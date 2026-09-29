@@ -1,0 +1,1858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OmniView Hub - English & Kannada Interactive Showcase</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts: Inter, Playfair Display, and Noto Sans Kannada -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Kannada:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Noto Sans Kannada', 'sans-serif'],
+            serif: ['Playfair Display', 'Noto Sans Kannada', 'serif'],
+            kannada: ['Noto Sans Kannada', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              400: '#818cf8',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              900: '#312e81',
+            },
+            kannadaAccent: {
+              500: '#f59e0b',
+              600: '#d97706',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* 3D Flip Card Preservation */
+    .perspective-1000 {
+      perspective: 1000px;
+    }
+    .transform-style-3d {
+      transform-style: preserve-3d;
+    }
+    .backface-hidden {
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+    .rotate-y-180 {
+      transform: rotateY(180deg);
+    }
+
+    /* Synchronized transcription highlight */
+    .word-span {
+      transition: background-color 0.15s ease, color 0.15s ease, transform 0.12s ease;
+      display: inline-block;
+      padding: 1px 4px;
+      margin: 1px 1px;
+      border-radius: 4px;
+      cursor: pointer;
+      line-height: 1.7;
+    }
+    .word-span:hover {
+      background-color: rgba(99, 102, 241, 0.3);
+      color: #ffffff;
+    }
+    .word-active {
+      background-color: #f59e0b !important;
+      color: #0f172a !important;
+      font-weight: 700;
+      box-shadow: 0 0 12px rgba(245, 158, 11, 0.75);
+      transform: scale(1.08);
+      border-radius: 4px;
+    }
+
+    /* Elegant custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(15, 23, 42, 0.6);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(99, 102, 241, 0.35);
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(99, 102, 241, 0.6);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased selection:bg-amber-500 selection:text-slate-950 flex flex-col">
+
+  <header class="sticky top-0 z-40 backdrop-blur-xl bg-slate-950/85 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between gap-4">
+
+      <!-- Brand Logo / Home Button -->
+      <button id="nav-brand-btn" class="flex items-center gap-3 group text-left cursor-pointer focus:outline-none">
+        <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-amber-500 via-indigo-600 to-pink-500 flex items-center justify-center shadow-lg shadow-indigo-500/25 group-hover:scale-105 transition-transform text-white font-bold text-lg">
+          <i class="fa-solid fa-shapes"></i>
+        </div>
+        <div>
+          <h1 class="text-base sm:text-lg font-bold tracking-tight text-white flex items-center gap-2">
+            ಕರ್ನಾಟಕ ದರ್ಶನ | Karnataka Darshana
+            <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">
+              EN | ಕನ್ನಡ
+            </span>
+          </h1>
+          <p id="nav-subtitle" class="text-xs text-slate-400">Audio Narration & Interactive Visual Cards</p>
+        </div>
+      </button>
+
+      <!-- Action items: Back Button, Language Toggle, JSON Manager -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- Return to Hub Button -->
+        <button
+          id="btn-return-hub"
+          class="hidden px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 items-center gap-2 transition-all cursor-pointer shadow-sm"
+        >
+          <i class="fa-solid fa-arrow-left"></i>
+          <span id="btn-return-hub-text">Back to Hub</span>
+        </button>
+
+        <!-- Language Switcher Pill Button -->
+        <div class="flex items-center bg-slate-900 border border-slate-700/80 rounded-2xl p-1 shadow-inner">
+            <button
+              id="lang-btn-kn"
+             class="px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer bg-amber-500 text-slate-950 shadow-sm"
+              title="ಕನ್ನಡಕ್ಕೆ ಬದಲಾಯಿಸಿ"
+            >
+              ಕನ್ನಡ
+            </button>
+          <button
+            id="lang-btn-en"
+
+            class="px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-200 transition-all cursor-pointer"
+            title="Switch to English"
+          >
+            English
+          </button>
+
+        </div>
+
+        <!-- JSON Data Manager Modal Trigger -->
+        <button
+          id="btn-open-json-modal"
+          class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-800 hover:bg-slate-700 border border-slate-700 active:scale-95 text-slate-200 flex items-center gap-2 transition-all cursor-pointer shadow-md"
+          title="Import, Edit or Export items.json"
+        >
+          <i class="fa-solid fa-code text-amber-400"></i>
+          <span class="hidden md:inline" id="btn-json-label">items.json Data</span>
+          <span class="md:hidden">JSON</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+    <!-- Diagnostic Banner: Displays when items.json is fetched or if CORS/fallback occurs -->
+    <div id="file-fetch-banner" class="hidden mb-6 p-4 rounded-2xl bg-indigo-950/60 border border-indigo-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+      <div class="flex items-center gap-3">
+        <i class="fa-solid fa-circle-nodes text-indigo-400 text-base"></i>
+        <div>
+          <p id="banner-message" class="font-medium text-slate-200">Loading dataset...</p>
+          <p id="banner-subtext" class="text-slate-400 text-[11px]">Serving via items.json Method 2 architecture.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-2 shrink-0">
+        <button id="banner-fallback-btn" class="hidden px-3 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-medium">
+          Load Embedded Demo Data
+        </button>
+        <button id="banner-picker-btn" class="hidden px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-medium">
+          Pick items.json From Disk
+        </button>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- VIEW 1: THE HUB GALLERY (BROWSE & SEARCH)  -->
+    <!-- ========================================== -->
+    <section id="view-hub" class="space-y-8">
+
+      <!-- Hub Hero Header -->
+      <div class="bg-gradient-to-r from-slate-900 via-indigo-950/30 to-amber-950/20 border border-slate-800 rounded-3xl p-6 sm:p-8 relative overflow-hidden">
+        <div class="absolute -right-16 -top-16 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-3xl space-y-3 relative z-10">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/30">
+            <i class="fa-solid fa-language text-[11px]"></i>
+            <span id="hub-items-badge">Loaded 4 bilingual items</span>
+          </span>
+          <h2 id="hub-hero-title" class="text-2xl sm:text-4xl font-serif font-bold text-white tracking-tight">
+            Curated Knowledge Gallery
+          </h2>
+          <p id="hub-hero-desc" class="text-sm sm:text-base text-slate-300 leading-relaxed">
+            Select any item below to explore high-definition imagery, listen to synchronized voice descriptions with karaoke transcription in English or Kannada, and test your knowledge with interactive flashcards.
+          </p>
+        </div>
+
+        <!-- Filter & Search Control Bar -->
+        <div class="mt-6 pt-6 border-t border-slate-800 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4">
+
+          <!-- Search Input -->
+          <div class="relative flex-1 max-w-md">
+            <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+            <input
+              id="hub-search-input"
+              type="text"
+              placeholder="Search by title, location, category, or description..."
+              class="w-full bg-slate-950/90 border border-slate-700/80 rounded-xl pl-10 pr-9 py-2.5 text-xs sm:text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-all"
+            />
+            <button id="hub-search-clear" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-slate-500 hover:text-slate-300">
+              <i class="fa-solid fa-circle-xmark"></i>
+            </button>
+          </div>
+
+          <!-- Category Filter Pills -->
+          <div class="flex items-center gap-1.5 overflow-x-auto pb-1 md:pb-0 scrollbar-none" id="hub-category-pills">
+            <!-- Dynamically populated categories -->
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Hub Cards Grid -->
+      <div id="hub-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered via JavaScript -->
+      </div>
+
+      <!-- Hub Empty State -->
+      <div id="hub-empty-state" class="hidden text-center py-16 px-4 bg-slate-900/40 rounded-3xl border border-slate-800">
+        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-slate-800 flex items-center justify-center text-slate-500 text-2xl">
+          <i class="fa-solid fa-box-open"></i>
+        </div>
+        <h3 id="empty-title" class="text-lg font-bold text-slate-200">No items match your criteria</h3>
+        <p id="empty-desc" class="text-sm text-slate-400 mt-1 max-w-md mx-auto">Try clearing your search keyword, switching categories, or adjusting language filters.</p>
+        <button id="btn-reset-filters" class="mt-4 px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-amber-300">
+          Reset All Filters
+        </button>
+      </div>
+
+    </section>
+
+    <!-- ========================================== -->
+    <!-- VIEW 2: DETAIL SHOWCASE VIEW               -->
+    <!-- ========================================== -->
+    <section id="view-detail" class="hidden space-y-10">
+
+      <!-- Top Row: Navigation Breadcrumb & Quick Actions -->
+      <div class="flex flex-wrap items-center justify-between gap-3 pb-2 border-b border-slate-800">
+        <div class="flex items-center gap-2 text-xs text-slate-400">
+          <button id="crumb-hub" class="hover:text-amber-400 transition-colors flex items-center gap-1 cursor-pointer">
+            <i class="fa-solid fa-home"></i> <span id="crumb-hub-label">Hub</span>
+          </button>
+          <span class="text-slate-600">/</span>
+          <span id="crumb-category" class="text-slate-300 font-medium">Category</span>
+          <span class="text-slate-600">/</span>
+          <span id="crumb-title" class="text-amber-300 font-semibold truncate max-w-[200px] sm:max-w-xs">Item Title</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <button
+            id="detail-prev-btn"
+            class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 hover:bg-slate-800 text-slate-300 text-xs flex items-center gap-1.5 transition-colors cursor-pointer"
+            title="Previous Item"
+          >
+            <i class="fa-solid fa-chevron-left"></i> <span id="btn-prev-label">Previous</span>
+          </button>
+          <button
+            id="detail-next-btn"
+            class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 hover:bg-slate-800 text-slate-300 text-xs flex items-center gap-1.5 transition-colors cursor-pointer"
+            title="Next Item"
+          >
+            <span id="btn-next-label">Next</span> <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Showcase Layout: Image Left, Narration Player & Transcript Right -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+        <!-- Photograph Display Column (7 cols) -->
+        <div class="lg:col-span-7 flex flex-col gap-4">
+          <div class="relative group rounded-3xl overflow-hidden bg-slate-900 border border-slate-800 shadow-2xl shadow-indigo-950/30">
+            <div class="aspect-[16/10] sm:aspect-[16/9] w-full overflow-hidden relative">
+              <img
+                id="main-image"
+                src=""
+                alt="Showcase Photograph"
+                class="w-full h-full object-cover object-center transition-all duration-700 ease-out group-hover:scale-105"
+                onerror="this.src='https://placehold.co/1200x800/1e293b/ffffff?text=Image+Unavailable'"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/30 to-transparent pointer-events-none"></div>
+
+              <div class="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 pointer-events-auto">
+                <span id="image-badge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/90 text-slate-950 shadow-sm mb-2 font-medium">
+                  <i class="fa-solid fa-sparkles text-[10px]"></i> Curated Selection
+                </span>
+                <h2 id="image-title" class="text-2xl sm:text-3xl font-serif font-bold text-white tracking-wide drop-shadow-md">
+                  <!-- Dynamic Title -->
+                </h2>
+                <p id="image-caption" class="text-xs sm:text-sm text-slate-300 line-clamp-2 mt-1 drop-shadow">
+                  <!-- Dynamic Caption -->
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Metadata spec tags -->
+          <div class="grid grid-cols-3 gap-3 text-center">
+            <div class="bg-slate-900/70 border border-slate-800 p-3 rounded-2xl">
+              <p id="meta-category-label" class="text-[11px] text-slate-400 font-medium">Category</p>
+              <p id="info-category" class="text-sm font-semibold text-amber-300 mt-0.5 truncate">-</p>
+            </div>
+            <div class="bg-slate-900/70 border border-slate-800 p-3 rounded-2xl">
+              <p id="meta-epoch-label" class="text-[11px] text-slate-400 font-medium">Epoch / Year</p>
+              <p id="info-year" class="text-sm font-semibold text-slate-200 mt-0.5 truncate">-</p>
+            </div>
+            <div class="bg-slate-900/70 border border-slate-800 p-3 rounded-2xl">
+              <p id="meta-location-label" class="text-[11px] text-slate-400 font-medium">Location</p>
+              <p id="info-location" class="text-sm font-semibold text-slate-200 mt-0.5 truncate">-</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Narration Deck & Karaoke Transcription Column (5 cols) -->
+        <div class="lg:col-span-5 flex flex-col gap-6">
+
+          <!-- Narration Player Deck -->
+          <div class="bg-slate-900/80 border border-slate-800 rounded-3xl p-6 shadow-xl relative backdrop-blur-md">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-5">
+              <div class="flex items-center gap-2.5">
+                <span class="relative flex h-3 w-3">
+                  <span id="speech-radar" class="hidden animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span id="speech-dot" class="relative inline-flex rounded-full h-3 w-3 bg-slate-600"></span>
+                </span>
+                <h3 id="speech-deck-title" class="font-semibold text-sm sm:text-base text-slate-200">Narration Speech Engine</h3>
+              </div>
+              <span id="speech-status" class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-400 border border-slate-700/60">
+                Ready
+              </span>
+            </div>
+
+            <!-- Controls: Play, Pause, Stop -->
+            <div class="flex items-center justify-center gap-3 mb-5">
+              <button
+                id="btn-play"
+                class="flex-1 py-3 px-4 rounded-2xl bg-amber-500 hover:bg-amber-400 active:scale-95 text-slate-950 font-bold flex items-center justify-center gap-2 shadow-lg shadow-amber-500/20 transition-all cursor-pointer"
+                title="Read Description Aloud"
+              >
+                <i class="fa-solid fa-volume-high text-lg"></i>
+                <span id="btn-play-label">Read Aloud</span>
+              </button>
+
+              <button
+                id="btn-pause"
+                disabled
+                class="p-3 w-12 h-12 rounded-2xl bg-slate-800 text-slate-400 disabled:opacity-30 disabled:cursor-not-allowed hover:bg-slate-700 active:scale-95 flex items-center justify-center transition-all cursor-pointer"
+                title="Pause or Resume Narration"
+              >
+                <i class="fa-solid fa-pause text-base"></i>
+              </button>
+
+              <button
+                id="btn-stop"
+                disabled
+                class="p-3 w-12 h-12 rounded-2xl bg-slate-800 text-slate-400 disabled:opacity-30 disabled:cursor-not-allowed hover:bg-rose-500/20 hover:text-rose-400 active:scale-95 flex items-center justify-center transition-all cursor-pointer"
+                title="Stop Narration"
+              >
+                <i class="fa-solid fa-stop text-base"></i>
+              </button>
+            </div>
+
+            <!-- Voice and Speed Parameters -->
+            <div class="space-y-4 pt-3 border-t border-slate-800 text-xs text-slate-400">
+              <div>
+                <div class="flex justify-between mb-1.5">
+                  <label id="voice-select-label" for="voice-select" class="font-medium text-slate-300">Voice Synthesis Model</label>
+                  <span id="voice-engine-badge" class="text-[11px] text-amber-400/80 font-mono">Web Speech API</span>
+                </div>
+                <select id="voice-select" class="w-full bg-slate-800/90 border border-slate-700 rounded-xl px-3 py-2 text-slate-200 text-xs focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                  <!-- Dynamically populated voices matching current language -->
+                </select>
+                <p id="voice-status-notice" class="mt-1.5 text-[11px] text-slate-500 italic hidden"></p>
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-1">
+                  <label id="speech-speed-label" for="rate-slider" class="font-medium text-slate-300">Narration Speed</label>
+                  <span id="rate-value" class="text-amber-400 font-mono font-semibold">1.0x</span>
+                </div>
+                <input
+                  id="rate-slider"
+                  type="range"
+                  min="0.7"
+                  max="1.4"
+                  step="0.05"
+                  value="1"
+                  class="w-full accent-amber-500 bg-slate-800 rounded-lg cursor-pointer"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Synchronized Interactive Karaoke Transcription -->
+          <div class="bg-slate-900/80 border border-slate-800 rounded-3xl p-6 shadow-xl flex flex-col flex-1 relative backdrop-blur-md">
+            <div class="flex items-center justify-between pb-3 mb-3 border-b border-slate-800">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-closed-captioning text-amber-400"></i>
+                <h3 id="transcription-title" class="font-semibold text-sm text-slate-200">Interactive Transcription</h3>
+              </div>
+              <div class="flex items-center gap-2">
+                <button
+                  id="btn-copy-transcript"
+                  class="text-xs px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center gap-1.5 transition-colors cursor-pointer"
+                  title="Copy Description Text"
+                >
+                  <i class="fa-regular fa-clone"></i>
+                  <span id="copy-btn-text">Copy</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Clickable, Highlightable Transcript Words (Supports English and Kannada tokens) -->
+            <div
+              id="transcription-body"
+              class="text-slate-300 leading-relaxed text-sm sm:text-base max-h-56 overflow-y-auto pr-2 focus:outline-none select-text font-sans"
+            >
+              <!-- Populated dynamically with span elements for each word -->
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-[11px] text-slate-500">
+              <span class="flex items-center gap-1.5">
+                <span class="inline-block w-2.5 h-2.5 rounded bg-amber-400"></span>
+                <span id="tracker-label">Live synchronized word tracker</span>
+              </span>
+              <span id="word-count" class="font-mono">0 words</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Interactive Flip Cards Section -->
+      <section class="pt-6">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-6 pb-3 border-b border-slate-800 gap-3">
+          <div>
+            <span id="flashcards-tagline" class="text-xs uppercase font-bold tracking-wider text-amber-400">Knowledge Reinforcement</span>
+            <h3 id="flashcards-heading" class="text-2xl font-bold font-serif text-white mt-1">Interactive Flashcards</h3>
+          </div>
+          <div class="flex items-center gap-3">
+            <button
+              id="btn-flip-all"
+              class="text-xs px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-800 hover:bg-slate-800 text-amber-300 font-semibold flex items-center gap-1.5 transition-all cursor-pointer shadow-sm"
+            >
+              <i class="fa-solid fa-rotate"></i>
+              <span id="flip-all-label">Flip All Cards</span>
+            </button>
+            <p id="flip-hint" class="text-xs text-slate-400 hidden sm:flex items-center gap-1.5">
+              <i class="fa-solid fa-hand-pointer text-amber-400 animate-bounce"></i> Click card to reveal
+            </p>
+          </div>
+        </div>
+
+        <!-- Flip Cards 3D Container Grid -->
+        <div id="cards-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Flashcards injected dynamically in currently active language -->
+        </div>
+      </section>
+
+    </section>
+
+  </main>
+
+  <!-- ========================================== -->
+  <!-- MODAL: BILINGUAL JSON METADATA MANAGER     -->
+  <!-- ========================================== -->
+  <div
+    id="json-modal"
+    class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm hidden opacity-0 transition-opacity duration-200"
+  >
+    <div class="bg-slate-900 border border-slate-800 rounded-3xl w-full max-w-4xl max-h-[90vh] flex flex-col shadow-2xl overflow-hidden">
+
+      <!-- Modal Header -->
+      <div class="px-6 py-4 border-b border-slate-800 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center">
+            <i class="fa-solid fa-database text-sm"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-base text-slate-100 flex items-center gap-2">
+              <span id="modal-title">items.json Metadata Manager</span>
+              <span class="text-[10px] px-2 py-0.5 bg-amber-500/20 text-amber-300 rounded-full font-mono">Bilingual EN/KN</span>
+            </h3>
+            <p id="modal-subtitle" class="text-xs text-slate-400">Load, customize, or export your images, descriptions and Kannada translations</p>
+          </div>
+        </div>
+
+        <button id="modal-close-btn" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center cursor-pointer transition-colors">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-6 space-y-4 flex-1 overflow-y-auto">
+
+        <!-- Controls: Load file, Export, Reset -->
+        <div class="flex flex-wrap items-center justify-between gap-3 p-3.5 bg-slate-950/70 border border-slate-800 rounded-2xl">
+          <div class="flex items-center gap-2">
+            <!-- Hidden file input for uploading .json -->
+            <input type="file" id="json-file-input" accept=".json,application/json" class="hidden" />
+            <button
+              id="btn-upload-json-file"
+              class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold flex items-center gap-2 transition-colors cursor-pointer"
+            >
+              <i class="fa-solid fa-folder-open text-amber-400"></i> <span id="btn-open-file-label">Open items.json</span>
+            </button>
+            <button
+              id="btn-download-json-file"
+              class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold flex items-center gap-2 transition-colors cursor-pointer"
+            >
+              <i class="fa-solid fa-download text-emerald-400"></i> <span id="btn-export-file-label">Download items.json</span>
+            </button>
+          </div>
+
+          <button
+            id="btn-reset-default-json"
+            class="px-3 py-2 rounded-xl bg-rose-500/10 hover:bg-rose-500/20 text-rose-300 text-xs font-medium flex items-center gap-1.5 transition-colors cursor-pointer"
+          >
+            <i class="fa-solid fa-rotate-left"></i> <span id="btn-restore-label">Restore Curated Data</span>
+          </button>
+        </div>
+
+        <!-- Schema info banner -->
+        <div class="text-xs text-slate-400 bg-slate-800/40 p-3 rounded-xl border border-slate-800 flex items-start gap-2.5">
+          <i class="fa-solid fa-circle-info text-amber-400 mt-0.5"></i>
+          <span id="schema-help-text">
+            Each item supports bilingual keys: <code class="text-amber-300 font-mono">title</code> / <code class="text-amber-300 font-mono">title_kn</code>, <code class="text-amber-300 font-mono">category</code> / <code class="text-amber-300 font-mono">category_kn</code>, <code class="text-amber-300 font-mono">location</code> / <code class="text-amber-300 font-mono">location_kn</code>, <code class="text-amber-300 font-mono">description</code> / <code class="text-amber-300 font-mono">description_kn</code>, and flip cards with <code class="text-amber-300 font-mono">q_kn</code> & <code class="text-amber-300 font-mono">a_kn</code>.
+          </span>
+        </div>
+
+        <!-- JSON Code Editor Area -->
+        <div class="relative">
+          <textarea
+            id="json-editor-textarea"
+            rows="13"
+            class="w-full bg-slate-950 font-mono text-xs text-emerald-300 p-4 rounded-2xl border border-slate-700/80 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 leading-relaxed selection:bg-amber-600 selection:text-white"
+            placeholder="Paste your items.json dataset array here..."
+            spellcheck="false"
+          ></textarea>
+        </div>
+
+        <!-- Validation Error Output -->
+        <div id="json-validation-error" class="hidden text-xs text-rose-400 bg-rose-950/40 border border-rose-800/60 p-3 rounded-xl flex items-center gap-2">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <span id="json-error-message">Invalid JSON structure.</span>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="px-6 py-4 border-t border-slate-800 bg-slate-900 flex items-center justify-between">
+        <span class="text-xs text-slate-400 font-mono" id="modal-json-stats">0 entries</span>
+        <div class="flex items-center gap-2">
+          <button
+            id="modal-cancel-btn"
+            class="px-4 py-2 rounded-xl text-xs font-medium text-slate-300 hover:bg-slate-800 transition-colors cursor-pointer"
+          >
+            Cancel
+          </button>
+          <button
+            id="btn-apply-json"
+            class="px-5 py-2 rounded-xl text-xs font-semibold bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold shadow-lg shadow-amber-500/20 transition-all cursor-pointer"
+          >
+            Save & Reload
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification element -->
+  <div
+    id="toast-notification"
+    class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-slate-900 border border-amber-500/40 text-slate-100 px-4 py-2.5 rounded-2xl shadow-2xl flex items-center gap-3 text-sm pointer-events-none"
+  >
+    <i id="toast-icon" class="fa-solid fa-check text-emerald-400"></i>
+    <span id="toast-message">Notification message</span>
+  </div>
+
+  <script>
+    // -------------------------------------------------------------
+    // UI LOCALIZATION DICTIONARY (English & Kannada)
+    // -------------------------------------------------------------
+    const I18N = {
+      en: {
+        subtitle: "Audio Narration & Interactive Visual Cards",
+        backToHub: "Back to Hub",
+        jsonManager: "items.json Data",
+        heroTitle: "Curated Knowledge Gallery",
+        heroDesc: "Select any item below to explore high-definition imagery, listen to synchronized voice descriptions with karaoke transcription in English or Kannada, and test your knowledge with interactive flashcards.",
+        searchPlaceholder: "Search by title, location, category, or description...",
+        allCategories: "All Collections",
+        exploreAction: "Explore Story & Flashcards",
+        emptyTitle: "No items match your criteria",
+        emptyDesc: "Try clearing your search keyword, switching categories, or adjusting language filters.",
+        resetFilters: "Reset All Filters",
+        hubCrumb: "Hub",
+        prev: "Previous",
+        next: "Next",
+        category: "Category",
+        epoch: "Epoch / Year",
+        location: "Location",
+        speechEngine: "Narration Speech Engine",
+        readAloud: "Read Aloud",
+        reading: "Reading...",
+        resume: "Resume",
+        paused: "Paused",
+        ready: "Ready",
+        voiceLabel: "Voice Synthesis Model",
+        speedLabel: "Narration Speed",
+        transcription: "Interactive Transcription",
+        copy: "Copy",
+        copied: "Copied!",
+        liveTracker: "Live synchronized speech tracker",
+        words: "words",
+        flashcardsTag: "Knowledge Reinforcement",
+        flashcardsHeading: "Interactive Flashcards",
+        flipAll: "Flip All Cards",
+        flipBack: "Flip Cards Back",
+        flipHint: "Click card to reveal",
+        questionPrefix: "QUESTION",
+        answerTitle: "ANSWER INSIGHT",
+        clickReveal: "Click to reveal",
+        tapFlipBack: "Tap to flip back",
+        verified: "Verified",
+        toastCopied: "Transcript copied to clipboard!",
+        toastLoaded: "Loaded dataset successfully!",
+        toastSpeechError: "Speech synthesis interrupted or unsupported.",
+        voiceNoKannada: "Note: Native Kannada voice not detected in browser. Using system voice fallback with kn-IN configuration."
+      },
+      kn: {
+        subtitle: "ಧ್ವನಿ ವಿವರಣೆ ಮತ್ತು ಸಂವಾದಾತ್ಮಕ ಚಿತ್ರ ಕಾರ್ಡ್‌ಗಳು",
+        backToHub: "ಮುಖಪುಟಕ್ಕೆ ಹಿಂತಿರುಗಿ",
+        jsonManager: "items.json ಡೇಟಾ",
+        heroTitle: "ಜ್ಞಾನ ದರ್ಶಿನಿ ಗ್ಯಾಲರಿ",
+        heroDesc: "ಉತ್ತಮ ಗುಣಮಟ್ಟದ ಛಾಯಾಚಿತ್ರಗಳನ್ನು ವೀಕ್ಷಿಸಲು, ಕನ್ನಡ ಅಥವಾ ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ಕ್ಯಾರಿಯೋಕೆ ಪದಗಳ ಹೈಲೈಟ್ ಜೊತೆಗೆ ಧ್ವನಿ ವಿವರಣೆಯನ್ನು ಕೇಳಲು ಹಾಗೂ ಫ್ಲಿಪ್ ಕಾರ್ಡ್‌ಗಳ ಮೂಲಕ ಜ್ಞಾನ ಪರೀಕ್ಷಿಸಲು ಕೆಳಗಿನ ಯಾವುದೇ ಕಾರ್ಡ್ ಆಯ್ಕೆಮಾಡಿ.",
+        searchPlaceholder: "ಶೀರ್ಷಿಕೆ, ಸ್ಥಳ, ವರ್ಗ ಅಥವಾ ವಿವರಣೆಯ ಮೂಲಕ ಹುಡುಕಿ...",
+        allCategories: "ಎಲ್ಲಾ ವಿಭಾಗಗಳು",
+        exploreAction: "ವಿವರಣೆ ಮತ್ತು ಫ್ಲ್ಯಾಷ್‌ಕಾರ್ಡ್‌ಗಳನ್ನು ವೀಕ್ಷಿಸಿ",
+        emptyTitle: "ಯಾವುದೇ ಫಲಿತಾಂಶ ದೊರೆತಿಲ್ಲ",
+        emptyDesc: "ಹುಡುಕಾಟ ಪದವನ್ನು ಬದಲಾಯಿಸಿ, ವಿಭಾಗ ಫಿಲ್ಟರ್ ಮರುಹೊಂದಿಸಿ ಅಥವಾ ಭಾಷೆಯನ್ನು ಪರಿಶೀಲಿಸಿ.",
+        resetFilters: "ಎಲ್ಲಾ ಫಿಲ್ಟರ್‌ಗಳನ್ನು ತೆರವುಗೊಳಿಸಿ",
+        hubCrumb: "ಮುಖಪುಟ",
+        prev: "ಹಿಂದಿನದು",
+        next: "ಮುಂದಿನದು",
+        category: "ವರ್ಗ",
+        epoch: "ಕಾಲಘಟ್ಟ / ವರ್ಷ",
+        location: "ಸ್ಥಳ",
+        speechEngine: "ಧ್ವನಿ ವಿವರಣಾ ಎಂಜಿನ್",
+        readAloud: "ಓದಿ ಹೇಳು",
+        reading: "ಓದಲಾಗುತ್ತಿದೆ...",
+        resume: "ಮುಂದುವರಿಸಿ",
+        paused: "ವಿರಾಮಗೊಳಿಸಲಾಗಿದೆ",
+        ready: "ಸಿದ್ಧವಾಗಿದೆ",
+        voiceLabel: "ಧ್ವನಿ ಮಾದರಿ (Voice Model)",
+        speedLabel: "ಓದುವ ವೇಗ",
+        transcription: "ಪದಾನುಸಾರ ಪ್ರತಿಲೇಖನ (Transcription)",
+        copy: "ಪ್ರತಿಮಾಡು",
+        copied: "ಪ್ರತಿಯಾಯಿತು!",
+        liveTracker: "ನೈಜ ಸಮಯದ ಧ್ವನಿ-ಪದ ಹೊಂದಾಣಿಕೆ",
+        words: "ಪದಗಳು",
+        flashcardsTag: "ಜ್ಞಾನ ಪುನರಾವರ್ತನೆ",
+        flashcardsHeading: "ಸಂವಾದಾತ್ಮಕ ಫ್ಲ್ಯಾಶ್‌ಕಾರ್ಡ್‌ಗಳು",
+        flipAll: "ಎಲ್ಲಾ ಕಾರ್ಡ್ ತಿರುಗಿಸಿ",
+        flipBack: "ಮೂಲಸ್ಥಿತಿಗೆ ತಿರುಗಿಸಿ",
+        flipHint: "ಉತ್ತರ ನೋಡಲು ಕಾರ್ಡ್ ಕ್ಲಿಕ್ ಮಾಡಿ",
+        questionPrefix: "ಪ್ರಶ್ನೆ",
+        answerTitle: "ಉತ್ತರದ ಒಳನೋಟ",
+        clickReveal: "ಉತ್ತರ ತಿಳಿಯಲು ಕ್ಲಿಕ್ ಮಾಡಿ",
+        tapFlipBack: "ಮರಳಿ ಪ್ರಶ್ನೆಗೆ ಹೋಗಲು ಕ್ಲಿಕ್ ಮಾಡಿ",
+        verified: "ಪರಿಶೀಲಿತ ಸತ್ಯ",
+        toastCopied: "ವಿವರಣೆಯನ್ನು ನಕಲಿಸಲಾಗಿದೆ!",
+        toastLoaded: "ಡೇಟಾಸೆಟ್ ಯಶಸ್ವಿಯಾಗಿ ಲೋಡ್ ಆಗಿದೆ!",
+        toastSpeechError: "ಧ್ವನಿ ಸಂಶ್ಲೇಷಣೆಯಲ್ಲಿ ದೋಷ ಕಂಡುಬಂದಿದೆ.",
+        voiceNoKannada: "ಸೂಚನೆ: ನಿಮ್ಮ ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಸ್ಥಳೀಯ ಕನ್ನಡ ಧ್ವನಿ ಲಭ್ಯವಿಲ್ಲ. ಸಿಸ್ಟಮ್ ಡೀಫಾಲ್ಟ್ ಧ್ವನಿಯನ್ನು kn-IN ಸಂರಚನೆಯೊಂದಿಗೆ ಬಳಸಲಾಗುತ್ತಿದೆ."
+      }
+    };
+
+    // -------------------------------------------------------------
+    // DEFAULT CURATED BILINGUAL DATASET (items.json default fallback)
+    // -------------------------------------------------------------
+    const DEFAULT_CATALOG_DATA = [
+      {
+        "id": "hampi-stone-chariot",
+        "title": "Stone Chariot of Vijayanagara, Hampi",
+        "title_kn": "ವಿಜಯನಗರದ ಕಲ್ಲಿನ ರಥ, ಹಂಪಿ",
+        "badge": "UNESCO World Heritage",
+        "badge_kn": "ಯುನೆಸ್ಕೋ ವಿಶ್ವ ಪರಂಪರೆ ತಾಣ",
+        "caption": "An architectural marvel sculpted from granite within the Vittala Temple complex.",
+        "caption_kn": "ವಿಜಯ ವಿಠ್ಠಲ ದೇವಾಲಯ ಸಂಕೀರ್ಣದಲ್ಲಿ ಗ್ರಾನೈಟ್ ಶಿಲೆಯಲ್ಲಿ ಕೆತ್ತಲಾದ ಶಿಲ್ಪಕಲೆಯ ಅದ್ಭುತ.",
+        "category": "Heritage",
+        "category_kn": "ಪರಂಪರೆ",
+        "year": "16th Century CE",
+        "year_kn": "ಕ್ರಿ.ಶ. 16ನೇ ಶತಮಾನ",
+        "location": "Hampi, Karnataka, India",
+        "location_kn": "ಹಂಪಿ, ಬಳ್ಳಾರಿ/ವಿಜಯನಗರ, ಕರ್ನಾಟಕ",
+        "image": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1400&q=80",
+        "description": "The Stone Chariot in Hampi is a world-renowned shrine dedicated to Garuda within the sacred Vijaya Vittala temple complex. Built during the peak of the Vijayanagara Empire, it is celebrated for its intricate Dravidian carvings, rotating granite wheels, and awe-inspiring architectural precision that represents the zenith of South Indian craftsmanship.",
+        "description_kn": "ಹಂಪಿಯ ಕಲ್ಲಿನ ರಥವು ಪವಿತ್ರ ವಿಜಯ ವಿಠ್ಠಲ ದೇವಾಲಯ ಸಂಕೀರ್ಣದಲ್ಲಿರುವ ಗರುಡನಿಗೆ ಸಮರ್ಪಿತವಾದ ವಿಶ್ವಪ್ರಸಿದ್ಧ ದೇಗುಲವಾಗಿದೆ. ವಿಜಯನಗರ ಸಾಮ್ರಾಜ್ಯದ ಸುವರ್ಣ ಯುಗದಲ್ಲಿ ನಿರ್ಮಿಸಲಾದ ಈ ರಥವು ದ್ರಾವಿಡ ಶಿಲ್ಪಕಲೆ, ಕೆತ್ತನೆಯ ಗ್ರಾನೈಟ್ ಚಕ್ರಗಳು ಮತ್ತು ದಕ್ಷಿಣ ಭಾರತೀಯ ವಾಸ್ತುಶಿಲ್ಪದ ಭವ್ಯತೆಯನ್ನು ಅದ್ಭುತವಾಗಿ ಪ್ರತಿಬಿಂಬಿಸುತ್ತದೆ.",
+        "triviaCards": [
+          {
+            "q": "To which divine deity is the Hampi Stone Chariot shrine dedicated?",
+            "q_kn": "ಹಂಪಿಯ ಕಲ್ಲಿನ ರಥವು ಯಾವ ದೇವರಿಗೆ ಅರ್ಪಿತವಾದ ದೇಗುಲವಾಗಿದೆ?",
+            "a": "It is dedicated to Garuda, the celestial mount of Lord Vishnu, facing directly toward the main sanctum of the Vittala temple.",
+            "a_kn": "ಇದು ವಿಷ್ಣುವಿನ ವಾಹನವಾದ ಗರುಡನಿಗೆ ಸಮರ್ಪಿತವಾಗಿದ್ದು, ವಿಠ್ಠಲ ದೇವಾಲಯದ ಮುಖ್ಯ ಗರ್ಭಗುಡಿಗೆ ಮುಖಮಾಡಿದೆ.",
+            "icon": "fa-monument"
+          },
+          {
+            "q": "Is the chariot carved out of a single monolithic stone block?",
+            "q_kn": "ಕಲ್ಲಿನ ರಥವನ್ನು ಒಂದೇ ಏಕಶಿಲೆಯಿಂದ ಕೆತ್ತಲಾಗಿದೆಯೇ?",
+            "a": "No, it is built of multiple intricately carved granite slabs cleverly assembled with disguised interlocking joints.",
+            "a_kn": "ಇಲ್ಲ, ಇದು ಕೀಲುಗಳು ಸುಲಭವಾಗಿ ಕಾಣಿಸದಂತೆ ಅತ್ಯಂತ ಕಲಾತ್ಮಕವಾಗಿ ಜೋಡಿಸಲಾದ ಬಹು ಗ್ರಾನೈಟ್ ಶಿಲಾಖಂಡಗಳಿಂದ ಮಾಡಲ್ಪಟ್ಟಿದೆ.",
+            "icon": "fa-gem"
+          },
+          {
+            "q": "On which current Indian currency banknote is this chariot depicted?",
+            "q_kn": "ಪ್ರಸ್ತುತ ಭಾರತೀಯ ರಿಸರ್ವ್ ಬ್ಯಾಂಕಿನ ಯಾವ ನೋಟಿನ ಮೇಲೆ ಈ ರಥದ ಚಿತ್ರವಿದೆ?",
+            "a": "The Hampi Stone Chariot is famously featured on the reverse side of the Indian 50 rupee banknote.",
+            "a_kn": "ಹಂಪಿಯ ಕಲ್ಲಿನ ರಥದ ಸುಂದರ ಚಿತ್ರವನ್ನು ಭಾರತದ 50 ರೂಪಾಯಿ ಕರೆನ್ಸಿ ನೋಟಿನ ಹಿಂಭಾಗದಲ್ಲಿ ಮುದ್ರಿಸಲಾಗಿದೆ.",
+            "icon": "fa-money-bill-wave"
+          }
+        ]
+      },
+      {
+        "id": "mysore-palace",
+        "title": "Mysore Palace (Amba Vilas)",
+        "title_kn": "ಮೈಸೂರು ಅರಮನೆ (ಅಂಬಾ ವಿಲಾಸ)",
+        "badge": "Royal Architecture",
+        "badge_kn": "ರಾಜಪ್ರಭುತ್ವದ ವಾಸ್ತುಶಿಲ್ಪ",
+        "caption": "The luminous seat of the Wadiyar dynasty glowing with nearly 100,000 bulbs.",
+        "caption_kn": "ಸುಮಾರು ಒಂದು ಲಕ್ಷ ದೀಪಗಳಿಂದ ಕಂಗೊಳಿಸುವ ಒಡೆಯರ್ ರಾಜವಂಶದ ವೈಭವೋಪೇತ ಸಿಂಹಾಸನದ ನೆಲೆ.",
+        "category": "Architecture",
+        "category_kn": "ವಾಸ್ತುಶಿಲ್ಪ",
+        "year": "1912 CE",
+        "year_kn": "ಕ್ರಿ.ಶ. 1912",
+        "location": "Mysuru, Karnataka, India",
+        "location_kn": "ಮೈಸೂರು, ಕರ್ನಾಟಕ",
+        "image": "https://images.unsplash.com/photo-1600100397608-f010f445b9a4?auto=format&fit=crop&w=1400&q=80",
+        "description": "Designed by the celebrated architect Lord Henry Irwin, the Mysore Palace is an extraordinary Indo-Saracenic royal residence. It blends Hindu, Muslim, Rajput, and Gothic styles with magnificent archways, rosewood doors inlaid with ivory, stained glass ceilings, and the legendary Golden Throne.",
+        "description_kn": "ಪ್ರಸಿದ್ಧ ವಾಸ್ತುಶಿಲ್ಪಿ ಹೆನ್ರಿ ಇರ್ವಿನ್ ಅವರಿಂದ ವಿನ್ಯಾಸಗೊಳಿಸಲಾದ ಮೈಸೂರು ಅರಮನೆಯು ಇಂಡೋ-ಸಾರ್ಸೆನಿಕ್ ಶೈಲಿಯ ಭವ್ಯ ರಾಜಭವನವಾಗಿದೆ. ಇದು ಹಿಂದೂ, ಮುಸ್ಲಿಂ, ರಜಪೂತ ಮತ್ತು ಗೋಥಿಕ್ ಶೈಲಿಗಳನ್ನು ಸುಂದರವಾಗಿ ಸಂಯೋಜಿಸಿದ್ದು, ದಂತದ ಕೆತ್ತನೆಯ ಬಾಗಿಲುಗಳು, ಬಣ್ಣದ ಗಾಜಿನ ಛಾವಣಿಗಳು ಮತ್ತು ಚಿನ್ನದ ಸಿಂಹಾಸನದಿಂದ ಪ್ರಸಿದ್ಧಿ ಪಡೆದಿದೆ.",
+        "triviaCards": [
+          {
+            "q": "Which architect designed the current stone building of the Mysore Palace?",
+            "q_kn": "ಮೈಸೂರಿನ ಪ್ರಸ್ತುತ ಅರಮನೆಯನ್ನು ವಿನ್ಯಾಸಗೊಳಿಸಿದ ವಾಸ್ತುಶಿಲ್ಪಿ ಯಾರು?",
+            "a": "British architect Lord Henry Irwin, commissioned by Maharani Kempananjammanni Vani Vilasa Sannidhana after the old wooden palace burned down.",
+            "a_kn": "ಬ್ರಿಟಿಷ್ ವಾಸ್ತುಶಿಲ್ಪಿ ಲಾರ್ಡ್ ಹೆನ್ರಿ ಇರ್ವಿನ್. ಹಳೆಯ ಮರದ ಅರಮನೆ ಬೆಂಕಿಗೆ ಆಹುತಿಯಾದ ನಂತರ ಇದನ್ನು ಮರುನಿರ್ಮಿಸಲಾಯಿತು.",
+            "icon": "fa-landmark"
+          },
+          {
+            "q": "How many light bulbs are illuminated on the palace exterior on Sundays and festivals?",
+            "q_kn": "ಭಾನುವಾರ ಮತ್ತು ಹಬ್ಬದ ದಿನಗಳಲ್ಲಿ ಅರಮನೆಯನ್ನು ಬೆಳಗಿಸಲು ಎಷ್ಟು ಬಲ್ಬ್‌ಗಳನ್ನು ಬೆಳಗಿಸಲಾಗುತ್ತದೆ?",
+            "a": "Approximately 97,000 to 100,000 incandescent light bulbs illuminate its majestic silhouette.",
+            "a_kn": "ಸುಮಾರು 97,000 ದಿಂದ 1,00,000 ದೀಪಗಳು ಅರಮನೆಯ ಭವ್ಯ ಬಾಹ್ಯರೇಖೆಯನ್ನು ರಾತ್ರಿಯ ವೇಳೆ ಬೆಳಗಿಸುತ್ತವೆ.",
+            "icon": "fa-lightbulb"
+          }
+        ]
+      },
+      {
+        "id": "jwst-deep-field",
+        "title": "James Webb Space Telescope: SMACS 0723",
+        "title_kn": "ಜೇಮ್ಸ್ ವೆಬ್ ದೂರದರ್ಶಕ: ಆಳ ಬಾಹ್ಯಾಕಾಶ ಚಿತ್ರ",
+        "badge": "Cosmic Observation",
+        "badge_kn": "ಖಗೋಳ ವೀಕ್ಷಣೆ",
+        "caption": "A gravitational lens bending light from distant galaxies over 13 billion years into cosmic history.",
+        "caption_kn": "13 ಶತಕೋಟಿ ವರ್ಷಗಳ ಹಿಂದಿನ ನಕ್ಷತ್ರಪುಂಜಗಳ ಬೆಳಕನ್ನು ತೋರಿಸುವ ನೈಸರ್ಗಿಕ ಕಾಸ್ಮಿಕ್ ಮಸೂರ.",
+        "category": "Astronomy",
+        "category_kn": "ಖಗೋಳವಿಜ್ಞಾನ",
+        "year": "2022 CE",
+        "year_kn": "ಕ್ರಿ.ಶ. 2022",
+        "location": "Lagrange Point 2 (Deep Space)",
+        "location_kn": "ಲಗ್ರಾಂಜ್ ಪಾಯಿಂಟ್ 2 (ಬಾಹ್ಯಾಕಾಶ)",
+        "image": "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=1400&q=80",
+        "description": "This deep field photograph captured by the James Webb Space Telescope reveals thousands of ancient galaxies. Through gravitational lensing, the massive foreground cluster SMACS 0723 magnifies light originating from the infancy of the universe, shortly after the Big Bang.",
+        "description_kn": "ಜೇಮ್ಸ್ ವೆಬ್ ಬಾಹ್ಯಾಕಾಶ ದೂರದರ್ಶಕವು ಸೆರೆಹಿಡಿದ ಈ ಚಿತ್ರವು ಸಾವಿರಾರು ಪ್ರಾಚೀನ ನಕ್ಷತ್ರಪುಂಜಗಳನ್ನು ಬಹಿರಂಗಪಡಿಸುತ್ತದೆ. ಮುಂಭಾಗದ ಬೃಹತ್ ಗ್ಯಾಲಕ್ಸಿ ಕ್ಲಸ್ಟರ್ ನೈಸರ್ಗಿಕ ಮಸೂರದಂತೆ ಕಾರ್ಯನಿರ್ವಹಿಸಿ, ಬ್ರಹ್ಮಾಂಡದ ಉದಯ ಕಾಲದ ಅತ್ಯಂತ ಮಸುಕಾದ ಬೆಳಕನ್ನು ವರ್ಧಿಸಿ ತೋರಿಸುತ್ತದೆ.",
+        "triviaCards": [
+          {
+            "q": "What phenomenon causes the curved, arc-shaped streaks of light in this image?",
+            "q_kn": "ಈ ಚಿತ್ರದಲ್ಲಿ ಕಾಣುವ ಬಾಗಿದ ಆಕಾರದ ಬೆಳಕಿನ ಗೆರೆಗಳಿಗೆ ಯಾವ ಖಗೋಳ ಭೌತಶಾಸ್ತ್ರದ ನಿಯಮ ಕಾರಣ?",
+            "a": "Gravitational lensing: the cluster's immense mass warps spacetime, bending the trajectories of background light rays.",
+            "a_kn": "ಗುರುತ್ವಾಕರ್ಷಣೆಯ ಮಸೂರ ಪರಿಣಾಮ (Gravitational Lensing): ನಕ್ಷತ್ರಪುಂಜಗಳ ಅಪಾರ ದ್ರವ್ಯರಾಶಿಯು ಬೆಳಕಿನ ಪಥವನ್ನು ಬಾಗಿಸುತ್ತದೆ.",
+            "icon": "fa-magnifying-glass"
+          },
+          {
+            "q": "Which wavelength spectrum does the JWST primarily use?",
+            "q_kn": "ಜೇಮ್ಸ್ ವೆಬ್ ದೂರದರ್ಶಕವು ಮುಖ್ಯವಾಗಿ ಯಾವ ತರಂಗಾಂತರದ ಬೆಳಕನ್ನು ಬಳಸುತ್ತದೆ?",
+            "a": "Infrared light, which penetrates cosmic dust clouds and captures redshifted light from early epochs.",
+            "a_kn": "ಅವಕೆಂಪು ಬೆಳಕು (Infrared). ಇದು ಬಾಹ್ಯಾಕಾಶ ಧೂಳನ್ನು ಭೇದಿಸಿ, ದೂರದ ಕೆಂಪು-ಸ್ಥಳಾಂತರಗೊಂಡ ಬೆಳಕನ್ನು ಗ್ರಹಿಸುತ್ತದೆ.",
+            "icon": "fa-satellite"
+          }
+        ]
+      },
+      {
+        "id": "jog-falls",
+        "title": "Jog Falls (Gerosoppa Cataracts)",
+        "title_kn": "ಜೋಗ ಜಲಪಾತ (ಗೇರುಸೊಪ್ಪೆ)",
+        "badge": "Natural Wonder",
+        "badge_kn": "ನೈಸರ್ಗಿಕ ವಿಸ್ಮಯ",
+        "caption": "The majestic Sharavathi river cascading down towering Western Ghats cliffs.",
+        "caption_kn": "ಪಶ್ಚಿಮ ಘಟ್ಟಗಳ ಎತ್ತರದ ಕಡಿದಾದ ಬಂಡೆಗಳಿಂದ ಧುಮುಕುವ ಶರಾವತಿ ನದಿಯ ರುದ್ರರಮಣೀಯ ದೃಶ್ಯ.",
+        "category": "Nature",
+        "category_kn": "ಪ್ರಕೃತಿ",
+        "year": "Perennial Waterfall",
+        "year_kn": "ಶಾಶ್ವತ ನಿಸರ್ಗ ಧಾರೆ",
+        "location": "Shivamogga, Karnataka, India",
+        "location_kn": "ಶಿವಮೊಗ್ಗ, ಕರ್ನಾಟಕ",
+        "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1400&q=80",
+        "description": "Jog Falls is one of the highest untiered waterfalls in India, plunging 253 meters in a breathtaking single drop. Formed by the Sharavathi River in the pristine Western Ghats, it divides into four distinct cascades: Raja, Roarer, Rocket, and Rani.",
+        "description_kn": "ಜೋಗ ಜಲಪಾತವು ಭಾರತದ ಎರಡನೇ ಅತಿ ಎತ್ತರದ ಧುಮುಕುವ ಜಲಪಾತವಾಗಿದ್ದು, ಶರಾವತಿ ನದಿಯು 253 ಮೀಟರ್ ಎತ್ತರದಿಂದ ನೇರವಾಗಿ ಪ್ರಪಾತಕ್ಕೆ ಧುಮುಕುತ್ತದೆ. ಇದು ರಾಜ, ರೋರರ್, ರಾಕೆಟ್ ಮತ್ತು ರಾಣಿ ಎಂಬ ನಾಲ್ಕು ವಿಭಿನ್ನ ಸುಂದರ ಕವಲುಗಳಾಗಿ ವಿಭಜನೆಗೊಳ್ಳುತ್ತದೆ.",
+        "triviaCards": [
+          {
+            "q": "What are the traditional names of the four distinct cascades of Jog Falls?",
+            "q_kn": "ಜೋಗ ಜಲಪಾತದ ನಾಲ್ಕು ಸುಪ್ರಸಿದ್ಧ ಕವಲುಗಳ ಹೆಸರುಗಳೇನು?",
+            "a": "Raja (King), Roarer, Rocket, and Rani (Queen), each possessing distinct water flow characteristics.",
+            "a_kn": "ರಾಜ, ರೋರರ್, ರಾಕೆಟ್ ಮತ್ತು ರಾಣಿ. ಪ್ರತಿಯೊಂದು ಕವಲು ತನ್ನದೇ ಆದ ವಿಶಿಷ್ಟ ಧ್ವನಿ ಹಾಗೂ ಹರಿವಿನ ಶೈಲಿಯನ್ನು ಹೊಂದಿದೆ.",
+            "icon": "fa-water"
+          },
+          {
+            "q": "Which river generates the magnificent cascade at Jog Falls?",
+            "q_kn": "ಜೋಗ ಜಲಪಾತವನ್ನು ನಿರ್ಮಿಸುವ ನದಿ ಯಾವುದು?",
+            "a": "The Sharavathi River, which also powers major hydroelectric generation projects for Karnataka.",
+            "a_kn": "ಶರಾವತಿ ನದಿ. ಇದು ಕರ್ನಾಟಕದ ಪ್ರಮುಖ ಜಲವಿದ್ಯುತ್ ಉತ್ಪಾದನೆಗೆ ಅತ್ಯಮೂಲ್ಯ ಆಸರೆಯಾಗಿದೆ.",
+            "icon": "fa-bolt"
+          }
+        ]
+      }
+    ];
+
+    // -------------------------------------------------------------
+    // APPLICATION STATE
+    // -------------------------------------------------------------
+    let currentLang = 'kn'; // 'en' or 'kn'
+    let catalog = [];
+    let currentTopicIndex = 0;
+    let selectedCategory = 'all';
+    let searchQuery = '';
+
+    // Speech State
+    const synth = window.speechSynthesis;
+    let utterance = null;
+    let availableVoices = [];
+    let isPaused = false;
+    let isSpeaking = false;
+    let wordSpans = [];
+
+    const navBrandBtn = document.getElementById('nav-brand-btn');
+    const navSubtitle = document.getElementById('nav-subtitle');
+    const btnReturnHub = document.getElementById('btn-return-hub');
+    const btnReturnHubText = document.getElementById('btn-return-hub-text');
+    const langBtnEn = document.getElementById('lang-btn-en');
+    const langBtnKn = document.getElementById('lang-btn-kn');
+    const btnJsonLabel = document.getElementById('btn-json-label');
+
+    const viewHub = document.getElementById('view-hub');
+    const viewDetail = document.getElementById('view-detail');
+    const hubHeroTitle = document.getElementById('hub-hero-title');
+    const hubHeroDesc = document.getElementById('hub-hero-desc');
+    const hubItemsBadge = document.getElementById('hub-items-badge');
+    const hubSearchInput = document.getElementById('hub-search-input');
+    const hubSearchClear = document.getElementById('hub-search-clear');
+    const hubCategoryPills = document.getElementById('hub-category-pills');
+    const hubGrid = document.getElementById('hub-grid');
+    const hubEmptyState = document.getElementById('hub-empty-state');
+    const emptyTitle = document.getElementById('empty-title');
+    const emptyDesc = document.getElementById('empty-desc');
+    const btnResetFilters = document.getElementById('btn-reset-filters');
+
+    const crumbHub = document.getElementById('crumb-hub');
+    const crumbHubLabel = document.getElementById('crumb-hub-label');
+    const crumbCategory = document.getElementById('crumb-category');
+    const crumbTitle = document.getElementById('crumb-title');
+    const detailPrevBtn = document.getElementById('detail-prev-btn');
+    const detailNextBtn = document.getElementById('detail-next-btn');
+    const btnPrevLabel = document.getElementById('btn-prev-label');
+    const btnNextLabel = document.getElementById('btn-next-label');
+
+    const mainImage = document.getElementById('main-image');
+    const imageBadge = document.getElementById('image-badge');
+    const imageTitle = document.getElementById('image-title');
+    const imageCaption = document.getElementById('image-caption');
+    const metaCategoryLabel = document.getElementById('meta-category-label');
+    const metaEpochLabel = document.getElementById('meta-epoch-label');
+    const metaLocationLabel = document.getElementById('meta-location-label');
+    const infoCategory = document.getElementById('info-category');
+    const infoYear = document.getElementById('info-year');
+    const infoLocation = document.getElementById('info-location');
+
+    const speechDeckTitle = document.getElementById('speech-deck-title');
+    const btnPlay = document.getElementById('btn-play');
+    const btnPlayLabel = document.getElementById('btn-play-label');
+    const btnPause = document.getElementById('btn-pause');
+    const btnStop = document.getElementById('btn-stop');
+    const voiceSelect = document.getElementById('voice-select');
+    const voiceSelectLabel = document.getElementById('voice-select-label');
+    const voiceStatusNotice = document.getElementById('voice-status-notice');
+    const speechSpeedLabel = document.getElementById('speech-speed-label');
+    const rateSlider = document.getElementById('rate-slider');
+    const rateValue = document.getElementById('rate-value');
+    const speechStatus = document.getElementById('speech-status');
+    const speechRadar = document.getElementById('speech-radar');
+    const speechDot = document.getElementById('speech-dot');
+
+    const transcriptionTitle = document.getElementById('transcription-title');
+    const btnCopyTranscript = document.getElementById('btn-copy-transcript');
+    const copyBtnText = document.getElementById('copy-btn-text');
+    const transcriptionBody = document.getElementById('transcription-body');
+    const trackerLabel = document.getElementById('tracker-label');
+    const wordCountBadge = document.getElementById('word-count');
+
+    const flashcardsTagline = document.getElementById('flashcards-tagline');
+    const flashcardsHeading = document.getElementById('flashcards-heading');
+    const btnFlipAll = document.getElementById('btn-flip-all');
+    const flipAllLabel = document.getElementById('flip-all-label');
+    const flipHint = document.getElementById('flip-hint');
+    const cardsContainer = document.getElementById('cards-container');
+
+    const fileFetchBanner = document.getElementById('file-fetch-banner');
+    const bannerMessage = document.getElementById('banner-message');
+    const bannerSubtext = document.getElementById('banner-subtext');
+    const bannerFallbackBtn = document.getElementById('banner-fallback-btn');
+    const bannerPickerBtn = document.getElementById('banner-picker-btn');
+
+    const btnOpenJsonModal = document.getElementById('btn-open-json-modal');
+    const jsonModal = document.getElementById('json-modal');
+    const modalCloseBtn = document.getElementById('modal-close-btn');
+    const modalCancelBtn = document.getElementById('modal-cancel-btn');
+    const jsonFileInput = document.getElementById('json-file-input');
+    const btnUploadJsonFile = document.getElementById('btn-upload-json-file');
+    const btnDownloadJsonFile = document.getElementById('btn-download-json-file');
+    const btnResetDefaultJson = document.getElementById('btn-reset-default-json');
+    const jsonEditorTextarea = document.getElementById('json-editor-textarea');
+    const jsonValidationError = document.getElementById('json-validation-error');
+    const jsonErrorMessage = document.getElementById('json-error-message');
+    const btnApplyJson = document.getElementById('btn-apply-json');
+    const modalJsonStats = document.getElementById('modal-json-stats');
+
+    function setLanguage(lang) {
+      currentLang = lang;
+
+      // Update toggle buttons styling
+      if (lang === 'kn') {
+        langBtnKn.className = "px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer bg-amber-500 text-slate-950 shadow-sm";
+        langBtnEn.className = "px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-200 transition-all cursor-pointer";
+        document.documentElement.lang = 'kn';
+      } else {
+        langBtnEn.className = "px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer bg-indigo-600 text-white shadow-sm";
+        langBtnKn.className = "px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-200 transition-all cursor-pointer";
+        document.documentElement.lang = 'en';
+      }
+
+      applyLocalization();
+      populateVoices();
+
+      // Refresh current view
+      if (!viewDetail.classList.contains('hidden')) {
+        loadTopic(currentTopicIndex);
+      } else {
+        renderHub();
+      }
+    }
+
+    function applyLocalization() {
+      const t = I18N[currentLang];
+      navSubtitle.textContent = t.subtitle;
+      btnReturnHubText.textContent = t.backToHub;
+      btnJsonLabel.textContent = t.jsonManager;
+      hubHeroTitle.textContent = t.heroTitle;
+      hubHeroDesc.textContent = t.heroDesc;
+      hubSearchInput.placeholder = t.searchPlaceholder;
+      emptyTitle.textContent = t.emptyTitle;
+      emptyDesc.textContent = t.emptyDesc;
+      btnResetFilters.textContent = t.resetFilters;
+      crumbHubLabel.textContent = t.hubCrumb;
+      btnPrevLabel.textContent = t.prev;
+      btnNextLabel.textContent = t.next;
+      metaCategoryLabel.textContent = t.category;
+      metaEpochLabel.textContent = t.epoch;
+      metaLocationLabel.textContent = t.location;
+      speechDeckTitle.textContent = t.speechEngine;
+      btnPlayLabel.textContent = isSpeaking ? (isPaused ? t.resume : t.reading) : t.readAloud;
+      voiceSelectLabel.textContent = t.voiceLabel;
+      speechSpeedLabel.textContent = t.speedLabel;
+      transcriptionTitle.textContent = t.transcription;
+      copyBtnText.textContent = t.copy;
+      trackerLabel.textContent = t.liveTracker;
+      flashcardsTagline.textContent = t.flashcardsTag;
+      flashcardsHeading.textContent = t.flashcardsHeading;
+      flipAllLabel.textContent = allFlipped ? t.flipBack : t.flipAll;
+      flipHint.innerHTML = `<i class="fa-solid fa-hand-pointer text-amber-400 animate-bounce"></i> ${t.flipHint}`;
+    }
+
+    langBtnEn.addEventListener('click', () => setLanguage('en'));
+    langBtnKn.addEventListener('click', () => setLanguage('kn'));
+
+    function populateVoices() {
+      if (!('speechSynthesis' in window)) return;
+      availableVoices = synth.getVoices();
+      voiceSelect.innerHTML = '';
+
+      // Target language prefixes
+      const targetPrefix = currentLang === 'kn' ? 'kn' : 'en';
+      const targetVoices = availableVoices.filter(v => v.lang.toLowerCase().startsWith(targetPrefix));
+
+      if (currentLang === 'kn') {
+        if (targetVoices.length > 0) {
+          voiceStatusNotice.classList.add('hidden');
+          targetVoices.forEach(v => {
+            const opt = document.createElement('option');
+            opt.textContent = `${v.name} (${v.lang})`;
+            opt.value = v.name;
+            voiceSelect.appendChild(opt);
+          });
+        } else {
+          // Graceful fallback when no native Kannada TTS is installed
+          voiceStatusNotice.textContent = I18N.kn.voiceNoKannada;
+          voiceStatusNotice.classList.remove('hidden');
+
+          // Add Indian English or general voices as fallbacks
+          const indianVoices = availableVoices.filter(v => v.lang.toLowerCase().includes('in') || v.lang.startsWith('en'));
+          const fallbackList = indianVoices.length > 0 ? indianVoices : availableVoices;
+
+          fallbackList.forEach((v, index) => {
+            const opt = document.createElement('option');
+            opt.textContent = `${v.name} (${v.lang}) [Fallback]`;
+            opt.value = v.name;
+            if (index === 0) opt.selected = true;
+            voiceSelect.appendChild(opt);
+          });
+        }
+      } else {
+        voiceStatusNotice.classList.add('hidden');
+        const list = targetVoices.length > 0 ? targetVoices : availableVoices;
+        list.forEach(v => {
+          const opt = document.createElement('option');
+          opt.textContent = `${v.name} (${v.lang})`;
+          opt.value = v.name;
+          if (v.default || v.name.includes('Natural') || v.name.includes('Google US English')) {
+            opt.selected = true;
+          }
+          voiceSelect.appendChild(opt);
+        });
+      }
+    }
+
+    if ('speechSynthesis' in window) {
+      populateVoices();
+      if (speechSynthesis.onvoiceschanged !== undefined) {
+        speechSynthesis.onvoiceschanged = populateVoices;
+      }
+    }
+
+    async function loadDataset() {
+      // 1. Check if user already customized in localStorage
+      const cached = localStorage.getItem('omniview_bilingual_catalog');
+      if (cached) {
+        try {
+          const parsed = JSON.parse(cached);
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            catalog = parsed;
+            renderHub();
+            return;
+          }
+        } catch (e) {
+          console.warn("Storage parse error", e);
+        }
+      }
+
+      // 2. Method 2: Try fetching external items.json
+      bannerMessage.textContent = "Attempting to fetch items.json...";
+      fileFetchBanner.classList.remove('hidden');
+
+      try {
+        const response = await fetch('items.json');
+        if (response.ok) {
+          const data = await response.json();
+          if (Array.isArray(data) && data.length > 0) {
+            catalog = data;
+            bannerMessage.innerHTML = `<span class="text-emerald-400 font-semibold"><i class="fa-solid fa-check"></i> Loaded items.json from server</span>`;
+            bannerSubtext.textContent = `Successfully loaded ${catalog.length} items.`;
+            setTimeout(() => fileFetchBanner.classList.add('hidden'), 3500);
+            renderHub();
+            return;
+          }
+        }
+        throw new Error("HTTP response not ok");
+      } catch (err) {
+        // Fallback triggered: File not found or CORS restriction on file:///
+        bannerMessage.innerHTML = `<span class="text-amber-400 font-semibold"><i class="fa-solid fa-triangle-exclamation"></i> items.json not found via network</span>`;
+        bannerSubtext.textContent = "Loaded embedded bilingual dataset. You can save items.json or pick it from disk.";
+        bannerFallbackBtn.classList.remove('hidden');
+        bannerPickerBtn.classList.remove('hidden');
+
+        catalog = [...DEFAULT_CATALOG_DATA];
+        renderHub();
+      }
+    }
+
+    bannerFallbackBtn.addEventListener('click', () => {
+      catalog = [...DEFAULT_CATALOG_DATA];
+      saveCatalogToStorage();
+      fileFetchBanner.classList.add('hidden');
+      renderHub();
+      showToast("Loaded embedded curated data!");
+    });
+
+    bannerPickerBtn.addEventListener('click', () => {
+      jsonFileInput.click();
+    });
+
+    function saveCatalogToStorage() {
+      localStorage.setItem('omniview_bilingual_catalog', JSON.stringify(catalog, null, 2));
+    }
+
+    function renderHub() {
+      const t = I18N[currentLang];
+
+      // Extract unique categories based on active language
+      const categorySet = new Set();
+      catalog.forEach(item => {
+        const cat = (currentLang === 'kn' ? (item.category_kn || item.category) : item.category) || 'General';
+        categorySet.add(cat);
+      });
+      const categories = ['all', ...categorySet];
+
+      // Category pills
+      hubCategoryPills.innerHTML = '';
+      categories.forEach(cat => {
+        const btn = document.createElement('button');
+        const isSelected = selectedCategory === cat;
+        btn.className = `px-3.5 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all cursor-pointer ${
+          isSelected
+            ? 'bg-amber-500 text-slate-950 font-bold shadow-md shadow-amber-500/20'
+            : 'bg-slate-900 text-slate-400 hover:text-slate-200 hover:bg-slate-800'
+        }`;
+        btn.textContent = cat === 'all' ? t.allCategories : cat;
+        btn.onclick = () => {
+          selectedCategory = cat;
+          renderHub();
+        };
+        hubCategoryPills.appendChild(btn);
+      });
+
+      // Filter query
+      const query = searchQuery.toLowerCase().trim();
+      const filtered = catalog.filter(item => {
+        const itemCat = (currentLang === 'kn' ? (item.category_kn || item.category) : item.category) || '';
+        const itemTitle = (currentLang === 'kn' ? (item.title_kn || item.title) : item.title) || '';
+        const itemDesc = (currentLang === 'kn' ? (item.description_kn || item.description) : item.description) || '';
+        const itemLoc = (currentLang === 'kn' ? (item.location_kn || item.location) : item.location) || '';
+
+        const matchesCategory = (selectedCategory === 'all') || (itemCat === selectedCategory);
+        const matchesSearch = !query ||
+          itemTitle.toLowerCase().includes(query) ||
+          itemDesc.toLowerCase().includes(query) ||
+          itemCat.toLowerCase().includes(query) ||
+          itemLoc.toLowerCase().includes(query);
+
+        return matchesCategory && matchesSearch;
+      });
+
+      hubItemsBadge.textContent = `${filtered.length} / ${catalog.length} ${t.words}`;
+
+      // Cards Grid
+      hubGrid.innerHTML = '';
+      if (filtered.length === 0) {
+        hubGrid.classList.add('hidden');
+        hubEmptyState.classList.remove('hidden');
+      } else {
+        hubGrid.classList.remove('hidden');
+        hubEmptyState.classList.add('hidden');
+
+        filtered.forEach((item) => {
+          const originalIndex = catalog.findIndex(c => c.id === item.id);
+          const card = document.createElement('div');
+          card.className = 'group bg-slate-900 border border-slate-800 hover:border-amber-500/50 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-amber-950/20 transition-all duration-300 flex flex-col cursor-pointer transform hover:-translate-y-1';
+
+          const title = currentLang === 'kn' ? (item.title_kn || item.title) : item.title;
+          const category = currentLang === 'kn' ? (item.category_kn || item.category) : item.category;
+          const description = currentLang === 'kn' ? (item.description_kn || item.description) : item.description;
+          const location = currentLang === 'kn' ? (item.location_kn || item.location) : item.location;
+          const year = currentLang === 'kn' ? (item.year_kn || item.year) : item.year;
+          const cardCount = (item.triviaCards || []).length;
+
+          card.innerHTML = `
+            <div class="aspect-[16/10] w-full overflow-hidden relative bg-slate-950">
+              <img
+                src="${item.image}"
+                alt="${title}"
+                loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                onerror="this.src='https://placehold.co/800x500/1e293b/ffffff?text=Image+Unavailable'"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+              <div class="absolute top-3 right-3">
+                <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-950/80 backdrop-blur-md text-amber-300 border border-amber-500/30">
+                  ${category || 'General'}
+                </span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs text-slate-300">
+                <span class="flex items-center gap-1 font-mono text-[11px]">
+                  <i class="fa-solid fa-clone text-amber-400"></i> ${cardCount}
+                </span>
+                <span class="text-slate-400 text-[11px]">${year || ''}</span>
+              </div>
+            </div>
+
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif font-bold text-lg text-slate-100 group-hover:text-amber-400 transition-colors line-clamp-1">
+                  ${title}
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-400 mt-2 line-clamp-2 leading-relaxed">
+                  ${description || ''}
+                </p>
+              </div>
+
+              <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs text-amber-400 font-medium">
+                <span class="flex items-center gap-1.5 group-hover:translate-x-1 transition-transform">
+                  ${t.exploreAction} <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </span>
+                <span class="text-slate-500 text-[11px] truncate max-w-[120px]">
+                  <i class="fa-solid fa-location-dot"></i> ${location || 'Global'}
+                </span>
+              </div>
+            </div>
+          `;
+
+          card.addEventListener('click', () => {
+            switchToDetailView(originalIndex !== -1 ? originalIndex : 0);
+          });
+
+          hubGrid.appendChild(card);
+        });
+      }
+    }
+
+    // Search events
+    hubSearchInput.addEventListener('input', (e) => {
+      searchQuery = e.target.value;
+      hubSearchClear.classList.toggle('hidden', searchQuery.length === 0);
+      renderHub();
+    });
+
+    hubSearchClear.addEventListener('click', () => {
+      hubSearchInput.value = '';
+      searchQuery = '';
+      hubSearchClear.classList.add('hidden');
+      renderHub();
+    });
+
+    btnResetFilters.addEventListener('click', () => {
+      selectedCategory = 'all';
+      searchQuery = '';
+      hubSearchInput.value = '';
+      hubSearchClear.classList.add('hidden');
+      renderHub();
+    });
+
+    function switchToDetailView(index) {
+      stopSpeech();
+      currentTopicIndex = index;
+      viewHub.classList.add('hidden');
+      viewDetail.classList.remove('hidden');
+      btnReturnHub.classList.remove('hidden');
+      btnReturnHub.classList.add('flex');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      loadTopic(currentTopicIndex);
+    }
+
+    function switchToHubView() {
+      stopSpeech();
+      viewDetail.classList.add('hidden');
+      viewHub.classList.remove('hidden');
+      btnReturnHub.classList.add('hidden');
+      btnReturnHub.classList.remove('flex');
+      renderHub();
+    }
+
+    navBrandBtn.addEventListener('click', switchToHubView);
+    btnReturnHub.addEventListener('click', switchToHubView);
+    crumbHub.addEventListener('click', switchToHubView);
+
+    detailPrevBtn.addEventListener('click', () => {
+      if (catalog.length <= 1) return;
+      currentTopicIndex = (currentTopicIndex - 1 + catalog.length) % catalog.length;
+      loadTopic(currentTopicIndex);
+    });
+
+    detailNextBtn.addEventListener('click', () => {
+      if (catalog.length <= 1) return;
+      currentTopicIndex = (currentTopicIndex + 1) % catalog.length;
+      loadTopic(currentTopicIndex);
+    });
+
+    function loadTopic(index) {
+      if (!catalog[index]) return;
+      const topic = catalog[index];
+
+      const title = currentLang === 'kn' ? (topic.title_kn || topic.title) : topic.title;
+      const category = currentLang === 'kn' ? (topic.category_kn || topic.category) : topic.category;
+      const caption = currentLang === 'kn' ? (topic.caption_kn || topic.caption) : topic.caption;
+      const location = currentLang === 'kn' ? (topic.location_kn || topic.location) : topic.location;
+      const year = currentLang === 'kn' ? (topic.year_kn || topic.year) : topic.year;
+      const badge = currentLang === 'kn' ? (topic.badge_kn || topic.badge) : topic.badge;
+      const description = currentLang === 'kn' ? (topic.description_kn || topic.description) : topic.description;
+
+      // Update Breadcrumbs
+      crumbCategory.textContent = category || 'General';
+      crumbTitle.textContent = title || 'Overview';
+
+      // Update Visuals & Metadata
+      mainImage.src = topic.image || '';
+      mainImage.alt = title || 'Image';
+      imageBadge.innerHTML = `<i class="fa-solid fa-sparkles text-[10px]"></i> ${badge || category || 'Curated'}`;
+      imageTitle.textContent = title || 'Untitled';
+      imageCaption.textContent = caption || '';
+      infoCategory.textContent = category || 'General';
+      infoYear.textContent = year || 'N/A';
+      infoLocation.textContent = location || 'Global';
+
+      // Build Interactive Karaoke Transcription
+      buildInteractiveTranscription(description || '');
+
+      // Render 3D Flip Cards in current language
+      renderFlipCards(topic.triviaCards || []);
+    }
+
+    function buildInteractiveTranscription(text) {
+      transcriptionBody.innerHTML = '';
+      wordSpans = [];
+
+      if (!text.trim()) {
+        transcriptionBody.textContent = currentLang === 'kn' ? 'ವಿವರಣೆ ಲಭ್ಯವಿಲ್ಲ.' : 'No description provided.';
+        wordCountBadge.textContent = '0 words';
+        return;
+      }
+
+      // Split words while honoring both English and Kannada Unicode words
+      const words = text.split(/\s+/);
+      let cumulativeCharIndex = 0;
+
+      words.forEach((word, index) => {
+        if (!word.trim()) return;
+
+        const startIndex = text.indexOf(word, cumulativeCharIndex);
+        const endIndex = startIndex + word.length;
+        cumulativeCharIndex = endIndex;
+
+        const span = document.createElement('span');
+        span.className = 'word-span';
+        span.textContent = word + ' ';
+        span.dataset.start = startIndex;
+        span.dataset.end = endIndex;
+        span.dataset.wordIndex = index;
+
+        span.addEventListener('click', () => {
+          startSpeech(startIndex);
+        });
+
+        transcriptionBody.appendChild(span);
+        wordSpans.push({
+          element: span,
+          start: startIndex,
+          end: endIndex
+        });
+      });
+
+      wordCountBadge.textContent = `${wordSpans.length} ${I18N[currentLang].words}`;
+    }
+
+    let allFlipped = false;
+    function renderFlipCards(cards) {
+      cardsContainer.innerHTML = '';
+      allFlipped = false;
+      flipAllLabel.textContent = I18N[currentLang].flipAll;
+
+      if (!cards || cards.length === 0) {
+        cardsContainer.innerHTML = `
+          <div class="col-span-full py-10 text-center bg-slate-900/50 rounded-3xl border border-slate-800 text-slate-400">
+            <i class="fa-solid fa-cards-blank text-3xl mb-2 text-slate-600"></i>
+            <p class="text-sm">${currentLang === 'kn' ? 'ಯಾವುದೇ ಫ್ಲ್ಯಾಷ್‌ಕಾರ್ಡ್‌ಗಳು ಲಭ್ಯವಿಲ್ಲ.' : 'No flashcards defined for this entry yet.'}</p>
+          </div>
+        `;
+        return;
+      }
+
+      cards.forEach((card, i) => {
+        const question = currentLang === 'kn' ? (card.q_kn || card.q) : card.q;
+        const answer = currentLang === 'kn' ? (card.a_kn || card.a) : card.a;
+        const t = I18N[currentLang];
+
+        const cardWrapper = document.createElement('div');
+        cardWrapper.className = 'perspective-1000 h-64 cursor-pointer select-none';
+        cardWrapper.setAttribute('tabindex', '0');
+        cardWrapper.setAttribute('role', 'button');
+        cardWrapper.setAttribute('aria-label', `${t.questionPrefix} 0${i + 1}`);
+
+        const cardInner = document.createElement('div');
+        cardInner.className = 'flip-inner w-full h-full relative transition-transform duration-700 transform-style-3d rounded-3xl';
+
+        // Front Face
+        const front = document.createElement('div');
+        front.className = 'absolute inset-0 w-full h-full backface-hidden bg-gradient-to-br from-slate-900 via-slate-900 to-indigo-950/40 border border-slate-800 rounded-3xl p-6 flex flex-col justify-between shadow-lg hover:border-amber-500/50 transition-colors group';
+        front.innerHTML = `
+          <div class="flex items-center justify-between text-xs text-slate-400">
+            <span class="font-mono tracking-wider text-amber-400 font-semibold">${t.questionPrefix} 0${i + 1}</span>
+            <div class="w-8 h-8 rounded-full bg-slate-800/80 group-hover:bg-amber-500/20 group-hover:text-amber-300 flex items-center justify-center text-slate-400 transition-colors">
+              <i class="fa-solid ${card.icon || 'fa-lightbulb'} text-sm"></i>
+            </div>
+          </div>
+          <p class="text-base sm:text-lg font-medium text-slate-100 leading-snug my-auto">
+            ${question || ''}
+          </p>
+          <div class="pt-3 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+            <span class="flex items-center gap-1.5 text-amber-300">
+              <i class="fa-solid fa-arrows-rotate text-[11px]"></i> ${t.clickReveal}
+            </span>
+            <span class="text-[10px] uppercase font-bold text-slate-500 tracking-wider">Trivia</span>
+          </div>
+        `;
+
+        // Back Face
+        const back = document.createElement('div');
+        back.className = 'absolute inset-0 w-full h-full backface-hidden rotate-y-180 bg-gradient-to-br from-amber-950/70 via-slate-900 to-slate-950 border border-amber-500/50 rounded-3xl p-6 flex flex-col justify-between shadow-2xl';
+        back.innerHTML = `
+          <div class="flex items-center justify-between text-xs text-amber-200">
+            <span class="font-mono tracking-wider font-semibold text-emerald-400">${t.answerTitle}</span>
+            <span class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+              <i class="fa-solid fa-check text-xs"></i>
+            </span>
+          </div>
+          <div class="my-auto overflow-y-auto pr-1">
+            <p class="text-sm sm:text-base text-slate-100 leading-relaxed">
+              ${answer || ''}
+            </p>
+          </div>
+          <div class="pt-3 border-t border-amber-700/40 flex items-center justify-between text-xs text-amber-200/80">
+            <span class="flex items-center gap-1.5">
+              <i class="fa-solid fa-arrow-rotate-left text-[11px]"></i> ${t.tapFlipBack}
+            </span>
+            <span class="text-[10px] uppercase font-semibold text-amber-300">${t.verified}</span>
+          </div>
+        `;
+
+        cardInner.appendChild(front);
+        cardInner.appendChild(back);
+        cardWrapper.appendChild(cardInner);
+
+        const toggleFlip = () => cardInner.classList.toggle('rotate-y-180');
+        cardWrapper.addEventListener('click', toggleFlip);
+        cardWrapper.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            toggleFlip();
+          }
+        });
+
+        cardsContainer.appendChild(cardWrapper);
+      });
+    }
+
+    // Flip All Toggle
+    btnFlipAll.addEventListener('click', () => {
+      const inners = cardsContainer.querySelectorAll('.flip-inner');
+      allFlipped = !allFlipped;
+      inners.forEach(inner => {
+        if (allFlipped) {
+          inner.classList.add('rotate-y-180');
+        } else {
+          inner.classList.remove('rotate-y-180');
+        }
+      });
+      flipAllLabel.textContent = allFlipped ? I18N[currentLang].flipBack : I18N[currentLang].flipAll;
+    });
+
+    function clearHighlights() {
+      wordSpans.forEach(item => {
+        item.element.classList.remove('word-active');
+      });
+    }
+
+    function highlightWordAtCharIndex(charIndex) {
+      let targetSpan = null;
+      for (let i = 0; i < wordSpans.length; i++) {
+        const item = wordSpans[i];
+        if (charIndex >= item.start && charIndex < item.end + 2) {
+          targetSpan = item.element;
+          break;
+        }
+      }
+
+      if (targetSpan) {
+        clearHighlights();
+        targetSpan.classList.add('word-active');
+
+        // Smooth scroll container to active word
+        const container = transcriptionBody;
+        const topPos = targetSpan.offsetTop - container.offsetTop - 30;
+        container.scrollTo({ top: Math.max(0, topPos), behavior: 'smooth' });
+      }
+    }
+
+    function startSpeech(startIndex = 0) {
+      if (!('speechSynthesis' in window)) {
+        showToast("Speech synthesis is not supported on this browser.", true);
+        return;
+      }
+
+      if (synth.paused && isSpeaking && startIndex === 0) {
+        synth.resume();
+        updateSpeechUIState('speaking');
+        return;
+      }
+
+      synth.cancel();
+      clearHighlights();
+
+      const currentItem = catalog[currentTopicIndex];
+      if (!currentItem) return;
+
+      const currentDesc = currentLang === 'kn' ? (currentItem.description_kn || currentItem.description) : currentItem.description;
+      const textToSpeak = (currentDesc || '').slice(startIndex);
+
+      if (!textToSpeak.trim()) return;
+
+      utterance = new SpeechSynthesisUtterance(textToSpeak);
+      utterance.lang = currentLang === 'kn' ? 'kn-IN' : 'en-US';
+      utterance.rate = parseFloat(rateSlider.value) || 1.0;
+
+      // Select chosen voice if available
+      const selectedVoiceName = voiceSelect.value;
+      if (selectedVoiceName && availableVoices.length > 0) {
+        const matched = availableVoices.find(v => v.name === selectedVoiceName);
+        if (matched) utterance.voice = matched;
+      }
+
+      utterance.onboundary = (event) => {
+        if (event.name === 'word') {
+          const absoluteCharIndex = startIndex + event.charIndex;
+          highlightWordAtCharIndex(absoluteCharIndex);
+        }
+      };
+
+      utterance.onstart = () => {
+        isSpeaking = true;
+        isPaused = false;
+        updateSpeechUIState('speaking');
+      };
+
+      utterance.onend = () => {
+        isSpeaking = false;
+        isPaused = false;
+        clearHighlights();
+        updateSpeechUIState('idle');
+      };
+
+      utterance.onerror = (e) => {
+        if (e.error !== 'canceled') {
+          showToast(I18N[currentLang].toastSpeechError, true);
+        }
+        isSpeaking = false;
+        isPaused = false;
+        clearHighlights();
+        updateSpeechUIState('idle');
+      };
+
+      synth.speak(utterance);
+    }
+
+    function pauseSpeech() {
+      if (synth.speaking && !synth.paused) {
+        synth.pause();
+        isPaused = true;
+        updateSpeechUIState('paused');
+      } else if (synth.paused) {
+        synth.resume();
+        isPaused = false;
+        updateSpeechUIState('speaking');
+      }
+    }
+
+    function stopSpeech() {
+      if ('speechSynthesis' in window) {
+        synth.cancel();
+      }
+      isSpeaking = false;
+      isPaused = false;
+      clearHighlights();
+      updateSpeechUIState('idle');
+    }
+
+    function updateSpeechUIState(state) {
+      const t = I18N[currentLang];
+      if (state === 'speaking') {
+        btnPlay.classList.add('bg-amber-600', 'ring-2', 'ring-amber-300');
+        btnPlayLabel.textContent = t.reading;
+        btnPause.disabled = false;
+        btnPause.innerHTML = `<i class="fa-solid fa-pause text-base"></i>`;
+        btnStop.disabled = false;
+
+        speechRadar.classList.remove('hidden');
+        speechDot.className = 'relative inline-flex rounded-full h-3 w-3 bg-emerald-400';
+        speechStatus.className = 'text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30';
+        speechStatus.textContent = t.reading;
+      } else if (state === 'paused') {
+        btnPlay.classList.remove('bg-amber-600', 'ring-2', 'ring-amber-300');
+        btnPlayLabel.textContent = t.resume;
+        btnPause.disabled = false;
+        btnPause.innerHTML = `<i class="fa-solid fa-play text-base text-amber-400"></i>`;
+        btnStop.disabled = false;
+
+        speechRadar.classList.add('hidden');
+        speechDot.className = 'relative inline-flex rounded-full h-3 w-3 bg-amber-400';
+        speechStatus.className = 'text-xs font-semibold px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30';
+        speechStatus.textContent = t.paused;
+      } else {
+        btnPlay.classList.remove('bg-amber-600', 'ring-2', 'ring-amber-300');
+        btnPlayLabel.textContent = t.readAloud;
+        btnPause.disabled = true;
+        btnPause.innerHTML = `<i class="fa-solid fa-pause text-base"></i>`;
+        btnStop.disabled = true;
+
+        speechRadar.classList.add('hidden');
+        speechDot.className = 'relative inline-flex rounded-full h-3 w-3 bg-slate-600';
+        speechStatus.className = 'text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-400 border border-slate-700/60';
+        speechStatus.textContent = t.ready;
+      }
+    }
+
+    btnPlay.addEventListener('click', () => {
+      if (isPaused) {
+        synth.resume();
+        isPaused = false;
+        updateSpeechUIState('speaking');
+      } else {
+        startSpeech(0);
+      }
+    });
+
+    btnPause.addEventListener('click', pauseSpeech);
+    btnStop.addEventListener('click', stopSpeech);
+
+    rateSlider.addEventListener('input', (e) => {
+      const val = parseFloat(e.target.value).toFixed(2);
+      rateValue.textContent = `${val}x`;
+      if (isSpeaking && !synth.paused) {
+        startSpeech(0);
+      }
+    });
+
+    // Copy to clipboard
+    btnCopyTranscript.addEventListener('click', () => {
+      const currentItem = catalog[currentTopicIndex];
+      const desc = currentItem ? (currentLang === 'kn' ? (currentItem.description_kn || currentItem.description) : currentItem.description) : '';
+
+      const dummyInput = document.createElement('textarea');
+      dummyInput.value = desc;
+      document.body.appendChild(dummyInput);
+      dummyInput.select();
+
+      try {
+        document.execCommand('copy');
+        copyBtnText.textContent = I18N[currentLang].copied;
+        showToast(I18N[currentLang].toastCopied);
+        setTimeout(() => {
+          copyBtnText.textContent = I18N[currentLang].copy;
+        }, 2200);
+      } catch (err) {
+        showToast("Unable to copy to clipboard", true);
+      } finally {
+        document.body.removeChild(dummyInput);
+      }
+    });
+
+    function openJsonModal() {
+      jsonValidationError.classList.add('hidden');
+      jsonEditorTextarea.value = JSON.stringify(catalog, null, 2);
+      modalJsonStats.textContent = `${catalog.length} items (Bilingual Schema)`;
+      jsonModal.classList.remove('hidden');
+      setTimeout(() => {
+        jsonModal.classList.remove('opacity-0');
+      }, 10);
+    }
+
+    function closeJsonModal() {
+      jsonModal.classList.add('opacity-0');
+      setTimeout(() => {
+        jsonModal.classList.add('hidden');
+      }, 200);
+    }
+
+    btnOpenJsonModal.addEventListener('click', openJsonModal);
+    modalCloseBtn.addEventListener('click', closeJsonModal);
+    modalCancelBtn.addEventListener('click', closeJsonModal);
+
+    // Apply JSON Changes
+    btnApplyJson.addEventListener('click', () => {
+      jsonValidationError.classList.add('hidden');
+      try {
+        const parsed = JSON.parse(jsonEditorTextarea.value);
+        if (!Array.isArray(parsed)) {
+          throw new Error("Root element must be a JSON array of items: [ { ... } ]");
+        }
+        if (parsed.length === 0) {
+          throw new Error("The array contains no items. Add at least one showcase item.");
+        }
+
+        // Validate basic fields
+        parsed.forEach((item, i) => {
+          if (!item.title || !item.image) {
+            throw new Error(`Item at index [${i}] is missing required 'title' or 'image' property.`);
+          }
+          if (!item.id) {
+            item.id = `item-${Date.now()}-${i}`;
+          }
+          if (!Array.isArray(item.triviaCards)) {
+            item.triviaCards = [];
+          }
+        });
+
+        // Save & reload
+        catalog = parsed;
+        saveCatalogToStorage();
+        closeJsonModal();
+        showToast(I18N[currentLang].toastLoaded);
+
+        // Update active view
+        if (!viewDetail.classList.contains('hidden')) {
+          currentTopicIndex = Math.min(currentTopicIndex, catalog.length - 1);
+          loadTopic(currentTopicIndex);
+        } else {
+          renderHub();
+        }
+
+      } catch (err) {
+        jsonErrorMessage.textContent = err.message || "Invalid JSON syntax. Please verify commas and quotes.";
+        jsonValidationError.classList.remove('hidden');
+      }
+    });
+
+    // Upload items.json file from disk
+    btnUploadJsonFile.addEventListener('click', () => {
+      jsonFileInput.click();
+    });
+
+    jsonFileInput.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        try {
+          const content = event.target.result;
+          const parsed = JSON.parse(content);
+          jsonEditorTextarea.value = JSON.stringify(parsed, null, 2);
+          jsonValidationError.classList.add('hidden');
+          modalJsonStats.textContent = `${Array.isArray(parsed) ? parsed.length : 0} items detected`;
+          showToast(`File "${file.name}" loaded into editor`);
+        } catch (err) {
+          jsonErrorMessage.textContent = "Could not parse uploaded file as valid JSON.";
+          jsonValidationError.classList.remove('hidden');
+        }
+      };
+      reader.readAsText(file);
+      jsonFileInput.value = '';
+    });
+
+    // Export items.json file download
+    btnDownloadJsonFile.addEventListener('click', () => {
+      try {
+        const text = jsonEditorTextarea.value;
+        const blob = new Blob([text], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `items.json`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        showToast("items.json file downloaded!");
+      } catch (err) {
+        showToast("Failed to export items.json", true);
+      }
+    });
+
+    // Restore curated default dataset
+    btnResetDefaultJson.addEventListener('click', () => {
+      jsonEditorTextarea.value = JSON.stringify(DEFAULT_CATALOG_DATA, null, 2);
+      modalJsonStats.textContent = `${DEFAULT_CATALOG_DATA.length} default items`;
+      jsonValidationError.classList.add('hidden');
+      showToast("Reset to default bilingual catalog");
+    });
+
+    // Notification toast
+    function showToast(msg, isError = false) {
+      const toast = document.getElementById('toast-notification');
+      const toastMsg = document.getElementById('toast-message');
+      const toastIcon = document.getElementById('toast-icon');
+
+      toastMsg.textContent = msg;
+      if (isError) {
+        toastIcon.className = 'fa-solid fa-circle-exclamation text-rose-400';
+      } else {
+        toastIcon.className = 'fa-solid fa-check text-emerald-400';
+      }
+
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 3000);
+    }
+
+    // Stop synthesizer on page unload
+    window.addEventListener('beforeunload', () => {
+      if ('speechSynthesis' in window) {
+        synth.cancel();
+      }
+    });
+
+    // Bootstrap
+    window.addEventListener('DOMContentLoaded', () => {
+      applyLocalization();
+      loadDataset();
+    });
+  </script>
+</body>
+</html>
