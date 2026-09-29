@@ -1,0 +1,232 @@
+[
+  {
+    "id": "hampi-stone-chariot",
+    "title": "Stone Chariot of Vijayanagara, Hampi",
+    "title_kn": "ವಿಜಯನಗರದ ಕಲ್ಲಿನ ರಥ, ಹಂಪಿ",
+    "badge": "UNESCO World Heritage",
+    "badge_kn": "ಯುನೆಸ್ಕೋ ವಿಶ್ವ ಪರಂಪರೆ ತಾಣ",
+    "caption": "An architectural marvel sculpted from granite within the Vittala Temple complex.",
+    "caption_kn": "ವಿಜಯ ವಿಠ್ಠಲ ದೇವಾಲಯ ಸಂಕೀರ್ಣದಲ್ಲಿ ಗ್ರಾನೈಟ್ ಶಿಲೆಯಲ್ಲಿ ಕೆತ್ತಲಾದ ಶಿಲ್ಪಕಲೆಯ ಅದ್ಭುತ.",
+    "category": "Heritage",
+    "category_kn": "ಪರಂಪರೆ",
+    "year": "16th Century CE",
+    "year_kn": "ಕ್ರಿ.ಶ. 16ನೇ ಶತಮಾನ",
+    "location": "Hampi, Karnataka, India",
+    "location_kn": "ಹಂಪಿ, ಬಳ್ಳಾರಿ/ವಿಜಯನಗರ, ಕರ್ನಾಟಕ",
+    "image": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1400&q=80",
+    "description": "The Stone Chariot in Hampi is a world-renowned shrine dedicated to Garuda within the sacred Vijaya Vittala temple complex. Built during the peak of the Vijayanagara Empire, it is celebrated for its intricate Dravidian carvings, rotating granite wheels, and awe-inspiring architectural precision that represents the zenith of South Indian craftsmanship.",
+    "description_kn": "ಹಂಪಿಯ ಕಲ್ಲಿನ ರಥವು ಪವಿತ್ರ ವಿಜಯ ವಿಠ್ಠಲ ದೇವಾಲಯ ಸಂಕೀರ್ಣದಲ್ಲಿರುವ ಗರುಡನಿಗೆ ಸಮರ್ಪಿತವಾದ ವಿಶ್ವಪ್ರಸಿದ್ಧ ದೇಗುಲವಾಗಿದೆ. ವಿಜಯನಗರ ಸಾಮ್ರಾಜ್ಯದ ಸುವರ್ಣ ಯುಗದಲ್ಲಿ ನಿರ್ಮಿಸಲಾದ ಈ ರಥವು ದ್ರಾವಿಡ ಶಿಲ್ಪಕಲೆ, ಕೆತ್ತನೆಯ ಗ್ರಾನೈಟ್ ಚಕ್ರಗಳು ಮತ್ತು ದಕ್ಷಿಣ ಭಾರತೀಯ ವಾಸ್ತುಶಿಲ್ಪದ ಭವ್ಯತೆಯನ್ನು ಅದ್ಭುತವಾಗಿ ಪ್ರತಿಬಿಂಬಿಸುತ್ತದೆ.",
+    "triviaCards": [
+      {
+        "q": "To which divine deity is the Hampi Stone Chariot shrine dedicated?",
+        "q_kn": "ಹಂಪಿಯ ಕಲ್ಲಿನ ರಥವು ಯಾವ ದೇವರಿಗೆ ಅರ್ಪಿತವಾದ ದೇಗುಲವಾಗಿದೆ?",
+        "a": "It is dedicated to Garuda, the celestial mount of Lord Vishnu, facing directly toward the main sanctum of the Vittala temple.",
+        "a_kn": "ಇದು ವಿಷ್ಣುವಿನ ವಾಹನವಾದ ಗರುಡನಿಗೆ ಸಮರ್ಪಿತವಾಗಿದ್ದು, ವಿಠ್ಠಲ ದೇವಾಲಯದ ಮುಖ್ಯ ಗರ್ಭಗುಡಿಗೆ ಮುಖಮಾಡಿದೆ.",
+        "icon": "fa-monument"
+      },
+      {
+        "q": "Is the chariot carved out of a single monolithic stone block?",
+        "q_kn": "ಕಲ್ಲಿನ ರಥವನ್ನು ಒಂದೇ ಏಕಶಿಲೆಯಿಂದ ಕೆತ್ತಲಾಗಿದೆಯೇ?",
+        "a": "No, it is built of multiple intricately carved granite slabs cleverly assembled with disguised interlocking joints.",
+        "a_kn": "ಇಲ್ಲ, ಇದು ಕೀಲುಗಳು ಸುಲಭವಾಗಿ ಕಾಣಿಸದಂತೆ ಅತ್ಯಂತ ಕಲಾತ್ಮಕವಾಗಿ ಜೋಡಿಸಲಾದ ಬಹು ಗ್ರಾನೈಟ್ ಶಿಲಾಖಂಡಗಳಿಂದ ಮಾಡಲ್ಪಟ್ಟಿದೆ.",
+        "icon": "fa-gem"
+      },
+      {
+        "q": "On which current Indian currency banknote is this chariot depicted?",
+        "q_kn": "ಪ್ರಸ್ತುತ ಭಾರತೀಯ ರಿಸರ್ವ್ ಬ್ಯಾಂಕಿನ ಯಾವ ನೋಟಿನ ಮೇಲೆ ಈ ರಥದ ಚಿತ್ರವಿದೆ?",
+        "a": "The Hampi Stone Chariot is famously featured on the reverse side of the Indian 50 rupee banknote.",
+        "a_kn": "ಹಂಪಿಯ ಕಲ್ಲಿನ ರಥದ ಸುಂದರ ಚಿತ್ರವನ್ನು ಭಾರತದ 50 ರೂಪಾಯಿ ಕರೆನ್ಸಿ ನೋಟಿನ ಹಿಂಭಾಗದಲ್ಲಿ ಮುದ್ರಿಸಲಾಗಿದೆ.",
+        "icon": "fa-money-bill-wave"
+      }
+    ]
+  },
+  {
+    "id": "mysore-palace",
+    "title": "Mysore Palace (Amba Vilas)",
+    "title_kn": "ಮೈಸೂರು ಅರಮನೆ (ಅಂಬಾ ವಿಲಾಸ)",
+    "badge": "Royal Architecture",
+    "badge_kn": "ರಾಜಪ್ರಭುತ್ವದ ವಾಸ್ತುಶಿಲ್ಪ",
+    "caption": "The luminous seat of the Wadiyar dynasty glowing with nearly 100,000 bulbs.",
+    "caption_kn": "ಸುಮಾರು ಒಂದು ಲಕ್ಷ ದೀಪಗಳಿಂದ ಕಂಗೊಳಿಸುವ ಒಡೆಯರ್ ರಾಜವಂಶದ ವೈಭವೋಪೇತ ಸಿಂಹಾಸನದ ನೆಲೆ.",
+    "category": "Architecture",
+    "category_kn": "ವಾಸ್ತುಶಿಲ್ಪ",
+    "year": "1912 CE",
+    "year_kn": "ಕ್ರಿ.ಶ. 1912",
+    "location": "Mysuru, Karnataka, India",
+    "location_kn": "ಮೈಸೂರು, ಕರ್ನಾಟಕ",
+    "image": "https://images.unsplash.com/photo-1600100397608-f010f445b9a4?auto=format&fit=crop&w=1400&q=80",
+    "description": "Designed by the celebrated architect Lord Henry Irwin, the Mysore Palace is an extraordinary Indo-Saracenic royal residence. It blends Hindu, Muslim, Rajput, and Gothic styles with magnificent archways, rosewood doors inlaid with ivory, stained glass ceilings, and the legendary Golden Throne.",
+    "description_kn": "ಪ್ರಸಿದ್ಧ ವಾಸ್ತುಶಿಲ್ಪಿ ಹೆನ್ರಿ ಇರ್ವಿನ್ ಅವರಿಂದ ವಿನ್ಯಾಸಗೊಳಿಸಲಾದ ಮೈಸೂರು ಅರಮನೆಯು ಇಂಡೋ-ಸಾರ್ಸೆನಿಕ್ ಶೈಲಿಯ ಭವ್ಯ ರಾಜಭವನವಾಗಿದೆ. ಇದು ಹಿಂದೂ, ಮುಸ್ಲಿಂ, ರಜಪೂತ ಮತ್ತು ಗೋಥಿಕ್ ಶೈಲಿಗಳನ್ನು ಸುಂದರವಾಗಿ ಸಂಯೋಜಿಸಿದ್ದು, ದಂತದ ಕೆತ್ತನೆಯ ಬಾಗಿಲುಗಳು, ಬಣ್ಣದ ಗಾಜಿನ ಛಾವಣಿಗಳು ಮತ್ತು ಚಿನ್ನದ ಸಿಂಹಾಸನದಿಂದ ಪ್ರಸಿದ್ಧಿ ಪಡೆದಿದೆ.",
+    "triviaCards": [
+      {
+        "q": "Which architect designed the current stone building of the Mysore Palace?",
+        "q_kn": "ಮೈಸೂರಿನ ಪ್ರಸ್ತುತ ಅರಮನೆಯನ್ನು ವಿನ್ಯಾಸಗೊಳಿಸಿದ ವಾಸ್ತುಶಿಲ್ಪಿ ಯಾರು?",
+        "a": "British architect Lord Henry Irwin, commissioned by Maharani Kempananjammanni Vani Vilasa Sannidhana after the old wooden palace burned down.",
+        "a_kn": "ಬ್ರಿಟಿಷ್ ವಾಸ್ತುಶಿಲ್ಪಿ ಲಾರ್ಡ್ ಹೆನ್ರಿ ಇರ್ವಿನ್. ಹಳೆಯ ಮರದ ಅರಮನೆ ಬೆಂಕಿಗೆ ಆಹುತಿಯಾದ ನಂತರ ಇದನ್ನು ಮರುನಿರ್ಮಿಸಲಾಯಿತು.",
+        "icon": "fa-landmark"
+      },
+      {
+        "q": "How many light bulbs are illuminated on the palace exterior on Sundays and festivals?",
+        "q_kn": "ಭಾನುವಾರ ಮತ್ತು ಹಬ್ಬದ ದಿನಗಳಲ್ಲಿ ಅರಮನೆಯನ್ನು ಬೆಳಗಿಸಲು ಎಷ್ಟು ಬಲ್ಬ್‌ಗಳನ್ನು ಬೆಳಗಿಸಲಾಗುತ್ತದೆ?",
+        "a": "Approximately 97,000 to 100,000 incandescent light bulbs illuminate its majestic silhouette.",
+        "a_kn": "ಸುಮಾರು 97,000 ದಿಂದ 1,00,000 ದೀಪಗಳು ಅರಮನೆಯ ಭವ್ಯ ಬಾಹ್ಯರೇಖೆಯನ್ನು ರಾತ್ರಿಯ ವೇಳೆ ಬೆಳಗಿಸುತ್ತವೆ.",
+        "icon": "fa-lightbulb"
+      }
+    ]
+  },
+  {
+    "id": "jwst-deep-field",
+    "title": "James Webb Space Telescope: SMACS 0723",
+    "title_kn": "ಜೇಮ್ಸ್ ವೆಬ್ ದೂರದರ್ಶಕ: ಆಳ ಬಾಹ್ಯಾಕಾಶ ಚಿತ್ರ",
+    "badge": "Cosmic Observation",
+    "badge_kn": "ಖಗೋಳ ವೀಕ್ಷಣೆ",
+    "caption": "A gravitational lens bending light from distant galaxies over 13 billion years into cosmic history.",
+    "caption_kn": "13 ಶತಕೋಟಿ ವರ್ಷಗಳ ಹಿಂದಿನ ನಕ್ಷತ್ರಪುಂಜಗಳ ಬೆಳಕನ್ನು ತೋರಿಸುವ ನೈಸರ್ಗಿಕ ಕಾಸ್ಮಿಕ್ ಮಸೂರ.",
+    "category": "Astronomy",
+    "category_kn": "ಖಗೋಳವಿಜ್ಞಾನ",
+    "year": "2022 CE",
+    "year_kn": "ಕ್ರಿ.ಶ. 2022",
+    "location": "Lagrange Point 2 (Deep Space)",
+    "location_kn": "ಲಗ್ರಾಂಜ್ ಪಾಯಿಂಟ್ 2 (ಬಾಹ್ಯಾಕಾಶ)",
+    "image": "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=1400&q=80",
+    "description": "This deep field photograph captured by the James Webb Space Telescope reveals thousands of ancient galaxies. Through gravitational lensing, the massive foreground cluster SMACS 0723 magnifies light originating from the infancy of the universe, shortly after the Big Bang.",
+    "description_kn": "ಜೇಮ್ಸ್ ವೆಬ್ ಬಾಹ್ಯಾಕಾಶ ದೂರದರ್ಶಕವು ಸೆರೆಹಿಡಿದ ಈ ಚಿತ್ರವು ಸಾವಿರಾರು ಪ್ರಾಚೀನ ನಕ್ಷತ್ರಪುಂಜಗಳನ್ನು ಬಹಿರಂಗಪಡಿಸುತ್ತದೆ. ಮುಂಭಾಗದ ಬೃಹತ್ ಗ್ಯಾಲಕ್ಸಿ ಕ್ಲಸ್ಟರ್ ನೈಸರ್ಗಿಕ ಮಸೂರದಂತೆ ಕಾರ್ಯನಿರ್ವಹಿಸಿ, ಬ್ರಹ್ಮಾಂಡದ ಉದಯ ಕಾಲದ ಅತ್ಯಂತ ಮಸುಕಾದ ಬೆಳಕನ್ನು ವರ್ಧಿಸಿ ತೋರಿಸುತ್ತದೆ.",
+    "triviaCards": [
+      {
+        "q": "What phenomenon causes the curved, arc-shaped streaks of light in this image?",
+        "q_kn": "ಈ ಚಿತ್ರದಲ್ಲಿ ಕಾಣುವ ಬಾಗಿದ ಆಕಾರದ ಬೆಳಕಿನ ಗೆರೆಗಳಿಗೆ ಯಾವ ಖಗೋಳ ಭೌತಶಾಸ್ತ್ರದ ನಿಯಮ ಕಾರಣ?",
+        "a": "Gravitational lensing: the cluster's immense mass warps spacetime, bending the trajectories of background light rays.",
+        "a_kn": "ಗುರುತ್ವಾಕರ್ಷಣೆಯ ಮಸೂರ ಪರಿಣಾಮ (Gravitational Lensing): ನಕ್ಷತ್ರಪುಂಜಗಳ ಅಪಾರ ದ್ರವ್ಯರಾಶಿಯು ಬೆಳಕಿನ ಪಥವನ್ನು ಬಾಗಿಸುತ್ತದೆ.",
+        "icon": "fa-magnifying-glass"
+      },
+      {
+        "q": "Which wavelength spectrum does the JWST primarily use?",
+        "q_kn": "ಜೇಮ್ಸ್ ವೆಬ್ ದೂರದರ್ಶಕವು ಮುಖ್ಯವಾಗಿ ಯಾವ ತರಂಗಾಂತರದ ಬೆಳಕನ್ನು ಬಳಸುತ್ತದೆ?",
+        "a": "Infrared light, which penetrates cosmic dust clouds and captures redshifted light from early epochs.",
+        "a_kn": "ಅವಕೆಂಪು ಬೆಳಕು (Infrared). ಇದು ಬಾಹ್ಯಾಕಾಶ ಧೂಳನ್ನು ಭೇದಿಸಿ, ದೂರದ ಕೆಂಪು-ಸ್ಥಳಾಂತರಗೊಂಡ ಬೆಳಕನ್ನು ಗ್ರಹಿಸುತ್ತದೆ.",
+        "icon": "fa-satellite"
+      }
+    ]
+  },
+  {
+    "id": "jog-falls",
+    "title": "Jog Falls (Gerosoppa Cataracts)",
+    "title_kn": "ಜೋಗ ಜಲಪಾತ (ಗೇರುಸೊಪ್ಪೆ)",
+    "badge": "Natural Wonder",
+    "badge_kn": "ನೈಸರ್ಗಿಕ ವಿಸ್ಮಯ",
+    "caption": "The majestic Sharavathi river cascading down towering Western Ghats cliffs.",
+    "caption_kn": "ಪಶ್ಚಿಮ ಘಟ್ಟಗಳ ಎತ್ತರದ ಕಡಿದಾದ ಬಂಡೆಗಳಿಂದ ಧುಮುಕುವ ಶರಾವತಿ ನದಿಯ ರುದ್ರರಮಣೀಯ ದೃಶ್ಯ.",
+    "category": "Nature",
+    "category_kn": "ಪ್ರಕೃತಿ",
+    "year": "Perennial Waterfall",
+    "year_kn": "ಶಾಶ್ವತ ನಿಸರ್ಗ ಧಾರೆ",
+    "location": "Shivamogga, Karnataka, India",
+    "location_kn": "ಶಿವಮೊಗ್ಗ, ಕರ್ನಾಟಕ",
+    "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1400&q=80",
+    "description": "Jog Falls is one of the highest untiered waterfalls in India, plunging 253 meters in a breathtaking single drop. Formed by the Sharavathi River in the pristine Western Ghats, it divides into four distinct cascades: Raja, Roarer, Rocket, and Rani.",
+    "description_kn": "ಜೋಗ ಜಲಪಾತವು ಭಾರತದ ಎರಡನೇ ಅತಿ ಎತ್ತರದ ಧುಮುಕುವ ಜಲಪಾತವಾಗಿದ್ದು, ಶರಾವತಿ ನದಿಯು 253 ಮೀಟರ್ ಎತ್ತರದಿಂದ ನೇರವಾಗಿ ಪ್ರಪಾತಕ್ಕೆ ಧುಮುಕುತ್ತದೆ. ಇದು ರಾಜ, ರೋರರ್, ರಾಕೆಟ್ ಮತ್ತು ರಾಣಿ ಎಂಬ ನಾಲ್ಕು ವಿಭಿನ್ನ ಸುಂದರ ಕವಲುಗಳಾಗಿ ವಿಭಜನೆಗೊಳ್ಳುತ್ತದೆ.",
+    "triviaCards": [
+      {
+        "q": "What are the traditional names of the four distinct cascades of Jog Falls?",
+        "q_kn": "ಜೋಗ ಜಲಪಾತದ ನಾಲ್ಕು ಸುಪ್ರಸಿದ್ಧ ಕವಲುಗಳ ಹೆಸರುಗಳೇನು?",
+        "a": "Raja (King), Roarer, Rocket, and Rani (Queen), each possessing distinct water flow characteristics.",
+        "a_kn": "ರಾಜ, ರೋರರ್, ರಾಕೆಟ್ ಮತ್ತು ರಾಣಿ. ಪ್ರತಿಯೊಂದು ಕವಲು ತನ್ನದೇ ಆದ ವಿಶಿಷ್ಟ ಧ್ವನಿ ಹಾಗೂ ಹರಿವಿನ ಶೈಲಿಯನ್ನು ಹೊಂದಿದೆ.",
+        "icon": "fa-water"
+      },
+      {
+        "q": "Which river generates the magnificent cascade at Jog Falls?",
+        "q_kn": "ಜೋಗ ಜಲಪಾತವನ್ನು ನಿರ್ಮಿಸುವ ನದಿ ಯಾವುದು?",
+        "a": "The Sharavathi River, which also powers major hydroelectric generation projects for Karnataka.",
+        "a_kn": "ಶರಾವತಿ ನದಿ. ಇದು ಕರ್ನಾಟಕದ ಪ್ರಮುಖ ಜಲವಿದ್ಯುತ್ ಉತ್ಪಾದನೆಗೆ ಅತ್ಯಮೂಲ್ಯ ಆಸರೆಯಾಗಿದೆ.",
+        "icon": "fa-bolt"
+      }
+    ]
+  },
+  {
+      "id": "cv-raman-bengaluru",
+      "category": "Pioneers & Science",
+      "category_kn": "ಪ್ರವರ್ತಕರು ಮತ್ತು ವಿಜ್ಞಾನ",
+      "title": "Sir C.V. Raman & Raman Research Institute",
+      "title_kn": "ಸರ್ ಸಿ.ವಿ. ರಾಮನ್ ಮತ್ತು ರಾಮನ್ ಸಂಶೋಧನಾ ಸಂಸ್ಥೆ",
+      "year": "1888 – 1970",
+      "year_kn": "೧೮೮೮ – ೧೯೭೦",
+      "location": "Bengaluru, Karnataka",
+      "location_kn": "ಬೆಂಗಳೂರು, ಕರ್ನಾಟಕ",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e7/C._V._Raman.jpg",
+      "imageAlt": "Nobel Laureate Sir C.V. Raman portrait",
+      "description": "Sir Chandrasekhara Venkata Raman was India's first scientific Nobel laureate, awarded the nineteen thirty Nobel Prize in Physics for discovering the Raman Effect. He served as the first Indian director of the Indian Institute of Science in Bengaluru and later founded the Raman Research Institute, where he conducted pioneering research in optics and crystallography until his final days.",
+      "description_kn": "ಸರ್ ಸಿ.ವಿ. ರಾಮನ್ ಅವರು ಭಾರತದ ಪ್ರಖ್ಯಾತ ಭೌತವಿಜ್ಞಾನಿಯಾಗಿದ್ದು, ೧೯೩೦ ರಲ್ಲಿ ನೊಬೆಲ್ ಪ್ರಶಸ್ತಿ ಪಡೆದ ಮೊದಲ ಭಾರತೀಯ ವಿಜ್ಞಾನಿ. ಅವರು ಬೆಂಗಳೂರಿನ ಭಾರತೀಯ ವಿಜ್ಞಾನ ಸಂಸ್ಥೆಯ (ಐ.ಐ.ಎಸ್.ಸಿ) ಮೊದಲ ಭಾರತೀಯ ನಿರ್ದೇಶಕರಾಗಿ ಸೇವೆ ಸಲ್ಲಿಸಿದರು ಮತ್ತು ನಂತರ ರಾಮನ್ ಸಂಶೋಧನಾ ಸಂಸ್ಥೆಯನ್ನು ಸ್ಥಾಪಿಸಿದರು. ಬೆಳಕಿನ ಚದುರುವಿಕೆಯ ಕುರಿತಾದ ಅವರ ಸಂಶೋಧನೆಯನ್ನು 'ರಾಮನ್ ಪರಿಣಾಮ' ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ.",
+      "flipCards": [
+        {
+          "q": "What phenomenon did Sir C.V. Raman discover in optics?",
+          "q_kn": "ಸರ್ ಸಿ.ವಿ. ರಾಮನ್ ಅವರು ಬೆಳಕಿನ ವಿಜ್ಞಾನದಲ್ಲಿ ಯಾವ ವಿದ್ಯಮಾನವನ್ನು ಕಂಡುಹಿಡಿದರು?",
+          "a": "The Raman Effect, showing that when light traverses a transparent medium, a fraction of the scattered light changes wavelength.",
+          "a_kn": "ಬೆಳಕು ಪಾರದರ್ಶಕ ಮಾಧ್ಯಮದ ಮೂಲಕ ಹಾದುಹೋದಾಗ ಅದರ ತರಂಗಾಂತರದಲ್ಲಿ ಬದಲಾವಣೆಯಾಗುತ್ತದೆ ಎಂಬುದನ್ನು ಸಾಬೀತುಪಡಿಸಿದ 'ರಾಮನ್ ಪರಿಣಾಮ'."
+        },
+        {
+          "q": "Why is National Science Day celebrated on February 28 in India?",
+          "q_kn": "ಭಾರತದಲ್ಲಿ ಪ್ರತಿವರ್ಷ ಫೆಬ್ರವರಿ ೨೮ ರಂದು ರಾಷ್ಟ್ರೀಯ ವಿಜ್ಞಾನ ದಿನವನ್ನು ಏಕೆ ಆಚರಿಸಲಾಗುತ್ತದೆ?",
+          "a": "To commemorate the landmark announcement of the Raman Effect discovery on February 28, 1928.",
+          "a_kn": "೧೯೨೮ ರ ಫೆಬ್ರವರಿ ೨೮ ರಂದು ಸಿ.ವಿ. ರಾಮನ್ ಅವರು ತಮ್ಮ ರಾಮನ್ ಪರಿಣಾಮದ ಆವಿಷ್ಕಾರವನ್ನು ಜಗತ್ತಿಗೆ ಪ್ರಕಟಿಸಿದ ದಿನದ ನೆನಪಿಗಾಗಿ."
+        }
+      ]
+    },
+    {
+      "id": "ur-rao-isro",
+      "category": "Pioneers & Science",
+      "category_kn": "ಪ್ರವರ್ತಕರು ಮತ್ತು ವಿಜ್ಞಾನ",
+      "title": "Prof. U.R. Rao (Father of Indian Satellites)",
+      "title_kn": "ಪ್ರೊ. ಯು.ಆರ್. ರಾವ್ (ಭಾರತೀಯ ಉಪಗ್ರಹಗಳ ಪಿತಾಮಹ)",
+      "year": "1932 – 2017",
+      "year_kn": "೧೯೩೨ – ೨೦೧೭",
+      "location": "Adamaru, Udupi / Bengaluru",
+      "location_kn": "ಅದಮಾರು, ಉಡುಪಿ / ಬೆಂಗಳೂರು",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/23/Prof._U.R._Rao.jpg",
+      "imageAlt": "Prof U.R. Rao standing with satellite models",
+      "description": "Professor Udupi Ramachandra Rao was an internationally renowned space scientist from Udupi, Karnataka. As the primary architect behind India's first satellite Aryabhata in nineteen seventy-five and later as Chairman of ISRO in Bengaluru, he spearheaded the indigenous development of rocket launch technologies like ASLV and PSLV, propelling India into an elite spacefaring nation.",
+      "description_kn": "ಪ್ರೊಫೆಸರ್ ಉಡುಪಿ ರಾಮಚಂದ್ರ ರಾವ್ ಅವರು ಕರ್ನಾಟಕದ ಪ್ರಸಿದ್ಧ ಬಾಹ್ಯಾಕಾಶ ವಿಜ್ಞಾನಿ. ೧೯೭೫ ರಲ್ಲಿ ಉಡಾವಣೆಯಾದ ಭಾರತದ ಮೊದಲ ಉಪಗ್ರಹ 'ಆರ್ಯಭಟ'ದ ಪ್ರಮುಖ ಶಿಲ್ಪಿಯಾಗಿದ್ದ ಇವರು, ನಂತರ ಬೆಂಗಳೂರಿನ ಇಸ್ರೋ ಅಧ್ಯಕ್ಷರಾಗಿ ಪಿ.ಎಸ್.ಎಲ್.ವಿ (ಪಿಎಸ್‌ಎಲ್‌ವಿ) ರಾಕೆಟ್ ತಂತ್ರಜ್ಞಾನವನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಅಭಿವೃದ್ಧಿಪಡಿಸಿದರು. ಇವರನ್ನು 'ಭಾರತೀಯ ಉಪಗ್ರಹಗಳ ಪಿತಾಮಹ' ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ.",
+      "flipCards": [
+        {
+          "q": "Which historic spacecraft was built under U.R. Rao's direct leadership in 1975?",
+          "q_kn": "೧೯೭೫ ರಲ್ಲಿ ಯು.ಆರ್. ರಾವ್ ಅವರ ನೇತೃತ್ವದಲ್ಲಿ ನಿರ್ಮಿಸಲಾದ ಐತಿಹಾಸಿಕ ಉಪಗ್ರಹ ಯಾವುದು?",
+          "a": "Aryabhata, India's very first indigenous unmanned satellite.",
+          "a_kn": "ಭಾರತದ ಪ್ರಪ್ರಥಮ ಸ್ವದೇಶಿ ಉಪಗ್ರಹವಾದ 'ಆರ್ಯಭಟ'."
+        },
+        {
+          "q": "In which Karnataka district was Prof. U.R. Rao born?",
+          "q_kn": "ಪ್ರೊ. ಯು.ಆರ್. ರಾವ್ ಅವರು ಕರ್ನಾಟಕದ ಯಾವ ಜಿಲ್ಲೆಯಲ್ಲಿ ಜನಿಸಿದರು?",
+          "a": "Udupi district (in the village of Adamaru).",
+          "a_kn": "ಉಡುಪಿ ಜಿಲ್ಲೆಯ ಅದಮಾರು ಗ್ರಾಮದಲ್ಲಿ."
+        }
+      ]
+    },
+    {
+      "id": "raja-ramanna-physicist",
+      "category": "Pioneers & Science",
+      "category_kn": "ಪ್ರವರ್ತಕರು ಮತ್ತು ವಿಜ್ಞಾನ",
+      "title": "Dr. Raja Ramanna (Nuclear Physicist & Polymath)",
+      "title_kn": "ಡಾ. ರಾಜಾ ರಾಮಣ್ಣ (ಪರಮಾಣು ವಿಜ್ಞಾನಿ)",
+      "year": "1925 – 2004",
+      "year_kn": "೧೯೨೫ – ೨೦೦೪",
+      "location": "Tumakuru, Karnataka",
+      "location_kn": "ತುಮಕೂರು, ಕರ್ನಾಟಕ",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Raja_Ramanna.jpg",
+      "imageAlt": "Dr. Raja Ramanna portrait",
+      "description": "Dr. Raja Ramanna was an illustrious nuclear physicist born in Tumakuru, Karnataka. A polymath who was equally gifted as a classical concert pianist and scientist, he directed the Bhabha Atomic Research Centre and guided the historic nineteen seventy-four Smiling Buddha peaceful nuclear experiment. He also served as the director of the National Institute of Advanced Studies in Bengaluru.",
+      "description_kn": "ಡಾ. ರಾಜಾ ರಾಮಣ್ಣನವರು ಕರ್ನಾಟಕದ ತುಮಕೂರಿನಲ್ಲಿ ಜನಿಸಿದ ಖ್ಯಾತ ಪರಮಾಣು ವಿಜ್ಞಾನಿ. ವಿಜ್ಞಾನದ ಜೊತೆಗೆ ಪಾಶ್ಚಿಮಾತ್ಯ ಶಾಸ್ತ್ರೀಯ ಪಿಯಾನೋ ವಾದನದಲ್ಲೂ ಪ್ರವೀಣರಾಗಿದ್ದ ಇವರು, ೧೯೭೪ ರ 'ಸ್ಮೈಲಿಂಗ್ ಬುದ್ಧ' ಪರಮಾಣು ಪರೀಕ್ಷೆಯ ನೇತೃತ್ವ ವಹಿಸಿದ್ದರು. ನಂತರ ಬೆಂಗಳೂರಿನ ನ್ಯಾಷನಲ್ ಇನ್‌ಸ್ಟಿಟ್ಯೂಟ್ ಆಫ್ ಅಡ್ವಾನ್ಸ್‌ಡ್ ಸ್ಟಡೀಸ್ (ನಿಯಾಸ್) ಸಂಸ್ಥೆಯ ನಿರ್ದೇಶಕರಾಗಿ ಮಹತ್ವದ ಕೊಡುಗೆ ನೀಡಿದರು.",
+      "flipCards": [
+        {
+          "q": "Which landmark scientific test did Dr. Raja Ramanna lead in 1974?",
+          "q_kn": "೧೯೭೪ ರಲ್ಲಿ ಡಾ. ರಾಜಾ ರಾಮಣ್ಣ ಅವರ ನೇತೃತ್ವದಲ್ಲಿ ನಡೆದ ಐತಿಹಾಸಿಕ ಪರೀಕ್ಷೆ ಯಾವುದು?",
+          "a": "Operation Smiling Buddha (Pokhran-I), India's first peaceful nuclear explosive test.",
+          "a_kn": "'ಸ್ಮೈಲಿಂಗ್ ಬುದ್ಧ' (ಪೋಖ್ರಾನ್-೧), ಭಾರತದ ಪ್ರಪ್ರಥಮ ಪರಮಾಣು ಪರೀಕ್ಷೆ."
+        },
+        {
+          "q": "What musical instrument was Dr. Ramanna acclaimed for playing?",
+          "q_kn": "ಡಾ. ರಾಮಣ್ಣನವರು ಯಾವ ಸಂಗೀತ ವಾದ್ಯ ನುಡಿಸುವುದರಲ್ಲಿ ಪ್ರವೀಣರಾಗಿದ್ದರು?",
+          "a": "Classical Piano; he frequently gave concerts and wrote a book on musical structure.",
+          "a_kn": "ಶಾಸ್ತ್ರೀಯ ಪಿಯಾನೋ ವಾದನ."
+        }
+      ]
+    }
+]
