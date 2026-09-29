@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Architecture & Engineering Guide | Bilingual Knowledge Hub</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts: Inter, JetBrains Mono & Noto Sans Kannada -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Kannada:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+            kannada: ['Noto Sans Kannada', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              400: '#818cf8',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              900: '#312e81',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar for Documentation */
+    ::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(15, 23, 42, 0.6);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(99, 102, 241, 0.35);
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(99, 102, 241, 0.6);
+    }
+
+    /* 3D Transform Classes */
+    .preserve-3d {
+      transform-style: preserve-3d;
+    }
+    .backface-hidden {
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+
+    /* Dynamic word highlight state for Speech Demo */
+    .word-token {
+      transition: background-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+      display: inline-block;
+      padding: 0 4px;
+      margin: 1px 0;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .word-token:hover {
+      background-color: rgba(99, 102, 241, 0.25);
+    }
+    .word-active-token {
+      background-color: #facc15 !important;
+      color: #0f172a !important;
+      font-weight: 700;
+      box-shadow: 0 0 12px rgba(250, 204, 21, 0.6);
+      transform: scale(1.08);
+    }
+
+    /* Print media optimization */
+    @media print {
+      #sidebar, #top-navbar, #doc-search-bar, .interactive-tool-bar {
+        display: none !important;
+      }
+      main {
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      body {
+        background: white !important;
+        color: black !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-200 min-h-screen font-sans antialiased selection:bg-indigo-500 selection:text-white transition-colors duration-200">
+
+  <header id="top-navbar" class="sticky top-0 z-50 backdrop-blur-xl bg-slate-950/85 border-b border-slate-800 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      
+      <!-- Brand & Version Tag -->
+      <div class="flex items-center gap-3">
+        <button id="mobile-menu-toggle" class="lg:hidden p-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none">
+          <i class="fa-solid fa-bars text-lg"></i>
+        </button>
+        <a href="#overview" class="flex items-center gap-3 group focus:outline-none">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-pink-500 flex items-center justify-center shadow-lg shadow-indigo-500/25 group-hover:scale-105 transition-transform text-white font-bold text-sm">
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm sm:text-base text-white tracking-tight">OmniView Docs</span>
+              <span class="text-[10px] uppercase font-mono font-semibold px-2 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">v2.4 Spec</span>
+            </div>
+            <p class="text-[11px] text-slate-400 font-mono hidden sm:block">Architecture, Engine & Developer Guide</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Quick Search Bar -->
+      <div class="relative flex-1 max-w-md hidden md:block">
+        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500 text-xs"></i>
+        <input 
+          id="doc-search-bar" 
+          type="text" 
+          placeholder="Filter documentation sections (e.g. Speech, CORS, Kannada, 3D)..."
+          class="w-full bg-slate-900 border border-slate-800 rounded-xl pl-9 pr-8 py-2 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all font-mono"
+        />
+        <span class="absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] font-mono text-slate-500 bg-slate-800 px-1.5 py-0.5 rounded border border-slate-700">ESC</span>
+      </div>
+
+      <!-- Nav Actions: Theme, Print, Playground Link -->
+      <div class="flex items-center gap-2">
+        <a 
+          href="#sandbox" 
+          class="px-3 py-1.5 rounded-xl text-xs font-semibold bg-indigo-600/20 text-indigo-300 border border-indigo-500/30 hover:bg-indigo-600/30 transition-colors hidden sm:flex items-center gap-1.5"
+        >
+          <i class="fa-solid fa-flask text-xs"></i> Sandbox
+        </a>
+
+        <button 
+          id="theme-toggle-btn" 
+          class="p-2 w-9 h-9 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-white border border-slate-800 transition-colors flex items-center justify-center cursor-pointer"
+          title="Toggle Light / Dark Mode"
+        >
+          <i class="fa-solid fa-moon text-xs" id="theme-icon"></i>
+        </button>
+
+        <button 
+          id="print-btn" 
+          class="p-2 w-9 h-9 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-white border border-slate-800 transition-colors flex items-center justify-center cursor-pointer"
+          title="Print or Export Documentation as PDF"
+        >
+          <i class="fa-solid fa-print text-xs"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex gap-8">
+
+    <!-- Desktop Sticky Sidebar -->
+    <aside id="sidebar" class="w-64 shrink-0 hidden lg:block sticky top-24 self-start max-h-[calc(100vh-8rem)] overflow-y-auto pr-3 space-y-6 text-xs text-slate-400">
+      <div>
+        <p class="font-mono uppercase tracking-wider font-semibold text-[10px] text-slate-500 mb-2.5">Getting Started</p>
+        <ul class="space-y-1" id="nav-list-1">
+          <li><a href="#overview" class="doc-nav-link block px-2.5 py-1.5 rounded-lg hover:text-white hover:bg-slate-900 transition-colors font-medium text-indigo-400 bg-slate-900/60 border border-slate-800">1. System Overview & Pattern</a></li>
+          <li><a href="#blueprint" class="doc-nav-link block px-2.5 py-1.5 rounded-lg hover:text-white hover:bg-slate-900 transition-colors">2. Architectural Blueprint</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="font-mono uppercase tracking-wider font-semibold text-[10px] text-slate-500 mb-2.5">Data & Pipeline</p>
+        <ul class="space-y-1" id="nav-list-2">
+          <li><a href="#schema" class="doc-nav-link block px-2.5 py-1.5 rounded-lg hover:text-white hover:bg-slate-900 transition-colors">3. Bilingual JSON Schema</a></li>
+          <li><a href="#ingestion" class="doc-nav-link block px-2.5 py-1.5 rounded-lg hover:text-white hover:bg-slate-900 transition-colors">4. CORS & Ingestion Resilience</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="font-mono uppercase tracking-wider font-semibold text-[10px] text-slate-500 mb-2.5">Engines & Mathematics</p>
+        <ul class="space-y-1" id="nav-list-3">
+          <li><a href="#speech" class="doc-nav-link block px-2.5 py-1.5 rounded-lg hover:text-white hover:bg-slate-900 transition-colors">5. Speech & Karaoke Tokenizer</a></li>
+          <li><a href="#flipcard-math" class="doc-nav-link block px-2.5 py-1.5 rounded-lg hover:text-white hover:bg-slate-900 transition-colors">6. 3D Flip Card Mathematics</a></li>
+          <li><a href="#unicode" class="doc-nav-link block px-2.5 py-1.5 rounded-lg hover:text-white hover:bg-slate-900 transition-colors">7. Kannada Script & Unicode</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="font-mono uppercase tracking-wider font-semibold text-[10px] text-slate-500 mb-2.5">Implementation</p>
+        <ul class="space-y-1" id="nav-list-4">
+          <li><a href="#guide" class="doc-nav-link block px-2.5 py-1.5 rounded-lg hover:text-white hover:bg-slate-900 transition-colors">8. Step-by-Step Developer Guide</a></li>
+          <li><a href="#sandbox" class="doc-nav-link block px-2.5 py-1.5 rounded-lg hover:text-white hover:bg-slate-900 transition-colors font-semibold text-emerald-400">9. Interactive Sandboxes</a></li>
+          <li><a href="#compatibility" class="doc-nav-link block px-2.5 py-1.5 rounded-lg hover:text-white hover:bg-slate-900 transition-colors">10. Compatibility & Matrix</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="flex-1 min-w-0 space-y-16">
+      
+      <!-- SECTION 1: SYSTEM OVERVIEW -->
+      <section id="overview" class="doc-section space-y-6">
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded-md bg-indigo-500/20 text-indigo-400 border border-indigo-500/30">SECTION 01</span>
+          <span class="text-xs text-slate-500 font-mono">Foundations</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">System Overview & Philosophy</h1>
+        <p class="text-base text-slate-300 leading-relaxed">
+          The <strong>OmniView Bilingual Knowledge Hub</strong> implements a <em>Zero-Build Fat-Client Single-Page Application</em> pattern. The application is completely self-contained within a single HTML5 file, consuming external bilingual JSON datasets without requiring build-step bundlers (Webpack, Vite, Rollup) or transpilations.
+        </p>
+
+        <!-- Core Architectural Pillars Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-2">
+            <div class="w-8 h-8 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-sm">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <h3 class="font-bold text-sm text-white">Zero Runtime Overhead</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              No virtual DOM diffing libraries. State transitions compile to direct DOM mutation cycles, keeping runtime memory footprints under 15MB.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-2">
+            <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-sm">
+              <i class="fa-solid fa-language"></i>
+            </div>
+            <h3 class="font-bold text-sm text-white">Parallel Bilingual Schema</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Native Kannada (ಕನ್ನಡ) script and English parity across all models: narrative text, metadata, speech synthesis, and trivia cards.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-2">
+            <div class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center text-sm">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3 class="font-bold text-sm text-white">CORS-Resilient Tri-Tier Pipeline</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Functions reliably over <code class="text-amber-300 font-mono">http://</code>, direct disk execution via <code class="text-amber-300 font-mono">file:///</code>, or offline sandboxes via automated fallback cascades.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="blueprint" class="doc-section space-y-6 pt-6 border-t border-slate-800/80">
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded-md bg-indigo-500/20 text-indigo-400 border border-indigo-500/30">SECTION 02</span>
+          <span class="text-xs text-slate-500 font-mono">Topology</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Architectural Blueprint & Component Flow</h2>
+        <p class="text-sm text-slate-300 leading-relaxed">
+          The system enforces unidirectional reactive state dispatching. Changes to the current locale (<code class="font-mono text-indigo-400 text-xs">'en' | 'kn'</code>) or active image entry trigger synchronized re-renders across the visual viewport, speech engine utterance parameters, and trivia decks.
+        </p>
+
+        <!-- SVG Architecture Diagram -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 sm:p-6 overflow-x-auto">
+          <svg viewBox="0 0 860 380" class="w-full min-w-[700px] font-mono text-xs select-none">
+            <!-- Background Grid Accent -->
+            <defs>
+              <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#1e1b4b" stop-opacity="0.8" />
+                <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+              </linearGradient>
+              <linearGradient id="edgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#6366f1" />
+                <stop offset="100%" stop-color="#a855f7" />
+              </linearGradient>
+              <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#818cf8" />
+              </marker>
+            </defs>
+
+            <!-- Layer 1: Data Providers -->
+            <rect x="20" y="40" width="220" height="90" rx="12" fill="url(#boxGrad)" stroke="#4338ca" stroke-width="1.5" />
+            <text x="35" y="70" fill="#c7d2fe" font-weight="bold" font-size="13">1. Data Ingestion Tier</text>
+            <text x="35" y="92" fill="#94a3b8" font-size="10">HTTP fetch('items.json')</text>
+            <text x="35" y="108" fill="#94a3b8" font-size="10">FileReader API / Embedded Backup</text>
+
+            <!-- Layer 2: Reactive State Hub -->
+            <rect x="320" y="40" width="230" height="90" rx="12" fill="url(#boxGrad)" stroke="#6366f1" stroke-width="2" />
+            <text x="335" y="70" fill="#a5b4fc" font-weight="bold" font-size="13">2. Central State Dispatcher</text>
+            <text x="335" y="92" fill="#94a3b8" font-size="10">currentLocale: 'en' | 'kn'</text>
+            <text x="335" y="108" fill="#94a3b8" font-size="10">activeItemIndex: number</text>
+
+            <!-- Connections 1 -> 2 -->
+            <line x1="240" y1="85" x2="310" y2="85" stroke="url(#edgeGrad)" stroke-width="2" marker-end="url(#arrow)" />
+
+            <!-- Layer 3: Presentation Engines -->
+            <!-- 3A: Hub Gallery -->
+            <rect x="620" y="20" width="220" height="70" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+            <text x="635" y="45" fill="#f8fafc" font-weight="bold" font-size="11">Hub Gallery Grid</text>
+            <text x="635" y="65" fill="#64748b" font-size="9">Dynamic Categories & Filter Engine</text>
+
+            <!-- 3B: Detail Hero & Spec -->
+            <rect x="620" y="105" width="220" height="70" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+            <text x="635" y="130" fill="#f8fafc" font-weight="bold" font-size="11">Visual Stage & Spec Pill</text>
+            <text x="635" y="150" fill="#64748b" font-size="9">Aspect Clamp & Responsive Imagery</text>
+
+            <!-- 3C: Speech & Karaoke Engine -->
+            <rect x="620" y="190" width="220" height="70" rx="10" fill="#0f172a" stroke="#4f46e5" stroke-width="1.5" />
+            <text x="635" y="215" fill="#a5b4fc" font-weight="bold" font-size="11">Speech Engine & Boundary</text>
+            <text x="635" y="235" fill="#64748b" font-size="9">window.speechSynthesis + onboundary</text>
+
+            <!-- 3D: 3D Flip Card Deck -->
+            <rect x="620" y="275" width="220" height="70" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+            <text x="635" y="300" fill="#f8fafc" font-weight="bold" font-size="11">3D CSS Flashcards</text>
+            <text x="635" y="320" fill="#64748b" font-size="9">perspective:1000px & preserve-3d</text>
+
+            <!-- Fanout Lines from 2 to 3A, 3B, 3C, 3D -->
+            <path d="M 550 85 L 580 85 L 580 55 L 610 55" fill="none" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrow)" />
+            <path d="M 550 85 L 580 85 L 580 140 L 610 140" fill="none" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrow)" />
+            <path d="M 550 85 L 580 85 L 580 225 L 610 225" fill="none" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrow)" />
+            <path d="M 550 85 L 580 85 L 580 310 L 610 310" fill="none" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrow)" />
+
+            <!-- Feedback Loop: User Clicks transcript word to seek speech -->
+            <path d="M 730 260 L 730 360 L 435 360 L 435 140" fill="none" stroke="#eab308" stroke-dasharray="4,4" stroke-width="1.5" marker-end="url(#arrow)" />
+            <text x="510" y="352" fill="#facc15" font-size="9">Click-to-Seek event dispatch</text>
+          </svg>
+        </div>
+      </section>
+
+      <section id="schema" class="doc-section space-y-6 pt-6 border-t border-slate-800/80">
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded-md bg-indigo-500/20 text-indigo-400 border border-indigo-500/30">SECTION 03</span>
+          <span class="text-xs text-slate-500 font-mono">Data Contract</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Bilingual Data Schema & Types</h2>
+        <p class="text-sm text-slate-300 leading-relaxed">
+          The data layer requires symmetric dual-language properties. By adhering to key pairs ending in <code class="font-mono text-indigo-300">_kn</code>, developers can add arbitrary content without creating isolated files for different languages.
+        </p>
+
+        <!-- TypeScript Interface Definition -->
+        <div class="rounded-2xl bg-slate-900 border border-slate-800 overflow-hidden font-mono text-xs">
+          <div class="px-4 py-2.5 bg-slate-950 border-b border-slate-800 flex items-center justify-between text-slate-400">
+            <span class="flex items-center gap-2"><i class="fa-solid fa-file-code text-indigo-400"></i> schema.d.ts</span>
+            <button class="copy-code-btn text-[11px] text-slate-400 hover:text-white transition-colors" data-copy="ts-code">
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+          </div>
+          <pre id="ts-code" class="p-4 text-slate-300 overflow-x-auto leading-relaxed"><code><span class="text-purple-400">export interface</span> <span class="text-yellow-300">TriviaCard</span> {
+  <span class="text-indigo-400">q</span>: <span class="text-emerald-400">string</span>;             <span class="text-slate-500">// English Question</span>
+  <span class="text-indigo-400">q_kn</span>: <span class="text-emerald-400">string</span>;          <span class="text-slate-500">// Kannada Question (ಕನ್ನಡ ಪ್ರಶ್ನೆ)</span>
+  <span class="text-indigo-400">a</span>: <span class="text-emerald-400">string</span>;             <span class="text-slate-500">// English Answer Insight</span>
+  <span class="text-indigo-400">a_kn</span>: <span class="text-emerald-400">string</span>;          <span class="text-slate-500">// Kannada Answer (ಕನ್ನಡ ವಿವರಣೆ)</span>
+  <span class="text-indigo-400">icon</span>?: <span class="text-emerald-400">string</span>;         <span class="text-slate-500">// Optional FontAwesome icon (e.g. 'fa-landmark')</span>
+}
+
+<span class="text-purple-400">export interface</span> <span class="text-yellow-300">OmniViewItem</span> {
+  <span class="text-indigo-400">id</span>: <span class="text-emerald-400">string</span>;            <span class="text-slate-500">// Unique URL-safe slug ('hampi-stone-chariot')</span>
+  <span class="text-indigo-400">title</span>: <span class="text-emerald-400">string</span>;         <span class="text-slate-500">// Headline in English</span>
+  <span class="text-indigo-400">title_kn</span>: <span class="text-emerald-400">string</span>;      <span class="text-slate-500">// Headline in Kannada (ಶೀರ್ಷಿಕೆ)</span>
+  <span class="text-indigo-400">category</span>: <span class="text-emerald-400">string</span>;      <span class="text-slate-500">// Category filter key (e.g., 'Architecture')</span>
+  <span class="text-indigo-400">category_kn</span>: <span class="text-emerald-400">string</span>;   <span class="text-slate-500">// Kannada category pill</span>
+  <span class="text-indigo-400">year</span>: <span class="text-emerald-400">string</span>;          <span class="text-slate-500">// Epoch or timestamp ('16th Century CE')</span>
+  <span class="text-indigo-400">year_kn</span>: <span class="text-emerald-400">string</span>;       <span class="text-slate-500">// Kannada Epoch ('೧೬ನೇ ಶತಮಾನ')</span>
+  <span class="text-indigo-400">location</span>: <span class="text-emerald-400">string</span>;      <span class="text-slate-500">// Geographic entity</span>
+  <span class="text-indigo-400">location_kn</span>: <span class="text-emerald-400">string</span>;  <span class="text-slate-500">// Kannada Location</span>
+  <span class="text-indigo-400">image</span>: <span class="text-emerald-400">string</span>;         <span class="text-slate-500">// Absolute URL or relative asset path</span>
+  <span class="text-indigo-400">description</span>: <span class="text-emerald-400">string</span>;   <span class="text-slate-500">// English speech script & karaoke text</span>
+  <span class="text-indigo-400">description_kn</span>: <span class="text-emerald-400">string</span>;<span class="text-slate-500">// Kannada speech script & karaoke text</span>
+  <span class="text-indigo-400">triviaCards</span>: <span class="text-yellow-300">TriviaCard</span>[];
+}</code></pre>
+        </div>
+
+        <!-- Polymorphic Key Resolver Function -->
+        <div class="space-y-2">
+          <h4 class="text-sm font-semibold text-slate-200">The Polymorphic Accessor Pattern</h4>
+          <p class="text-xs text-slate-400">
+            To prevent repetitive conditional branching, a dedicated helper function safely resolves localized values with automatic fallback:
+          </p>
+          <div class="rounded-xl bg-slate-900 border border-slate-800 p-3 font-mono text-xs text-slate-300">
+            <code><span class="text-purple-400">function</span> <span class="text-blue-400">getLocProp</span>(item, field) {<br>
+  &nbsp;&nbsp;<span class="text-purple-400">return</span> (currentLocale === <span class="text-emerald-400">'kn'</span> &amp;&amp; item[field + <span class="text-emerald-400">'_kn'</span>]) ? item[field + <span class="text-emerald-400">'_kn'</span>] : (item[field] || <span class="text-emerald-400">''</span>);<br>
+}</code>
+          </div>
+        </div>
+      </section>
+
+      <section id="ingestion" class="doc-section space-y-6 pt-6 border-t border-slate-800/80">
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded-md bg-indigo-500/20 text-indigo-400 border border-indigo-500/30">SECTION 04</span>
+          <span class="text-xs text-slate-500 font-mono">Security & Transport</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">CORS & Resilient Ingestion Pipeline</h2>
+        <p class="text-sm text-slate-300 leading-relaxed">
+          Standard browser security restricts asynchronous <code class="font-mono text-xs text-indigo-300">fetch()</code> queries when a web page is executed directly off the local disk using the <code class="font-mono text-xs text-indigo-300">file:///</code> protocol. To make the architecture zero-setup for both production web servers and local learners, the ingestion pipeline implements a three-tier fallback hierarchy.
+        </p>
+
+        <!-- Pipeline Breakdown Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 font-mono text-xs">
+          <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
+            <div class="flex items-center justify-between text-indigo-400">
+              <span class="font-bold">TIER 1</span>
+              <span class="text-[10px] px-1.5 py-0.5 bg-indigo-500/20 rounded">Default</span>
+            </div>
+            <p class="font-sans text-sm text-slate-200 font-semibold">Async HTTP Fetch</p>
+            <p class="font-sans text-slate-400 text-xs">Attempts <code class="text-indigo-300">fetch('items.json')</code> on standard Web servers (Vercel, Apache, Python HTTP server).</p>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
+            <div class="flex items-center justify-between text-amber-400">
+              <span class="font-bold">TIER 2</span>
+              <span class="text-[10px] px-1.5 py-0.5 bg-amber-500/20 rounded">file:/// Safe</span>
+            </div>
+            <p class="font-sans text-sm text-slate-200 font-semibold">HTML5 FileReader</p>
+            <p class="font-sans text-slate-400 text-xs">If CORS blocks the fetch, triggers a file picker that streams disk data into memory via <code class="text-amber-300">reader.readAsText()</code>.</p>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
+            <div class="flex items-center justify-between text-emerald-400">
+              <span class="font-bold">TIER 3</span>
+              <span class="text-[10px] px-1.5 py-0.5 bg-emerald-500/20 rounded">Fail-Safe</span>
+            </div>
+            <p class="font-sans text-sm text-slate-200 font-semibold">Embedded Backup Array</p>
+            <p class="font-sans text-slate-400 text-xs">If no local file is selected, automatically loads an in-memory bilingual dataset so the UI remains interactive.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="speech" class="doc-section space-y-6 pt-6 border-t border-slate-800/80">
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded-md bg-indigo-500/20 text-indigo-400 border border-indigo-500/30">SECTION 05</span>
+          <span class="text-xs text-slate-500 font-mono">Audio Engineering</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Web Speech Synthesis & Karaoke Tokenizer</h2>
+        <p class="text-sm text-slate-300 leading-relaxed">
+          The audio narration features synchronized word-by-word transcription tracking using the browser's native <code class="font-mono text-indigo-300 text-xs">SpeechSynthesisUtterance</code> engine. This avoids third-party cloud audio dependencies and reduces bandwidth consumption to zero.
+        </p>
+
+        <!-- Technical Deep-Dive Callouts -->
+        <div class="space-y-4">
+          <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800 space-y-3">
+            <h4 class="text-sm font-semibold text-white flex items-center gap-2">
+              <i class="fa-solid fa-code-commit text-indigo-400"></i> The onboundary Event Mapping Algorithm
+            </h4>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              When speech synthesis runs, the browser fires an <code class="font-mono text-indigo-300 text-[11px]">onboundary</code> event emitting an absolute character offset (<code class="font-mono text-indigo-300 text-[11px]">event.charIndex</code>). The tokenization engine builds an indexed lookup table mapping character ranges <code class="font-mono text-slate-300 text-[11px]">[start, end]</code> to target DOM span elements:
+            </p>
+            <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 font-mono text-xs text-indigo-300">
+              <code>utterance.onboundary = (e) =&gt; {<br>
+  &nbsp;&nbsp;<span class="text-purple-400">if</span> (e.name === <span class="text-emerald-400">'word'</span>) {<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-purple-400">const</span> targetSpan = wordTokenMap.find(t =&gt; e.charIndex &gt;= t.start &amp;&amp; e.charIndex &lt; t.end);<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-purple-400">if</span> (targetSpan) highlightAndScroll(targetSpan.element);<br>
+  &nbsp;&nbsp;}<br>
+};</code>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="flipcard-math" class="doc-section space-y-6 pt-6 border-t border-slate-800/80">
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded-md bg-indigo-500/20 text-indigo-400 border border-indigo-500/30">SECTION 06</span>
+          <span class="text-xs text-slate-500 font-mono">Computer Graphics</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">3D CSS Mathematics & Flip Card Engine</h2>
+        <p class="text-sm text-slate-300 leading-relaxed">
+          The flashcards use hardware-accelerated 3D coordinate transformations. By nesting three hierarchical coordinate planes, cards achieve authentic physical perspective, light refraction, and backface culling.
+        </p>
+
+        <!-- Coordinate Math Equations -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 font-mono text-xs">
+          <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
+            <span class="text-indigo-400 font-bold">1. Perspective Projection Matrix</span>
+            <p class="font-sans text-xs text-slate-400 leading-relaxed">
+              Applying <code class="text-slate-200">perspective: 1000px</code> creates a virtual camera located along the positive $Z$-axis. As an element rotates, points closer to the camera are magnified according to the perspective projection formula:
+            </p>
+            <div class="p-2.5 bg-slate-950 rounded-lg text-emerald-300 font-mono text-center">
+              Scale = d / (d - z)
+            </div>
+            <p class="font-sans text-[11px] text-slate-500">Where $d = 1000\text{px}$ is distance to viewport and $z$ is spatial coordinate.</p>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
+            <span class="text-purple-400 font-bold">2. Y-Axis Euler Rotation Matrix</span>
+            <p class="font-sans text-xs text-slate-400 leading-relaxed">
+              When toggled, the inner chassis executes a spatial rotation about the $Y$-axis:
+            </p>
+            <div class="p-2.5 bg-slate-950 rounded-lg text-emerald-300 font-mono text-center">
+              R_y(θ) = [ cos θ &nbsp; 0 &nbsp; sin θ ; 0 &nbsp; 1 &nbsp; 0 ; -sin θ &nbsp; 0 &nbsp; cos θ ]
+            </div>
+            <p class="font-sans text-[11px] text-slate-500">At $\theta = 180^\circ$, normal vector flips, hiding the front face via <code class="text-slate-300">backface-visibility</code>.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="unicode" class="doc-section space-y-6 pt-6 border-t border-slate-800/80">
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded-md bg-indigo-500/20 text-indigo-400 border border-indigo-500/30">SECTION 07</span>
+          <span class="text-xs text-slate-500 font-mono">Linguistics</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Kannada Script Rendering & Unicode Handling</h2>
+        <p class="text-sm text-slate-300 leading-relaxed font-sans">
+          Kannada (ಕನ್ನಡ) is a southern Brahmic abugida script. Unlike Latin scripts where each letter represents a standalone glyph, Kannada constructs complex orthographic syllables (ಅಕ್ಷರಗಳು) composed of base consonants, virama (<span class="font-kannada text-indigo-300">್</span> - halant), and subscript consonant signs (<span class="font-kannada text-indigo-300">ಒತ್ತಕ್ಷರ</span>).
+        </p>
+
+        <!-- Linguistic & Technical Considerations -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
+            <h4 class="font-bold text-sm text-slate-100 flex items-center gap-2">
+              <i class="fa-solid fa-font text-indigo-400"></i> OpenType Font Shaping
+            </h4>
+            <p class="text-xs text-slate-400 leading-relaxed font-sans">
+              Without specialized font shaping, browser engines fall back to generic system typefaces that break sub-base conjunct ligatures (e.g. <span class="font-kannada text-slate-200">ರ್ಕ</span> or <span class="font-kannada text-slate-200">ಷ್ಟ</span>). OmniView injects Google Fonts' <strong>Noto Sans Kannada</strong> to ensure standard HarfBuzz/DirectWrite rendering.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
+            <h4 class="font-bold text-sm text-slate-100 flex items-center gap-2">
+              <i class="fa-solid fa-code text-indigo-400"></i> Regex Grapheme Boundaries
+            </h4>
+            <p class="text-xs text-slate-400 leading-relaxed font-sans">
+              Splitting strings via <code class="font-mono text-indigo-300 text-xs">string.split('')</code> breaks multi-codepoint Kannada graphemes into broken symbols. OmniView's word tokenizer splits explicitly by Unicode whitespace <code class="font-mono text-indigo-300 text-xs">/\s+/</code>, preserving all diacritics.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="guide" class="doc-section space-y-6 pt-6 border-t border-slate-800/80">
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded-md bg-indigo-500/20 text-indigo-400 border border-indigo-500/30">SECTION 08</span>
+          <span class="text-xs text-slate-500 font-mono">Step-by-Step</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Developer Implementation Guide</h2>
+        <p class="text-sm text-slate-300 leading-relaxed">
+          Follow these three steps to integrate new images and bilingual descriptions into an existing OmniView deployment.
+        </p>
+
+        <!-- Steps Accordion Style -->
+        <div class="space-y-3 font-mono text-xs">
+          <!-- Step 1 -->
+          <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
+            <div class="flex items-center gap-2 text-indigo-400 font-bold">
+              <span class="w-5 h-5 rounded-full bg-indigo-500/20 flex items-center justify-center text-[10px]">1</span>
+              <span>APPEND NEW RECORD IN ITEMS.JSON</span>
+            </div>
+            <p class="font-sans text-xs text-slate-400 leading-relaxed pl-7">
+              Add a JSON object to the root array of <code class="text-indigo-300 font-mono">items.json</code>. Ensure matching <code class="text-indigo-300 font-mono">_kn</code> fields are included:
+            </p>
+            <div class="pl-7">
+              <pre class="p-3 bg-slate-950 rounded-lg text-slate-300 overflow-x-auto text-[11px]"><code>{
+  "id": "jog-falls",
+  "title": "Jog Falls Cataracts",
+  "title_kn": "ಜೋಗ ಜಲಪಾತ",
+  "category": "Nature",
+  "category_kn": "ಪ್ರಕೃತಿ",
+  "year": "Perennial",
+  "year_kn": "ನಿರಂತರ",
+  "location": "Shivamogga, Karnataka",
+  "location_kn": "ಶಿವಮೊಗ್ಗ, ಕರ್ನಾಟಕ",
+  "image": "https://images.unsplash.com/...",
+  "description": "Jog Falls is the second highest plunge waterfall in India...",
+  "description_kn": "ಜೋಗ ಜಲಪಾತವು ಭಾರತದ ಎರಡನೇ ಅತಿ ಎತ್ತರದ ಜಲಪಾತವಾಗಿದೆ...",
+  "triviaCards": [
+    {
+      "q": "What river feeds Jog Falls?",
+      "q_kn": "ಜೋಗ ಜಲಪಾತವನ್ನು ಯಾವ ನದಿ ರೂಪಿಸುತ್ತದೆ?",
+      "a": "The Sharavathi River plunging from 253 meters.",
+      "a_kn": "೨೫೩ ಮೀಟರ್ ಎತ್ತರದಿಂದ ಧುಮುಕುವ ಶರಾವತಿ ನದಿ."
+    }
+  ]
+}</code></pre>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
+            <div class="flex items-center gap-2 text-indigo-400 font-bold">
+              <span class="w-5 h-5 rounded-full bg-indigo-500/20 flex items-center justify-center text-[10px]">2</span>
+              <span>HOST LOCALLY VIA LIVE SERVER OR PYTHON</span>
+            </div>
+            <p class="font-sans text-xs text-slate-400 leading-relaxed pl-7">
+              To test the native <code class="text-indigo-300 font-mono">fetch()</code> call, start an HTTP daemon in your folder:
+            </p>
+            <div class="pl-7">
+              <div class="p-2.5 bg-slate-950 rounded-lg text-emerald-400 flex items-center justify-between">
+                <code>python3 -m http.server 8000</code>
+                <button class="copy-code-btn text-slate-500 hover:text-white" data-copy-raw="python3 -m http.server 8000">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
+            <div class="flex items-center gap-2 text-indigo-400 font-bold">
+              <span class="w-5 h-5 rounded-full bg-indigo-500/20 flex items-center justify-center text-[10px]">3</span>
+              <span>VALIDATE IN IN-PAGE SANDBOX</span>
+            </div>
+            <p class="font-sans text-xs text-slate-400 leading-relaxed pl-7">
+              Paste your raw JSON into Section 09 below to verify schema compliance and preview the resulting card before committing to production.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="sandbox" class="doc-section space-y-8 pt-6 border-t border-slate-800/80">
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded-md bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">SECTION 09</span>
+          <span class="text-xs text-slate-500 font-mono">Live Testing</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Interactive Developer Sandboxes</h2>
+        <p class="text-sm text-slate-300 leading-relaxed">
+          Use these embedded tools to test JSON schemas, evaluate speech synthesis in English and Kannada, and inspect 3D card rotation physics.
+        </p>
+
+        <!-- TOOL 1: JSON SCHEMA VALIDATOR & LIVE CARD GENERATOR -->
+        <div class="p-6 rounded-3xl bg-slate-900/90 border border-slate-800 space-y-4">
+          <div class="flex items-center justify-between flex-wrap gap-2">
+            <div class="flex items-center gap-2.5">
+              <div class="w-7 h-7 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xs">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3 class="font-bold text-base text-white">1. JSON Schema Validator & Live Card Preview</h3>
+            </div>
+            <button id="btn-load-sample-json" class="text-xs px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-indigo-300 font-medium transition-colors cursor-pointer">
+              Load Sample Record
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- Left: Text Area -->
+            <div class="space-y-2">
+              <label class="text-xs text-slate-400 font-mono">Paste Single Item JSON:</label>
+              <textarea 
+                id="sandbox-json-input" 
+                rows="11" 
+                class="w-full bg-slate-950 font-mono text-xs text-emerald-300 p-3 rounded-2xl border border-slate-800 focus:outline-none focus:border-indigo-500 leading-relaxed resize-none"
+                placeholder='{ "id": "test", "title": "Example", "title_kn": "ಉದಾಹರಣೆ", ... }'
+              ></textarea>
+              <button 
+                id="btn-validate-json" 
+                class="w-full py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-colors shadow-lg shadow-indigo-600/30 cursor-pointer"
+              >
+                Validate & Render Preview
+              </button>
+              <div id="sandbox-validation-msg" class="hidden text-xs p-2.5 rounded-xl"></div>
+            </div>
+
+            <!-- Right: Live Visual Preview -->
+            <div class="space-y-2 flex flex-col">
+              <label class="text-xs text-slate-400 font-mono">Generated Hub Card Preview:</label>
+              <div id="sandbox-card-preview" class="flex-1 bg-slate-950 rounded-2xl border border-slate-800 p-4 flex items-center justify-center text-slate-500 text-xs">
+                Click "Validate & Render Preview" to inspect card output.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TOOL 2: SPEECH SYNTHESIS & KARAOKE TEST BENCH -->
+        <div class="p-6 rounded-3xl bg-slate-900/90 border border-slate-800 space-y-4">
+          <div class="flex items-center gap-2.5">
+            <div class="w-7 h-7 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <h3 class="font-bold text-base text-white">2. Bilingual Speech & Karaoke Tokenizer Tester</h3>
+          </div>
+
+          <p class="text-xs text-slate-400">
+            Select a language and press <strong>Play Speech</strong>. Words highlight synchronously as the speech engine emits <code class="font-mono text-indigo-300">onboundary</code> events. Click any word in the box to seek speech directly to that point.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <label class="text-xs text-slate-300 font-medium">Language Model:</label>
+                <div class="flex items-center gap-2">
+                  <button id="speech-lang-en" class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-indigo-600 text-white">English (en-US)</button>
+                  <button id="speech-lang-kn" class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-800 text-slate-400 hover:text-white">ಕನ್ನಡ (kn-IN)</button>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button id="btn-test-play" class="flex-1 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs flex items-center justify-center gap-1.5 shadow-md shadow-emerald-600/30">
+                  <i class="fa-solid fa-play"></i> Play Speech
+                </button>
+                <button id="btn-test-stop" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold">
+                  <i class="fa-solid fa-stop"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Speech Voice Details & Speed -->
+            <div class="space-y-2 text-xs">
+              <div class="flex justify-between text-slate-400">
+                <span>Active Voice:</span>
+                <span id="test-voice-name" class="font-mono text-indigo-400">Searching voices...</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="text-slate-400">Speed:</span>
+                <input id="test-speech-rate" type="range" min="0.75" max="1.5" step="0.05" value="1.0" class="flex-1 accent-indigo-500 bg-slate-800 rounded-lg">
+                <span id="test-rate-display" class="font-mono text-indigo-400 w-10 text-right">1.0x</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Karaoke Display Container -->
+          <div class="space-y-1">
+            <span class="text-[11px] text-slate-400 font-mono">Interactive Word Stream:</span>
+            <div id="test-karaoke-stream" class="p-4 rounded-2xl bg-slate-950 border border-slate-800 leading-relaxed text-sm select-text min-h-[5rem]">
+              <!-- Injected dynamically -->
+            </div>
+          </div>
+        </div>
+
+        <!-- TOOL 3: 3D FLIP CARD PHYSICS SIMULATOR -->
+        <div class="p-6 rounded-3xl bg-slate-900/90 border border-slate-800 space-y-4">
+          <div class="flex items-center gap-2.5">
+            <div class="w-7 h-7 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center text-xs">
+              <i class="fa-solid fa-cube"></i>
+            </div>
+            <h3 class="font-bold text-base text-white">3. 3D Flip Card Physics & Perspective Simulator</h3>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <!-- Controls -->
+            <div class="lg:col-span-6 space-y-4 text-xs text-slate-400">
+              <p>Adjust spatial perspective and Y-axis rotation values in real-time to inspect the transformation matrix:</p>
+              
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span>Perspective Distance (px):</span>
+                  <span id="sim-perspective-val" class="font-mono text-indigo-400 font-semibold">1000px</span>
+                </div>
+                <input id="sim-perspective" type="range" min="300" max="2000" step="50" value="1000" class="w-full accent-indigo-500 bg-slate-800 rounded-lg">
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span>Y-Axis Rotation (deg):</span>
+                  <span id="sim-rotate-val" class="font-mono text-indigo-400 font-semibold">0°</span>
+                </div>
+                <input id="sim-rotate" type="range" min="0" max="180" step="1" value="0" class="w-full accent-indigo-500 bg-slate-800 rounded-lg">
+              </div>
+
+              <div class="flex items-center gap-3 pt-2">
+                <button id="sim-flip-btn" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold transition-colors">
+                  Flip 180°
+                </button>
+                <button id="sim-reset-btn" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium transition-colors">
+                  Reset
+                </button>
+              </div>
+            </div>
+
+            <!-- Visual 3D Stage -->
+            <div class="lg:col-span-6 flex justify-center py-4">
+              <div id="sim-viewport" class="w-72 h-48 select-none cursor-pointer" style="perspective: 1000px;">
+                <div id="sim-card-inner" class="w-full h-full relative preserve-3d transition-transform duration-300 rounded-2xl shadow-2xl">
+                  
+                  <!-- Front -->
+                  <div class="absolute inset-0 backface-hidden bg-gradient-to-br from-indigo-950 via-slate-900 to-slate-950 border border-indigo-500/40 rounded-2xl p-5 flex flex-col justify-between">
+                    <div class="flex items-center justify-between text-[11px] text-indigo-400 font-mono">
+                      <span>QUESTION FACE</span>
+                      <i class="fa-solid fa-circle-question"></i>
+                    </div>
+                    <p class="text-sm font-medium text-slate-100">Which dynasty commissioned the monolithic chariot of Hampi?</p>
+                    <span class="text-[10px] text-slate-500">Tap or drag slider to rotate &rarr;</span>
+                  </div>
+
+                  <!-- Back -->
+                  <div class="absolute inset-0 backface-hidden bg-gradient-to-br from-emerald-950 via-slate-900 to-slate-950 border border-emerald-500/40 rounded-2xl p-5 flex flex-col justify-between" style="transform: rotateY(180deg);">
+                    <div class="flex items-center justify-between text-[11px] text-emerald-400 font-mono">
+                      <span>ANSWER FACE</span>
+                      <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <p class="text-xs text-slate-100 leading-relaxed">The Vijayanagara Empire during the 16th century, commissioned under the reign of King Krishnadevaraya.</p>
+                    <span class="text-[10px] text-emerald-400/70">Verified historical record</span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="compatibility" class="doc-section space-y-6 pt-6 border-t border-slate-800/80">
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded-md bg-indigo-500/20 text-indigo-400 border border-indigo-500/30">SECTION 10</span>
+          <span class="text-xs text-slate-500 font-mono">Specifications</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Troubleshooting & Browser Compatibility</h2>
+        <p class="text-sm text-slate-300 leading-relaxed">
+          The table below indicates Web API support levels across modern desktop and mobile browsers:
+        </p>
+
+        <!-- Compatibility Table -->
+        <div class="overflow-x-auto rounded-2xl border border-slate-800">
+          <table class="w-full text-left text-xs font-mono">
+            <thead class="bg-slate-900 text-slate-300 border-b border-slate-800">
+              <tr>
+                <th class="p-3">Feature / Web API</th>
+                <th class="p-3">Chrome / Chromium</th>
+                <th class="p-3">Firefox</th>
+                <th class="p-3">Safari / iOS</th>
+                <th class="p-3">Edge</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800/60 bg-slate-950 text-slate-400">
+              <tr>
+                <td class="p-3 font-semibold text-slate-200">window.speechSynthesis</td>
+                <td class="p-3 text-emerald-400"><i class="fa-solid fa-check"></i> Full (v33+)</td>
+                <td class="p-3 text-emerald-400"><i class="fa-solid fa-check"></i> Full (v49+)</td>
+                <td class="p-3 text-emerald-400"><i class="fa-solid fa-check"></i> Full (v7+)</td>
+                <td class="p-3 text-emerald-400"><i class="fa-solid fa-check"></i> Full (v14+)</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-semibold text-slate-200">utterance.onboundary ('word')</td>
+                <td class="p-3 text-emerald-400"><i class="fa-solid fa-check"></i> Supported</td>
+                <td class="p-3 text-amber-400"><i class="fa-solid fa-triangle-exclamation"></i> OS-Dependent</td>
+                <td class="p-3 text-emerald-400"><i class="fa-solid fa-check"></i> Supported</td>
+                <td class="p-3 text-emerald-400"><i class="fa-solid fa-check"></i> Supported</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-semibold text-slate-200">Kannada (kn-IN) Voices</td>
+                <td class="p-3 text-emerald-400"><i class="fa-solid fa-check"></i> Google Kannada</td>
+                <td class="p-3 text-amber-400"><i class="fa-solid fa-circle-info"></i> Host OS Voice</td>
+                <td class="p-3 text-emerald-400"><i class="fa-solid fa-check"></i> Apple Kannada</td>
+                <td class="p-3 text-emerald-400"><i class="fa-solid fa-check"></i> MS Ravi/Girish</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-semibold text-slate-200">CSS 3D (transform-style: 3d)</td>
+                <td class="p-3 text-emerald-400"><i class="fa-solid fa-check"></i> Full (GPU)</td>
+                <td class="p-3 text-emerald-400"><i class="fa-solid fa-check"></i> Full (GPU)</td>
+                <td class="p-3 text-emerald-400"><i class="fa-solid fa-check"></i> Full (-webkit)</td>
+                <td class="p-3 text-emerald-400"><i class="fa-solid fa-check"></i> Full (GPU)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Troubleshooting Cards -->
+        <div class="space-y-3 font-mono text-xs">
+          <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-1">
+            <span class="text-amber-400 font-bold">Issue: Kannada Speech sounds English or is silent</span>
+            <p class="font-sans text-xs text-slate-400">
+              The host operating system lacks a Kannada language speech model. In Windows, install the <em>Kannada (India) Speech Package</em> via <em>Settings &gt; Time &amp; Language &gt; Speech</em>. On macOS/iOS, enable <em>Accessibility &gt; Spoken Content &gt; Voices &gt; Kannada</em>.
+            </p>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-1">
+            <span class="text-rose-400 font-bold">Issue: CORS Error (Failed to fetch items.json)</span>
+            <p class="font-sans text-xs text-slate-400">
+              Occurs when double-clicking <code class="text-indigo-300">index.html</code> directly into a browser using the <code class="text-indigo-300">file:///</code> protocol. Click the <strong>Pick File from Disk</strong> button in the UI or launch via <code class="text-indigo-300">npx serve</code> or <code class="text-indigo-300">python -m http.server</code>.
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+      <footer class="pt-10 pb-6 border-t border-slate-800 text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono">
+        <div class="flex items-center gap-2">
+          <span>OmniView Hub Architecture Specification</span>
+          <span>&bull;</span>
+          <span>Bengaluru, Karnataka</span>
+        </div>
+        <div>
+          <a href="#overview" class="hover:text-indigo-400 transition-colors flex items-center gap-1">
+            Back to Top <i class="fa-solid fa-arrow-up text-[10px]"></i>
+          </a>
+        </div>
+      </footer>
+
+    </main>
+
+  </div>
+
+  <script>
+    // --------------------------------------------------------
+    // 1. THEME SWITCHER (Dark / Light)
+    // --------------------------------------------------------
+    const themeToggleBtn = document.getElementById('theme-toggle-btn');
+    const themeIcon = document.getElementById('theme-icon');
+    let isDarkMode = true;
+
+    themeToggleBtn.addEventListener('click', () => {
+      isDarkMode = !isDarkMode;
+      if (isDarkMode) {
+        document.documentElement.classList.add('dark');
+        themeIcon.className = 'fa-solid fa-moon text-xs';
+        document.body.classList.remove('bg-slate-50', 'text-slate-900');
+        document.body.classList.add('bg-slate-950', 'text-slate-200');
+      } else {
+        document.documentElement.classList.remove('dark');
+        themeIcon.className = 'fa-solid fa-sun text-xs text-amber-500';
+        document.body.classList.remove('bg-slate-950', 'text-slate-200');
+        document.body.classList.add('bg-slate-50', 'text-slate-900');
+      }
+    });
+
+    // Print Button
+    document.getElementById('print-btn').addEventListener('click', () => {
+      window.print();
+    });
+
+    // --------------------------------------------------------
+    // 2. SCROLLSPY & SIDEBAR NAVIGATION
+    // --------------------------------------------------------
+    const docSections = document.querySelectorAll('.doc-section');
+    const docNavLinks = document.querySelectorAll('.doc-nav-link');
+
+    window.addEventListener('scroll', () => {
+      let currentSectionId = '';
+      const scrollPos = window.scrollY + 120;
+
+      docSections.forEach((section) => {
+        const top = section.offsetTop;
+        const height = section.offsetHeight;
+        if (scrollPos >= top && scrollPos < top + height) {
+          currentSectionId = section.getAttribute('id');
+        }
+      });
+
+      docNavLinks.forEach((link) => {
+        link.classList.remove('text-indigo-400', 'bg-slate-900/80', 'font-semibold');
+        if (link.getAttribute('href') === `#${currentSectionId}`) {
+          link.classList.add('text-indigo-400', 'bg-slate-900/80', 'font-semibold');
+        }
+      });
+    });
+
+    // Quick Search Filter for Sidebar
+    const searchBar = document.getElementById('doc-search-bar');
+    if (searchBar) {
+      searchBar.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        docNavLinks.forEach(link => {
+          const text = link.textContent.toLowerCase();
+          if (!query || text.includes(query)) {
+            link.parentElement.style.display = 'block';
+          } else {
+            link.parentElement.style.display = 'none';
+          }
+        });
+      });
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          searchBar.value = '';
+          docNavLinks.forEach(l => l.parentElement.style.display = 'block');
+        }
+      });
+    }
+
+    // Copy Code Blocks
+    document.querySelectorAll('.copy-code-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-copy');
+        const rawContent = btn.getAttribute('data-copy-raw');
+        let textToCopy = '';
+
+        if (targetId) {
+          const elem = document.getElementById(targetId);
+          textToCopy = elem ? elem.innerText : '';
+        } else if (rawContent) {
+          textToCopy = rawContent;
+        }
+
+        if (textToCopy) {
+          const textarea = document.createElement('textarea');
+          textarea.value = textToCopy;
+          document.body.appendChild(textarea);
+          textarea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textarea);
+
+          btn.innerHTML = `<i class="fa-solid fa-check text-emerald-400"></i> Copied!`;
+          setTimeout(() => {
+            btn.innerHTML = `<i class="fa-regular fa-copy"></i>`;
+          }, 2000);
+        }
+      });
+    });
+
+    // --------------------------------------------------------
+    // 3. SANDBOX 1: LIVE JSON VALIDATOR & CARD GENERATOR
+    // --------------------------------------------------------
+    const SAMPLE_RECORD = {
+      "id": "hampi-stone-chariot",
+      "title": "Stone Chariot of Vittala Temple",
+      "title_kn": "ಹಂಪಿಯ ಕಲ್ಲಿನ ರಥ",
+      "category": "Architecture",
+      "category_kn": "ವಾಸ್ತುಶಿಲ್ಪ",
+      "year": "16th Century",
+      "year_kn": "೧೬ನೇ ಶತಮಾನ",
+      "location": "Hampi, Karnataka",
+      "location_kn": "ಹಂಪಿ, ಕರ್ನಾಟಕ",
+      "image": "https://images.unsplash.com/photo-1600100397608-f010f444f479?auto=format&fit=crop&w=800&q=80",
+      "description": "An exquisite shrine dedicated to Garuda in the Vijayanagara architectural style.",
+      "description_kn": "ವಿಜಯನಗರ ವಾಸ್ತುಶಿಲ್ಪ ಶೈಲಿಯಲ್ಲಿ ಗರುಡನಿಗೆ ಸಮರ್ಪಿತವಾದ ಅದ್ಭುತ ದೇವಾಲಯ.",
+      "triviaCards": [
+        {
+          "q": "What deity is the shrine dedicated to?",
+          "q_kn": "ಈ ರಥ ಗುಡಿಯು ಯಾವ ದೇವರಿಗೆ ಸಮರ್ಪಿತವಾಗಿದೆ?",
+          "a": "Garuda, the mythological mount of Vishnu.",
+          "a_kn": "ವಿಷ್ಣುವಿನ ವಾಹನವಾದ ಗರುಡ ದೇವರಿಗೆ."
+        }
+      ]
+    };
+
+    const sandboxInput = document.getElementById('sandbox-json-input');
+    const btnValidate = document.getElementById('btn-validate-json');
+    const btnLoadSample = document.getElementById('btn-load-sample-json');
+    const validationMsg = document.getElementById('sandbox-validation-msg');
+    const cardPreview = document.getElementById('sandbox-card-preview');
+
+    btnLoadSample.addEventListener('click', () => {
+      sandboxInput.value = JSON.stringify(SAMPLE_RECORD, null, 2);
+      renderCardPreview(SAMPLE_RECORD);
+    });
+
+    btnValidate.addEventListener('click', () => {
+      validationMsg.classList.add('hidden');
+      try {
+        const parsed = JSON.parse(sandboxInput.value);
+        
+        // Assert Schema Validation
+        if (!parsed.id || !parsed.title || !parsed.image) {
+          throw new Error("Missing required root properties: 'id', 'title', or 'image'.");
+        }
+        if (!parsed.title_kn || !parsed.description_kn) {
+          throw new Error("Bilingual schema compliance warning: 'title_kn' and 'description_kn' are required for Kannada support.");
+        }
+
+        validationMsg.className = 'text-xs p-2.5 rounded-xl bg-emerald-950/60 border border-emerald-800 text-emerald-300 block';
+        validationMsg.innerHTML = `<i class="fa-solid fa-check"></i> JSON conforms to bilingual schema! Ready for production.`;
+        renderCardPreview(parsed);
+
+      } catch (err) {
+        validationMsg.className = 'text-xs p-2.5 rounded-xl bg-rose-950/60 border border-rose-800 text-rose-300 block';
+        validationMsg.innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i> ${err.message}`;
+      }
+    });
+
+    function renderCardPreview(item) {
+      cardPreview.innerHTML = `
+        <div class="w-full max-w-sm bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl text-left">
+          <div class="aspect-[16/10] relative bg-slate-950">
+            <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/600x400/1e293b/ffffff?text=Image'">
+            <span class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-slate-950/80 text-indigo-300 border border-indigo-500/30">
+              ${item.category || 'General'}
+            </span>
+          </div>
+          <div class="p-4 space-y-2">
+            <div>
+              <h4 class="font-bold text-sm text-slate-100">${item.title}</h4>
+              <p class="font-kannada text-xs text-indigo-300">${item.title_kn || ''}</p>
+            </div>
+            <p class="text-xs text-slate-400 line-clamp-2">${item.description || ''}</p>
+            <div class="pt-2 border-t border-slate-800 flex justify-between text-[11px] text-slate-500 font-mono">
+              <span><i class="fa-solid fa-clone text-indigo-400"></i> ${(item.triviaCards || []).length} cards</span>
+              <span><i class="fa-solid fa-location-dot"></i> ${item.location || 'Location'}</span>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    // --------------------------------------------------------
+    // 4. SANDBOX 2: BILINGUAL SPEECH & KARAOKE ENGINE
+    // --------------------------------------------------------
+    const TEST_TEXTS = {
+      en: "The monolithic Stone Chariot in Hampi represents the peak of Vijayanagara architectural craftsmanship, dedicated to the celestial bird Garuda.",
+      kn: "ಹಂಪಿಯ ಏಕಶಿಲಾ ಕಲ್ಲಿನ ರಥವು ವಿಜಯನಗರ ವಾಸ್ತುಶಿಲ್ಪದ ಉತ್ತುಂಗವನ್ನು ಪ್ರತಿನಿಧಿಸುತ್ತದೆ ಮತ್ತು ಇದು ಗರುಡ ದೇವರಿಗೆ ಸಮರ್ಪಿತವಾಗಿದೆ."
+    };
+
+    let activeTestLang = 'en';
+    let testUtterance = null;
+    let testWordElements = [];
+    const testStream = document.getElementById('test-karaoke-stream');
+    const testVoiceName = document.getElementById('test-voice-name');
+    const testSpeechRate = document.getElementById('test-speech-rate');
+    const testRateDisplay = document.getElementById('test-rate-display');
+    const btnSpeechEn = document.getElementById('speech-lang-en');
+    const btnSpeechKn = document.getElementById('speech-lang-kn');
+    const btnTestPlay = document.getElementById('btn-test-play');
+    const btnTestStop = document.getElementById('btn-test-stop');
+
+    function rebuildTestStream() {
+      testStream.innerHTML = '';
+      testWordElements = [];
+      const rawText = TEST_TEXTS[activeTestLang];
+      const tokens = rawText.split(/\s+/);
+      let cumulativeIndex = 0;
+
+      tokens.forEach((token, idx) => {
+        if (!token.trim()) return;
+        const start = rawText.indexOf(token, cumulativeIndex);
+        const end = start + token.length;
+        cumulativeIndex = end;
+
+        const span = document.createElement('span');
+        span.className = `word-token ${activeTestLang === 'kn' ? 'font-kannada text-sm' : ''}`;
+        span.textContent = token + ' ';
+        span.dataset.start = start;
+        span.dataset.end = end;
+        span.dataset.idx = idx;
+
+        span.addEventListener('click', () => {
+          startTestSpeech(start);
+        });
+
+        testStream.appendChild(span);
+        testWordElements.push({ element: span, start, end });
+      });
+      updateDetectedVoiceName();
+    }
+
+    function updateDetectedVoiceName() {
+      if (!('speechSynthesis' in window)) {
+        testVoiceName.textContent = "Speech synthesis not supported";
+        return;
+      }
+      const voices = window.speechSynthesis.getVoices();
+      const targetLangPrefix = activeTestLang === 'kn' ? 'kn' : 'en';
+      const matched = voices.find(v => v.lang.startsWith(targetLangPrefix));
+      if (matched) {
+        testVoiceName.textContent = `${matched.name} (${matched.lang})`;
+      } else {
+        testVoiceName.textContent = activeTestLang === 'kn' ? "No native kn-IN voice (Using fallback)" : "Default Voice";
+      }
+    }
+
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.onvoiceschanged = updateDetectedVoiceName;
+    }
+
+    btnSpeechEn.addEventListener('click', () => {
+      activeTestLang = 'en';
+      btnSpeechEn.className = 'px-2.5 py-1 rounded-lg text-xs font-semibold bg-indigo-600 text-white';
+      btnSpeechKn.className = 'px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-800 text-slate-400 hover:text-white';
+      stopTestSpeech();
+      rebuildTestStream();
+    });
+
+    btnSpeechKn.addEventListener('click', () => {
+      activeTestLang = 'kn';
+      btnSpeechKn.className = 'px-2.5 py-1 rounded-lg text-xs font-semibold bg-indigo-600 text-white';
+      btnSpeechEn.className = 'px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-800 text-slate-400 hover:text-white';
+      stopTestSpeech();
+      rebuildTestStream();
+    });
+
+    testSpeechRate.addEventListener('input', (e) => {
+      testRateDisplay.textContent = `${parseFloat(e.target.value).toFixed(2)}x`;
+    });
+
+    function highlightTestWordAtCharIndex(charIndex) {
+      testWordElements.forEach(item => item.element.classList.remove('word-active-token'));
+      const match = testWordElements.find(item => charIndex >= item.start && charIndex < item.end + 2);
+      if (match) {
+        match.element.classList.add('word-active-token');
+      }
+    }
+
+    function startTestSpeech(startIndex = 0) {
+      if (!('speechSynthesis' in window)) return;
+      window.speechSynthesis.cancel();
+      testWordElements.forEach(item => item.element.classList.remove('word-active-token'));
+
+      const fullText = TEST_TEXTS[activeTestLang];
+      const slice = fullText.slice(startIndex);
+      if (!slice.trim()) return;
+
+      testUtterance = new SpeechSynthesisUtterance(slice);
+      testUtterance.rate = parseFloat(testSpeechRate.value) || 1.0;
+      testUtterance.lang = activeTestLang === 'kn' ? 'kn-IN' : 'en-US';
+
+      // Assign matching voice
+      const voices = window.speechSynthesis.getVoices();
+      const matched = voices.find(v => v.lang.startsWith(activeTestLang === 'kn' ? 'kn' : 'en'));
+      if (matched) testUtterance.voice = matched;
+
+      testUtterance.onboundary = (e) => {
+        if (e.name === 'word') {
+          highlightTestWordAtCharIndex(startIndex + e.charIndex);
+        }
+      };
+
+      testUtterance.onend = () => {
+        testWordElements.forEach(item => item.element.classList.remove('word-active-token'));
+      };
+
+      window.speechSynthesis.speak(testUtterance);
+    }
+
+    function stopTestSpeech() {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+      testWordElements.forEach(item => item.element.classList.remove('word-active-token'));
+    }
+
+    btnTestPlay.addEventListener('click', () => startTestSpeech(0));
+    btnTestStop.addEventListener('click', stopTestSpeech);
+
+    // --------------------------------------------------------
+    // 5. SANDBOX 3: 3D FLIP CARD PHYSICS SIMULATOR
+    // --------------------------------------------------------
+    const simViewport = document.getElementById('sim-viewport');
+    const simCardInner = document.getElementById('sim-card-inner');
+    const simPerspectiveSlider = document.getElementById('sim-perspective');
+    const simPerspectiveVal = document.getElementById('sim-perspective-val');
+    const simRotateSlider = document.getElementById('sim-rotate');
+    const simRotateVal = document.getElementById('sim-rotate-val');
+    const simFlipBtn = document.getElementById('sim-flip-btn');
+    const simResetBtn = document.getElementById('sim-reset-btn');
+
+    function applySimTransform() {
+      const p = simPerspectiveSlider.value;
+      const deg = simRotateSlider.value;
+      simPerspectiveVal.textContent = `${p}px`;
+      simRotateVal.textContent = `${deg}°`;
+
+      simViewport.style.perspective = `${p}px`;
+      simCardInner.style.transform = `rotateY(${deg}deg)`;
+    }
+
+    simPerspectiveSlider.addEventListener('input', applySimTransform);
+    simRotateSlider.addEventListener('input', applySimTransform);
+
+    simFlipBtn.addEventListener('click', () => {
+      const current = parseInt(simRotateSlider.value, 10);
+      const target = current >= 180 ? 0 : 180;
+      simRotateSlider.value = target;
+      applySimTransform();
+    });
+
+    simResetBtn.addEventListener('click', () => {
+      simPerspectiveSlider.value = 1000;
+      simRotateSlider.value = 0;
+      applySimTransform();
+    });
+
+    simViewport.addEventListener('click', () => {
+      const current = parseInt(simRotateSlider.value, 10);
+      const target = current >= 180 ? 0 : 180;
+      simRotateSlider.value = target;
+      applySimTransform();
+    });
+
+    // Mobile Sidebar Toggle
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+    if (mobileMenuToggle && sidebar) {
+      mobileMenuToggle.addEventListener('click', () => {
+        sidebar.classList.toggle('hidden');
+        sidebar.classList.toggle('block');
+      });
+    }
+
+    // Init on load
+    window.addEventListener('DOMContentLoaded', () => {
+      rebuildTestStream();
+      sandboxInput.value = JSON.stringify(SAMPLE_RECORD, null, 2);
+      renderCardPreview(SAMPLE_RECORD);
+    });
+  </script>
+</body>
+</html>
