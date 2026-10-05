@@ -1,4 +1,4 @@
-const CACHE_NAME = 'karnataka-arch-v2';
+const CACHE_NAME = 'karnataka-arch-v3';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
