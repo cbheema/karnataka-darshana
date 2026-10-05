@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Architects of Karnataka - Heritage Explorer</title>
+  
+  <!-- PWA Metadata -->
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#090d16">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="KarnatakaArch">
+  <link rel="apple-touch-icon" href="https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=192&q=80">
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #090d16;
+      --surface: #131c2e;
+      --surface-card: #1a263e;
+      --primary: #f59e0b;
+      --accent: #38bdf8;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --border: #243552;
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+      font-family: 'Plus Jakarta Sans', 'Noto Sans Kannada', -apple-system, sans-serif;
+    }
+
+    body {
+      background-color: #030712;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      color: var(--text);
+    }
+
+    .app-shell {
+      width: 100%;
+      max-width: 440px;
+      background: var(--bg);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      box-shadow: 0 0 50px rgba(0,0,0,0.8);
+      overflow-x: hidden;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(9, 13, 22, 0.95);
+      backdrop-filter: blur(14px);
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+      z-index: 100;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand-eyebrow {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .brand-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .icon-btn-home {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+
+    .lang-btn {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 6px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .view-screen {
+      display: none;
+      flex-direction: column;
+      flex: 1;
+      padding: 16px 18px 80px;
+    }
+
+    .view-screen.active {
+      display: flex;
+    }
+
+    .state-overlay {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 300px;
+      gap: 16px;
+      text-align: center;
+    }
+
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid var(--border);
+      border-top-color: var(--primary);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .subview-nav {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .btn-back {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+    .subview-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    .search-container {
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .search-input {
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px 14px 12px 42px;
+      color: var(--text);
+      font-size: 0.9rem;
+      outline: none;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .section-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .domain-grid, .topics-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .domain-card, .topic-item-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      cursor: pointer;
+    }
+
+    .domain-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: rgba(245, 158, 11, 0.12);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+
+    .topic-thumb {
+      width: 65px;
+      height: 65px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .media-carousel {
+      position: relative;
+      width: 100%;
+      height: 220px;
+      background: #000;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .carousel-track {
+      display: flex;
+      height: 100%;
+      transition: transform 0.35s ease-out;
+    }
+
+    .carousel-item {
+      min-width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .carousel-item img, .carousel-item iframe {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: none;
+    }
+
+    .carousel-caption {
+      position: absolute;
+      bottom: 0;
+      inset-x: 0;
+      padding: 20px 12px 6px;
+      background: linear-gradient(transparent, rgba(0,0,0,0.9));
+      font-size: 0.72rem;
+    }
+
+    .carousel-nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(19, 28, 46, 0.75);
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.15);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    .carousel-nav-btn.prev { left: 8px; }
+    .carousel-nav-btn.next { right: 8px; }
+
+    .btn-read-aloud {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 12px;
+      border-radius: 14px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      cursor: pointer;
+      margin: 10px 0;
+    }
+
+    .btn-read-aloud.speaking {
+      background: var(--accent);
+      color: #030712;
+    }
+
+    .challenges-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 10px;
+    }
+
+    .card-scene {
+      perspective: 1200px;
+      width: 100%;
+      min-height: 240px;
+    }
+
+    .card-cube {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+      cursor: pointer;
+    }
+
+    .card-scene.is-flipped .card-cube {
+      transform: rotateY(180deg);
+    }
+
+    .card-face {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      min-height: 240px;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--surface-card);
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card-face-front { border-left: 4px solid var(--primary); }
+    .card-face-back { transform: rotateY(180deg); border-left: 4px solid var(--accent); }
+  </style>
+</head>
+<body>
+
+  <div class="app-shell">
+    <header>
+      <div class="header-top">
+        <div>
+          <div class="brand-eyebrow" id="uiEyebrow">Heritage Museum</div>
+          <div class="brand-title" id="uiTitle">Architects of Karnataka</div>
+        </div>
+        <div class="header-actions">
+          <button class="icon-btn-home" id="btnGoHome" title="Home">🏠</button>
+          <button class="lang-btn" id="langToggleBtn">
+            <span>🌐</span> <span id="langLabel">ಕನ್ನಡ</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- SCREEN 1: HOME -->
+    <section class="view-screen active" id="screenHome">
+      <div class="search-container">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search architecture, builders...">
+      </div>
+
+      <div class="section-label" id="uiDomainsLabel">Architectural Domains</div>
+      <div id="domainsWrapper">
+        <div class="state-overlay" id="loadingState">
+          <div class="spinner"></div>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">Loading museum catalog...</p>
+        </div>
+        <div class="domain-grid" id="domainsContainer" style="display:none;"></div>
+      </div>
+    </section>
+
+    <!-- SCREEN 2: TOPICS -->
+    <section class="view-screen" id="screenTopics">
+      <div class="subview-nav">
+        <button class="btn-back" onclick="navigateTo('screenHome')">‹</button>
+        <div class="subview-title" id="currentDomainTitle">Domain Topics</div>
+      </div>
+      <div class="section-label" id="uiTopicsLabel">Select a Topic</div>
+      <div class="topics-list" id="topicsContainer"></div>
+    </section>
+
+    <!-- SCREEN 3: DETAIL -->
+    <section class="view-screen" id="screenDetail">
+      <div class="subview-nav">
+        <button class="btn-back" onclick="navigateTo('screenTopics')">‹</button>
+        <div class="subview-title" id="detailNavTitle">Topic Detail</div>
+      </div>
+      <div id="detailContainer" style="display:flex; flex-direction:column; gap:16px;"></div>
+    </section>
+  </div>
+
+  <script>
+    const I18N = {
+      en: {
+        eyebrow: "Heritage Museum",
+        title: "Architects of Karnataka",
+        langNext: "ಕನ್ನಡ",
+        searchPlaceholder: "Search architecture, builders...",
+        domainsLabel: "Architectural Domains",
+        topicsLabel: "Explore Master Builders",
+        readAloud: "Read Aloud",
+        pauseAudio: "Pause Audio",
+        challengeTitle: "Knowledge Challenges",
+        challengeCounter: "Challenge",
+        tapToFlip: "Tap card to reveal answer 🔄",
+        tapToFlipBack: "Tap card to flip back ↺",
+        verifiedAnswer: "✓ Verified Answer",
+        entriesCount: "entries",
+        empty: "No matching architectural records found."
+      },
+      kn: {
+        eyebrow: "ಪರಂಪರೆ ಡಿಜಿಟಲ್ ಮ್ಯೂಸಿಯಂ",
+        title: "ಕರ್ನಾಟಕದ ವಾಸ್ತುಶಿಲ್ಪಿಗಳು",
+        langNext: "English",
+        searchPlaceholder: "ವಾಸ್ತುಶಿಲ್ಪಿ, ಸ್ಮಾರಕಗಳನ್ನು ಹುಡುಕಿ...",
+        domainsLabel: "ವಾಸ್ತುಶಿಲ್ಪ ವಿಭಾಗಗಳು",
+        topicsLabel: "ಶಿಲ್ಪಿಗಳು ಮತ್ತು ಸ್ಮಾರಕಗಳು",
+        readAloud: "ವಿವರಣೆ ಆಲಿಸಿ (Read Aloud)",
+        pauseAudio: "ವಿರಾಮಗೊಳಿಸಿ (Pause)",
+        challengeTitle: "ಜ್ಞಾನ ಸವಾಲುಗಳು (Challenges)",
+        challengeCounter: "ಸವಾಲು",
+        tapToFlip: "ಉತ್ತರ ತಿಳಿಯಲು ಕಾರ್ಡ್ ಸ್ಪರ್ಶಿಸಿ 🔄",
+        tapToFlipBack: "ಹಿಂದಕ್ಕೆ ತಿರುಗಿಸಲು ಸ್ಪರ್ಶಿಸಿ ↺",
+        verifiedAnswer: "✓ ದೃಢೀಕೃತ ಉತ್ತರ",
+        entriesCount: "ದಾಖಲೆಗಳು",
+        empty: "ಯಾವುದೇ ದಾಖಲೆಗಳು ಕಂಡುಬಂದಿಲ್ಲ."
+      }
+    };
+
+    let DATASET = null;
+    let currentLang = "en";
+    let activeDomain = null;
+    let activeTopic = null;
+    let activeSpeech = null;
+    const carouselState = {};
+
+    async function loadDataset() {
+      try {
+        const res = await fetch('./data.json');
+        DATASET = await res.json();
+        document.getElementById("loadingState").style.display = "none";
+        document.getElementById("domainsContainer").style.display = "flex";
+        renderDomains();
+      } catch (err) {
+        document.getElementById("loadingState").innerHTML = `<p style="color:#f87171">Failed to load data.json.</p>`;
+      }
+    }
+
+    function navigateTo(id) {
+      document.querySelectorAll(".view-screen").forEach(s => s.classList.remove("active"));
+      document.getElementById(id).classList.add("active");
+      window.scrollTo(0,0);
+      window.speechSynthesis.cancel();
+      activeSpeech = null;
+    }
+
+    document.getElementById("btnGoHome").addEventListener("click", () => {
+      document.getElementById("searchInput").value = "";
+      if (DATASET) renderDomains();
+      navigateTo("screenHome");
+    });
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      const t = I18N[lang];
+      document.getElementById("uiEyebrow").textContent = t.eyebrow;
+      document.getElementById("uiTitle").textContent = t.title;
+      document.getElementById("langLabel").textContent = t.langNext;
+      document.getElementById("searchInput").placeholder = t.searchPlaceholder;
+      document.getElementById("uiDomainsLabel").textContent = t.domainsLabel;
+      document.getElementById("uiTopicsLabel").textContent = t.topicsLabel;
+      if (DATASET) {
+        renderDomains();
+        if (activeDomain) renderTopics(activeDomain);
+        if (activeTopic) renderDetail(activeTopic);
+      }
+    }
+
+    document.getElementById("langToggleBtn").addEventListener("click", () => {
+      setLanguage(currentLang === "en" ? "kn" : "en");
+    });
+
+    function renderDomains() {
+      const container = document.getElementById("domainsContainer");
+      container.innerHTML = "";
+      DATASET.domains.forEach(d => {
+        const card = document.createElement("div");
+        card.className = "domain-card";
+        card.innerHTML = `
+          <div class="domain-icon">${d.icon}</div>
+          <div style="flex:1;">
+            <div style="font-weight:700;">${d.name[currentLang]}</div>
+            <div style="font-size:0.75rem; color:var(--text-muted);">${d.topics.length} ${I18N[currentLang].entriesCount}</div>
+          </div>
+          <div>›</div>
+        `;
+        card.onclick = () => { activeDomain = d; renderTopics(d); navigateTo("screenTopics"); };
+        container.appendChild(card);
+      });
+    }
+
+    function renderTopics(d) {
+      document.getElementById("currentDomainTitle").textContent = d.name[currentLang];
+      const container = document.getElementById("topicsContainer");
+      container.innerHTML = "";
+      d.topics.forEach(t => {
+        const item = document.createElement("div");
+        item.className = "topic-item-card";
+        item.innerHTML = `
+          <img src="${t.media[0].url}" class="topic-thumb">
+          <div style="flex:1;">
+            <div style="font-weight:700;">${t.name[currentLang]}</div>
+            <div style="font-size:0.75rem; color:var(--primary);">${t.era[currentLang]}</div>
+            <div style="font-size:0.75rem; color:var(--text-muted);">${t.summary[currentLang]}</div>
+          </div>
+          <div>›</div>
+        `;
+        item.onclick = () => { activeTopic = t; renderDetail(t); navigateTo("screenDetail"); };
+        container.appendChild(item);
+      });
+    }
+
+    function renderDetail(topic) {
+      document.getElementById("detailNavTitle").textContent = topic.name[currentLang];
+      const container = document.getElementById("detailContainer");
+      const t = I18N[currentLang];
+      carouselState[topic.id] = 0;
+
+      const slidesHtml = topic.media.map(m => m.type === "video"
+        ? `<div class="carousel-item"><iframe src="${m.url}" allowfullscreen></iframe></div>`
+        : `<div class="carousel-item"><img src="${m.url}"><div class="carousel-caption">${m.caption[currentLang]}</div></div>`
+      ).join("");
+
+      const challengesHtml = topic.challenges.map((c, i) => `
+        <div class="card-scene" onclick="this.classList.toggle('is-flipped')">
+          <div class="card-cube">
+            <div class="card-face card-face-front">
+              <div>
+                <div style="font-size:0.65rem; color:var(--primary); font-weight:800;">❓ ${t.challengeCounter} ${i+1}</div>
+                <div style="font-size:0.95rem; font-weight:700; color:#fef3c7; margin-top:6px;">${c.question[currentLang]}</div>
+              </div>
+              <div style="font-size:0.72rem; color:var(--primary); text-align:right;">${t.tapToFlip}</div>
+            </div>
+            <div class="card-face card-face-back">
+              <div>
+                <div style="font-size:0.68rem; color:var(--accent); font-weight:800;">${t.verifiedAnswer}</div>
+                <div style="font-size:1.05rem; font-weight:800; color:#fff; margin:4px 0;">${c.answer[currentLang]}</div>
+                <div style="font-size:0.82rem; color:#cbd5e1;">${c.details[currentLang]}</div>
+              </div>
+              <div style="font-size:0.72rem; color:var(--accent); text-align:right;">${t.tapToFlipBack}</div>
+            </div>
+          </div>
+        </div>
+      `).join("");
+
+      container.innerHTML = `
+        <div class="media-carousel">
+          <div class="carousel-track" id="track-${topic.id}">${slidesHtml}</div>
+          ${topic.media.length > 1 ? `
+            <button class="carousel-nav-btn prev" onclick="moveCarousel('${topic.id}', -1, event)">‹</button>
+            <button class="carousel-nav-btn next" onclick="moveCarousel('${topic.id}', 1, event)">›</button>
+          ` : ''}
+        </div>
+        <div>
+          <div style="font-size:1.3rem; font-weight:800;">${topic.name[currentLang]}</div>
+          <div style="font-size:0.85rem; color:var(--primary);">${topic.era[currentLang]}</div>
+          <button class="btn-read-aloud" id="btnAudio" onclick="handleSpeech()">
+            <span>🔊</span> <span id="lblAudio">${t.readAloud}</span>
+          </button>
+        </div>
+        <div style="font-size:0.9rem; line-height:1.6; color:#cbd5e1;">${topic.fullDescription[currentLang]}</div>
+        <div>
+          <div style="font-size:0.78rem; font-weight:800; color:var(--primary);">${t.challengeTitle} (${topic.challenges.length})</div>
+          <div class="challenges-list">${challengesHtml}</div>
+        </div>
+      `;
+    }
+
+    window.moveCarousel = function(id, step, e) {
+      e.stopPropagation();
+      const total = activeTopic.media.length;
+      let cur = (carouselState[id] || 0) + step;
+      if (cur < 0) cur = total - 1;
+      if (cur >= total) cur = 0;
+      carouselState[id] = cur;
+      document.getElementById(`track-${id}`).style.transform = `translateX(-${cur * 100}%)`;
+    };
+
+    window.handleSpeech = function() {
+      const btn = document.getElementById("btnAudio");
+      const lbl = document.getElementById("lblAudio");
+      const t = I18N[currentLang];
+
+      if (activeSpeech) {
+        window.speechSynthesis.cancel();
+        activeSpeech = null;
+        btn.classList.remove("speaking");
+        lbl.textContent = t.readAloud;
+        return;
+      }
+
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(`${activeTopic.name[currentLang]}. ${activeTopic.fullDescription[currentLang]}`);
+      utterance.lang = currentLang === "kn" ? "kn-IN" : "en-IN";
+      utterance.rate = currentLang === "kn" ? 0.88 : 0.95;
+
+      utterance.onstart = () => { activeSpeech = utterance; btn.classList.add("speaking"); lbl.textContent = t.pauseAudio; };
+      utterance.onend = utterance.onerror = () => { activeSpeech = null; btn.classList.remove("speaking"); lbl.textContent = t.readAloud; };
+      window.speechSynthesis.speak(utterance);
+    };
+
+    // Global Search
+    document.getElementById("searchInput").addEventListener("input", (e) => {
+      if (!DATASET) return;
+      const q = e.target.value.toLowerCase().trim();
+      const container = document.getElementById("domainsContainer");
+      if (!q) { renderDomains(); return; }
+      container.innerHTML = "";
+      DATASET.domains.forEach(d => {
+        d.topics.forEach(t => {
+          if (t.name.en.toLowerCase().includes(q) || t.name.kn.includes(q)) {
+            const item = document.createElement("div");
+            item.className = "domain-card";
+            item.innerHTML = `<img src="${t.media[0].url}" style="width:48px;height:48px;border-radius:12px;object-fit:cover;"><div style="flex:1;"><b>${t.name[currentLang]}</b><div style="font-size:0.75rem;color:var(--text-muted);">${d.name[currentLang]}</div></div><div>›</div>`;
+            item.onclick = () => { activeTopic = t; renderDetail(t); navigateTo("screenDetail"); };
+            container.appendChild(item);
+          }
+        });
+      });
+    });
+
+    // PWA Service Worker Registration
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then(reg => console.log('PWA Service Worker registered:', reg.scope))
+          .catch(err => console.error('Service Worker registration failed:', err));
+      });
+    }
+
+    setLanguage("en");
+    loadDataset();
+  </script>
+</body>
+</html>
