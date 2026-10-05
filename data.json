@@ -993,7 +993,1061 @@
           ]
         }
       ]
+    },
+        
+    {
+      "id": "classical_halagannada",
+      "icon": "📜",
+      "name": {
+        "en": "Classical Epics & Court Literature",
+        "kn": "ಪ್ರಾಚೀನ ಹಳಗನ್ನಡ ಕಾವ್ಯ ಮತ್ತು ಚಂಪೂ ಸಾಹಿತ್ಯ"
+      },
+      "topics": [
+        {
+          "id": "pampa",
+          "name": {
+            "en": "Adikavi Pampa",
+            "kn": "ಆದಿಕವಿ ಪಂಪ"
+          },
+          "era": {
+            "en": "10th Century CE (~941 CE)",
+            "kn": "೧೦ನೇ ಶತಮಾನ (ಸುಮಾರು ೯೪೧)"
+          },
+          "summary": {
+            "en": "The first poet of Kannada literature who wrote Vikramarjuna Vijaya and proclaimed universal human equality.",
+            "kn": "'ಮಾನವ ಜಾತಿ ತಾನೊಂದೇ ವಲಂ' ಎಂದು ಸಾರಿದ ಕನ್ನಡದ ಆದಿಕವಿ ಹಾಗೂ ಪಂಪಭಾರತದ ಕರ್ತೃ."
+          },
+          "fullDescription": {
+            "en": "Adikavi Pampa is widely celebrated as the founding father of classical Kannada poetry. Serving as the court poet of Rashtrakuta feudatory Arikesari II, he perfected the Champu meter (blending prose and verse). In Adipurana, he detailed the life of the first Jain Tirthankara, while in Vikramarjuna Vijaya (Pampa Bharata), he adapted the Mahabharata with Arjuna as the central hero, championing the universal humanist motto: 'Manava jati tanonde valam' (Humanity is of one caste).",
+            "kn": "ಆದಿಕವಿ ಪಂಪ ಕನ್ನಡ ಸಾಹಿತ್ಯದ ಪ್ರಪ್ರಥಮ ಮಹಾಕವಿ. ವೇಮುಲವಾಡದ ಚಾಲುಕ್ಯ ಅರಸ ಎರಡನೇ ಅರಿಕೇಸರಿಯ ಆಸ್ಥಾನ ಕವಿಯಾಗಿದ್ದ ಇವರು, ಚಂಪೂ ಶೈಲಿಗೆ ಶಾಶ್ವತ ರೂಪ ನೀಡಿದರು. ಮೊದಲ ತೀರ್ಥಂಕರ ಋಷಭನಾಥರ ಚರಿತ್ರೆಯನ್ನು 'ಆದಿಪುರಾಣ'ದಲ್ಲಿಯೂ, ಮಹಾಭಾರತದ ಕಥೆಯನ್ನು ಅರ್ಜುನನ ದೃಷ್ಟಿಕೋನದಲ್ಲಿ 'ವಿಕ್ರಮಾರ್ಜುನ ವಿಜಯ' (ಪಂಪ ಭಾರತ) ಕಾವ್ಯದಲ್ಲಿಯೂ ರಚಿಸಿದರು. 'ಮಾನವ ಜಾತಿ ತಾನೊಂದೇ ವಲಂ' ಎಂಬ ಉದಾತ್ತ ತತ್ವವನ್ನು ಸಾರಿದ ಮೇರು ಕವಿ."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Ancient palm leaf manuscript and Halagannada inscription",
+                "kn": "ಪ್ರಾಚೀನ ತಾಳೆಗರಿ ಹಸ್ತಪ್ರತಿ ಮತ್ತು ಹಳಗನ್ನಡ ಶಾಸನ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "pampa_c1",
+              "question": {
+                "en": "Which famous humanist declaration asserting the universal brotherhood of mankind was inscribed by Adikavi Pampa?",
+                "kn": "ಎಲ್ಲಾ ಮಾನವರೂ ಒಂದೇ ಎಂಬ ವಿಶ್ವಮಾನವ ತತ್ವವನ್ನು ಸಾರುವ ಪಂಪನ ಪ್ರಸಿದ್ಧ ಸಾಲು ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "'Manava jati tanonde valam' (Mankind is but one)",
+                "kn": "'ಮಾನವ ಜಾತಿ ತಾನೊಂದೇ ವಲಂ'"
+              },
+              "details": {
+                "en": "Found in his Adipurana, affirming human equality centuries before the European Enlightenment.",
+                "kn": "ಇದು ಪಂಪನ ಆದಿಪುರಾಣ ಕೃತಿಯಲ್ಲಿ ಬರುವ ಅಮರ ಸೂಕ್ತಿಯಾಗಿದೆ."
+              }
+            }
+          ]
+        },
+        {
+          "id": "ranna",
+          "name": {
+            "en": "Mahakavi Ranna",
+            "kn": "ಮಹಾಕವಿ ರನ್ನ"
+          },
+          "era": {
+            "en": "10th Century CE (~993 CE)",
+            "kn": "೧೦ನೇ ಶತಮಾನ (ಸುಮಾರು ೯೯೩)"
+          },
+          "summary": {
+            "en": "Master of dramatic dialogues and author of Sahasa Bhima Vijaya (Gada Yuddha).",
+            "kn": "'ಸಾಹಸಭೀಮ ವಿಜಯಂ' (ಗದಾಯುದ್ಧ) ಕಾವ್ಯದ ಕರ್ತೃ ಮತ್ತು ರತ್ನತ್ರಯರಲ್ಲಿ ಒಬ್ಬರು."
+          },
+          "fullDescription": {
+            "en": "Ranna is one of the 'Ratnatraya' (Three Gems) of early Kannada poetry alongside Pampa and Ponna. Patronized by Western Chalukya King Tailapa II and Satyashraya, he composed 'Sahasa Bhima Vijaya' (popularly known as Gada Yuddha). The work is celebrated for its dramatic dialogue, fierce poetic tension, and tragic grandeur in portraying Duryodhana's final stand in the battle of maces.",
+            "kn": "ಪಂಪ ಮತ್ತು ಪೊನ್ನರೊಂದಿಗೆ ಹಳಗನ್ನಡದ 'ರತ್ನತ್ರಯ'ರಲ್ಲಿ ಒಬ್ಬರೆಂದು ಗೌರವಿಸಲ್ಪಡುವ ಕವಿ ರನ್ನ. ಕಲ್ಯಾಣ ಚಾಲುಕ್ಯರ ತೈಲಪ ಮತ್ತು ಸತ್ಯಾಶ್ರಯನ ಆಸ್ಥಾನದಲ್ಲಿದ್ದ ಇವರು ರಚಿಸಿದ 'ಸಾಹಸಭೀಮ ವಿಜಯಂ' (ಗದಾಯುದ್ಧ) ಕನ್ನಡದ ಅತ್ಯಂತ ನಾಟಕೀಯ ಕಾವ್ಯ. ಭೀಮ ಮತ್ತು ದುರ್ಯೋಧನರ ನಡುವಿನ ಗದಾಯುದ್ಧವನ್ನು ಜೀವಂತ ಸಂಭಾಷಣೆ ಮತ್ತು ರೌದ್ರ ರಸದ ಮೂಲಕ ವರ್ಣಿಸಿರುವ ಕಾವ್ಯರತ್ನವಿದು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Epic battlefield dynamics of Gada Yuddha",
+                "kn": "ಗದಾಯುದ್ಧ ಕಾವ್ಯದ ನಾಟಕೀಯ ರೌದ್ರ ರಸದ ಸನ್ನಿವೇಶ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "ran_c1",
+              "question": {
+                "en": "Which dramatic classic by Ranna focuses intensely on the final mace duel between Bhima and Duryodhana?",
+                "kn": "ಭೀಮ ಮತ್ತು ದುರ್ಯೋಧನರ ಅಂತಿಮ ಕಾಳಗವನ್ನು ರನ್ನನು ಚಿತ್ರಿಸಿದ ಮಹಾನ್ ಕೃತಿ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Sahasa Bhima Vijaya / Gada Yuddha",
+                "kn": "ಸಾಹಸಭೀಮ ವಿಜಯಂ (ಗದಾಯುದ್ಧ)"
+              },
+              "details": {
+                "en": "Written in dynamic Champu verse, it is widely compared to classical Greek tragedies.",
+                "kn": "ಈ ಕಾವ್ಯದಲ್ಲಿ ದುರ್ಯೋಧನನ ಪಾತ್ರಕ್ಕೆ ನೀಡಿರುವ ದುರಂತ ನಾಯಕನ ಮಹತ್ವವು ಜಾಗತಿಕ ಕ್ಲಾಸಿಕ್‌ಗಳಿಗೆ ಸರಿಸಾಟಿಯಾಗಿದೆ."
+              }
+            }
+          ]
+        },
+        {
+          "id": "harihara",
+          "name": {
+            "en": "Harihara",
+            "kn": "ಹರಿಹರ"
+          },
+          "era": {
+            "en": "12th – 13th Century CE",
+            "kn": "೧೨ – ೧೩ನೇ ಶತಮಾನ"
+          },
+          "summary": {
+            "en": "Pioneered the musical Ragale meter and penned devotional biographies of saints.",
+            "kn": "ಕನ್ನಡದಲ್ಲಿ 'ರಗಳೆ' ಛಂದಸ್ಸಿನ ಪ್ರವರ್ತಕ ಹಾಗೂ ಶರಣರ ಜೀವನ ಚರಿತ್ರೆಯ ಕವಿ."
+          },
+          "fullDescription": {
+            "en": "Harihara broke away from courtly praise of kings to institute narrative biographies of spiritual mystics. He invented the fluid, musical 'Ragale' meter in Kannada. His works include 'Girija Kalyana' in Champu and dozens of 'Ragalegalu' recounting the impassioned lives of Basavanna, Allama Prabhu, and Tamil Nayanar saints.",
+            "kn": "ರಾಜರನ್ನು ಹೊಗಳುವ ಪದ್ಧತಿಯನ್ನು ಧಿಕ್ಕರಿಸಿ ಭಗವಂತನ ಭಕ್ತರ ಚರಿತ್ರೆಯನ್ನು ಬರೆದ ಕವಿ ಹರಿಹರ. ಕನ್ನಡದಲ್ಲಿ 'ರಗಳೆ' ಎಂಬ ಸರಳ ಸುಂದರ ಛಂದಸ್ಸನ್ನು ಪ್ರಚುರಪಡಿಸಿದ ಇವರು 'ಗಿರಿಜಾ ಕಲ್ಯಾಣ' ಮಹಾಕಾವ್ಯ ಮತ್ತು ಬಸವರಾಜದೇವರ ರಗಳೆ, ನಂಬಿಯಣ್ಣನ ರಗಳೆ ಸೇರಿದಂತೆ ನೂರಾರು ಶರಣರ ಜೀವನಗಾಥೆಗಳನ್ನು ರಚಿಸಿದರು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1516962215378-7fa2e137ae93?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Classical Ragale rhythm and Shiva bhakti verse",
+                "kn": "ರಗಳೆ ಕಾವ್ಯ ಶೈಲಿ ಮತ್ತು ಶಿವಭಕ್ತಿ ಸಾಹಿತ್ಯ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "har_c1",
+              "question": {
+                "en": "Which musical and narrative poetic meter did Harihara pioneer in classical Kannada?",
+                "kn": "ಹರಿಹರ ಕವಿಯು ಕನ್ನಡ ಸಾಹಿತ್ಯದಲ್ಲಿ ಜನಪ್ರಿಯಗೊಳಿಸಿದ ವಿಶಿಷ್ಟ ಛಂದಸ್ಸು ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Ragale (ರಗಳೆ)",
+                "kn": "ರಗಳೆ (Ragale Metre)"
+              },
+              "details": {
+                "en": "His mastery over this metre earned him the timeless title 'Ragale Kavi'.",
+                "kn": "ಇದರಿಂದಾಗಿಯೇ ಇವರಿಗೆ 'ರಗಳೆಯ ಕವಿ ಹರಿಹರ' ಎಂಬ ಖ್ಯಾತಿ ಬಂದಿತು."
+              }
+            }
+          ]
+        },
+        {
+          "id": "raghavanka",
+          "name": {
+            "en": "Raghavanka",
+            "kn": "ರಾಘವಾಂಕ"
+          },
+          "era": {
+            "en": "12th – 13th Century CE",
+            "kn": "೧೨ – ೧೩ನೇ ಶತಮಾನ"
+          },
+          "summary": {
+            "en": "Master of Shatpadi (six-line verse) and author of the poignant Harishchandra Kavya.",
+            "kn": "ಷಟ್ಪದಿ ಕಾವ್ಯ ಪ್ರಕಾರದ ಸಾರ್ವಭೌಮ ಮತ್ತು 'ಹರಿಶ್ಚಂದ್ರ ಕಾವ್ಯ'ದ ಕರ್ತೃ."
+          },
+          "fullDescription": {
+            "en": "Raghavanka, nephew and student of Harihara, adapted the indigenous six-line Shatpadi meter into high literature. In 'Harishchandra Kavya', he recast King Harishchandra's trials with psychological realism, dramatic tension, and emotional depth, transforming a moral legend into a realistic human masterpiece.",
+            "kn": "ಹರಿಹರನ ಸೋದರಳಿಯ ಮತ್ತು ಶಿಷ್ಯನಾದ ರಾಘವಾಂಕ, ಕನ್ನಡದ ದೇಸಿ ಛಂದಸ್ಸಾದ 'ಷಟ್ಪದಿ'ಗೆ ಮಹಾಕಾವ್ಯದ ಘನತೆ ತಂದುಕೊಟ್ಟ ಕವಿ. ಇವರ 'ಹರಿಶ್ಚಂದ್ರ ಕಾವ್ಯ' ಸತ್ಯಕ್ಕಾಗಿ ಸರ್ವಸ್ವವನ್ನೂ ತ್ಯಾಗ ಮಾಡಿದ ರಾಜ ಹರಿಶ್ಚಂದ್ರನ ನೋವು, ಸಂಕಟ ಮತ್ತು ಸ್ವಾಭಿಮಾನವನ್ನು ಅದ್ಭುತವಾಗಿ ಚಿತ್ರಿಸುತ್ತದೆ."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Dramatic verses of Vardhaka Shatpadi",
+                "kn": "ವಾರ್ಧಕ ಷಟ್ಪದಿಯ ನಾಟಕೀಯ ಕಾವ್ಯ ಸನ್ನಿವೇಶಗಳು"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "rag_c1",
+              "question": {
+                "en": "In which six-line poetic meter did Raghavanka compose the celebrated Harishchandra Kavya?",
+                "kn": "ರಾಘವಾಂಕನು ತನ್ನ ಪ್ರಸಿದ್ಧ 'ಹರಿಶ್ಚಂದ್ರ ಕಾವ್ಯ'ವನ್ನು ಯಾವ ಷಟ್ಪದಿ ಛಂದಸ್ಸಿನಲ್ಲಿ ರಚಿಸಿದನು?"
+              },
+              "answer": {
+                "en": "Vardhaka Shatpadi (ವಾರ್ಧಕ ಷಟ್ಪದಿ)",
+                "kn": "ವಾರ್ಧಕ ಷಟ್ಪದಿ"
+              },
+              "details": {
+                "en": "Vardhaka Shatpadi allowed wide room for dramatic dialogue and intense narrative pacing.",
+                "kn": "ಗಂಭೀರ ಸಂಭಾಷಣೆ ಮತ್ತು ಭಾವನಾತ್ಮಕ ಸನ್ನಿವೇಶಗಳಿಗೆ ವಾರ್ಧಕ ಷಟ್ಪದಿಯು ಅತ್ಯಂತ ಸೂಕ್ತವಾದ ಛಂದಸ್ಸಾಗಿದೆ."
+              }
+            }
+          ]
+        },
+        {
+          "id": "kumaravyasa",
+          "name": {
+            "en": "Kumaravyasa",
+            "kn": "ಕುಮಾರವ್ಯಾಸ"
+          },
+          "era": {
+            "en": "15th Century CE",
+            "kn": "೧೫ನೇ ಶತಮಾನ"
+          },
+          "summary": {
+            "en": "Emperor of Metaphor (Rupaka Samrajya Chakravarti) who authored Gadugina Bharata.",
+            "kn": "'ರೂಪಕ ಸಾಮ್ರಾಜ್ಯ ಚಕ್ರವರ್ತಿ' ಹಾಗೂ 'ಗದಗಿನ ಭಾರತ' (ಕರ್ಣಾಟ ಭಾರತ ಕಥಾಮಂಜರಿ) ರಚಿಸಿದ ಮಹಾಕವಿ."
+          },
+          "fullDescription": {
+            "en": "Kumaravyasa (Naranappa of Koliwada) composed 'Karnata Bharata Kathamanjari' (popularly known as Gadugina Bharata) before the deity Veera Narayana of Gadag. Composed in the Bhamini Shatpadi meter, his retelling of the first ten parvas of the Mahabharata remains unmatched for its roaring metaphors, rhythmic vitality, and depiction of Krishna as the inner string-puller of destiny.",
+            "kn": "ಗದಗಿನ ವೀರನಾರಾಯಣ ಸ್ವಾಮಿಯ ಸನ್ನಿಧಿಯಲ್ಲಿ ಕುಳಿತು 'ಕರ್ಣಾಟ ಭಾರತ ಕಥಾಮಂಜರಿ'ಯನ್ನು ರಚಿಸಿದ ನಾರಾಯಣಪ್ಪನೇ ಮಹಾಕವಿ ಕುಮಾರವ್ಯಾಸ. ಭಾಮಿನಿ ಷಟ್ಪದಿಯಲ್ಲಿ ರಚಿತವಾದ ಈ ಕಾವ್ಯವು ಕನ್ನಡದ ನುಡಿಗಟ್ಟು, ಜೀವಂತ ರೂಪಕಗಳು ಮತ್ತು ಶ್ರೀಕೃಷ್ಣನ ಮಹತ್ವವನ್ನು ಅಮರವಾಗಿಸಿದೆ. ಇವರಿಗೆ 'ರೂಪಕ ಸಾಮ್ರಾಜ್ಯ ಚಕ್ರವರ್ತಿ' ಎಂಬ ಬಿರುದಿದೆ."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1532012164546-f432f2e3777f?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Veera Narayana temple at Gadag, birthplace of Gadugina Bharata",
+                "kn": "ಗದಗಿನ ವೀರನಾರಾಯಣ ದೇವಾಲಯ ಮತ್ತು ಕುಮಾರವ್ಯಾಸನ ಕಾವ್ಯ ಪರಂಪರೆ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "kv_c1",
+              "question": {
+                "en": "Which famous title was bestowed upon Kumaravyasa for his unparalleled mastery over poetic imagery?",
+                "kn": "ಸಾಟಿಯಿಲ್ಲದ ರೂಪಕಗಳ ಬಳಕೆಯಿಂದಾಗಿ ಕುಮಾರವ್ಯಾಸನಿಗೆ ಕನ್ನಡ ಸಾಹಿತ್ಯದಲ್ಲಿ ದೊರೆತ ಬಿರುದು ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Rupaka Samrajya Chakravarti (ರೂಪಕ ಸಾಮ್ರಾಜ್ಯ ಚಕ್ರವರ್ತಿ)",
+                "kn": "ರೂಪಕ ಸಾಮ್ರಾಜ್ಯ ಚಕ್ರವರ್ತಿ"
+              },
+              "details": {
+                "en": "He created thousands of layered metaphors combining folk idioms with epic philosophical grandeur.",
+                "kn": "ಕಾವ್ಯದ ಪ್ರತಿಯೊಂದು ಪದ್ಯದಲ್ಲೂ ಅದ್ಭುತ ಉಪಮೆ-ರೂಪಕಗಳನ್ನು ಹೆಣೆದಿರುವ ಕಾರಣ ಇವರಿಗೆ ಈ ಬಿರುದು ಸಲ್ಲುತ್ತದೆ."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vachana_haridasa",
+      "icon": "🪕",
+      "name": {
+        "en": "Vachana & Haridasa Movements",
+        "kn": "ವಚನ ಕ್ರಾಂತಿ ಮತ್ತು ಹರಿದಾಸ ಪರಂಪರೆ"
+      },
+      "topics": [
+        {
+          "id": "basavanna",
+          "name": {
+            "en": "Basavanna",
+            "kn": "ಬಸವಣ್ಣ"
+          },
+          "era": {
+            "en": "12th Century CE (1106 – 1167 CE)",
+            "kn": "೧೨ನೇ ಶತಮಾನ (೧೧೦೬ – ೧೧೬೭)"
+          },
+          "summary": {
+            "en": "Social reformer and philosopher who democratized literature through spoken prose-poetry (Vachanas).",
+            "kn": "ಕಾಯಕ ಮತ್ತು ದಾಸೋಹ ತತ್ವಗಳನ್ನು ಬೋಧಿಸಿ, ವಚನಗಳ ಮೂಲಕ ಸಾಮಾಜಿಕ ಕ್ರಾಂತಿ ತಂದ ವಿಶ್ವಗುರು."
+          },
+          "fullDescription": {
+            "en": "Basavanna was a statesman, spiritual rebel, and pioneer of the Vachana movement. Rejecting temple rituals, sacrificial orthodoxy, and caste hierarchy, he founded the Anubhava Mantapa—a democratic spiritual assembly. Using the signature 'Kudalasangamadeva', his Vachanas synthesized lofty metaphysical truths into the daily spoken idiom, establishing the enduring philosophies of 'Kayaka' (work is worship) and 'Dasoha' (selfless sharing).",
+            "kn": "೧೨ನೇ ಶತಮಾನದ ಶರಣ ಕ್ರಾಂತಿಯ ನೇತಾರ, ಕಲ್ಯಾಣದ ಬಿಜ್ಜಳನ ಆಸ್ಥಾನದಲ್ಲಿ ಮಂತ್ರಿಯಾಗಿದ್ದ ಬಸವಣ್ಣನವರು ಅನುಭವ ಮಂಟಪವನ್ನು ಸ್ಥಾಪಿಸಿದರು. 'ಕೂಡಲಸಂಗಮದೇವ' ಎಂಬ ಅಂಕಿತನಾಮದಲ್ಲಿ ಇವರು ಬರೆದ ವಚನಗಳು ಜಾತಿ ವ್ಯವಸ್ಥೆ ಮತ್ತು ಕಂದಾಚಾರಗಳನ್ನು ಧಿಕ್ಕರಿಸಿ ಸಮಾನತೆ, 'ಕಾಯಕವೇ ಕೈಲಾಸ' ಹಾಗೂ ದಾಸೋಹ ತತ್ವವನ್ನು ಪ್ರತಿಪಾದಿಸಿದವು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Confluence of rivers at Kudalasangama",
+                "kn": "ಕೂಡಲಸಂಗಮದ ಪವಿತ್ರ ಸಂಗಮ ಕ್ಷೇತ್ರ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "bas_c1",
+              "question": {
+                "en": "What is the pen name (ankitanama) inscribed in Basavanna's vachanas?",
+                "kn": "ಬಸವಣ್ಣನವರ ವಚನಗಳ ಅಂಕಿತನಾಮ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Kudalasangamadeva (ಕೂಡಲಸಂಗಮದೇವ)",
+                "kn": "ಕೂಡಲಸಂಗಮದೇವ"
+              },
+              "details": {
+                "en": "Referring to Lord Shiva at the sacred confluence of the Krishna and Malaprabha rivers.",
+                "kn": "ಕೃಷ್ಣಾ ಮತ್ತು ಮಲಪ್ರಭಾ ನದಿಗಳ ಸಂಗಮ ಕ್ಷೇತ್ರವಾದ ಕೂಡಲಸಂಗಮದ ಈಶ್ವರನನ್ನು ಇವರು ಆರಾಧಿಸಿದರು."
+              }
+            }
+          ]
+        },
+        {
+          "id": "akka_mahadevi",
+          "name": {
+            "en": "Akka Mahadevi",
+            "kn": "ಅಕ್ಕ ಮಹಾದೇವಿ"
+          },
+          "era": {
+            "en": "12th Century CE",
+            "kn": "೧೨ನೇ ಶತಮಾನ"
+          },
+          "summary": {
+            "en": "Feminist mystic icon and philosopher who penned radical devotion addressed to Chennamallikarjuna.",
+            "kn": "'ಚೆನ್ನಮಲ್ಲಿಕಾರ್ಜುನ'ನನ್ನು ಒಲಿದು ಸಕಲ ಲೌಕಿಕ ಬಂಧನಗಳನ್ನು ಧಿಕ್ಕರಿಸಿದ ಶ್ರೇಷ್ಠ ವಚನಕಾರ್ತಿ."
+          },
+          "fullDescription": {
+            "en": "Akka Mahadevi was a prominent female poet-mystic of the 12th-century Bhakti movement. Shedding worldly wealth, social expectations, and royal marriage, she wandered clothed only by her flowing hair in search of divine truth. Her Vachanas, signed 'Chennamallikarjuna' (the beautiful Lord white as jasmine), represent an apex of mysticism, raw feminine autonomy, and existential freedom.",
+            "kn": "ಶಿವಮೊಗ್ಗ ಜಿಲ್ಲೆಯ ಉಡುತಡಿಯ ಅಕ್ಕ ಮಹಾದೇವಿ ಶರಣ ಚಳವಳಿಯ ಪ್ರಖ್ಯಾತ ಸಂತ ಕವಯಿತ್ರಿ. ಲೌಕಿಕ ವಿವಾಹ ಮತ್ತು ರಾಜವೈಭೋಗವನ್ನು ತ್ಯಜಿಸಿ, ಕೂದಲನ್ನೇ ವಸ್ತ್ರವನ್ನಾಗಿಸಿಕೊಂಡು 'ಚೆನ್ನಮಲ್ಲಿಕಾರ್ಜುನ'ನನ್ನೇ ಪತಿಯಾಗಿ ಸ್ವೀಕರಿಸಿದರು. ಅನುಭವ ಮಂಟಪದಲ್ಲಿ ಪ್ರಬುದ್ಧ ಚರ್ಚೆಗಳಲ್ಲಿ ಭಾಗವಹಿಸಿದ ಇವರ ವಚನಗಳು ಆಧ್ಯಾತ್ಮಿಕ ಸ್ವಾತಂತ್ರ್ಯ ಮತ್ತು ಹೆಣ್ಣಿನ ಅಸ್ಮಿತೆಯ ಅದ್ಭುತ ಅಭಿವ್ಯಕ್ತಿಗಳಾಗಿವೆ."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1508873696983-2df5293cb395?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Sacred groves of Kadali Vana, Srisailam",
+                "kn": "ಅಕ್ಕ ಮಹಾದೇವಿಯ ಐಕ್ಯ ಕ್ಷೇತ್ರ ಶ್ರೀಶೈಲದ ಕದಳಿವನ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "akka_c1",
+              "question": {
+                "en": "What was Akka Mahadevi's sacred ankitanama dedicated to Lord Shiva?",
+                "kn": "ಅಕ್ಕಮಹಾದೇವಿಯವರ ವಚನಗಳ ಅಂಕಿತನಾಮ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Chennamallikarjuna (ಚೆನ್ನಮಲ್ಲಿಕಾರ್ಜುನ)",
+                "kn": "ಚೆನ್ನಮಲ್ಲಿಕಾರ್ಜುನ"
+              },
+              "details": {
+                "en": "Meaning 'The beautiful Lord white as jasmine', enshrined at Srisailam.",
+                "kn": "ಮಲ್ಲಿಗೆಯಂತೆ ಸುಂದರನಾದ ಶ್ರೀಶೈಲದ ಮಲ್ಲಿಕಾರ್ಜುನನನ್ನು ಇವರು ಹೀಗೆ ಕರೆದರು."
+              }
+            }
+          ]
+        },
+        {
+          "id": "allama_prabhu",
+          "name": {
+            "en": "Allama Prabhu",
+            "kn": "ಅಲ್ಲಮ ಪ್ರಭು"
+          },
+          "era": {
+            "en": "12th Century CE",
+            "kn": "೧೨ನೇ ಶತಮಾನ"
+          },
+          "summary": {
+            "en": "Master mystic and President of Anubhava Mantapa who composed cryptic, metaphysical Bedagina Vachanas.",
+            "kn": "ಅನುಭವ ಮಂಟಪದ ಶೂನ್ಯ ಸಿಂಹಾಸನಾಧೀಶ ಹಾಗೂ ಬೆಡಗಿನ ವಚನಗಳ ತಾತ್ವಿಕ ಗುರು."
+          },
+          "fullDescription": {
+            "en": "Allama Prabhu was the patron philosopher and presiding spiritual authority of the Anubhava Mantapa in Kalyana. Writing under the pen name 'Guheshwara', his poetry represents non-dualism, radical introspective enquiry, and cryptic metaphysical paradoxes known as 'Bedagina Vachanagalu'.",
+            "kn": "ಕಲ್ಯಾಣದ ಅನುಭವ ಮಂಟಪದ ಶೂನ್ಯಪೀಠವನ್ನು ಅಲಂಕರಿಸಿದ್ದ ಮಹಾನ್ ಜ್ಞಾನಿ ಅಲ್ಲಮಪ್ರಭು. 'ಗುಹೇಶ್ವರ' ಎಂಬ ಅಂಕಿತನಾಮದಲ್ಲಿ ರಚಿಸಿದ ಇವರ ವಚನಗಳು ಅದ್ವೈತ ತತ್ವ, ಆಂತರಿಕ ಶೋಧನೆ ಮತ್ತು 'ಬೆಡಗಿನ ವಚನ'ಗಳೆಂದು ಕರೆಯಲ್ಪಡುವ ಗೂಢಾರ್ಥದ ತಾತ್ವಿಕ ಒಗಟುಗಳನ್ನು ಒಳಗೊಂಡಿವೆ."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Metaphysical caves and ascetic pathways of Balligavi",
+                "kn": "ಅಲ್ಲಮ ಪ್ರಭುಗಳ ಜನ್ಮಸ್ಥಳ ಬಳ್ಳಿಗಾವಿಯ ತಪೋಭೂಮಿ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "all_c1",
+              "question": {
+                "en": "Which symbolic spiritual seat was occupied by Allama Prabhu at the Anubhava Mantapa?",
+                "kn": "ಅನುಭವ ಮಂಟಪದಲ್ಲಿ ಅಲ್ಲಮ ಪ್ರಭುಗಳು ಅಲಂಕರಿಸಿದ್ದ ಪವಿತ್ರ ಪೀಠದ ಹೆಸರೇನು?"
+              },
+              "answer": {
+                "en": "Shoonya Simhasana (ಶೂನ್ಯ ಸಿಂಹಾಸನ)",
+                "kn": "ಶೂನ್ಯ ಸಿಂಹಾಸನ"
+              },
+              "details": {
+                "en": "Representing supreme egoless awareness and transcendence of the material cosmos.",
+                "kn": "ಅಹಂಕಾರವಿಲ್ಲದ ಪರಿಪೂರ್ಣ ಆಧ್ಯಾತ್ಮಿಕ ಅರಿವಿನ ಸಂಕೇತವಾಗಿ ಈ ಪೀಠವಿತ್ತು."
+              }
+            }
+          ]
+        },
+        {
+          "id": "purandara_dasa",
+          "name": {
+            "en": "Purandara Dasa",
+            "kn": "ಪುರಂದರ ದಾಸರು"
+          },
+          "era": {
+            "en": "1484 – 1564 CE",
+            "kn": "೧೪೮೪ – ೧೫೬೪"
+          },
+          "summary": {
+            "en": "Pitamaha of Carnatic music who composed thousands of soul-stirring Keerthanas.",
+            "kn": "ಕರ್ನಾಟಕ ಸಂಗೀತ ಪಿತಾಮಹ ಹಾಗೂ ಸಾಮಾಜಿಕ ವಿಡಂಬನೆಯ ಕೀರ್ತನೆಗಳನ್ನು ರಚಿಸಿದ ಮಹಾದಾಸರು."
+          },
+          "fullDescription": {
+            "en": "Born as the wealthy merchant Srinivasa Nayaka, Purandara Dasa renounced all his riches after a spiritual awakening to become a wandering Haridasa. He structured the graded pedagogical syllabus of Carnatic classical music (Mayamalavagowla raga, Sarali Varisai) still practiced today. Addressing Lord 'Purandara Vittala', his compositions combined devotional surrender with stinging social satire on hypocrisy.",
+            "kn": "ಶ್ರೀಮಂತ ವ್ಯಾಪಾರಿಯಾಗಿದ್ದ ಶ್ರೀನಿವಾಸ ನಾಯಕರು ಸಕಲ ಆಸ್ತಿಯನ್ನು ತ್ಯಜಿಸಿ ಪುರಂದರದಾಸರಾದರು. ಕರ್ನಾಟಕ ಶಾಸ್ತ್ರೀಯ ಸಂಗೀತಕ್ಕೆ ಸ್ಪಷ್ಟ ಚೌಕಟ್ಟು ನೀಡಿ, ಸ್ವರಾವಳಿಗಳನ್ನು ರೂಪಿಸಿದ್ದರಿಂದ ಇವರನ್ನು 'ಕರ್ನಾಟಕ ಸಂಗೀತ ಪಿತಾಮಹ' ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ. 'ಪುರಂದರ ವಿಠ್ಠಲ' ಅಂಕಿತದಲ್ಲಿ ಇವರು ರಚಿಸಿದ ಸಾವಿರಾರು ಕೀರ್ತನೆಗಳು ಭಕ್ತಿ ಮತ್ತು ಸಾಮಾಜಿಕ ನೀತಿ ಬೋಧನೆಯ ಮುತ್ತುಗಳಾಗಿವೆ."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Tambura and traditional Carnatic classical rhythm",
+                "kn": "ತಂಬೂರಿ, ತಾಳ ಮತ್ತು ದಾಸ ಸಾಹಿತ್ಯದ ನಾದತರಂಗ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "pd_c1",
+              "question": {
+                "en": "Which musical honorific title is universally given to Purandara Dasa across Indian classical music?",
+                "kn": "ಭಾರತೀಯ ಶಾಸ್ತ್ರೀಯ ಸಂಗೀತದಲ್ಲಿ ಪುರಂದರದಾಸರಿಗೆ ಇರುವ ಗೌರವಪೂರ್ಣ ಬಿರುದು ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Pitamaha of Carnatic Music (ಕರ್ನಾಟಕ ಸಂಗೀತ ಪಿತಾಮಹ)",
+                "kn": "ಕರ್ನಾಟಕ ಸಂಗೀತ ಪಿತಾಮಹ"
+              },
+              "details": {
+                "en": "He formulated the basic musical exercises and graded lessons taught to music students across centuries.",
+                "kn": "ಸಂಗೀತ ಕಲಿಯುವವರಿಗೆ ಇಂದಿಗೂ ಆರಂಭಿಕ ಪಾಠವಾಗಿರುವ ಸರಳೆ ವರಸೆ, ಜಂಟಿ ವರಸೆಗಳನ್ನು ಇವರೇ ರೂಪಿಸಿದರು."
+              }
+            }
+          ]
+        },
+        {
+          "id": "kanaka_dasa",
+          "name": {
+            "en": "Kanaka Dasa",
+            "kn": "ಕನಕ ದಾಸರು"
+          },
+          "era": {
+            "en": "1509 – 1609 CE",
+            "kn": "೧೫೦೯ – ೧೬೦೯"
+          },
+          "summary": {
+            "en": "Philosopher-poet who composed Ramadhanya Charitre and challenged caste orthodoxy in Udupi.",
+            "kn": "'ಕುಲ ಕುಲವೆಂದು ಹೊಡೆದಾಡದಿರಿ' ಎಂದು ಸಾರಿದ ಹಾಗೂ 'ರಾಮಧಾನ್ಯ ಚರಿತೆ'ಯನ್ನು ರಚಿಸಿದ ತತ್ವಜ್ಞಾನಿ."
+          },
+          "fullDescription": {
+            "en": "Born Thimmappa Nayaka, Kanaka Dasa was a warrior-chieftain who surrendered arms to take up the tambura. His poetry tackled social prejudice, ritualism, and caste arrogance, famously asking: 'Kula Kula Kula vendu hodedadadiri' (Do not squabble over caste). His narrative work 'Ramadhanya Charitre' used a dispute between Ragi (millet) and Rice to debate class and moral integrity. The legendary Kanakana Kindi in Udupi commemorates his devotion.",
+            "kn": "ಬಾಡದ ದಂಡನಾಯಕ ತಿಮ್ಮಪ್ಪ ನಾಯಕರಾಗಿದ್ದ ಕನಕದಾಸರು ಭಕ್ತಿಯ ಮಾರ್ಗ ಹಿಡಿದು ಸಮಾಜ ಸುಧಾರಕರಾದರು. 'ಕಾಗಿನೆಲೆಯಾದಿಕೇಶವ' ಅಂಕಿತದಲ್ಲಿ ಕೀರ್ತನೆಗಳನ್ನು, ಮೋಹನತರಂಗಿಣಿ, ನಳಚರಿತ್ರೆ ಮತ್ತು ರಾಗಿ-ಭತ್ತಗಳ ಸಂವಾದದ ಮೂಲಕ ಬಡವರ ಧಾನ್ಯ ರಾಗಿಯ ಶ್ರೇಷ್ಠತೆ ಸಾರುವ 'ರಾಮಧಾನ್ಯ ಚರಿತೆ'ಯನ್ನು ರಚಿಸಿದರು. ಉಡುಪಿಯ 'ಕನಕನ ಕಿಂಡಿ' ಇವರ ಭಕ್ತಿಯ ಸಂಕೇತವಾಗಿದೆ."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Sacred shrine window of Kanakana Kindi, Udupi",
+                "kn": "ಉಡುಪಿಯ ಶ್ರೀಕೃಷ್ಣ ಮಠದ ಕನಕನ ಕಿಂಡಿ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "kd_c1",
+              "question": {
+                "en": "Which allegorical work did Kanaka Dasa write, staging a debate between Ragi (millet) and Rice to critique class inequality?",
+                "kn": "ರಾಗಿ ಮತ್ತು ಭತ್ತದ ನಡುವಿನ ಸಂವಾದದ ಮೂಲಕ ವರ್ಗ ಸಂಘರ್ಷವನ್ನು ಬಿಂಬಿಸುವ ಕನಕದಾಸರ ಕೃತಿ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Ramadhanya Charitre (ರಾಮಧಾನ್ಯ ಚರಿತೆ)",
+                "kn": "ರಾಮಧಾನ್ಯ ಚರಿತೆ"
+              },
+              "details": {
+                "en": "Lord Rama blesses the humble millet Ragi with immortality by naming it 'Raghava Dhanya'.",
+                "kn": "ಬಡವರ ಆಹಾರವಾದ ರಾಗಿಯ ಸದ್ಗುಣವನ್ನು ಮೆಚ್ಚಿ ಶ್ರೀರಾಮನು ಅದಕ್ಕೆ 'ರಾಘವ ಧಾನ್ಯ' ಎಂದು ಹೆಸರಿಡುವ ಕಥೆಯಿದು."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "navodaya_renaissance",
+      "icon": "🌅",
+      "name": {
+        "en": "Navodaya Renaissance & National Awakening",
+        "kn": "ನವೋದಯ ಕಾವ್ಯ ಮತ್ತು ಕನ್ನಡ ಪುನರುಜ್ಜೀವನ"
+      },
+      "topics": [
+        {
+          "id": "bm_sri",
+          "name": {
+            "en": "B. M. Srikantaiah (B. M. Sri)",
+            "kn": "ಬಿ. ಎಂ. ಶ್ರೀಕಂಠಯ್ಯ (ಬಿ. ಎಂ. ಶ್ರೀ)"
+          },
+          "era": {
+            "en": "1884 – 1946 CE",
+            "kn": "೧೮೮೪ – ೧೯೪೬"
+          },
+          "summary": {
+            "en": "Kannadada Kanva who triggered the 20th-century lyric renaissance with English Geethagalu.",
+            "kn": "'ಕನ್ನಡದ ಕಣ್ವ' ಎಂದೇ ಖ್ಯಾತರಾದ ಹಾಗೂ 'ಇಂಗ್ಲಿಷ್ ಗೀತಗಳು' ಮೂಲಕ ನವೋದಯ ಕಾವ್ಯಕ್ಕೆ ಮುನ್ನುಡಿ ಬರೆದ ಆಚಾರ್ಯರು."
+          },
+          "fullDescription": {
+            "en": "Belluru Mylaraiah Srikantaiah is revered as 'Kannadada Kanva' (The patriarch of modern Kannada literature). A master professor of English, his seminal book of adaptations 'English Geethagalu' (1921) introduced modern lyrical poetry, subjective emotional expression, and Western poetic meters into Kannada, inspiring Kuvempu and Bendre to unleash the Navodaya literary revolution.",
+            "kn": "ಆಧುನಿಕ ಕನ್ನಡ ಸಾಹಿತ್ಯದ ಮಾರ್ಗದರ್ಶಕ ಬಿ. ಎಂ. ಶ್ರೀಕಂಠಯ್ಯನವರನ್ನು 'ಕನ್ನಡದ ಕಣ್ವ' ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ. ಇಂಗ್ಲಿಷ್ ಪ್ರಾಧ್ಯಾಪಕರಾಗಿದ್ದ ಇವರು ೧೯೨೧ ರಲ್ಲಿ ಪ್ರಕಟಿಸಿದ 'ಇಂಗ್ಲಿಷ್ ಗೀತಗಳು' ಅನುವಾದ ಸಂಕಲನವು ಕನ್ನಡ ಕಾವ್ಯಲೋಕದಲ್ಲಿ ನವೋದಯ ಕ್ರಾಂತಿಯನ್ನು ಉಂಟುಮಾಡಿತು. ಜೊತೆಗೆ 'ಗದಾಯುದ್ಧ ನಾಟಕಂ' ಮತ್ತು 'ಅಶ್ವತ್ಥಾಮನ್' ಮೂಲಕ ಗ್ರೀಕ್ ದುರಂತ ನಾಟಕಗಳನ್ನು ಕನ್ನಡಕ್ಕೆ ತಂದರು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "The dawn of modern Kannada lyrical poetry",
+                "kn": "ಆಧುನಿಕ ನವೋದಯ ಕಾವ್ಯದ ಉದಯ ಕಾಲ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "bms_c1",
+              "question": {
+                "en": "Which 1921 poetry adaptation collection by B. M. Sri served as the catalyst for the modern Kannada Navodaya movement?",
+                "kn": "ಕನ್ನಡದಲ್ಲಿ ನವೋದಯ ಕಾವ್ಯದ ಉದಯಕ್ಕೆ ಕಾರಣವಾದ ಬಿ. ಎಂ. ಶ್ರೀ ಅವರ ೧೯೨೧ ರ ಪ್ರಸಿದ್ಧ ಕೃತಿ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "English Geethagalu (ಇಂಗ್ಲಿಷ್ ಗೀತಗಳು)",
+                "kn": "ಇಂಗ್ಲಿಷ್ ಗೀತಗಳು"
+              },
+              "details": {
+                "en": "It showed writers how colloquial Kannada could capture modern subjective lyricism.",
+                "kn": "ಇದು ಇಂಗ್ಲಿಷ್ ಗೀತೆಗಳ ಕೇವಲ ಭಾಷಾಂತರವಾಗಿರದೆ ಕನ್ನಡದ ದೇಸಿಯ ಸೊಗಡಿನ ಸೃಜನಶೀಲ ರೂಪಾಂತರವಾಗಿತ್ತು."
+              }
+            }
+          ]
+        },
+        {
+          "id": "kuvempu",
+          "name": {
+            "en": "K. V. Puttappa (Kuvempu)",
+            "kn": "ಕುವೆಂಪು (ಕೆ. ವಿ. ಪುಟ್ಟಪ್ಪ)"
+          },
+          "era": {
+            "en": "1904 – 1994 CE",
+            "kn": "೧೯೦೪ – ೧೯೯೪"
+          },
+          "summary": {
+            "en": "Rashtrakavi and Karnataka's first Jnanpith laureate who authored Sri Ramayana Darshanam and the state anthem.",
+            "kn": "ಕನ್ನಡದ ಪ್ರಥಮ ಜ್ಞಾನಪೀಠ ಪುರಸ್ಕೃತ ರಾಷ್ಟ್ರಕವಿ, 'ಶ್ರೀ ರಾಮಾಯಣ ದರ್ಶನಂ' ಮತ್ತು ನಾಡಗೀತೆಯ ರಚನೆಕಾರರು."
+          },
+          "fullDescription": {
+            "en": "Kuppali Venkatappa Puttappa, celebrated under his pen name Kuvempu, is Karnataka's foremost 20th-century literary titan. Born in the lush Western Ghats of Kuppali, he composed the epic 'Sri Ramayana Darshanam', which won the first Jnanpith Award for Kannada in 1967. He authored towering rural novels ('Kanooru Heggadithi', 'Malegalalli Madumagalu'), the Karnataka State Anthem ('Jaya Bharata Jananiya Tanujate'), and championed the universal philosophy of 'Vishwa Manava' (Universal Human).",
+            "kn": "ಮಲೆನಾಡಿನ ಕವಿಶೈಲದ ಕುವೆಂಪು ಕನ್ನಡ ಸಾಹಿತ್ಯದ ಮೇರು ಪರ್ವತ. ೧೯೬೭ ರಲ್ಲಿ 'ಶ್ರೀ ರಾಮಾಯಣ ದರ್ಶನಂ' ಮಹಾಕಾವ್ಯಕ್ಕಾಗಿ ಕನ್ನಡಕ್ಕೆ ಪ್ರಪ್ರಥಮ 'ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿ' ತಂದುಕೊಟ್ಟರು. 'ಕಾನೂರು ಹೆಗ್ಗಡಿತಿ', 'ಮಲೆಗಳಲ್ಲಿ ಮದುಮಗಳು' ಕಾದಂಬರಿಗಳ ಮೂಲಕ ಮಲೆನಾಡಿನ ಜನಜೀವನವನ್ನು ಹಿಡಿದಿಟ್ಟ ಇವರು, ಕರ್ನಾಟಕದ ನಾಡಗೀತೆ 'ಜಯ ಭಾರತ ಜನನಿಯ ತನುಜಾತೆ'ಯನ್ನು ರಚಿಸಿದರು. 'ವಿಶ್ವಮಾನವ' ಸಂದೇಶವನ್ನು ಸಾರಿದ ರಾಷ್ಟ್ರಕವಿ."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Kavishaila rock monument at Kuppali, Thirthahalli",
+                "kn": "ಕುಪ್ಪಳ್ಳಿಯ ಕವಿಶೈಲ ಮತ್ತು ಮಲೆನಾಡಿನ ಪ್ರಕೃತಿ ಸೌಂದರ್ಯ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "kuv_c1",
+              "question": {
+                "en": "Which epic poem in blank verse earned Kuvempu Kannada's first-ever Jnanpith Award in 1967?",
+                "kn": "೧೯೬೭ ರಲ್ಲಿ ಕುವೆಂಪು ಅವರಿಗೆ ಕನ್ನಡದ ಮೊದಲ ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿಯನ್ನು ತಂದುಕೊಟ್ಟ ಮಹಾಕಾವ್ಯ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Sri Ramayana Darshanam (ಶ್ರೀ ರಾಮಾಯಣ ದರ್ಶನಂ)",
+                "kn": "ಶ್ರೀ ರಾಮಾಯಣ ದರ್ಶನಂ"
+              },
+              "details": {
+                "en": "Composed in Mahachhandas (sonorous blank verse), reimagining the epic through modern humanist ideals.",
+                "kn": "ಸರಳ ರಗಳೆಯ ಮಹಾಛಂದಸ್ಸಿನಲ್ಲಿ ವಾಲ್ಮೀಕಿ ರಾಮಾಯಣವನ್ನು ಮರುಸೃಷ್ಟಿಸಿದ ಅದ್ಭುತ ಕಾವ್ಯವಿದು."
+              }
+            }
+          ]
+        },
+        {
+          "id": "dr_bendre",
+          "name": {
+            "en": "D. R. Bendre",
+            "kn": "ದ. ರಾ. ಬೇಂದ್ರೆ"
+          },
+          "era": {
+            "en": "1896 – 1981 CE",
+            "kn": "೧೮೯೬ – ೧೯೮೧"
+          },
+          "summary": {
+            "en": "Varakavi and Jnanpith laureate whose musical verses in Naaku Tanti touched cosmic mysticism.",
+            "kn": "'ಅಂಬಿಕಾತನಯದತ್ತ' ಅಂಕಿತದ ವರಕವಿ, ಜ್ಞಾನಪೀಠ ಪುರಸ್ಕೃತ 'ನಾಕು ತಂತಿ' ಕವನ ಸಂಕಲನದ ಕರ್ತೃ."
+          },
+          "fullDescription": {
+            "en": "Dattatreya Ramachandra Bendre, writing under the nom-de-plume 'Ambikatanayadatta', was modern Kannada's greatest lyric poet. Hailing from Dharwad, he captured the musicality of North Karnataka dialect while exploring esoteric numbers, Vedic rhythms, and cosmic consciousness. His poetry collection 'Naaku Tanti' (Four Strings) was honored with the Jnanpith Award in 1973.",
+            "kn": "ಧಾರವಾಡದ ದತ್ತಾತ್ರೇಯ ರಾಮಚಂದ್ರ ಬೇಂದ್ರೆಯವರು 'ಅಂಬಿಕಾತನಯದತ್ತ' ಎಂಬ ಕಾವ್ಯನಾಮದಲ್ಲಿ ಬರೆದ ವರಕವಿ. ಉತ್ತರ ಕರ್ನಾಟಕದ ಆಡುಭಾಷೆಯ ನಾದಮಾಧುರ್ಯಕ್ಕೆ ಆಧ್ಯಾತ್ಮಿಕ ಮತ್ತು ವೈದಿಕ ಒಳನೋಟಗಳನ್ನು ಬೆಸೆದ ಕಾವ್ಯ ಋಷಿ. ೧೯೭೩ ರಲ್ಲಿ ಇವರ 'ನಾಕು ತಂತಿ' ಕವನ ಸಂಕಲನಕ್ಕೆ ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿ ಲಭಿಸಿತು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Four strings of consciousness (Naaku Tanti symbolism)",
+                "kn": "ನಾಕು ತಂತಿ - ಚತುರ್ಮುಖ ಅರಿವಿನ ನಾದ ಸಂಕೇತ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "ben_c1",
+              "question": {
+                "en": "What pen name did D. R. Bendre use across his poetry?",
+                "kn": "ದ. ರಾ. ಬೇಂದ್ರೆಯವರ ಕಾವ್ಯನಾಮ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Ambikatanayadatta (ಅಂಬಿಕಾತನಯದತ್ತ)",
+                "kn": "ಅಂಬಿಕಾತನಯದತ್ತ"
+              },
+              "details": {
+                "en": "Signifying 'Dutta, son of Ambika', honoring his mother Ambika.",
+                "kn": "ತಮ್ಮ ತಾಯಿ ಅಂಬಿಕೆಯ ಹೆಸರನ್ನು ಸೇರಿಸಿ 'ಅಂಬಿಕೆಯ ಮಗ ದತ್ತ' ಎಂಬ ಅರ್ಥದಲ್ಲಿ ಈ ಕಾವ್ಯನಾಮವಿಟ್ಟುಕೊಂಡರು."
+              }
+            }
+          ]
+        },
+        {
+          "id": "masti",
+          "name": {
+            "en": "Masti Venkatesha Iyengar",
+            "kn": "ಮಾಸ್ತಿ ವೆಂಕಟೇಶ ಅಯ್ಯಂಗಾರ್"
+          },
+          "era": {
+            "en": "1891 – 1986 CE",
+            "kn": "೧೮೯೧ – ೧೯೮೬"
+          },
+          "summary": {
+            "en": "Father of the modern Kannada short story (Maasti Kannadada Aasti) and Jnanpith awardee.",
+            "kn": "'ಮಾಸ್ತಿ ಕನ್ನಡದ ಆಸ್ತಿ' ಎಂದು ಪ್ರಸಿದ್ಧರಾದ ಕನ್ನಡ ಸಣ್ಣ ಕಥೆಗಳ ಜನಕ ಹಾಗೂ ಜ್ಞಾನಪೀಠ ಪುರಸ್ಕೃತರು."
+          },
+          "fullDescription": {
+            "en": "Masti Venkatesha Iyengar, celebrated fondly as 'Maasti Kannadada Aasti' (Masti, the Treasure of Kannada), pioneered the modern Kannada short story under the pen name 'Srinivasa'. His psychological restraint and quiet narrative grace influenced generations of writers. His historical novel 'Chikkavira Rajendra', about the tragic fall of the last king of Kodagu, earned the Jnanpith Award in 1983.",
+            "kn": "ಕನ್ನಡ ಸಣ್ಣ ಕಥೆಗಳ ಪಿತಾಮಹರೆನಿಸಿಕೊಂಡ ಮಾಸ್ತಿ ವೆಂಕಟೇಶ ಅಯ್ಯಂಗಾರರು 'ಶ್ರೀನಿವಾಸ' ಎಂಬ ಕಾವ್ಯನಾಮದಲ್ಲಿ ಬರೆದವರು. ಅತ್ಯಂತ ಸರಳ ಹಾಗೂ ನೈಜ ಶೈಲಿಯಲ್ಲಿ ಮಾನವೀಯ ಸಂಬಂಧಗಳ ಸೂಕ್ಷ್ಮತೆಗಳನ್ನು ಬಿಡಿಸಿಟ್ಟ ಇವರನ್ನು 'ಮಾಸ್ತಿ ಕನ್ನಡದ ಆಸ್ತಿ' ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ. ಕೊಡಗಿನ ಕೊನೆಯ ಅರಸನ ಕಥೆ ಹೇಳುವ 'ಚಿಕ್ಕವೀರ ರಾಜೇಂದ್ರ' ಕಾದಂಬರಿಗೆ ೧೯೮೩ ರಲ್ಲಿ ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿ ದೊರೆಯಿತು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Classic storytelling and human emotional restraint",
+                "kn": "ಸಣ್ಣ ಕಥೆಗಳ ಸರಳತೆ ಮತ್ತು ಮಾನವೀಯ ಭಾವನೆಗಳ ಸಂಕೇತ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "mas_c1",
+              "question": {
+                "en": "Which historical novel by Masti based on the final monarch of Kodagu was awarded the 1983 Jnanpith Award?",
+                "kn": "ಕೊಡಗಿನ ಅರಸನ ಕಥೆಯನ್ನು ಒಳಗೊಂಡ ೧೯೮೩ ರ ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿ ವಿಜೇತ ಮಾಸ್ತಿಯವರ ಐತಿಹಾಸಿಕ ಕಾದಂಬರಿ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Chikkavira Rajendra (ಚಿಕ್ಕವೀರ ರಾಜೇಂದ್ರ)",
+                "kn": "ಚಿಕ್ಕವೀರ ರಾಜೇಂದ್ರ"
+              },
+              "details": {
+                "en": "The novel portrays the moral disintegration and British annexation of the Coorg kingdom.",
+                "kn": "ಕೊಡಗು ರಾಜ್ಯವು ಬ್ರಿಟಿಷರ ವಶವಾಗುವ ಐತಿಹಾಸಿಕ ದುರಂತವನ್ನು ಈ ಕಾದಂಬರಿ ವಿವರಿಸುತ್ತದೆ."
+              }
+            }
+          ]
+        },
+        {
+          "id": "dvg",
+          "name": {
+            "en": "D. V. Gundappa (D.V.G.)",
+            "kn": "ಡಿ. ವಿ. ಗುಂಡಪ್ಪ (ಡಿ.ವಿ.ಜಿ)"
+          },
+          "era": {
+            "en": "1887 – 1975 CE",
+            "kn": "೧೮೮೭ – ೧೯೭೫"
+          },
+          "summary": {
+            "en": "Philosopher-statesman who penned Mankuthimmana Kagga, the 'Bhagavad Gita of Kannada'.",
+            "kn": "ಕನ್ನಡದ ಭಗವದ್ಗೀತೆ ಎಂದೇ ಕರೆಯಲಾಗುವ 'ಮಂಕುತಿಮ್ಮನ ಕಗ್ಗ'ವನ್ನು ರಚಿಸಿದ ಮಹಾಜ್ಞಾನಿ."
+          },
+          "fullDescription": {
+            "en": "Devanahalli Venkataramanaiah Gundappa was a visionary philosopher, litterateur, and civic activist who established the Gokhale Institute of Public Affairs in Bengaluru. His philosophical masterwork, 'Mankuthimmana Kagga' (1943), composed of 945 four-line stanzas, serves as a universal compass on life's doubts, destiny, detachment, and human duty, universally revered as the 'Gita of Kannada'.",
+            "kn": "ದೇವನಹಳ್ಳಿ ವೆಂಕಟರಮಣಯ್ಯ ಗುಂಡಪ್ಪನವರು ಕನ್ನಡದ ಹಿರಿಯ ಸಾಹಿತಿ, ಪತ್ರಕರ್ತ ಮತ್ತು ಸಾರ್ವಜನಿಕ ಧೀಮಂತರು. ಬೆಂಗಳೂರಿನಲ್ಲಿ ಗೋಖಲೆ ಸಾರ್ವಜನಿಕ ವಿಚಾರ ಸಂಸ್ಥೆಯನ್ನು ಕಟ್ಟಿದ ಇವರು ರಚಿಸಿದ 'ಮಂಕುತಿಮ್ಮನ ಕಗ್ಗ' (೯೪೫ ಪದ್ಯಗಳ ಸಂಗ್ರಹ) ಬದುಕಿನ ಏಳುಬೀಳು, ವಿಧಿ, ಕರ್ತವ್ಯ ಮತ್ತು ಸಮಾಧಾನವನ್ನು ತಿಳಿಹೇಳುವ ಕನ್ನಡದ ಸಾರ್ವಕಾಲಿಕ ಭಗವದ್ಗೀತೆಯಾಗಿದೆ."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Timeless four-line philosophical wisdom of Kagga",
+                "kn": "ಮಂಕುತಿಮ್ಮನ ಕಗ್ಗದ ಸಾರ್ವಕಾಲಿಕ ತಾತ್ವಿಕ ಚಿಂತನೆಗಳು"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "dvg_c1",
+              "question": {
+                "en": "What is the title of D.V.G.'s celebrated collection of 945 philosophical verses on everyday human life?",
+                "kn": "ಮಾನವ ಬದುಕಿನ ನಿತ್ಯ ಸತ್ಯಗಳನ್ನು ಒಳಗೊಂಡ ಡಿ.ವಿ.ಜಿ ಅವರ ೯೪೫ ಪದ್ಯಗಳ ಮೇರು ಕೃತಿ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Mankuthimmana Kagga (ಮಂಕುತಿಮ್ಮನ ಕಗ್ಗ)",
+                "kn": "ಮಂಕುತಿಮ್ಮನ ಕಗ್ಗ"
+              },
+              "details": {
+                "en": "Followed later by its companion volume 'Marula Muniyana Kagga'.",
+                "kn": "ನಂತರ ಇದರ ಮುಂದುವರಿದ ಭಾಗವಾಗಿ 'ಮರುಳ ಮುನಿಯನ ಕಗ್ಗ'ವನ್ನು ರಚಿಸಿದರು."
+              }
+            }
+          ]
+        },
+        {
+          "id": "shivarama_karanth",
+          "name": {
+            "en": "K. Shivaram Karanth",
+            "kn": "ಕೋಟ ಶಿವರಾಮ ಕಾರಂತ"
+          },
+          "era": {
+            "en": "1902 – 1997 CE",
+            "kn": "೧೯೦೨ – ೧೯೯೭"
+          },
+          "summary": {
+            "en": "Kadalateerada Bhargava, environmental crusader, Yakshagana reformer, and Jnanpith laureate.",
+            "kn": "'ಕಡಲತೀರದ ಭಾರ್ಗವ', ಯಕ್ಷಗಾನದ ಪುನರುದ್ಧಾರಕ ಹಾಗೂ 'ಮೂಕಜ್ಜಿಯ ಕನಸುಗಳು' ಕಾದಂಬರಿಗೆ ಜ್ಞಾನಪೀಠ ಪುರಸ್ಕೃತರು."
+          },
+          "fullDescription": {
+            "en": "Kota Shivaram Karanth, hailed as 'Kadalateerada Bhargava' (Titan of the Coast), was a renaissance polymath—novelist, playwright, painter, dancer, environmentalist, and encyclopedist. He authored landmark novels ('Marali Mannige', 'Choma Dudi', 'Alida Mele', 'Bettada Jeeva') capturing coastal life, untouchability, and ecology. His metaphysical masterpiece 'Mookajjiya Kanasugalu' won the Jnanpith Award in 1977. He single-handedly revived the folk theatre form Yakshagana.",
+            "kn": "ಕೋಟ ಶಿವರಾಮ ಕಾರಂತರು ಕೇವಲ ಸಾಹಿತಿಯಷ್ಟೇ ಅಲ್ಲದೆ ಪರಿಸರವಾದಿ, ಯಕ್ಷಗಾನ ಸಂಶೋಧಕ, ವಿಶ್ವಕೋಶ ನಿರ್ಮಾತೃವಾಗಿದ್ದ ಮಹಾನ್ ಚೇತನ. ಕರಾವಳಿಯ ಬದುಕನ್ನು 'ಮರಳಿ ಮಣ್ಣಿಗೆ', 'ಬೆಟ್ಟದ ಜೀವ' ಮತ್ತು ದಲಿತರ ನೋವನ್ನು 'ಚೋಮನ ದುಡಿ'ಯಲ್ಲಿ ಚಿತ್ರಿಸಿದ ಇವರು, ಮಾನವ ನಂಬಿಕೆಗಳ ವಿಕಾಸವನ್ನು ಅನ್ವೇಷಿಸುವ 'ಮೂಕಜ್ಜಿಯ ಕನಸುಗಳು' ಕಾದಂಬರಿಗೆ ೧೯೭೭ ರಲ್ಲಿ ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿ ಪಡೆದರು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Coastal shores of Kota and Yakshagana folk heritage",
+                "kn": "ಕಡಲತೀರದ ಭಾರ್ಗವನ ಊರು ಕೋಟ ಮತ್ತು ಯಕ್ಷಗಾನ ಕಲೆ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "ksk_c1",
+              "question": {
+                "en": "Which novel by Shivaram Karanth questioning mythologies through an old village grandmother won the 1977 Jnanpith Award?",
+                "kn": "ಹಳ್ಳಿಯ ವೃದ್ಧ ಅಜ್ಜಿಯ ಒಳನೋಟಗಳ ಮೂಲಕ ದೇವರ ಕಲ್ಪನೆಯನ್ನು ಶೋಧಿಸುವ ಕಾರಂತರ ಜ್ಞಾನಪೀಠ ವಿಜೇತ ಕಾದಂಬರಿ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Mookajjiya Kanasugalu (ಮೂಕಜ್ಜಿಯ ಕನಸುಗಳು)",
+                "kn": "ಮೂಕಜ್ಜಿಯ ಕನಸುಗಳು"
+              },
+              "details": {
+                "en": "Mookajji uses subconscious visions to untangle thousands of years of evolving human rituals and taboos.",
+                "kn": "ಮೂಕಜ್ಜಿ ಎಂಬ ಹಣ್ಣುಹಣ್ಣು ಮುದುಕಿಯ ಕಲ್ಪನೆಗಳ ಮೂಲಕ ಮಾನವ ಸಂಸ್ಕೃತಿಯ ಇತಿಹಾಸವನ್ನು ತೆರೆದಿಡುವ ಕಾದಂಬರಿ."
+              }
+            }
+          ]
+        },
+        {
+          "id": "vk_gokak",
+          "name": {
+            "en": "V. K. Gokak",
+            "kn": "ವಿ. ಕೃ. ಗೋಕಾಕ್"
+          },
+          "era": {
+            "en": "1909 – 1992 CE",
+            "kn": "೧೯೦೯ – ೧೯೯೨"
+          },
+          "summary": {
+            "en": "Jnanpith laureate, Oxford scholar, and leader of the landmark Gokak Movement for the Kannada language.",
+            "kn": "ಜ್ಞಾನಪೀಠ ಪುರಸ್ಕೃತ 'ಭಾರತ ಸಿಂಧು ರಶ್ಮಿ' ಕಾವ್ಯದ ಕರ್ತೃ ಹಾಗೂ ಗೋಕಾಕ್ ಚಳವಳಿಯ ನಾಯಕತ್ವ ವಹಿಸಿದ ಶಿಕ್ಷಣ ತಜ್ಞ."
+          },
+          "fullDescription": {
+            "en": "Vinayaka Krishna Gokak was a distinguished scholar of English and Kannada, educator, and visionary thinker. Honored with the Jnanpith Award in 1990 for his epic 'Bharatha Sindhu Rashmi' (detailing Vedic human awakening in 35,000 lines), he also headed the historic Gokak Committee whose recommendations triggered the massive 1980s 'Gokak Chaluvali', securing first-language supremacy for Kannada in state education.",
+            "kn": "ವಿನಾಯಕ ಕೃಷ್ಣ ಗೋಕಾಕರು ಆಕ್ಸ್‌ಫರ್ಡ್ ಪದವೀಧರರು, ವಿಶ್ವವಿದ್ಯಾಲಯದ ಕುಲಪತಿಗಳು ಹಾಗೂ ಶ್ರೇಷ್ಠ ಸಾಹಿತಿ. ೩೫,೦೦೦ ಸಾಲುಗಳ ಬೃಹತ್ ಮಹಾಕಾವ್ಯ 'ಭಾರತ ಸಿಂಧು ರಶ್ಮಿ'ಗಾಗಿ ೧೯೯೦ ರಲ್ಲಿ ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿ ಪಡೆದರು. ಕರ್ನಾಟಕದಲ್ಲಿ ಕನ್ನಡಕ್ಕೆ ಶಿಕ್ಷಣದಲ್ಲಿ ಪ್ರಥಮ ಸ್ಥಾನ ದೊರಕಿಸಿಕೊಟ್ಟ ಐತಿಹಾಸಿಕ 'ಗೋಕಾಕ್ ವರದಿ'ಯನ್ನು ನೀಡಿದವರು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Epic meters of Bharatha Sindhu Rashmi and Gokak movement",
+                "kn": "ಭಾರತ ಸಿಂಧು ರಶ್ಮಿ ಮಹಾಕಾವ್ಯ ಮತ್ತು ಕನ್ನಡ ಭಾಷಾ ಆಂದೋಲನ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "vkg_c1",
+              "question": {
+                "en": "Which monumental 35,000-line epic poem earned V. K. Gokak the 1990 Jnanpith Award?",
+                "kn": "ವಿ. ಕೃ. ಗೋಕಾಕರಿಗೆ ೧೯೯೦ ರಲ್ಲಿ ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿಯನ್ನು ತಂದುಕೊಟ್ಟ ೩೫,೦೦೦ ಸಾಲುಗಳ ಬೃಹತ್ ಕೃತಿ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Bharatha Sindhu Rashmi (ಭಾರತ ಸಿಂಧು ರಶ್ಮಿ)",
+                "kn": "ಭಾರತ ಸಿಂಧು ರಶ್ಮಿ"
+              },
+              "details": {
+                "en": "An epic retelling of the Vedic age, spirituality, and India's ancient cultural synthesis.",
+                "kn": "ವೈದಿಕ ಭಾರತದ ಇತಿಹಾಸ ಮತ್ತು ಆಧ್ಯಾತ್ಮಿಕ ಅನ್ವೇಷಣೆಯನ್ನು ವರ್ಣಿಸುವ ಮಹಾಕಾವ್ಯ."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "navya_contemporary",
+      "icon": "🎭",
+      "name": {
+        "en": "Navya Modernism & Contemporary Theatre",
+        "kn": "ನವ್ಯ ಸಾಹಿತ್ಯ, ರಂಗಭೂಮಿ ಮತ್ತು ಸಮಕಾಲೀನ ಕಾದಂಬರಿ"
+      },
+      "topics": [
+        {
+          "id": "sl_bhyrappa",
+          "name": {
+            "en": "S. L. Bhyrappa",
+            "kn": "ಎಸ್. ಎಲ್. ಭೈರಪ್ಪ"
+          },
+          "era": {
+            "en": "Born 1931 CE",
+            "kn": "ಜನನ ೧೯೩೧"
+          },
+          "summary": {
+            "en": "Titan of philosophical realism and author of masterpieces Parva, Vamshavruksha, and Aavarana.",
+            "kn": "ಕನ್ನಡದ ಅತಿ ಹೆಚ್ಚು ಓದುಗರನ್ನು ಹೊಂದಿರುವ ದಾರ್ಶನಿಕ ಕಾದಂಬರಿಕಾರರು ಹಾಗೂ 'ಪರ್ವ'ದ ಸೃಷ್ಟಿಕರ್ತ."
+          },
+          "fullDescription": {
+            "en": "Dr. Santeshivara Lingannaiah Bhyrappa is one of India's most read, translated, and debated contemporary novelists. Renowned for rigorous philosophical and historical inquiry, his masterpiece 'Parva' (1979) offers a completely demythologized, psychologically realistic retelling of the Mahabharata. His other monumental novels include 'Vamshavruksha', 'Grihabhanga', 'Mandra', and 'Aavarana'. He was conferred with the Saraswati Samman and Padma Bhushan.",
+            "kn": "ಎಸ್. ಎಲ್. ಭೈರಪ್ಪನವರು ಭಾರತೀಯ ಸಾಹಿತ್ಯದ ದಿಗ್ಗಜ ಕಾದಂಬರಿಕಾರರು. ಭಾರತದ ಪ್ರಾಚೀನ ತತ್ವಶಾಸ್ತ್ರ ಮತ್ತು ಇತಿಹಾಸದ ಆಧಾರದ ಮೇಲೆ ಕಾದಂಬರಿಗಳನ್ನು ರಚಿಸುವ ಇವರ 'ಪರ್ವ', ಮಹಾಭಾರತದ ಪವಾಡಗಳನ್ನು ತೆಗೆದುಹಾಕಿ ವಾಸ್ತವಿಕ ನೆಲೆಯಲ್ಲಿ ರಚಿಸಿದ ಅದ್ಭುತ ಕೃತಿಯಾಗಿದೆ. 'ವಂಶವೃಕ್ಷ', 'ಗೃಹಭಂಗ', 'ಆವರಣ', 'ಮಂದ್ರ' ಮುಂತಾದ ಜನಪ್ರಿಯ ಕಾದಂಬರಿಗಳ ಕರ್ತೃ."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Philosophical depth of Parva and ancient Indian epics",
+                "kn": "ಪರ್ವ ಕಾದಂಬರಿಯ ದಾರ್ಶನಿಕ ಮತ್ತು ಐತಿಹಾಸಿಕ ಆಯಾಮಗಳು"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "slb_c1",
+              "question": {
+                "en": "Which landmark 1979 novel by S. L. Bhyrappa reconstructs the Mahabharata from a strictly naturalistic and psychological perspective?",
+                "kn": "ಮಹಾಭಾರತದ ಪವಾಡಗಳನ್ನು ಹೊರತುಪಡಿಸಿ ಕೇವಲ ಮಾನವೀಯ ಮತ್ತು ನೈಸರ್ಗಿಕ ನೆಲೆಯಲ್ಲಿ ಭೈರಪ್ಪನವರು ರಚಿಸಿದ ಕಾದಂಬರಿ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Parva (ಪರ್ವ)",
+                "kn": "ಪರ್ವ"
+              },
+              "details": {
+                "en": "Translated into over a dozen languages, exploring sociological warfare, morality, and family bonds.",
+                "kn": "ಹಲವು ಭಾರತೀಯ ಮತ್ತು ವಿದೇಶಿ ಭಾಷೆಗಳಿಗೆ ಅನುವಾದಗೊಂಡು ನಾಟಕವಾಗಿಯೂ ಪ್ರದರ್ಶನಗೊಂಡಿದೆ."
+              }
+            }
+          ]
+        },
+        {
+          "id": "ur_ananthamurthy",
+          "name": {
+            "en": "U. R. Ananthamurthy",
+            "kn": "ಯು. ಆರ್. ಅನಂತಮೂರ್ತಿ"
+          },
+          "era": {
+            "en": "1932 – 2014 CE",
+            "kn": "೧೯೩೨ – ೨೦೧೪"
+          },
+          "summary": {
+            "en": "Leader of the Navya (Modernist) movement whose explosive novel Samskara shook caste orthodoxy.",
+            "kn": "ನವ್ಯ ಸಾಹಿತ್ಯ ಚಳವಳಿಯ ಅಗ್ರಗಣ್ಯ ನಾಯಕ ಹಾಗೂ 'ಸಂಸ್ಕಾರ' ಕಾದಂಬರಿಯ ಕರ್ತೃ, ಜ್ಞಾನಪೀಠ ಪುರಸ್ಕೃತರು."
+          },
+          "fullDescription": {
+            "en": "Dr. Udupi Rajagopalacharya Ananthamurthy was a towering intellectual, critic, and frontrunner of the Navya (Modernist) literary movement. In his explosive 1965 debut novel 'Samskara' (Funeral Rites), he dissected caste orthodoxy, Brahminical existential paralysis, and moral hypocrisy in an agrahara. Honored with the Jnanpith Award in 1994, his other masterworks include 'Bharathipura', 'Avasthe', and 'Bhava'.",
+            "kn": "ಯು. ಆರ್. ಅನಂತಮೂರ್ತಿಯವರು ಕನ್ನಡದ ನವ್ಯ ಸಾಹಿತ್ಯ ಚಳವಳಿಯ ಪ್ರಮುಖ ನೇತಾರರು. ೧೯೬೫ ರಲ್ಲಿ ಪ್ರಕಟವಾದ ಇವರ 'ಸಂಸ್ಕಾರ' ಕಾದಂಬರಿಯು ಬ್ರಾಹ್ಮಣ ಅಗ್ರಹಾರದ ಜಾತಿ ಪದ್ಧತಿ, ಮಡಿವಂತಿಕೆ ಮತ್ತು ಸಂಪ್ರದಾಯದ ಬಿಕ್ಕಟ್ಟುಗಳನ್ನು ಪ್ರಶ್ನಿಸಿ ದೇಶಾದ್ಯಂತ ದೊಡ್ಡ ಸಂಚಲನ ಮೂಡಿಸಿತು. ೧೯೯೪ ರಲ್ಲಿ ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿ ಪಡೆದ ಇವರು 'ಭಾರತೀಪುರ', 'ಅವಸ್ಥೆ' ಮುಂತಾದ ಪ್ರಸಿದ್ಧ ಕೃತಿಗಳನ್ನು ರಚಿಸಿದರು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Existential agrahara dilemmas of Samskara",
+                "kn": "ಸಂಸ್ಕಾರ ಕಾದಂಬರಿಯ ಅಸ್ತಿತ್ವವಾದಿ ಚಿಂತನೆಗಳ ಪರಿಸರ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "ura_c1",
+              "question": {
+                "en": "Which debut 1965 modernist novel by U. R. Ananthamurthy sparked nationwide intellectual debates over tradition and death rituals?",
+                "kn": "೧೯೬೫ ರಲ್ಲಿ ಪ್ರಕಟವಾಗಿ ಸಂಪ್ರದಾಯ ಮತ್ತು ಅಂತ್ಯಸಂಸ್ಕಾರದ ಕುರಿತು ದೊಡ್ಡ ಚರ್ಚೆ ಹುಟ್ಟುಹಾಕಿದ ಅನಂತಮೂರ್ತಿಯವರ ಕಾದಂಬರಿ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Samskara (ಸಂಸ್ಕಾರ)",
+                "kn": "ಸಂಸ್ಕಾರ"
+              },
+              "details": {
+                "en": "Adapted into a path-breaking parallel cinema film directed by Pattabhirama Reddy in 1970.",
+                "kn": "೧೯೭೦ ರಲ್ಲಿ ಇದು ಚಲನಚಿತ್ರವಾಗಿ ರಾಷ್ಟ್ರಪತಿಗಳ ಸ್ವರ್ಣ ಕಮಲ ಪ್ರಶಸ್ತಿಯನ್ನು ಪಡೆಯಿತು."
+              }
+            }
+          ]
+        },
+        {
+          "id": "girish_karnad",
+          "name": {
+            "en": "Girish Karnad",
+            "kn": "ಗಿರೀಶ್ ಕಾರ್ನಾಡ್"
+          },
+          "era": {
+            "en": "1938 – 2019 CE",
+            "kn": "೧೯೩೮ – ೨೦೧೯"
+          },
+          "summary": {
+            "en": "Rhodes scholar and Jnanpith laureate who transformed Indian theatre with Tughlaq, Hayavadana, and Nagamandala.",
+            "kn": "'ತುಘಲಕ್', 'ಹಯವದನ', 'ನಾಗಮಂಡಲ' ನಾಟಕಗಳ ಮೂಲಕ ಭಾರತೀಯ ರಂಗಭೂಮಿಗೆ ಹೊಸ ರೂಪ ನೀಡಿದ ಜ್ಞಾನಪೀಠ ಪುರಸ್ಕೃತರು."
+          },
+          "fullDescription": {
+            "en": "Girish Karnad was an internationally acclaimed playwright, filmmaker, and actor. He revolutionized modern Indian theater by employing folklore, myth, and medieval history to dissect contemporary political and existential angst. His celebrated plays—including 'Yayati', 'Tughlaq', 'Hayavadana', 'Naga-Mandala', and 'Taledanda'—have been performed across languages worldwide. He was conferred the Jnanpith Award in 1998.",
+            "kn": "ಆಕ್ಸ್‌ಫರ್ಡ್‌ನ ರೋಡ್ಸ್ ಸ್ಕಾಲರ್ ಆಗಿದ್ದ ಗಿರೀಶ್ ಕಾರ್ನಾಡ್ ಅವರು ಕನ್ನಡ ರಂಗಭೂಮಿಗೆ ವಿಶ್ವಮಾನ್ಯತೆ ತಂದುಕೊಟ್ಟ ಶ್ರೇಷ್ಠ ನಾಟಕಕಾರರು ಮತ್ತು ನಟರು. ಜಾನಪದ ಕಥೆಗಳು ಮತ್ತು ಇತಿಹಾಸವನ್ನು ಆಧುನಿಕ ರಾಜಕೀಯ ಚಿಂತನೆಗಳಿಗೆ ಒಗ್ಗಿಸಿದ ಇವರ 'ತುಘಲಕ್', 'ಹಯವದನ', 'ನಾಗಮಂಡಲ', 'ತಲೆದಂಡ' ನಾಟಕಗಳು ಜಾಗತಿಕವಾಗಿ ಪ್ರದರ್ಶನಗೊಂಡಿವೆ. ೧೯೯೮ ರಲ್ಲಿ ಇವರಿಗೆ ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿ ಪ್ರದಾನ ಮಾಡಲಾಯಿತು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Modern theatre spotlights and dramatic masks",
+                "kn": "ರಂಗಭೂಮಿ ಮುಖವಾಡಗಳು ಮತ್ತು ತುಘಲಕ್ ನಾಟಕದ ರಂಗಸಜ್ಜಿಕೆ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "gk_c1",
+              "question": {
+                "en": "Which historical play by Girish Karnad allegorized the Nehruvian era through the 14th-century Sultan of Delhi?",
+                "kn": "೧೪ನೇ ಶತಮಾನದ ದೆಹಲಿ ಸುಲ್ತಾನನ ಕಥೆಯ ಮೂಲಕ ಸಮಕಾಲೀನ ರಾಜಕೀಯ ಭ್ರಮನಿರಸನವನ್ನು ಬಿಂಬಿಸಿದ ಕಾರ್ನಾಡರ ನಾಟಕ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Tughlaq (ತುಘಲಕ್)",
+                "kn": "ತುಘಲಕ್"
+              },
+              "details": {
+                "en": "Written in 1964, examining the tragic descent of idealism into tyranny.",
+                "kn": "ಆದರ್ಶವಾದಿ ರಾಜನೊಬ್ಬ ನಿರಂಕುಶ ಪ್ರಭುವಾಗಿ ಬದಲಾಗುವ ದುರಂತವನ್ನು ಇದು ಚಿತ್ರಿಸುತ್ತದೆ."
+              }
+            }
+          ]
+        },
+        {
+          "id": "chandrashekhara_kambara",
+          "name": {
+            "en": "Chandrashekhara Kambara",
+            "kn": "ಚಂದ್ರಶೇಖರ ಕಂಬಾರ"
+          },
+          "era": {
+            "en": "Born 1937 CE",
+            "kn": "ಜನನ ೧೯೩೭"
+          },
+          "summary": {
+            "en": "Jnanpith laureate, folklorist, and founder Vice-Chancellor of Kannada University Hampi.",
+            "kn": "ಉತ್ತರ ಕರ್ನಾಟಕದ ದೇಸಿ ಸೊಗಡಿನ ಜಾನಪದ ವಿದ್ವಾಂಸರು, ಹಂಪಿ ಕನ್ನಡ ವಿವಿಯ ಸಂಸ್ಥಾಪಕ ಕುಲಪತಿ, ಜ್ಞಾನಪೀಠ ಪುರಸ್ಕೃತರು."
+          },
+          "fullDescription": {
+            "en": "Dr. Chandrashekhara Kambara is a renowned poet, playwright, folklorist, and pioneer of indigenous theatre forms. Rooted in the rich cultural soil of Shivapura (his mythical village), his celebrated plays like 'Jokumaraswamy', 'Siri Sampige', and the novel 'Singarevva Mattu Aramane' blend regional folklore, tantric metaphors, and modern power struggles. He was awarded the Jnanpith Award in 2010.",
+            "kn": "ಡಾ. ಚಂದ್ರಶೇಖರ ಕಂಬಾರರು ಕನ್ನಡದ ಹಿರಿಯ ಕವಿ, ನಾಟಕಕಾರ ಮತ್ತು ಜಾನಪದ ವಿದ್ವಾಂಸರು. 'ಶಿವಪುರ' ಎಂಬ ಕಾಲ್ಪನಿಕ ಗ್ರಾಮದ ಹಿನ್ನೆಲೆಯಲ್ಲಿ ಉತ್ತರ ಕರ್ನಾಟಕದ ಜಾನಪದ ನಂಬಿಕೆಗಳು ಮತ್ತು ದೇಸಿ ರಂಗಭೂಮಿಯ ಸೊಗಡನ್ನು 'ಜೋಕುಮಾರಸ್ವಾಮಿ', 'ಸಿರಿಸಂಪಿಗೆ', 'ಸಾಂಬಶಿವ ಪ್ರಹಸನ' ಮತ್ತು 'ಸಿಂಗಾರವ್ವ ಮತ್ತು ಅರಮನೆ' ಕೃತಿಗಳಲ್ಲಿ ಅದ್ಭುತವಾಗಿ ತಂದಿದ್ದಾರೆ. ೨೦೧೦ ರಲ್ಲಿ ಇವರಿಗೆ ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿ ಸಂದಿತು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Indigenous folk theatre instruments and oral storytelling",
+                "kn": "ದೇಸಿ ಜಾನಪದ ವಾದ್ಯಗಳು ಮತ್ತು ಶಿವಪುರದ ಜಾನಪದ ಲೋಕ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "csk_c1",
+              "question": {
+                "en": "Which famous folk fertility-ritual play by Chandrashekhara Kambara exposed feudal landlord oppression?",
+                "kn": "ಊಳಿಗಮಾನ್ಯ ಪದ್ಧತಿ ಮತ್ತು ಭೂಮಾಲೀಕತ್ವವನ್ನು ವಿಡಂಬಿಸುವ ಕಂಬಾರರ ಪ್ರಸಿದ್ಧ ಜಾನಪದ ನಾಟಕ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Jokumaraswamy (ಜೋಕುಮಾರಸ್ವಾಮಿ)",
+                "kn": "ಜೋಕುಮಾರಸ್ವಾಮಿ"
+              },
+              "details": {
+                "en": "One of modern India's most staged folk-theatre classics across multiple languages.",
+                "kn": "ಮಳೆಯ ದೇವರು ಜೋಕುಮಾರನ ಹಬ್ಬದ ಆಚರಣೆಯ ಹಿನ್ನೆಲೆಯಲ್ಲಿ ಸಾಮಾಜಿಕ ಅಸಮಾನತೆಯನ್ನು ಬಯಲಿಗೆಳೆಯುವ ನಾಟಕ."
+              }
+            }
+          ]
+        },
+        {
+          "id": "p_lankesh",
+          "name": {
+            "en": "P. Lankesh",
+            "kn": "ಪಿ. ಲಂಕೇಶ್"
+          },
+          "era": {
+            "en": "1935 – 2000 CE",
+            "kn": "೧೯೩೫ – ೨೦೦೦"
+          },
+          "summary": {
+            "en": "Pioneering writer, National Award-winning filmmaker, and founder of the anti-establishment Lankesh Patrike.",
+            "kn": "ಬಂಡಾಯ ಸಾಹಿತ್ಯದ ನೇತಾರ, ರಾಷ್ಟ್ರಪ್ರಶಸ್ತಿ ವಿಜೇತ ಚಿತ್ರ ನಿರ್ದೇಶಕ ಹಾಗೂ 'ಲಂಕೇಶ್ ಪತ್ರಿಕೆ'ಯ ಸಂಸ್ಥಾಪಕ ಸಂಪಾದಕರು."
+          },
+          "fullDescription": {
+            "en": "Palyada Lankesh was a trailblazing writer, poet, director, and fearless journalist from Shivamogga. In 1980, he founded 'Lankesh Patrike', an advertisement-free weekly tabloid that transformed Karnataka's sociopolitical discourse and groomed a generation of progressive writers. His literary masterworks include the novel 'Mussanjeya Katha Prasanga', short stories like 'Kallu Karaguva Samaya', and the National Award-winning film 'Pallavi'.",
+            "kn": "ಶಿವಮೊಗ್ಗ ಜಿಲ್ಲೆಯ ಕೊನಗವಳ್ಳಿಯ ಪಿ. ಲಂಕೇಶ್ ಕನ್ನಡದ ಖ್ಯಾತ ಬಂಡಾಯ ಸಾಹಿತಿ, ಪ್ರಾಧ್ಯಾಪಕ ಹಾಗೂ ಪತ್ರಕರ್ತರು. ೧೯೮೦ ರಲ್ಲಿ ಜಾಹೀರಾತು ರಹಿತವಾಗಿ ಆರಂಭಿಸಿದ 'ಲಂಕೇಶ್ ಪತ್ರಿಕೆ' ರಾಜ್ಯದ ರಾಜಕೀಯ ಮತ್ತು ಸಾಂಸ್ಕೃತಿಕ ವಲಯದಲ್ಲಿ ಹೊಸ ಅಲೆ ಎಬ್ಬಿಸಿತು. 'ಮುಸ್ಸಂಜೆಯ ಕಥಾಪ್ರಸಂಗ', 'ಕಲ್ಲು ಕರಗುವ ಸಮಯ' ಕತೆಗಳು ಹಾಗೂ ರಾಷ್ಟ್ರಪ್ರಶಸ್ತಿ ಪಡೆದ 'ಪಲ್ಲವಿ' ಚಲನಚಿತ್ರ ಇವರ ಸೃಜನಶೀಲತೆಗೆ ಸಾಕ್ಷಿ."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Courageous journalism and progressive literary activism",
+                "kn": "ದಿಟ್ಟ ಪತ್ರಿಕೋದ್ಯಮ ಮತ್ತು ಬಂಡಾಯ ಸಾಹಿತ್ಯದ ಪರಂಪರೆ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "lan_c1",
+              "question": {
+                "en": "Which iconic advertisement-free tabloid founded by P. Lankesh in 1980 shaped Karnataka's progressive socio-political debates?",
+                "kn": "೧೯೮೦ ರಲ್ಲಿ ಪಿ. ಲಂಕೇಶ್ ಅವರು ಯಾವುದೇ ಜಾಹೀರಾತುಗಳಿಲ್ಲದೆ ಆರಂಭಿಸಿದ ಕ್ರಾಂತಿಕಾರಿ ವಾರಪತ್ರಿಕೆ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Lankesh Patrike (ಲಂಕೇಶ್ ಪತ್ರಿಕೆ)",
+                "kn": "ಲಂಕೇಶ್ ಪತ್ರಿಕೆ"
+              },
+              "details": {
+                "en": "It introduced a conversational, biting, and fearless critical voice to Kannada journalism.",
+                "kn": "ಸಾಮಾಜಿಕ ಅನ್ಯಾಯಗಳ ವಿರುದ್ಧ ಧ್ವನಿ ಎತ್ತಿದ ಈ ಪತ್ರಿಕೆಯು ಅನೇಕ ಹೊಸ ಲೇಖಕರನ್ನು ನಾಡಿಗೆ ಪರಿಚಯಿಸಿತು."
+              }
+            }
+          ]
+        }
+      ]
     }
+  
   
       ]
     }
