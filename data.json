@@ -1,86 +1,208 @@
 {
   "domains": [
     {
-      "id": "hoysala",
-      "icon": "🏛️",
+      "id": "space_aerospace",
+      "icon": "🚀",
       "name": {
-        "en": "Hoysala Heritage",
-        "kn": "ಹೊಯ್ಸಳ ಪರಂಪರೆ"
+        "en": "Space & Aerospace Pioneers",
+        "kn": "ಬಾಹ್ಯಾಕಾಶ ಮತ್ತು ಏರೋಸ್ಪೇಸ್ ವಿಜ್ಞಾನಿಗಳು"
       },
       "topics": [
         {
-          "id": "mallitamma",
+          "id": "ur_rao",
           "name": {
-            "en": "Ruvari Mallitamma",
-            "kn": "ರೂವಾರಿ ಮಲ್ಲಿತಮ್ಮ"
+            "en": "Dr. U. R. Rao",
+            "kn": "ಡಾ. ಯು. ಆರ್. ರಾವ್"
           },
           "era": {
-            "en": "12th – 13th Century CE",
-            "kn": "೧೨ – ೧೩ನೇ ಶತಮಾನ"
+            "en": "1932 – 2017 CE",
+            "kn": "೧೯೩೨ – ೨೦೧೭"
           },
           "summary": {
-            "en": "Ruvari Mallitamma was the chief sculptor of the Hoysala dynasty who signed over forty exquisite soapstone friezes at Somanathapura and Belur.",
-            "kn": "ರೂವಾರಿ ಮಲ್ಲಿತಮ್ಮ ಹೊಯ್ಸಳ ಸಾಮ್ರಾಜ್ಯದ ಅಪ್ರತಿಮ ಮುಖ್ಯ ಶಿಲ್ಪಿ. ಸೋಮನಾಥಪುರ ಮತ್ತು ಬೇಲೂರಿನಲ್ಲಿ ೪೦ಕ್ಕೂ ಹೆಚ್ಚು ಸೂಕ್ಷ್ಮ ಕೆತ್ತನೆಗಳ ಮೇಲೆ ತಮ್ಮ ಹೆಸರನ್ನು ಕೆತ್ತಿದ ಹೆಗ್ಗಳಿಕೆ ಇವರದು."
+            "en": "India's Satellite Man who spearheaded Aryabhata and the development of the PSLV rocket.",
+            "kn": "ಭಾರತದ ಪ್ರಥಮ ಉಪಗ್ರಹ ಆರ್ಯಭಟದ ನಿರ್ಮಾತೃ ಮತ್ತು ಪಿ.ಎಸ್.ಎಲ್.ವಿ ರಾಕೆಟ್ ಅಭಿವೃದ್ಧಿಯ ರೂವಾರಿ."
           },
           "fullDescription": {
-            "en": "Ruvari Mallitamma is one of the few ancient Indian master builders who broke the tradition of artisan anonymity by systematically inscribing his signature on stone creations. Spanning an astonishing career of nearly eight decades across the reigns of Hoysala kings Narasimha II, Someshvara, and Narasimha III, Mallitamma masterfully converted chloritic schist (soapstone) into microscopic friezes, celestial dancers (Madanikas), and stellate temple platforms.",
-            "kn": "ಪ್ರಾಚೀನ ಭಾರತೀಯ ಶಿಲ್ಪಿಗಳ ಅನಾಮಧೇಯ ಸಂಪ್ರದಾಯವನ್ನು ಮುರಿದು ತಮ್ಮ ಅದ್ಭುತ ಶಿಲ್ಪಗಳ ಮೇಲೆ ಸಹಿ ಹಾಕಿದ ಶ್ರೇಷ್ಠ ಶಿಲ್ಪಿ ರೂವಾರಿ ಮಲ್ಲಿತಮ್ಮ. ಮೂರು ತಲೆಮಾರುಗಳ ಹೊಯ್ಸಳ ರಾಜರ ಆಳ್ವಿಕೆಯಲ್ಲಿ ಎಂಟು ದಶಕಗಳ ಕಾಲ ಸೇವೆ ಸಲ್ಲಿಸಿದ ಇವರು, ಬಳಪದ ಕಲ್ಲಿನಲ್ಲಿ (Soapstone) ಮದನಿಕೆಯರು, ರಾಮಾಯಣ-ಮಹಾಭಾರತದ ಪ್ರಸಂಗಗಳು ಮತ್ತು ನಕ್ಷತ್ರಾಕಾರದ ದೇವಾಲಯಗಳನ್ನು ಅತ್ಯಂತ ಸೂಕ್ಷ್ಮವಾಗಿ ನಿರ್ಮಿಸಿದರು."
+            "en": "Prof. Udupi Ramachandra Rao was an internationally renowned space scientist who served as the Chairman of ISRO from 1984 to 1994. Under his leadership, India successfully fabricated and launched its first indigenous satellite, Aryabhata, in 1975 from Kapustin Yar. He prioritized rocket technology, establishing the foundational architecture for the Polar Satellite Launch Vehicle (PSLV), now considered ISRO's workhorse.",
+            "kn": "ಉಡುಪಿ ರಾಮಚಂದ್ರ ರಾವ್ ಅವರು ಅಂತರರಾಷ್ಟ್ರೀಯ ಮಟ್ಟದಲ್ಲಿ ಖ್ಯಾತಿ ಪಡೆದ ಬಾಹ್ಯಾಕಾಶ ವಿಜ್ಞಾನಿ. ೧೯೮೪ ರಿಂದ ೧೯೯೪ ರವರೆಗೆ ಇಸ್ರೋ ಅಧ್ಯಕ್ಷರಾಗಿ ಸೇವೆ ಸಲ್ಲಿಸಿದ ಇವರು, ೧೯೭೫ ರಲ್ಲಿ ಭಾರತದ ಮೊದಲ ಉಪಗ್ರಹ 'ಆರ್ಯಭಟ'ವನ್ನು ಯಶಸ್ವಿಯಾಗಿ ನಿರ್ಮಿಸಿ ಉಡಾವಣೆ ಮಾಡಿದರು. ಭಾರತೀಯ ಬಾಹ್ಯಾಕಾಶ ಕಾರ್ಯಕ್ರಮದ ಜೀವನಾಡಿ ಎನಿಸಿರುವ ಪಿ.ಎಸ್.ಎಲ್.ವಿ ರಾಕೆಟ್ ಅಭಿವೃದ್ಧಿಗೆ ಬಲವಾದ ಅಡಿಪಾಯ ಹಾಕಿದರು."
           },
           "media": [
             {
               "type": "image",
-              "url": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=700&q=80",
+              "url": "https://images.unsplash.com/photo-1517976487544-77a86f7b1981?auto=format&fit=crop&w=700&q=80",
               "caption": {
-                "en": "Intricate soapstone reliefs, Somanathapura",
-                "kn": "ಸೋಮನಾಥಪುರದ ಸೂಕ್ಷ್ಮ ಬಳಪದ ಕಲ್ಲಿನ ಕೆತ್ತನೆ"
-              }
-            },
-            {
-              "type": "video",
-              "url": "https://www.youtube.com/embed/gW3LpXWf4aQ",
-              "caption": {
-                "en": "Documentary: Hoysala Architecture & Mallitamma",
-                "kn": "ಸಾಕ್ಷ್ಯಚಿತ್ರ: ಹೊಯ್ಸಳ ವಾಸ್ತುಶಿಲ್ಪ ಮತ್ತು ಮಲ್ಲಿತಮ್ಮ"
-              }
-            },
-            {
-              "type": "image",
-              "url": "https://images.unsplash.com/photo-1600100397608-f010f443b2e5?auto=format&fit=crop&w=700&q=80",
-              "caption": {
-                "en": "Stellate platform layout",
-                "kn": "ನಕ್ಷತ್ರಾಕಾರದ ಜಗತಿ ವಿನ್ಯಾಸ"
+                "en": "Satellite payload assembly & telemetry",
+                "kn": "ಉಪಗ್ರಹ ತಂತ್ರಜ್ಞಾನ ಜೋಡಣೆ ಮತ್ತು ಟೆಲಿಮೆಟ್ರಿ"
               }
             }
           ],
           "challenges": [
             {
-              "id": "mal_c1",
+              "id": "ur_c1",
               "question": {
-                "en": "Which trikuta (three-shrine) temple features over 40 distinct stone friezes signed by Ruvari Mallitamma?",
-                "kn": "ರೂವಾರಿ ಮಲ್ಲಿತಮ್ಮ ಕೆತ್ತಿದ ೪೦ಕ್ಕೂ ಹೆಚ್ಚು ಸಹಿ ಕೆತ್ತನೆಗಳನ್ನು ಹೊಂದಿರುವ ಪ್ರಸಿದ್ಧ ತ್ರಿಕೂಟ ದೇವಾಲಯ ಯಾವುದು?"
+                "en": "Which first indigenous satellite of India was developed under the direct project directorship of Dr. U. R. Rao in 1975?",
+                "kn": "೧೯೭೫ ರಲ್ಲಿ ಡಾ. ಯು. ಆರ್. ರಾವ್ ಅವರ ನೇತೃತ್ವದಲ್ಲಿ ನಿರ್ಮಿಸಲಾದ ಭಾರತದ ಪ್ರಥಮ ಉಪಗ್ರಹ ಯಾವುದು?"
               },
               "answer": {
-                "en": "Keshava Temple, Somanathapura (1268 CE)",
-                "kn": "ಕೇಶವ ದೇವಾಲಯ, ಸೋಮನಾಥಪುರ (೧೨೬೮)"
+                "en": "Aryabhata (ಆರ್ಯಭಟ)",
+                "kn": "ಆರ್ಯಭಟ (೧೯೭೫)"
               },
               "details": {
-                "en": "Commissioned under Hoysala general Somanatha, this star-shaped monument preserves signed lintels indicating Mallitamma completed nearly the entire northern quadrant.",
-                "kn": "ಹೊಯ್ಸಳ ದಂಡನಾಯಕ ಸೋಮನಾಥನಿಂದ ನಿರ್ಮಿಸಲ್ಪಟ್ಟ ಈ ನಕ್ಷತ್ರಾಕಾರದ ದೇವಾಲಯದ ಉತ್ತರ ಭಾಗದ ಬಹುತೇಕ ಶಿಲ್ಪಗಳನ್ನು ಮಲ್ಲಿತಮ್ಮನೇ ಕೆತ್ತಿದ್ದಾನೆ."
+                "en": "Launched on April 19, 1975, using a Soviet Kosmos-3M launch vehicle, marking India's entry into the space age.",
+                "kn": "ಏಪ್ರಿಲ್ ೧೯, ೧೯೭೫ ರಂದು ಸೋವಿಯತ್ ಒಕ್ಕೂಟದ ಸಹಯೋಗದೊಂದಿಗೆ ಉಡಾವಣೆಗೊಂಡು ಭಾರತವನ್ನು ಬಾಹ್ಯಾಕಾಶ ಯುಗಕ್ಕೆ ಕೊಂಡೊಯ್ಯಿತು."
               }
             },
             {
-              "id": "mal_c2",
+              "id": "ur_c2",
               "question": {
-                "en": "What specific geological stone was favored by Mallitamma because it is soft when quarried but hardens when exposed to air?",
-                "kn": "ಗಣಿಯಿಂದ ತೆಗೆದಾಗ ಮೃದುವಾಗಿದ್ದು ಗಾಳಿಗೆ ಒಡ್ಡಿಕೊಂಡಾಗ ಗಟ್ಟಿಯಾಗುವ ಯಾವ ಕಲ್ಲನ್ನು ಮಲ್ಲಿತಮ್ಮ ಕೆತ್ತನೆಗೆ ಬಳಸಿದರು?"
+                "en": "Which launch vehicle, developed under Dr. Rao's tenure, became ISRO's most reliable workhorse rocket?",
+                "kn": "ಡಾ. ರಾವ್ ಅವರ ಅಧಿಕಾರಾವಧಿಯಲ್ಲಿ ಅಭಿವೃದ್ಧಿಪಡಿಸಲಾದ ಇಸ್ರೋದ ಅತ್ಯಂತ ವಿಶ್ವಾಸಾರ್ಹ ರಾಕೆಟ್ ಯಾವುದು?"
               },
               "answer": {
-                "en": "Chloritic Schist (Soapstone / ಬಳಪದ ಕಲ್ಲು)",
-                "kn": "ಕ್ಲೋರಿಟಿಕ್ ಶಿಸ್ಟ್ (ಬಳಪದ ಕಲ್ಲು)"
+                "en": "Polar Satellite Launch Vehicle (PSLV)",
+                "kn": "ಪಿ.ಎಸ್.ಎಲ್.ವಿ (PSLV)"
               },
               "details": {
-                "en": "Chloritic schist allowed master carvers to execute microscopic lace-like jewelry, drapery, and undercut filigree work unachievable on hard granite.",
-                "kn": "ಈ ಮೃದುವಾದ ಕಲ್ಲಿನಿಂದಾಗಿ ಕಠಿಣ ಗ್ರಾನೈಟ್ ಕಲ್ಲಿನಲ್ಲಿ ಕೆತ್ತಲಾಗದ ಆಭರಣಗಳು, ಬಟ್ಟೆಯ ಮಡಿಕೆಗಳು ಮತ್ತು ಹೂವಿನ ಜಾಲಂದ್ರಗಳನ್ನು ಅತ್ಯಂತ ನಾಜೂಕಾಗಿ ಕೆತ್ತಲು ಸಾಧ್ಯವಾಯಿತು."
+                "en": "PSLV achieved historic success, later launching Chandrayaan-1, Mars Orbiter Mission (Mangalyaan), and over 300 foreign satellites.",
+                "kn": "ಪಿ.ಎಸ್.ಎಲ್.ವಿ ನಂತರ ಚಂದ್ರಯಾನ-೧, ಮಂಗಳಯಾನ ಮತ್ತು ನೂರಾರು ವಿದೇಶಿ ಉಪಗ್ರಹಗಳನ್ನು ಕಕ್ಷೆಗೆ ಯಶಸ್ವಿಯಾಗಿ ಸೇರಿಸಿದೆ."
+              }
+            }
+          ]
+        },
+        {
+          "id": "roddam_narasimha",
+          "name": {
+            "en": "Dr. Roddam Narasimha",
+            "kn": "ಡಾ. ರೊದ್ದಂ ನರಸಿಂಹ"
+          },
+          "era": {
+            "en": "1933 – 2020 CE",
+            "kn": "೧೯೩೩ – ೨೦೨೦"
+          },
+          "summary": {
+            "en": "Aerospace giant and fluid dynamicist who shaped the aerodynamics of India's Tejas fighter jet.",
+            "kn": "ಭಾರತದ ತೇಜಸ್ ಯುದ್ಧವಿಮಾನದ ಏರೋಡೈನಾಮಿಕ್ಸ್ ವಿನ್ಯಾಸ ರೂಪಿಸಿದ ಪ್ರಖ್ಯಾತ ವಾಯುಯಾನ ವಿಜ್ಞಾನಿ."
+          },
+          "fullDescription": {
+            "en": "Dr. Roddam Narasimha was an eminent aerospace scientist and fluid dynamicist who made landmark contributions to boundary layer transition, turbulence, and atmospheric dynamics. As Director of the National Aerospace Laboratories (NAL), he played a foundational role in the Light Combat Aircraft (LCA) Tejas programme and initiated India's civilian aircraft development with the SARAS project.",
+            "kn": "ಡಾ. ರೊದ್ದಂ ನರಸಿಂಹ ಅವರು ಭಾರತದ ಮುಂಚೂಣಿ ಏರೋಸ್ಪೇಸ್ ವಿಜ್ಞಾನಿ. ಬೆಂಗಳೂರಿನ ರಾಷ್ಟ್ರೀಯ ಏರೋಸ್ಪೇಸ್ ಲ್ಯಾಬೊರೇಟರೀಸ್ (NAL) ನಿರ್ದೇಶಕರಾಗಿ, ಲಘು ಯುದ್ಧ ವಿಮಾನ 'ತೇಜಸ್'ನ ಏರೋಡೈನಾಮಿಕ್ಸ್ ವಿನ್ಯಾಸವನ್ನು ರೂಪಿಸಿದರು ಮತ್ತು ಭಾರತದ ನಾಗರಿಕ ವಿಮಾನ 'ಸಾರಸ್' ಯೋಜನೆಯನ್ನು ಪ್ರಾರಂಭಿಸಿದರು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Aerodynamics and supersonic wind tunnel analysis",
+                "kn": "ಏರೋಡೈನಾಮಿಕ್ಸ್ ಮತ್ತು ವಾಯುಯಾನ ಸಂಶೋಧನೆ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "rn_c1",
+              "question": {
+                "en": "Which indigenous Indian supersonic multirole fighter aircraft benefited directly from Dr. Narasimha's aerodynamic research?",
+                "kn": "ಡಾ. ನರಸಿಂಹ ಅವರ ವಾಯುಬಲ ವಿಜ್ಞಾನದ ಸಂಶೋಧನೆಯಿಂದ ಪ್ರಯೋಜನ ಪಡೆದ ಭಾರತದ ಯುದ್ಧ ವಿಮಾನ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "LCA Tejas (ತೇಜಸ್)",
+                "kn": "ತೇಜಸ್ ಯುದ್ಧವಿಮಾನ (LCA Tejas)"
+              },
+              "details": {
+                "en": "He resolved intricate wing vortex dynamics allowing the delta-wing Tejas to maintain agile flight control at high angles of attack.",
+                "kn": "ಡೆಲ್ಟಾ ರೆಕ್ಕೆಗಳನ್ನು ಹೊಂದಿರುವ ತೇಜಸ್ ವಿಮಾನಕ್ಕೆ ಸ್ಥಿರತೆ ಮತ್ತು ನಿಖರವಾದ ಹಾರಾಟದ ನಿಯಂತ್ರಣವನ್ನು ಒದಗಿಸುವಲ್ಲಿ ಇವರ ಪಾತ್ರ ಮುಖ್ಯವಾಗಿತ್ತು."
+              }
+            }
+          ]
+        },
+        {
+          "id": "k_kasturirangan",
+          "name": {
+            "en": "Dr. K. Kasturirangan",
+            "kn": "ಡಾ. ಕೆ. ಕಸ್ತೂರಿರಂಗನ್"
+          },
+          "era": {
+            "en": "Born 1940 CE",
+            "kn": "ಜನನ ೧೯೪೦"
+          },
+          "summary": {
+            "en": "Visionary astrophysicist and former ISRO Chairman who operationalized GSLV and drafted NEP 2020.",
+            "kn": "ಜಿ.ಎಸ್.ಎಲ್.ವಿ ರಾಕೆಟ್ ಅಭಿವೃದ್ಧಿಪಡಿಸಿದ ಮಾಜಿ ಇಸ್ರೋ ಮುಖ್ಯಸ್ಥರು ಮತ್ತು ರಾಷ್ಟ್ರೀಯ ಶಿಕ್ಷಣ ನೀತಿಯ ರೂವಾರಿ."
+          },
+          "fullDescription": {
+            "en": "Dr. Krishnaswamy Kasturirangan steered India's space program into operational excellence as Chairman of ISRO from 1994 to 2003. He oversaw the major milestones of IRS Earth observation satellites, INSAT communication networks, and the early missions planning for Chandrayaan. Beyond space, he chaired the committee that drafted the National Education Policy 2020 (NEP) and the Western Ghats environmental protection panel.",
+            "kn": "ಡಾ. ಕಸ್ತೂರಿರಂಗನ್ ಅವರು ೧೯೯೪ ರಿಂದ ೨೦೦೩ ರವರೆಗೆ ಇಸ್ರೋ ಸಂಸ್ಥೆಯ ಅಧ್ಯಕ್ಷರಾಗಿ ಸೇವೆ ಸಲ್ಲಿಸಿದರು. ಇವರ ಅವಧಿಯಲ್ಲಿ ಭಾರತದ ದೂರಸಂವೇದಿ ಉಪಗ್ರಹಗಳು (IRS) ಮತ್ತು ಇನ್ಸಾಟ್ (INSAT) ಸಂವಹನ ಜಾಲವು ವಿಶ್ವದ ಮುಂಚೂಣಿಗೆ ತಲುಪಿತು. ಭಾರತದ ಹೊಸ ರಾಷ್ಟ್ರೀಯ ಶಿಕ್ಷಣ ನೀತಿ (NEP 2020) ರಚನಾ ಸಮಿತಿಯ ಅಧ್ಯಕ್ಷರಾಗಿಯೂ ಇವರು ಪ್ರಮುಖ ಪಾತ್ರ ವಹಿಸಿದ್ದಾರೆ."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Earth observation remote sensing constellation",
+                "kn": "ಭೂ-ವೀಕ್ಷಣಾ ದೂರಸಂವೇದಿ ಉಪಗ್ರಹ ಜಾಲ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "kk_c1",
+              "question": {
+                "en": "Which major national education reform framework was drafted by a high-level committee chaired by Dr. Kasturirangan?",
+                "kn": "ಡಾ. ಕಸ್ತೂರಿರಂಗನ್ ಅವರ ಅಧ್ಯಕ್ಷತೆಯ ಸಮಿತಿಯು ರೂಪಿಸಿದ ಭಾರತದ ಮಹತ್ವದ ಶಿಕ್ಷಣ ನೀತಿ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "National Education Policy 2020 (NEP 2020)",
+                "kn": "ರಾಷ್ಟ್ರೀಯ ಶಿಕ್ಷಣ ನೀತಿ ೨೦೨೦ (NEP)"
+              },
+              "details": {
+                "en": "Submitted in 2019 and adopted in 2020, restructuring primary through higher education in India.",
+                "kn": "ಭಾರತದ ಪ್ರಾಥಮಿಕ ಶಿಕ್ಷಣದಿಂದ ಉನ್ನತ ಶಿಕ್ಷಣದವರೆಗೆ ಸಮಗ್ರ ಬದಲಾವಣೆ ತರಲು ಈ ನೀತಿಯನ್ನು ರೂಪಿಸಲಾಯಿತು."
+              }
+            }
+          ]
+        },
+        {
+          "id": "sk_shivakumar",
+          "name": {
+            "en": "Dr. S. K. Shivakumar",
+            "kn": "ಡಾ. ಎಸ್. ಕೆ. ಶಿವಕುಮಾರ್"
+          },
+          "era": {
+            "en": "1953 – 2019 CE",
+            "kn": "೧೯೫೩ – ೨೦೧೯"
+          },
+          "summary": {
+            "en": "Mysuru-born telemetry pioneer who built India's Deep Space Network antenna for Chandrayaan-1.",
+            "kn": "ಚಂದ್ರಯಾನ-೧ ಗಾಗಿ ಭಾರತದ ಡೀಪ್ ಸ್ಪೇಸ್ ನೆಟ್‌‌ವರ್ಕ್ ಆಂಟೆನಾ ನಿರ್ಮಿಸಿದ ಮೈಸೂರಿನ ಟೆಲಿಮೆಟ್ರಿ ವಿಜ್ಞಾನಿ."
+          },
+          "fullDescription": {
+            "en": "Hailing from Mysuru, Dr. S. K. Shivakumar served as the Director of ISTRAC and the U R Rao Satellite Centre. He was the chief architect behind establishing the 32-meter giant Deep Space Network (DSN) antenna at Byalalu near Bengaluru, which made it possible for India to track, navigate, and receive high-definition images from Chandrayaan-1 in lunar orbit.",
+            "kn": "ಮೈಸೂರಿನವರಾದ ಡಾ. ಎಸ್. ಕೆ. ಶಿವಕುಮಾರ್ ಅವರು ಇಸ್ಟ್ರಾಕ್ (ISTRAC) ಮತ್ತು ಯು.ಆರ್. ರಾವ್ ಸ್ಯಾಟಲೈಟ್ ಸೆಂಟರ್‌ನ ನಿರ್ದೇಶಕರಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸಿದರು. ಬೆಂಗಳೂರಿನ ಸಮೀಪದ ಬ್ಯಾಲಾಳುವಿನಲ್ಲಿ ೩೨ ಮೀಟರ್ ಅಗಲದ ಬೃಹತ್ ಡೀಪ್ ಸ್ಪೇಸ್ ನೆಟ್‌ವರ್ಕ್ (DSN) ಆಂಟೆನಾವನ್ನು ಸ್ಥಾಪಿಸಿ, ಚಂದ್ರನ ಕಕ್ಷೆಯಲ್ಲಿದ್ದ ಚಂದ್ರಯಾನ-೧ ರೊಂದಿಗೆ ಭೂಮಿಯಿಂದ ಸಂವಹನ ಸಾಧ್ಯವಾಗಿಸಿದರು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Deep Space Network tracking dish antenna",
+                "kn": "ಡೀಪ್ ಸ್ಪೇಸ್ ನೆಟ್‌ವರ್ಕ್ ಟ್ರ್ಯಾಕಿಂಗ್ ಆಂಟೆನಾ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "sks_c1",
+              "question": {
+                "en": "At which location near Bengaluru did Dr. Shivakumar set up India's 32-meter Deep Space Network antenna for Chandrayaan-1?",
+                "kn": "ಚಂದ್ರಯಾನ-೧ ಕ್ಕಾಗಿ ಬೆಂಗಳೂರಿನ ಸಮೀಪವಿರುವ ಯಾವ ಸ್ಥಳದಲ್ಲಿ ೩೨ ಮೀಟರ್ ಆಂಟೆನಾವನ್ನು ಸ್ಥಾಪಿಸಲಾಯಿತು?"
+              },
+              "answer": {
+                "en": "Byalalu (ಬ್ಯಾಲಾಳು)",
+                "kn": "ಬ್ಯಾಲಾಳು (Byalalu)"
+              },
+              "details": {
+                "en": "The Byalalu deep space complex was crucial for confirming the presence of water molecules on the lunar surface.",
+                "kn": "ಚಂದ್ರನ ಮೇಲೆ ನೀರಿನ ಕಣಗಳಿರುವುದನ್ನು ಖಚಿತಪಡಿಸಿದ ಚಂದ್ರಯಾನ-೧ ರ ದತ್ತಾಂಶಗಳನ್ನು ಸ್ವೀಕರಿಸಿದ್ದು ಇದೇ ಬ್ಯಾಲಾಳು ಕೇಂದ್ರ."
               }
             }
           ]
@@ -88,11 +210,113 @@
       ]
     },
     {
-      "id": "mysore_engineering",
-      "icon": "🌊",
+      "id": "materials_nuclear",
+      "icon": "⚛️",
       "name": {
-        "en": "Mysore & Hydraulic Engineering",
-        "kn": "ಮೈಸೂರು ಸಂಸ್ಥಾನ ಮತ್ತು ಜಲತಂತ್ರಜ್ಞಾನ"
+        "en": "Materials & Nuclear Physics",
+        "kn": "ವಸ್ತು ವಿಜ್ಞಾನ ಮತ್ತು ಅಣುಶಕ್ತಿ"
+      },
+      "topics": [
+        {
+          "id": "cnr_rao",
+          "name": {
+            "en": "Prof. C. N. R. Rao",
+            "kn": "ಪ್ರೊ. ಸಿ. ಎನ್. ಆರ್. ರಾವ್"
+          },
+          "era": {
+            "en": "Born 1934 CE",
+            "kn": "ಜನನ ೧೯೩೪"
+          },
+          "summary": {
+            "en": "Bharat Ratna solid-state chemist and global authority on graphene and transition metal oxides.",
+            "kn": "ಘನವಸ್ತು ರಸಾಯನಶಾಸ್ತ್ರ ಮತ್ತು ನ್ಯಾನೊ ತಂತ್ರಜ್ಞಾನದಲ್ಲಿ ಜಾಗತಿಕ ಮಟ್ಟದ ಸಂಶೋಧನೆ ನಡೆಸಿದ ಭಾರತ ರತ್ನ ಪುರಸ್ಕೃತರು."
+          },
+          "fullDescription": {
+            "en": "Prof. Chintamani Nagesa Ramachandra Rao is one of the world's most cited materials chemists. He has authored over 1,700 research publications and 50 books covering transition metal oxides, superconductors, carbon nanotubes, and graphene. He founded the Jawaharlal Nehru Centre for Advanced Scientific Research (JNCASR) in Bengaluru and was awarded the Bharat Ratna in 2014.",
+            "kn": "ಪ್ರೊ. ಸಿ. ಎನ್. ಆರ್. ರಾವ್ ಅವರು ವಿಶ್ವದ ಅತಿ ಹೆಚ್ಚು ಉಲ್ಲೇಖಿಸಲ್ಪಟ್ಟ (most cited) ವಿಜ್ಞಾನಿಗಳಲ್ಲಿ ಒಬ್ಬರು. ಸೂಪರ್‌ಕಂಡಕ್ಟರ್‌ಗಳು, ಗ್ರಾಫೀನ್ ಮತ್ತು ನ್ಯಾನೊ ವಸ್ತುಗಳ ಕುರಿತು ೧೭೦೦ ಕ್ಕೂ ಹೆಚ್ಚು ಸಂಶೋಧನಾ ಪ್ರಬಂಧಗಳನ್ನು ಪ್ರಕಟಿಸಿದ್ದಾರೆ. ಬೆಂಗಳೂರಿನ ಜವಾಹರಲಾಲ್ ನೆಹರು ಸೆಂಟರ್ ಫಾರ್ ಅಡ್ವಾನ್ಸ್ಡ್ ಸೈಂಟಿಫಿಕ್ ರಿಸರ್ಚ್ (JNCASR) ಸಂಸ್ಥಾಪಕರಾದ ಇವರಿಗೆ ೨೦೧೪ ರಲ್ಲಿ 'ಭಾರತ ರತ್ನ' ಪ್ರಶಸ್ತಿ ನೀಡಿ ಗೌರವಿಸಲಾಯಿತು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Nanomaterials and 2D graphene crystal research",
+                "kn": "ನ್ಯಾನೊ ವಸ್ತುಗಳು ಮತ್ತು ಗ್ರಾಫೀನ್ ಸ್ಫಟಿಕ ಸಂಶೋಧನೆ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "cnr_c1",
+              "question": {
+                "en": "Which premier scientific research institute in Jakkur, Bengaluru, was founded by Prof. C. N. R. Rao in 1989?",
+                "kn": "೧೯೮೯ ರಲ್ಲಿ ಬೆಂಗಳೂರಿನ ಜಕ್ಕೂರು ಬಳಿ ಪ್ರೊ. ಸಿ. ಎನ್. ಆರ್. ರಾವ್ ಅವರು ಸ್ಥಾಪಿಸಿದ ಪ್ರಸಿದ್ಧ ಸಂಶೋಧನಾ ಸಂಸ್ಥೆ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "JNCASR (ಜವಾಹರಲಾಲ್ ನೆಹರು ಉನ್ನತ ವೈಜ್ಞಾನಿಕ ಸಂಶೋಧನಾ ಕೇಂದ್ರ)",
+                "kn": "ಜೆ.ಎನ್.ಸಿ.ಎ.ಎಸ್.ಆರ್ (JNCASR)"
+              },
+              "details": {
+                "en": "Jawaharlal Nehru Centre for Advanced Scientific Research is a premier multidisciplinary research institute in advanced chemistry and nanotechnology.",
+                "kn": "ಇದು ನವೀನ ರಸಾಯನಶಾಸ್ತ್ರ, ವಸ್ತು ವಿಜ್ಞಾನ ಮತ್ತು ನ್ಯಾನೊ ತಂತ್ರಜ್ಞಾನದಲ್ಲಿ ಉನ್ನತ ಸಂಶೋಧನೆ ನಡೆಸುವ ಸಂಸ್ಥೆಯಾಗಿದೆ."
+              }
+            }
+          ]
+        },
+        {
+          "id": "raja_ramanna",
+          "name": {
+            "en": "Dr. Raja Ramanna",
+            "kn": "ಡಾ. ರಾಜಾ ರಾಮಣ್ಣ"
+          },
+          "era": {
+            "en": "1925 – 2004 CE",
+            "kn": "೧೯೨೫ – ೨೦೦೪"
+          },
+          "summary": {
+            "en": "Nuclear physicist and master director of India's first nuclear test, Operation Smiling Buddha (1974).",
+            "kn": "ಭಾರತದ ಮೊದಲ ಅಣು ಪರೀಕ್ಷೆ 'ಆಪರೇಷನ್ ಸ್ಮೈಲಿಂಗ್ ಬುದ್ಧ' ಯಶಸ್ವಿಯಾಗಿ ಮುನ್ನಡೆಸಿದ ಖ್ಯಾತ ಅಣು ವಿಜ್ಞಾನಿ."
+          },
+          "fullDescription": {
+            "en": "Born in Tumakuru, Dr. Raja Ramanna was a legendary nuclear physicist who directed the Bhabha Atomic Research Centre (BARC). He was the operational commander and chief physicist behind India's maiden peaceful nuclear explosion in Pokhran in May 1974 (Operation Smiling Buddha). Beyond science, he was a gifted Western classical pianist and musicologist.",
+            "kn": "ತುಮಕೂರಿನಲ್ಲಿ ಜನಿಸಿದ ಡಾ. ರಾಜಾ ರಾಮಣ್ಣ ಅವರು ಭಾರತದ ಖ್ಯಾತ ಅಣು ಭೌತಶಾಸ್ತ್ರಜ್ಞರು. ೧೯೭೪ ರ ಮೇ ತಿಂಗಳಲ್ಲಿ ಪೋಖ್ರಾನ್‌ನಲ್ಲಿ ನಡೆದ ಭಾರತದ ಪ್ರಥಮ ಅಣು ಪರೀಕ್ಷೆಯನ್ನು (ಆಪರೇಷನ್ ಸ್ಮೈಲಿಂಗ್ ಬುದ್ಧ) ಇವರ ನೇತೃತ್ವದಲ್ಲಿ ಯಶಸ್ವಿಯಾಗಿ ನಡೆಸಲಾಯಿತು. ಭಾಭಾ ಪರಮಾಣು ಸಂಶೋಧನಾ ಕೇಂದ್ರದ (BARC) ನಿರ್ದೇಶಕರಾಗಿದ್ದ ಇವರು ಅತ್ಯುತ್ತಮ ಪಿಯಾನೋ ವಾದಕರೂ ಆಗಿದ್ದರು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Nuclear physics reactor and particle beam research",
+                "kn": "ಅಣುಶಕ್ತಿ ರಿಯಾಕ್ಟರ್ ಮತ್ತು ಕಣ ಭೌತಶಾಸ್ತ್ರ ಸಂಶೋಧನೆ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "rr_c1",
+              "question": {
+                "en": "What was the codename of India's first nuclear test conducted under Dr. Raja Ramanna's direction in May 1974?",
+                "kn": "೧೯೭೪ ರಲ್ಲಿ ಡಾ. ರಾಜಾ ರಾಮಣ್ಣ ಅವರ ನೇತೃತ್ವದಲ್ಲಿ ನಡೆದ ಭಾರತದ ಮೊದಲ ಅಣು ಪರೀಕ್ಷೆಯ ಸಂಕೇತ ನಾಮ (Codename) ಏನು?"
+              },
+              "answer": {
+                "en": "Operation Smiling Buddha (ಸ್ಮೈಲಿಂಗ್ ಬುದ್ಧ)",
+                "kn": "ಆಪರೇಷನ್ ಸ್ಮೈಲಿಂಗ್ ಬುದ್ಧ (Pokhran-I)"
+              },
+              "details": {
+                "en": "Conducted on Buddha Jayanti at the Pokhran test range in Rajasthan, establishing India's sovereign nuclear deterrence capability.",
+                "kn": "ರಾಜಸ್ಥಾನದ ಪೋಖ್ರಾನ್‌ನಲ್ಲಿ ಬುದ್ಧ ಪೂರ್ಣಿಮೆಯ ದಿನದಂದು ಈ ಪರೀಕ್ಷೆ ನಡೆದಿದ್ದರಿಂದ ಇದಕ್ಕೆ 'ಸ್ಮೈಲಿಂಗ್ ಬುದ್ಧ' ಎಂದು ಹೆಸರಿಡಲಾಯಿತು."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "civil_ecology",
+      "icon": "🌱",
+      "name": {
+        "en": "Engineering, Ecology & Life Sciences",
+        "kn": "ಎಂಜಿನಿಯರಿಂಗ್, ಪರಿಸರ ಮತ್ತು ಜೀವವಿಜ್ಞಾನ"
       },
       "topics": [
         {
@@ -106,28 +330,20 @@
             "kn": "೧೮೬೧ – ೧೯೬೨"
           },
           "summary": {
-            "en": "Visionary statesman and engineer who designed the Krishna Raja Sagara Dam and patented revolutionary automatic floodgates.",
-            "kn": "ಕೃಷ್ಣರಾಜ ಸಾಗರ ಅಣೆಕಟ್ಟು ವಿನ್ಯಾಸಗೊಳಿಸಿ, ಸ್ವಯಂಚಾಲಿತ ತೂಬು ಗೇಟ್‌‌ಗಳನ್ನು ಆವಿಷ್ಕರಿಸಿದ ಮಹಾನ್ ಎಂಜಿನಿಯರ್ ಮತ್ತು ದಾರ್ಶನಿಕ."
+            "en": "Father of Indian engineering, inventor of automatic floodgates, and builder of modern Mysore.",
+            "kn": "ಭಾರತೀಯ ಎಂಜಿನಿಯರಿಂಗ್‌ನ ಪಿತಾಮಹ, ಸ್ವಯಂಚಾಲಿತ ತೂಬು ಗೇಟ್‌ಗಳ ಸಂಶೋಧಕ ಹಾಗೂ ನವ ಮೈಸೂರಿನ ನಿರ್ಮಾತೃ."
           },
           "fullDescription": {
-            "en": "Sir Mokshagundam Visvesvaraya transformed Karnataka's agrarian and industrial topography. Appointed Chief Engineer and later the 19th Diwan of Mysore, he conceptualized the Krishna Raja Sagara (KRS) dam across the Kaveri. He patented automatic weir sluice gates that operated purely via counterweights and water displacement, preventing reservoir breach without requiring human power.",
-            "kn": "ಸರ್ ಎಂ. ವಿಶ್ವೇಶ್ವರಯ್ಯನವರು ಕರ್ನಾಟಕದ ಕೃಷಿ ಮತ್ತು ಕೈಗಾರಿಕಾ ರಂಗಕ್ಕೆ ಹೊಸ ದಿಕ್ಕು ನೀಡಿದರು. ಮೈಸೂರಿನ ೧೯ನೇ ದಿವಾನರಾಗಿ, ಕಾವೇರಿ ನದಿಗೆ ಅಡ್ಡಲಾಗಿ ಕೃಷ್ಣರಾಜ ಸಾಗರ (KRS) ಅಣೆಕಟ್ಟನ್ನು ನಿರ್ಮಿಸಿದರು. ವಿದ್ಯುತ್ ಅಥವಾ ಮಾನವ ಶಕ್ತಿಯ ಅಗತ್ಯವಿಲ್ಲದೆ, ನೀರಿನ ಮಟ್ಟಕ್ಕನುಗುಣವಾಗಿ ತಾವಾಗಿಯೇ ತೆರೆದುಕೊಳ್ಳುವ ಸ್ವಯಂಚಾಲಿತ ಗೇಟ್‌ಗಳನ್ನು ವಿನ್ಯಾಸಗೊಳಿಸಿ ಪೇಟೆಂಟ್ ಪಡೆದರು."
+            "en": "Sir Mokshagundam Visvesvaraya was a preeminent civil and hydraulic engineer born in Muddenahalli, Chikkaballapura. He designed and patented counterweighted automatic sluice floodgates, engineered the Krishna Raja Sagara Dam across the Kaveri, transformed Hyderabad's flood protection drainage, and founded the University of Visvesvaraya College of Engineering (UVCE). He was decorated with the Bharat Ratna in 1955.",
+            "kn": "ಚಿಕ್ಕಬಳ್ಳಾಪುರದ ಮುದ್ದೇನಹಳ್ಳಿಯಲ್ಲಿ ಜನಿಸಿದ ಸರ್ ಎಂ. ವಿಶ್ವೇಶ್ವರಯ್ಯ ಭಾರತದ ಮಹಾನ್ ಸಿವಿಲ್ ಮತ್ತು ಜಲ ಎಂಜಿನಿಯರಿಂಗ್ ವಿಜ್ಞಾನಿ. ಕೃಷ್ಣರಾಜ ಸಾಗರ ಅಣೆಕಟ್ಟನ್ನು ನಿರ್ಮಿಸಿ, ಸ್ವಯಂಚಾಲಿತ ಪ್ರವಾಹ ನಿಯಂತ್ರಣ ಗೇಟ್‌ಗಳನ್ನು ಆವಿಷ್ಕರಿಸಿ ಪೇಟೆಂಟ್ ಪಡೆದರು. ಇವರ ಜನ್ಮದಿನವಾದ ಸೆಪ್ಟೆಂಬರ್ ೧೫ ಅನ್ನು ಭಾರತದಲ್ಲಿ 'ಎಂಜಿನಿಯರ್ಸ್ ಡೇ' ಎಂದು ಆಚರಿಸಲಾಗುತ್ತದೆ. ೧೯೫೫ ರಲ್ಲಿ ಇವರಿಗೆ ಭಾರತ ರತ್ನ ಸಂದಿತು."
           },
           "media": [
             {
               "type": "image",
               "url": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=700&q=80",
               "caption": {
-                "en": "Krishna Raja Sagara Dam spillways",
-                "kn": "ಕೆ.ಆರ್.ಎಸ್ ಅಣೆಕಟ್ಟಿನ ನೀರೊಳು ಹರಿವು"
-              }
-            },
-            {
-              "type": "video",
-              "url": "https://www.youtube.com/embed/8J7m5n_Gg08",
-              "caption": {
-                "en": "Engineering Marvel: Automatic Floodgates",
-                "kn": "ಎಂಜಿನಿಯರಿಂಗ್ ಚಮತ್ಕಾರ: ಸ್ವಯಂಚಾಲಿತ ಪ್ರವಾಹ ಗೇಟ್‌ಗಳು"
+                "en": "KRS Dam hydraulic sluice architecture",
+                "kn": "ಕೆ.ಆರ್.ಎಸ್ ಅಣೆಕಟ್ಟಿನ ನೀರಾವರಿ ವಿನ್ಯಾಸ"
               }
             }
           ],
@@ -135,143 +351,154 @@
             {
               "id": "mv_c1",
               "question": {
-                "en": "What patented innovation did Sir M. Visvesvaraya design in 1903 to safeguard reservoirs during peak floods?",
-                "kn": "೧೯೦೩ ರಲ್ಲಿ ಗರಿಷ್ಠ ಪ್ರವಾಹದ ಸಮಯದಲ್ಲಿ ಅಣೆಕಟ್ಟುಗಳನ್ನು ರಕ್ಷಿಸಲು ಸರ್ ಎಂ.ವಿ ಕಂಡುಹಿಡಿದ ಪೇಟೆಂಟ್ ತಂತ್ರಜ್ಞಾನ ಯಾವುದು?"
+                "en": "On which date is Engineer's Day celebrated across India every year in honor of Sir M. Visvesvaraya's birthday?",
+                "kn": "ಸರ್ ಎಂ. ವಿಶ್ವೇಶ್ವರಯ್ಯನವರ ಜನ್ಮದಿನದ ಅಂಗವಾಗಿ ಪ್ರತಿವರ್ಷ ಭಾರತದಲ್ಲಿ 'ಎಂಜಿನಿಯರ್ಸ್ ಡೇ' ಎಂದು ಯಾವ ದಿನ ಆಚರಿಸಲಾಗುತ್ತದೆ?"
               },
               "answer": {
-                "en": "Automatic Sluice Floodgates",
-                "kn": "ಸ್ವಯಂಚಾಲಿತ ತೂಬು ಪ್ರವಾಹ ಗೇಟ್‌ಗಳು"
+                "en": "September 15 (ಸೆಪ್ಟೆಂಬರ್ ೧೫)",
+                "kn": "ಸೆಪ್ಟೆಂಬರ್ ೧೫"
               },
               "details": {
-                "en": "First installed at Khadakwasla Dam and later at Tigra and KRS Dams, these counterweight gates opened automatically when water rose above safety levels.",
-                "kn": "ಮೊದಲು ಪುಣೆಯ ಖಡಕ್‌‌ವಾಸ್ಲಾ ಮತ್ತು ನಂತರ ಕೆ.ಆರ್.ಎಸ್ ಅಣೆಕಟ್ಟಿನಲ್ಲಿ ಅಳವಡಿಸಲಾದ ಈ ತೂಬು ಗೇಟ್‌ಗಳು ನೀರಿನ ಒತ್ತಡದಿಂದ ತಾವೇ ತೆರೆದುಕೊಳ್ಳುತ್ತಿದ್ದವು."
-              }
-            },
-            {
-              "id": "mv_c2",
-              "question": {
-                "en": "In which year was Sir M. Visvesvaraya conferred India's highest civilian award, the Bharat Ratna?",
-                "kn": "ಸರ್ ಎಂ. ವಿಶ್ವೇಶ್ವರಯ್ಯನವರಿಗೆ ಭಾರತದ ಅತ್ಯುನ್ನತ ನಾಗರಿಕ ಪ್ರಶಸ್ತಿಯಾದ 'ಭಾರತ ರತ್ನ' ಯಾವ ವರ್ಷದಲ್ಲಿ ಸಂದಿತು?"
-              },
-              "answer": {
-                "en": "1955 CE",
-                "kn": "೧೯೫೫ ರಲ್ಲಿ"
-              },
-              "details": {
-                "en": "Conferred by President Rajendra Prasad, recognizing his indelible contributions to civil engineering, nation-building, and education.",
-                "kn": "ರಾಷ್ಟ್ರ ನಿರ್ಮಾಣ, ನೀರಾವರಿ ಎಂಜಿನಿಯರಿಂಗ್ ಮತ್ತು ಶಿಕ್ಷಣ ಕ್ಷೇತ್ರಕ್ಕೆ ನೀಡಿದ ಮಹೋನ್ನತ ಕೊಡುಗೆಗಾಗಿ ರಾಷ್ಟ್ರಪತಿ ರಾಜೇಂದ್ರ ಪ್ರಸಾದ್ ಅವರು ಪ್ರಶಸ್ತಿ ಪ್ರದಾನ ಮಾಡಿದರು."
+                "en": "Commemorated across India, Sri Lanka, and Tanzania to recognize his revolutionary contributions to civil engineering and industrialization.",
+                "kn": "ಭಾರತ, ಶ್ರೀಲಂಕಾ ಮತ್ತು ತಾಂಜಾನಿಯಾಗಳಲ್ಲಿ ಇವರ ಸ್ಮರಣಾರ್ಥ ಈ ದಿನವನ್ನು ಎಂಜಿನಿಯರ್ಸ್ ಡೇ ಎಂದು ಆಚರಿಸಲಾಗುತ್ತದೆ."
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "modern_civic",
-      "icon": "🏛️",
-      "name": {
-        "en": "Modernist & Civic Architecture",
-        "kn": "ಆಧುನಿಕ ಮತ್ತು ಸಾರ್ವಜನಿಕ ವಾಸ್ತುಶಿಲ್ಪ"
-      },
-      "topics": [
+        },
         {
-          "id": "manickam",
+          "id": "madhav_gadgil",
           "name": {
-            "en": "B.R. Manickam",
-            "kn": "ಬಿ.ಆರ್. ಮಾಣಿಕ್ಯಂ"
+            "en": "Prof. Madhav Gadgil",
+            "kn": "ಪ್ರೊ. ಮಾಧವ್ ಗಾಡ್ಗೀಳ್"
           },
           "era": {
-            "en": "Mid 20th Century",
-            "kn": "೨೦ನೇ ಶತಮಾನದ ಮಧ್ಯಭಾಗ"
+            "en": "Born 1942 CE",
+            "kn": "ಜನನ ೧೯೪೨"
           },
           "summary": {
-            "en": "Chief architect of the Vidhana Soudha, combining Bangalore granite with Neo-Dravidian architecture.",
-            "kn": "ಬೆಂಗಳೂರು ಗ್ರಾನೈಟ್ ಕಲ್ಲಿನಿಂದ ಭವ್ಯ ವಿಧಾನ ಸೌಧವನ್ನು ನವ-ದ್ರಾವಿಡ ಶೈಲಿಯಲ್ಲಿ ನಿರ್ಮಿಸಿದ ಮುಖ್ಯ ವಾಸ್ತುಶಿಲ್ಪಿ."
+            "en": "Pioneering ecologist at IISc Bengaluru who authored the Western Ghats environmental protection report.",
+            "kn": "ಐಐಎಸ್‌ಸಿ ಪರಿಸರ ಕೇಂದ್ರದ ಸ್ಥಾಪಕರು ಮತ್ತು ಪಶ್ಚಿಮ ಘಟ್ಟಗಳ ಸಂರಕ್ಷಣಾ ವರದಿಯ (ಗಾಡ್ಗೀಳ್ ವರದಿ) ಕರ್ತೃ."
           },
           "fullDescription": {
-            "en": "B.R. Manickam served as the Government Architect of Mysore State. Guided by Chief Minister Kengal Hanumanthaiah's vision to craft an indigenous monument for sovereign governance, Manickam combined elements of Dravidian gopurams, Chola pillars, and Indo-Saracenic domes entirely constructed from Bangalore granite.",
-            "kn": "ಬಿ.ಆರ್. ಮಾಣಿಕ್ಯಂ ಮೈಸೂರು ಸರ್ಕಾರದ ಮುಖ್ಯ ವಾಸ್ತುಶಿಲ್ಪಿಯಾಗಿದ್ದರು. ಕೆಂಗಲ್ ಹನುಮಂತಯ್ಯನವರ ಕನಸಿನಂತೆ, ಪ್ರಜಾಪ್ರಭುತ್ವದ ಸಂಕೇತವಾಗಿ ಬೆಂಗಳೂರಿನ ಬೂದು ಗ್ರಾನೈಟ್ ಶಿಲೆಯಲ್ಲಿ ಭವ್ಯ ನವ-ದ್ರಾವಿಡ ವಿಧಾನ ಸೌಧವನ್ನು ನಿರ್ಮಿಸಿದರು."
+            "en": "Prof. Madhav Gadgil is an acclaimed Indian ecologist who founded the Centre for Ecological Sciences (CES) at the Indian Institute of Science (IISc), Bengaluru. He pioneered community-based conservation and the documentation of traditional ecological knowledge through People's Biodiversity Registers. He headed the landmark Western Ghats Ecology Expert Panel (WGEEP), widely known as the Gadgil Commission.",
+            "kn": "ಪ್ರೊ. ಮಾಧವ್ ಗಾಡ್ಗೀಳ್ ಅವರು ಬೆಂಗಳೂರಿನ ಭಾರತೀಯ ವಿಜ್ಞಾನ ಸಂಸ್ಥೆಯಲ್ಲಿ (IISc) ಪರಿಸರ ವಿಜ್ಞಾನ ಕೇಂದ್ರವನ್ನು (CES) ಸ್ಥಾಪಿಸಿದ ಪ್ರಸಿದ್ಧ ಪರಿಸರ ವಿಜ್ಞಾನಿ. ಸ್ಥಳೀಯ ಸಮುದಾಯಗಳ ಸಹಭಾಗಿತ್ವದಲ್ಲಿ ಜೀವವೈವಿಧ್ಯ ರಕ್ಷಣೆಗೆ ಒತ್ತು ನೀಡಿದ ಇವರು, ಪಶ್ಚಿಮ ಘಟ್ಟಗಳ ಪರಿಸರ ರಕ್ಷಣೆಗಾಗಿ ವಿಶ್ವಖ್ಯಾತ 'ಗಾಡ್ಗೀಳ್ ಸಮಿತಿ ವರದಿ'ಯನ್ನು ಸಿದ್ಧಪಡಿಸಿದರು."
           },
           "media": [
             {
               "type": "image",
-              "url": "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=700&q=80",
+              "url": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=700&q=80",
               "caption": {
-                "en": "Vidhana Soudha central dome",
-                "kn": "ವಿಧಾನ ಸೌಧದ ಪ್ರಮುಖ ಗುಮ್ಮಟ"
+                "en": "Western Ghats tropical biodiversity canopy",
+                "kn": "ಪಶ್ಚಿಮ ಘಟ್ಟಗಳ ದಟ್ಟ ಮಳೆಕಾಡು ಮತ್ತು ಜೀವವೈವಿಧ್ಯ"
               }
             }
           ],
           "challenges": [
             {
-              "id": "brm_c1",
+              "id": "mg_c1",
               "question": {
-                "en": "What local stone material was quarried and hand-dressed to construct the entire Vidhana Soudha?",
-                "kn": "ಸಂಪೂರ್ಣ ವಿಧಾನ ಸೌಧವನ್ನು ನಿರ್ಮಿಸಲು ಸ್ಥಳೀಯವಾಗಿ ಬಳಸಲಾದ ಕಲ್ಲು ಯಾವುದು?"
+                "en": "Which biodiversity-rich mountain range was the primary focus of the Gadgil Commission's landmark environmental report?",
+                "kn": "ಗಾಡ್ಗೀಳ್ ಸಮಿತಿಯ ಮಹತ್ವದ ಪರಿಸರ ಸಂರಕ್ಷಣಾ ವರದಿಯು ಭಾರತದ ಯಾವ ಪರ್ವತ ಶ್ರೇಣಿಗೆ ಸಂಬಂಧಿಸಿದೆ?"
               },
               "answer": {
-                "en": "Bangalore Blue-Gray Granite",
-                "kn": "ಬೆಂಗಳೂರಿನ ನೀಲಿ-ಬೂದು ಗ್ರಾನೈಟ್ ಕಲ್ಲು"
+                "en": "The Western Ghats (ಪಶ್ಚಿಮ ಘಟ್ಟಗಳು / ಸಹ್ಯಾದ್ರಿ)",
+                "kn": "ಪಶ್ಚಿಮ ಘಟ್ಟಗಳು (Western Ghats)"
               },
               "details": {
-                "en": "Over 5,000 convict artisans and sculptors hand-carved millions of cubic feet of granite between 1951 and 1956.",
-                "kn": "೧೯೫೧ ರಿಂದ ೧೯೫೬ ರ ನಡುವೆ ಸಾವಿರಾರು ಶಿಲ್ಪಿಗಳು ಗ್ರಾನೈಟ್ ಕಲ್ಲುಗಳನ್ನು ಕೈಯಾರೆ ಕೆತ್ತಿ ಈ ಬೃಹತ್ ಸೌಧವನ್ನು ನಿರ್ಮಿಸಿದರು."
+                "en": "The report designated ecological sensitivity zones across Karnataka, Kerala, Goa, Maharashtra, and Tamil Nadu to preserve water catchments and biodiversity.",
+                "kn": "ಕರ್ನಾಟಕವೂ ಸೇರಿದಂತೆ ೬ ರಾಜ್ಯಗಳ ವ್ಯಾಪ್ತಿಯಲ್ಲಿರುವ ಪಶ್ಚಿಮ ಘಟ್ಟಗಳನ್ನು ಸೂಕ್ಷ್ಮ ಪರಿಸರ ವಲಯವೆಂದು ಗುರುತಿಸಿ ಸಂರಕ್ಷಣೆಗೆ ಶಿಫಾರಸು ಮಾಡಲಾಯಿತು."
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "sustainable",
-      "icon": "🌱",
-      "name": {
-        "en": "Sustainable & Earth Architecture",
-        "kn": "ಪರಿಸರ ಸ್ನೇಹಿ ಮತ್ತು ಮಣ್ಣಿನ ವಾಸ್ತುಶಿಲ್ಪ"
-      },
-      "topics": [
+        },
         {
-          "id": "chitra",
+          "id": "sharat_chandra",
           "name": {
-            "en": "Chitra Vishwanath",
-            "kn": "ಚಿತ್ರಾ ವಿಶ್ವನಾಥ್"
+            "en": "Prof. H. Sharat Chandra",
+            "kn": "ಪ್ರೊ. ಎಚ್. ಶರತ್ ಚಂದ್ರ"
           },
           "era": {
-            "en": "Contemporary Era",
-            "kn": "ಸಮಕಾಲೀನ ಯುಗ"
+            "en": "1938 – 2021 CE",
+            "kn": "೧೯೩೮ – ೨೦೨೧"
           },
           "summary": {
-            "en": "Pioneering eco-architect advocating mud architecture, rainwater harvesting, and ecological sanitation.",
-            "kn": "ಮಣ್ಣಿನ ಗಾರೆ, ಮಳೆನೀರು ಕೊಯ್ಲು ಮತ್ತು ನೈಸರ್ಗಿಕ ವಾತಾಯನದ ಮೂಲಕ ಪರಿಸರ ಸ್ನೇಹಿ ಮನೆಗಳನ್ನು ರೂಪಿಸಿದ ಪ್ರವರ್ತಕಿ."
+            "en": "Bengaluru geneticist who made foundational breakthroughs in human sex determination and epigenetics.",
+            "kn": "ಮಾನವ ಲಿಂಗ ನಿರ್ಧಾರ ಮತ್ತು ಜೆನೆಟಿಕ್ಸ್ (ತಳಿಶಾಸ್ತ್ರ) ಸಂಶೋಧನೆಯಲ್ಲಿ ಮಹತ್ವದ ಕೊಡುಗೆ ನೀಡಿದ ಬೆಂಗಳೂರಿನ ವಿಜ್ಞಾನಿ."
           },
           "fullDescription": {
-            "en": "Chitra Vishwanath, principal architect at Biome Environmental Solutions, has designed and built more than 1,000 ecological structures. Her core methodology relies on mud excavated from basements and rainwater sumps to make compressed stabilized earth blocks without baking, reducing carbon emissions drastically.",
-            "kn": "ಬಯೋಮ್ ಎನ್ವಿರಾನ್‌ಮೆಂಟಲ್ ಸೊಲ್ಯೂಷನ್ಸ್ ಸಂಸ್ಥಾಪಕಿ ಚಿತ್ರಾ ವಿಶ್ವನಾಥ್, ಒಂದು ಸಾವಿರಕ್ಕೂ ಹೆಚ್ಚು ಪರಿಸರ ಸ್ನೇಹಿ ಕಟ್ಟಡಗಳನ್ನು ನಿರ್ಮಿಸಿದ್ದಾರೆ. ಕಟ್ಟಡದ ಅಡಿಪಾಯ ಅಗೆಯುವಾಗ ದೊರೆಯುವ ಮಣ್ಣಿನಿಂದಲೇ ಇಟ್ಟಿಗೆಗಳನ್ನು ತಯಾರಿಸಿ, ವಿದ್ಯುತ್ ಶಕ್ತಿಯಿಲ್ಲದೆ ತಂಪಾಗಿರುವ ಮನೆಗಳನ್ನು ನಿರ್ಮಿಸುವುದು ಇವರ ವಿಶೇಷತೆ."
+            "en": "Prof. Hombe Gowda Sharat Chandra was an internationally respected human geneticist who served as Director of the Centre for Cellular and Molecular Biology (CCMB) and taught at the Indian Institute of Science (IISc). His pioneering work unraveled the mechanisms of mammalian X-chromosome inactivation, genomic imprinting, and the evolution of sex determination chromosomes.",
+            "kn": "ಪ್ರೊ. ಎಚ್. ಶರತ್ ಚಂದ್ರ ಅವರು ವಿಶ್ವಮನ್ನಣೆ ಪಡೆದ ತಳಿವಿಜ್ಞಾನಿ. ಬೆಂಗಳೂರಿನ ಐಐಎಸ್‌ಸಿ ಮತ್ತು ಹೈದರಾಬಾದ್‌ನ ಸಿಸಿಎಂಬಿ (CCMB) ನಿರ್ದೇಶಕರಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸಿದ ಇವರು, ಸಸ್ತನಿಗಳಲ್ಲಿ ಎಕ್ಸ್-ಕ್ರೋಮೋಸೋಮ್ ನಿಷ್ಕ್ರಿಯತೆ ಮತ್ತು ವಂಶವಾಹಿಗಳಲ್ಲಿ ಲಿಂಗ ನಿರ್ಧಾರವಾಗುವ ಪ್ರಕ್ರಿಯೆಯನ್ನು ಸಂಶೋಧನೆಯ ಮೂಲಕ ಜಗತ್ತಿಗೆ ವಿವರಿಸಿದರು."
           },
           "media": [
             {
               "type": "image",
-              "url": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=700&q=80",
+              "url": "https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&w=700&q=80",
               "caption": {
-                "en": "Rammed earth wall texture",
-                "kn": "ನೈಸರ್ಗಿಕ ಮಣ್ಣಿನ ಗೋಡೆಯ ವಿನ್ಯಾಸ"
+                "en": "DNA double helix and chromosome karyotyping",
+                "kn": "ಡಿಎನ್ಎ ಮತ್ತು ಕ್ರೋಮೋಸೋಮ್ ತಳಿ ಸಂಶೋಧನೆ"
               }
             }
           ],
           "challenges": [
             {
-              "id": "cv_c1",
+              "id": "sc_c1",
               "question": {
-                "en": "What unburnt building material forms the cornerstone of Chitra Vishwanath's zero-waste construction?",
-                "kn": "ಚಿತ್ರಾ ವಿಶ್ವನಾಥ್ ಅವರ ಪರಿಸರ ಸ್ನೇಹಿ ಕಟ್ಟಡ ನಿರ್ಮಾಣದಲ್ಲಿ ಬಳಸಲಾಗುವ ಸುಡದ ಇಟ್ಟಿಗೆ ತಂತ್ರಜ್ಞಾನ ಯಾವುದು?"
+                "en": "In which field of genetics did Prof. Sharat Chandra make pioneering discoveries regarding mammalian X-chromosomes?",
+                "kn": "ಸಸ್ತನಿಗಳ 'ಎಕ್ಸ್-ಕ್ರೋಮೋಸೋಮ್' ಕುರಿತು ಪ್ರೊ. ಶರತ್ ಚಂದ್ರ ಅವರು ಯಾವ ಕ್ಷೇತ್ರದಲ್ಲಿ ಪ್ರಮುಖ ಆವಿಷ್ಕಾರ ಮಾಡಿದರು?"
               },
               "answer": {
-                "en": "Compressed Stabilized Earth Blocks (CSEB)",
-                "kn": "ಸಂಕುಚಿತ ಮಣ್ಣಿನ ಇಟ್ಟಿಗೆಗಳು (CSEB)"
+                "en": "X-Chromosome Inactivation & Epigenetics",
+                "kn": "ಎಕ್ಸ್-ಕ್ರೋಮೋಸೋಮ್ ನಿಷ್ಕ್ರಿಯತೆ ಮತ್ತು ಎಪಿಜೆನೆಟಿಕ್ಸ್"
               },
               "details": {
-                "en": "Blocks are pressed on-site using soil excavated from the foundation, eliminating kiln emissions and transportation carbon footprints.",
-                "kn": "ಸ್ಥಳೀಯವಾಗಿ ಅಗೆದ ಮಣ್ಣಿಗೆ ಸ್ವಲ್ಪ ಸಿಮೆಂಟ್ ಮಿಶ್ರಣ ಮಾಡಿ ಯಂತ್ರದಿಂದ ಅದುಮಿ ಇಟ್ಟಿಗೆ ತಯಾರಿಸಲಾಗುತ್ತದೆ."
+                "en": "His papers established how genes on one of the two female X chromosomes are silenced to maintain equal dosage balance with males.",
+                "kn": "ಸ್ತ್ರೀಯರಲ್ಲಿರುವ ಎರಡು ಎಕ್ಸ್-ಕ್ರೋಮೋಸೋಮ್‌ಗಳಲ್ಲಿ ಒಂದರ ಜೀನ್‌ಗಳು ಹೇಗೆ ಸಮತೋಲನ ಕಾಯ್ದುಕೊಳ್ಳುತ್ತವೆ ಎಂಬುದನ್ನು ಇವರು ವಿವರಿಸಿದರು."
+              }
+            }
+          ]
+        },
+        {
+          "id": "br_seshachar",
+          "name": {
+            "en": "Prof. B. R. Seshachar",
+            "kn": "ಪ್ರೊ. ಬಿ. ಆರ್. ಶೇಷಾಚಾರ್"
+          },
+          "era": {
+            "en": "1908 – 1994 CE",
+            "kn": "೧೯೦೮ – ೧೯೯೪"
+          },
+          "summary": {
+            "en": "Foundational cytologist and zoology pioneer who served as the President of the Indian National Science Academy.",
+            "kn": "ಕೋಶವಿಜ್ಞಾನ ಮತ್ತು ಪ್ರಾಣಿಶಾಸ್ತ್ರದ ಹಿರಿಯ ಸಂಶೋಧಕರು ಹಾಗೂ ಭಾರತೀಯ ರಾಷ್ಟ್ರೀಯ ವಿಜ್ಞಾನ ಅಕಾಡೆಮಿ ಅಧ್ಯಕ್ಷರು."
+          },
+          "fullDescription": {
+            "en": "Prof. B. R. Seshachar was a distinguished zoologist and cell biologist from Bengaluru who built one of the earliest prominent cytology research departments at Central College, Bengaluru. His investigations into the nuclear structure of ciliated protozoans and amphibian reproduction earned international citations. He served as the President of the Indian National Science Academy (INSA).",
+            "kn": "ಪ್ರೊ. ಬಿ. ಆರ್. ಶೇಷಾಚಾರ್ ಅವರು ಬೆಂಗಳೂರಿನ ಪ್ರಖ್ಯಾತ ಕೋಶವಿಜ್ಞಾನಿ (Cytologist) ಮತ್ತು ಪ್ರಾಣಿಶಾಸ್ತ್ರಜ್ಞರು. ಬೆಂಗಳೂರಿನ ಸೆಂಟ್ರಲ್ ಕಾಲೇಜಿನಲ್ಲಿ ಪ್ರಾಣಿಶಾಸ್ತ್ರ ವಿಭಾಗವನ್ನು ಅತ್ಯುನ್ನತ ಸಂಶೋಧನಾ ಕೇಂದ್ರವನ್ನಾಗಿ ಬೆಳೆಸಿದ ಇವರು, ಏಕಕೋಶ ಜೀವಿಗಳು ಮತ್ತು ಉಭಯವಾಸಿಗಳ ಕೋಶ ರಚನೆಯ ಬಗ್ಗೆ ಸಂಶೋಧನೆ ನಡೆಸಿದರು. ಭಾರತೀಯ ರಾಷ್ಟ್ರೀಯ ವಿಜ್ಞಾನ ಅಕಾಡೆಮಿಯ (INSA) ಅಧ್ಯಕ್ಷರಾಗಿಯೂ ಸೇವೆ ಸಲ್ಲಿಸಿದರು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Microscopic cytological cellular analysis",
+                "kn": "ಸೂಕ್ಷ್ಮದರ್ಶಕ ಕೋಶ ವಿಜ್ಞಾನ ಮತ್ತು ಜೈವಿಕ ಸಂಶೋಧನೆ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "brs_c1",
+              "question": {
+                "en": "Which historic Bengaluru college's Zoology and Cytology department was led and built into a national research hub by Prof. Seshachar?",
+                "kn": "ಪ್ರೊ. ಶೇಷಾಚಾರ್ ಅವರು ಬೆಂಗಳೂರಿನ ಯಾವ ಐತಿಹಾಸಿಕ ಕಾಲೇಜಿನ ಪ್ರಾಣಿಶಾಸ್ತ್ರ ವಿಭಾಗವನ್ನು ರಾಷ್ಟ್ರೀಯ ಮಟ್ಟದ ಸಂಶೋಧನಾ ಕೇಂದ್ರವಾಗಿ ರೂಪಿಸಿದರು?"
+              },
+              "answer": {
+                "en": "Central College, Bengaluru (ಸೆಂಟ್ರಲ್ ಕಾಲೇಜು)",
+                "kn": "ಸೆಂಟ್ರಲ್ ಕಾಲೇಜು, ಬೆಂಗಳೂರು"
+              },
+              "details": {
+                "en": "Under his mentorship, Central College trained generations of premier Indian zoologists and evolutionary biologists.",
+                "kn": "ಇವರ ಮಾರ್ಗದರ್ಶನದಲ್ಲಿ ಸೆಂಟ್ರಲ್ ಕಾಲೇಜು ನೂರಾರು ಪ್ರತಿಭಾವಂತ ಪ್ರಾಣಿಶಾಸ್ತ್ರ ಸಂಶೋಧಕರನ್ನು ದೇಶಕ್ಕೆ ನೀಡಿತು."
               }
             }
           ]
