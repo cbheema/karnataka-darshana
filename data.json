@@ -502,7 +502,499 @@
               }
             }
           ]
+        },
+        
+    {
+      "id": "grassroots_afforestation",
+      "icon": "🌳",
+      "name": {
+        "en": "Grassroots Afforestation & Tribal Conservation",
+        "kn": "ಜನಸಾಮಾನ್ಯರ ಪರಿಸರ ರಕ್ಷಣೆ ಮತ್ತು ಬುಡಕಟ್ಟು ಅರಣ್ಯ ಸಂರಕ್ಷಕರು"
+      },
+      "topics": [
+        {
+          "id": "saalumarada_thimmakka",
+          "name": {
+            "en": "Saalumarada Thimmakka",
+            "kn": "ಸಾಲುಮರದ ತಿಮ್ಮಕ್ಕ"
+          },
+          "era": {
+            "en": "Born ~1912 CE",
+            "kn": "ಜನನ ಸುಮಾರು ೧೯೧೨"
+          },
+          "summary": {
+            "en": "Legendary environmentalist who planted and nurtured hundreds of banyan trees along a 4-km stretch in Ramanagara.",
+            "kn": "ಹುಲಿಕಲ್ ಮತ್ತು ಕುದೂರು ನಡುವಿನ ರಸ್ತೆಯುದ್ದಕ್ಕೂ ನೂರಾರು ಆಲದ ಮರಗಳನ್ನು ನೆಟ್ಟು ಬೆಳೆಸಿದ ಮಹಾನ್ ಪರಿಸರ ಪ್ರೇಮಿ."
+          },
+          "fullDescription": {
+            "en": "Saalumarada Thimmakka, hailed across the world for her selfless dedication to nature, began planting banyan saplings along with her husband Chikkaiah between Hulikal and Kudur in Ramanagara district. Over decades, she nurtured nearly 400 banyan trees and over 8,000 other trees as her own children. Recognized with the Padma Shri in 2019, she remains a timeless symbol of community afforestation.",
+            "kn": "ರಾಮನಗರ ಜಿಲ್ಲೆಯ ಹುಲಿಕಲ್ ಮತ್ತು ಕುದೂರು ಗ್ರಾಮಗಳ ನಡುವೆ ತನ್ನ ಪತಿ ಬಿಕ್ಕಲು ಚಿಕ್ಕಯ್ಯನವರೊಂದಿಗೆ ಸೇರಿ ರಸ್ತೆಯ ಎರಡೂ ಬದಿಗಳಲ್ಲಿ ನೂರಾರು ಆಲದ ಸಸಿಗಳನ್ನು ನೆಟ್ಟು, ಮಕ್ಕಳೆಂಬಂತೆ ಪೋಷಿಸಿ ಬೆಳೆಸಿದವರು ಸಾಲುಮರದ ತಿಮ್ಮಕ್ಕ. ಸುಮಾರು ೪ ಕಿ.ಮೀ ಉದ್ದಕ್ಕೂ ೪೦೦ಕ್ಕೂ ಹೆಚ್ಚು ಆಲದ ಮರಗಳನ್ನು ಸೇರಿದಂತೆ ಸಾವಿರಾರು ಮರಗಳನ್ನು ನೆಟ್ಟು ವಿಶ್ವದ ಗಮನ ಸೆಳೆದ ಇವರಿಗೆ ೨೦೧೯ ರಲ್ಲಿ ಪದ್ಮಶ್ರೀ ಪ್ರಶಸ್ತಿ ನೀಡಿ ಗೌರವಿಸಲಾಯಿತು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Canopy of mature banyan trees along village road",
+                "kn": "ರಸ್ತೆಯ ಬದಿಯಲ್ಲಿ ಹೆಮ್ಮರವಾಗಿ ಬೆಳೆದ ಆಲದ ಮರಗಳ ಸಾಲು"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "smt_c1",
+              "question": {
+                "en": "Between which two Karnataka villages did Saalumarada Thimmakka plant and nurture rows of massive banyan trees?",
+                "kn": "ಸಾಲುಮರದ ತಿಮ್ಮಕ್ಕನವರು ಯಾವ ಎರಡು ಗ್ರಾಮಗಳ ನಡುವಿನ ರಸ್ತೆಯಲ್ಲಿ ಆಲದ ಸಸಿಗಳನ್ನು ನೆಟ್ಟು ಬೆಳೆಸಿದರು?"
+              },
+              "answer": {
+                "en": "Hulikal and Kudur (ಹುಲಿಕಲ್ ಮತ್ತು ಕುದೂರು)",
+                "kn": "ಹುಲಿಕಲ್ ಮತ್ತು ಕುದೂರು"
+              },
+              "details": {
+                "en": "Located in Magadi taluk of Ramanagara district, covering a 4-kilometer shaded tree-lined corridor.",
+                "kn": "ರಾಮನಗರ ಜಿಲ್ಲೆಯ ಮಾಗಡಿ ತಾಲೂಕಿನ ಈ ರಸ್ತೆಯಲ್ಲಿ ಸುಮಾರು ೪ ಕಿಲೋಮೀಟರ್ ವ್ಯಾಪ್ತಿಯಲ್ಲಿ ಇವರು ಮರಗಳನ್ನು ಬೆಳೆಸಿದರು."
+              }
+            }
+          ]
+        },
+        {
+          "id": "tulsi_gowda",
+          "name": {
+            "en": "Tulsi Gowda",
+            "kn": "ತುಳಸಿ ಗೌಡ"
+          },
+          "era": {
+            "en": "Born ~1944 CE",
+            "kn": "ಜನನ ಸುಮಾರು ೧೯೪೪"
+          },
+          "summary": {
+            "en": "Padma Shri environmentalist from the Halakki tribe known worldwide as the 'Encyclopedia of the Forest'.",
+            "kn": "ಅರಣ್ಯದ ಜೀವಂತ ವಿಶ್ವಕೋಶವೆಂದೇ ಖ್ಯಾತಿ ಪಡೆದಿರುವ ಹಾಲಕ್ಕಿ ಒಕ್ಕಲಿಗ ಬುಡಕಟ್ಟಿನ ಪರಿಸರ ಸಂರಕ್ಷಕಿ."
+          },
+          "fullDescription": {
+            "en": "Tulsi Gowda belongs to the indigenous Halakki Vokkaliga tribe in Honnali village of Uttara Kannada. Despite having no formal education, she possesses unparalleled traditional knowledge of indigenous plant species, seed maturity, and herbal medicine. Over six decades, she has planted more than 30,000 trees with the Karnataka Forest Department. She was awarded the Padma Shri in 2021.",
+            "kn": "ಉತ್ತರ ಕನ್ನಡ ಜಿಲ್ಲೆಯ ಅಂಕೋಲಾ ತಾಲೂಕಿನ ಹೊನ್ನಾಳಿ ಗ್ರಾಮದ ಹಾಲಕ್ಕಿ ಒಕ್ಕಲಿಗ ಬುಡಕಟ್ಟಿಗೆ ಸೇರಿದ ತುಳಸಿ ಗೌಡ ಅವರಿಗೆ ಶಾಲೆ ಮೆಟ್ಟಿಲೇರದಿದ್ದರೂ ಕಾಡಿನ ಪ್ರತಿಯೊಂದು ಮರ, ಗಿಡಮೂಲಿಕೆ ಮತ್ತು ಬೀಜಗಳ ಬಗ್ಗೆ ಅಪಾರ ಜ್ಞಾನವಿದೆ. ಅರಣ್ಯ ಇಲಾಖೆಯಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತಾ ಮೂವತ್ತು ಸಾವಿರಕ್ಕೂ ಹೆಚ್ಚು ಮರಗಳನ್ನು ನೆಟ್ಟು ಬೆಳೆಸಿದ ಇವರನ್ನು 'ಕಾಡಿನ ವಿಶ್ವಕೋಶ' (Encyclopedia of the Forest) ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ. ೨೦೨೧ ರಲ್ಲಿ ಇವರಿಗೆ ಪದ್ಮಶ್ರೀ ಗೌರವ ಸಂದಿತು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Native seed collection and rainforest nursery",
+                "kn": "ಕಾಡಿನ ನೈಸರ್ಗಿಕ ಸಸಿ ಪಾಲನೆ ಮತ್ತು ಬೀಜ ಸಂಗ್ರಹ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "tg_c1",
+              "question": {
+                "en": "Which famous honorary title was given to Tulsi Gowda due to her vast traditional knowledge of plants and native herbs?",
+                "kn": "ಸಸ್ಯಗಳು ಮತ್ತು ಗಿಡಮೂಲಿಕೆಗಳ ಬಗ್ಗೆ ಅಪಾರ ಸಾಂಪ್ರದಾಯಿಕ ಜ್ಞಾನ ಹೊಂದಿರುವ ತುಳಸಿ ಗೌಡ ಅವರಿಗೆ ಇರುವ ಜನಪ್ರಿಯ ಬಿರುದು ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Encyclopedia of the Forest (ಅರಣ್ಯದ ವಿಶ್ವಕೋಶ)",
+                "kn": "ಅರಣ್ಯದ ವಿಶ್ವಕೋಶ (Encyclopedia of the Forest)"
+              },
+              "details": {
+                "en": "She can identify the mother tree of almost any species in the Western Ghats and knows the exact seasonal window for seed germination.",
+                "kn": "ಪಶ್ಚಿಮ ಘಟ್ಟದ ಯಾವುದೇ ಸಸ್ಯದ ತಾಯಿ ಮರವನ್ನು ಗುರುತಿಸಿ, ಬೀಜ ಮೊಳಕೆಯೊಡೆಯುವ ಸೂಕ್ತ ಸಮಯವನ್ನು ತಿಳಿಸುವ ಅಪೂರ್ವ ಜ್ಞಾನ ಇವರಿಗಿದೆ."
+              }
+            }
+          ]
+        },
+        {
+          "id": "pandurang_hegde",
+          "name": {
+            "en": "Pandurang Hegde",
+            "kn": "ಪಾಂಡುರಂಗ ಹೆಗಡೆ"
+          },
+          "era": {
+            "en": "Contemporary",
+            "kn": "ಸಮಕಾಲೀನ"
+          },
+          "summary": {
+            "en": "Leader of the Appiko Movement that mobilized villagers to hug and protect trees in the Western Ghats.",
+            "kn": "ಪಶ್ಚಿಮ ಘಟ್ಟಗಳಲ್ಲಿ ಮರಗಳನ್ನು ಉಳಿಸಲು ನಡೆದ ಜನಪ್ರಿಯ 'ಅಪ್ಪಿಕೋ ಚಳವಳಿ'ಯ ನೇತಾರರು."
+          },
+          "fullDescription": {
+            "en": "Pandurang Hegde spearheaded the historic Appiko Movement in September 1983 in Salkani village, Uttara Kannada. Inspired by Sunderlal Bahuguna's Chipko movement, villagers hugged trees to stop commercial contractors from clear-felling natural rainforests. The movement promoted the three principles: Ubbisu (save), Belesu (grow), and Balasu (rational use).",
+            "kn": "೧೯೮೩ ರ ಸೆಪ್ಟೆಂಬರ್‌ನಲ್ಲಿ ಉತ್ತರ ಕನ್ನಡ ಜಿಲ್ಲೆಯ ಸಲ್ಕಾನಿ ಅರಣ್ಯದಲ್ಲಿ ಮರಗಳನ್ನು ಅಪ್ಪಿಕೊಳ್ಳುವ ಮೂಲಕ 'ಅಪ್ಪಿಕೋ ಚಳವಳಿ'ಗೆ ಚಾಲನೆ ನೀಡಿದವರು ಪಾಂಡುರಂಗ ಹೆಗಡೆ. ಹಿಮಾಲಯದ ಚಿಪ್ಕೋ ಚಳವಳಿಯಿಂದ ಪ್ರೇರಿತವಾದ ಈ ಆಂದೋಲನವು 'ಉಳಿಸು, ಬೆಳೆಸು ಮತ್ತು ಬಳಸು' ಎಂಬ ಧ್ಯೇಯವಾಕ್ಯದೊಂದಿಗೆ ಪಶ್ಚಿಮ ಘಟ್ಟಗಳ ದಟ್ಟ ಮಳೆಕಾಡುಗಳನ್ನು ಮರಮುಟ್ಟು ಗುತ್ತಿಗೆದಾರರ ಕೊಡಲಿಯಿಂದ ರಕ್ಷಿಸಿತು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Western Ghats evergreen rainforest conservation",
+                "kn": "ಪಶ್ಚಿಮ ಘಟ್ಟಗಳ ನಿತ್ಯಹರಿದ್ವರ್ಣ ಅರಣ್ಯ ಸಂರಕ್ಷಣೆ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "ph_c1",
+              "question": {
+                "en": "What were the three core conservation slogans of the 1983 Appiko Movement led by Pandurang Hegde?",
+                "kn": "ಪಾಂಡುರಂಗ ಹೆಗಡೆಯವರ ನೇತೃತ್ವದಲ್ಲಿ ಆರಂಭವಾದ 'ಅಪ್ಪಿಕೋ ಚಳವಳಿ'ಯ ಪ್ರಮುಖ ಮೂರು ಧ್ಯೇಯವಾಕ್ಯಗಳು ಯಾವುವು?"
+              },
+              "answer": {
+                "en": "Ubbisu, Belesu, Balasu (Save, Grow, Use rationally)",
+                "kn": "ಉಳಿಸು, ಬೆಳೆಸು, ಬಳಸು"
+              },
+              "details": {
+                "en": "Ubbisu meant saving the standing natural forests, Belesu meant regenerating degraded lands, and Balasu stood for sustainable forest use.",
+                "kn": "ಕಾಡನ್ನು ರಕ್ಷಿಸುವುದು (ಉಳಿಸು), ಹೊಸ ಗಿಡಗಳನ್ನು ನೆಡುವುದು (ಬೆಳೆಸು) ಮತ್ತು ನೈಸರ್ಗಿಕ ಸಂಪನ್ಮೂಲಗಳನ್ನು ಹಿತಮಿತವಾಗಿ ಬಳಸುವುದು (ಬಳಸು) ಇದರ ಉದ್ದೇಶವಾಗಿತ್ತು."
+              }
+            }
+          ]
         }
+      ]
+    },
+    {
+      "id": "wildlife_forest_protection",
+      "icon": "🐅",
+      "name": {
+        "en": "Wildlife Biology & Forest Protection",
+        "kn": "ವನ್ಯಜೀವಿ ಜೀವವಿಜ್ಞಾನ ಮತ್ತು ಅರಣ್ಯ ರಕ್ಷಣೆ"
+      },
+      "topics": [
+        {
+          "id": "ullas_karanth",
+          "name": {
+            "en": "Dr. K. Ullas Karanth",
+            "kn": "ಡಾ. ಕೆ. ಉಲ್ಲಾಸ್ ಕಾರಂತ"
+          },
+          "era": {
+            "en": "Born 1948 CE",
+            "kn": "ಜನನ ೧೯೪೮"
+          },
+          "summary": {
+            "en": "World-renowned carnivore ecologist who pioneered camera-trap tiger census methodologies in Nagarahole.",
+            "kn": "ನಾಗರಹೊಳೆಯಲ್ಲಿ ಕ್ಯಾಮೆರಾ-ಟ್ರ್ಯಾಪ್ ವಿಧಾನದ ಮೂಲಕ ಹುಲಿ ಗಣತಿ ತಂತ್ರಜ್ಞಾನವನ್ನು ಆವಿಷ್ಕರಿಸಿದ ಜಾಗತಿಕ ಹುಲಿ ಸಂಶೋಧಕರು."
+          },
+          "fullDescription": {
+            "en": "Dr. Kota Ullas Karanth is an internationally acclaimed tiger biologist and conservation scientist from Karnataka. He revolutionized wildlife ecology by introducing camera-trap photographic capture-recapture sampling to scientifically estimate wild tiger populations. His decades of long-term ecological research in Nagarahole and Bhadra helped establish science-based models for voluntary human relocation and protected tiger reserves.",
+            "kn": "ಡಾ. ಕೆ. ಉಲ್ಲಾಸ್ ಕಾರಂತ ಅವರು ವಿಶ್ವಖ್ಯಾತ ವನ್ಯಜೀವಿ ಜೀವವಿಜ್ಞಾನಿ. ಕಾಡಿನಲ್ಲಿ ಹುಲಿಗಳ ನಿಖರವಾದ ಸಂಖ್ಯೆಯನ್ನು ಅಂದಾಜು ಮಾಡಲು 'ಕ್ಯಾಮೆರಾ-ಟ್ರ್ಯಾಪ್' (ಫೋಟೋ ಆಧಾರಿತ ಮರುಹಿಡಿಯುವಿಕೆ) ತಂತ್ರಜ್ಞಾನವನ್ನು ಮೊದಲ ಬಾರಿಗೆ ಯಶಸ್ವಿಯಾಗಿ ಅಳವಡಿಸಿದವರು. ನಾಗರಹೊಳೆ ಮತ್ತು ಭದ್ರಾ ಹುಲಿ ಯೋಜನೆಗಳಲ್ಲಿ ಇವರು ನಡೆಸಿದ ಸುದೀರ್ಘ ಸಂಶೋಧನೆಗಳು ಭಾರತದ ವನ್ಯಜೀವಿ ಸಂರಕ್ಷಣಾ ನೀತಿಗಳಿಗೆ ವೈಜ್ಞಾನಿಕ ಅಡಿಪಾಯ ಹಾಕಿದವು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Royal Bengal tiger tracking in deciduous forests",
+                "kn": "ದಟ್ಟ ಕಾಡಿನಲ್ಲಿ ರಾಯಲ್ ಬೆಂಗಾಲ್ ಹುಲಿ ಸಂರಕ್ಷಣೆ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "uk_c1",
+              "question": {
+                "en": "Which scientific sampling technique was pioneered by Dr. Ullas Karanth to reliably count wild tiger populations in India?",
+                "kn": "ಕಾಡಿನಲ್ಲಿ ಹುಲಿಗಳ ಸಂಖ್ಯೆಯನ್ನು ವೈಜ್ಞಾನಿಕವಾಗಿ ಗಣತಿ ಮಾಡಲು ಡಾ. ಉಲ್ಲಾಸ್ ಕಾರಂತರು ರೂಪಿಸಿದ ತಂತ್ರಜ್ಞಾನ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Camera-Trap Photographic Capture-Recapture",
+                "kn": "ಕ್ಯಾಮೆರಾ-ಟ್ರ್ಯಾಪ್ ವಿಧಾನ (Camera-Trap Sampling)"
+              },
+              "details": {
+                "en": "Individual tigers are uniquely identified by their distinct stripe patterns, replacing unreliable traditional pugmark measurements.",
+                "kn": "ಪ್ರತಿಯೊಂದು ಹುಲಿಯ ಪಟ್ಟೆಗಳ ವಿನ್ಯಾಸ ವಿಭಿನ್ನವಾಗಿರುವುದನ್ನು ಆಧರಿಸಿ ಕ್ಯಾಮೆರಾಗಳ ಮೂಲಕ ನಿಖರವಾಗಿ ಹುಲಿಗಳನ್ನು ಗುರುತಿಸುವ ವಿಧಾನ ಇದಾಗಿದೆ."
+              }
+            }
+          ]
+        },
+        {
+          "id": "km_chinnappa",
+          "name": {
+            "en": "K. M. Chinnappa",
+            "kn": "ಕೆ. ಎಂ. ಚಿನ್ನಪ್ಪ"
+          },
+          "era": {
+            "en": "Contemporary",
+            "kn": "ಸಮಕಾಲೀನ"
+          },
+          "summary": {
+            "en": "Fearless forest ranger from Kodagu who eradicated poaching cartels to make Nagarahole a premier tiger reserve.",
+            "kn": "ನಾಗರಹೊಳೆಯನ್ನು ಕಳ್ಳಬೇಟೆಗಾರರಿಂದ ಮುಕ್ತಗೊಳಿಸಿ ಮಾದರಿ ರಾಷ್ಟ್ರೀಯ ಉದ್ಯಾನವನವನ್ನಾಗಿ ರೂಪಿಸಿದ ದಿಟ್ಟ ಅರಣ್ಯ ಅಧಿಕಾರಿ."
+          },
+          "fullDescription": {
+            "en": "K. M. Chinnappa joined the Karnataka Forest Department as a forester in the late 1960s. Stationed at Nagarahole National Park, he survived multiple assassination attempts by poachers and illegal timber networks to enforce zero-tolerance anti-poaching protocols. His heroic field patrolling transformed Nagarahole from a degraded hunting forest into one of the densest tiger habitats in Asia. He later co-founded the NGO 'Wildlife First'.",
+            "kn": "ಕೊಡಗಿನ ಕೆ. ಎಂ. ಚಿನ್ನಪ್ಪ ಅವರು ೧೯೬೦ ರ ದಶಕದಲ್ಲಿ ಅರಣ್ಯ ರಕ್ಷಕರಾಗಿ ಕರ್ತವ್ಯಕ್ಕೆ ಸೇರಿದರು. ನಾಗರಹೊಳೆ ಕಾಡಿನಲ್ಲಿ ಬೀಡುಬಿಟ್ಟಿದ್ದ ಪ್ರಭಾವಿ ಕಳ್ಳಬೇಟೆಗಾರರು ಮತ್ತು ಮರ ಕಳ್ಳರ ವಿರುದ್ಧ ಪ್ರಾಣದ ಹಂಗು ತೊರೆದು ಹೋರಾಡಿದರು. ಹಲವು ಬಾರಿ ಗುಂಡೇಟು ತಿಂದರೂ ಕರ್ತವ್ಯದಿಂದ ಹಿಂದೆ ಸರಿಯದೆ, ನಾಗರಹೊಳೆಯನ್ನು ವಿಶ್ವದ ಅತ್ಯಂತ ಸುರಕ್ಷಿತ ಹುಲಿ ಮತ್ತು ಆನೆಗಳ ಆವಾಸಸ್ಥಾನವನ್ನಾಗಿ ಪರಿವರ್ತಿಸಿದರು. ನಂತರ 'ವೈಲ್ಡ್‌ಲೈಫ್ ಫಸ್ಟ್' ಸಂಸ್ಥೆಯ ಮೂಲಕ ಹೋರಾಟ ಮುಂದುವರಿಸಿದರು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Asiatic elephant corridor in Nagarahole",
+                "kn": "ನಾಗರಹೊಳೆಯ ಕಾಡಾನೆ ಸಂರಕ್ಷಿತ ಕಾರಿಡಾರ್"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "kmc_c1",
+              "question": {
+                "en": "Which premier Karnataka national park was transformed into a safe haven for tigers due to K. M. Chinnappa's fearless anti-poaching enforcement?",
+                "kn": "ಕೆ. ಎಂ. ಚಿನ್ನಪ್ಪನವರ ದಿಟ್ಟ ಗಸ್ತು ಮತ್ತು ಕಳ್ಳಬೇಟೆ ವಿರೋಧಿ ಹೋರಾಟದಿಂದಾಗಿ ಸುರಕ್ಷಿತ ಆವಾಸಸ್ಥಾನವಾಗಿ ಬದಲಾದ ಕರ್ನಾಟಕದ ರಾಷ್ಟ್ರೀಯ ಉದ್ಯಾನವನ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Nagarahole National Park (Rajiv Gandhi National Park)",
+                "kn": "ನಾಗರಹೊಳೆ ರಾಷ್ಟ್ರೀಯ ಉದ್ಯಾನವನ"
+              },
+              "details": {
+                "en": "His community-building and ground enforcement methods became a benchmark for wildlife management across South Asia.",
+                "kn": "ಅರಣ್ಯ ಇಲಾಖೆಯಲ್ಲಿ ಇವರು ಜಾರಿಗೆ ತಂದ ಕಟ್ಟುನಿಟ್ಟಾದ ಗಸ್ತು ನಿಯಮಗಳು ಭಾರತದ ವನ್ಯಜೀವಿ ರಕ್ಷಣೆಗೆ ಮಾದರಿಯಾದವು."
+              }
+            }
+          ]
+        },
+        {
+          "id": "yellappa_reddy",
+          "name": {
+            "en": "A. N. Yellappa Reddy",
+            "kn": "ಎ. ಎನ್. ಯಲ್ಲಪ್ಪ ರೆಡ್ಡಿ"
+          },
+          "era": {
+            "en": "Contemporary",
+            "kn": "ಸಮಕಾಲೀನ"
+          },
+          "summary": {
+            "en": "Visionary IFS officer and lake crusader who created Bengaluru's green belts and fought urban wetland encroachment.",
+            "kn": "ಬೆಂಗಳೂರಿನ ಹಸಿರು ವಲಯಗಳನ್ನು ನಿರ್ಮಿಸಿ, ಕೆರೆ-ಕೊಳ್ಳಗಳ ಒತ್ತುವರಿ ವಿರುದ್ಧ ನ್ಯಾಯಾಲಯದಲ್ಲಿ ಹೋರಾಡಿದ ಹಿರಿಯ ಅರಣ್ಯಾಧಿಕಾರಿ."
+          },
+          "fullDescription": {
+            "en": "A. N. Yellappa Reddy is a retired Indian Forest Service (IFS) officer and environmental jurist who has spent over five decades fighting to protect Karnataka's forests and wetlands. He pioneered urban ecological landscapes, including the 100-acre Mahatma Gandhi Botanical Garden at GKVK Bengaluru. As an expert advisor to high courts and civic tribunals, he has halted illegal infrastructure projects on fragile lake beds.",
+            "kn": "ಭಾರತೀಯ ಅರಣ್ಯ ಸೇವೆಯ (IFS) ನಿವೃತ್ತ ಅಧಿಕಾರಿಯಾದ ಎ. ಎನ್. ಯಲ್ಲಪ್ಪ ರೆಡ್ಡಿ ಅವರು ಬೆಂಗಳೂರಿನ ಕೆರೆಗಳು, ಪರಿಸರ ಸೂಕ್ಷ್ಮ ವಲಯಗಳು ಮತ್ತು ಅರಣ್ಯಗಳ ಸಂರಕ್ಷಣೆಗಾಗಿ ನಿರಂತರವಾಗಿ ಶ್ರಮಿಸಿದವರು. ಜಿಕೆವಿಕೆ ಆವರಣದಲ್ಲಿರುವ ಮಹಾತ್ಮಾ ಗಾಂಧಿ ಸಸ್ಯೋದ್ಯಾನ ಸೇರಿದಂತೆ ಹಸಿರು ತಾಣಗಳನ್ನು ನಿರ್ಮಿಸಿದ ಇವರು, ನಗರೀಕರಣದ ಹೆಸರಿನಲ್ಲಿ ಕೆರೆಗಳ ಒತ್ತುವರಿ ಮತ್ತು ಮರಗಳ ಮಾರಣಹೋಮದ ವಿರುದ್ಧ ಕಾನೂನು ಹೋರಾಟಗಳನ್ನು ನಡೆಸಿದ್ದಾರೆ."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Urban wetland vegetation and lake ecosystem",
+                "kn": "ನಗರ ಪ್ರದೇಶದ ಕೆರೆಗಳು ಮತ್ತು ಜಲ ಪರಿಸರ ಸಂರಕ್ಷಣೆ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "yr_c1",
+              "question": {
+                "en": "Which major botanical sanctuary within Bengaluru's GKVK campus was conceptualized and planted under Yellappa Reddy's stewardship?",
+                "kn": "ಯಲ್ಲಪ್ಪ ರೆಡ್ಡಿಯವರ ಮಾರ್ಗದರ್ಶನದಲ್ಲಿ ಬೆಂಗಳೂರಿನ ಜಿಕೆವಿಕೆ (GKVK) ಆವರಣದಲ್ಲಿ ನಿರ್ಮಿಸಲಾದ ಬೃಹತ್ ಸಸ್ಯೋದ್ಯಾನ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Mahatma Gandhi Botanical Garden (ಮಹಾತ್ಮಾ ಗಾಂಧಿ ಸಸ್ಯೋದ್ಯಾನ)",
+                "kn": "ಮಹಾತ್ಮಾ ಗಾಂಧಿ ಸಸ್ಯೋದ್ಯಾನ (GKVK)"
+              },
+              "details": {
+                "en": "It preserves hundreds of indigenous and endangered tropical plant varieties native to the Deccan Plateau.",
+                "kn": "ಇದು ದಖನ್ ಪ್ರಸ್ಥಭೂಮಿಯ ನೂರಾರು ಅಳಿವಿನಂಚಿನಲ್ಲಿರುವ ಸ್ಥಳೀಯ ಸಸ್ಯ ಪ್ರಭೇದಗಳನ್ನು ಸಂರಕ್ಷಿಸಿದೆ."
+              }
+            }
+          ]
+        },
+        {
+          "id": "suresh_heblikar",
+          "name": {
+            "en": "Suresh Heblikar",
+            "kn": "ಸುರೇಶ್ ಹೆಬ್ಳೀಕರ್"
+          },
+          "era": {
+            "en": "Born 1948 CE",
+            "kn": "ಜನನ ೧೯೪೮"
+          },
+          "summary": {
+            "en": "Actor, eco-filmmaker and founder of Eco-Watch who blends cinematic storytelling with lake restoration.",
+            "kn": "ಚಲನಚಿತ್ರ ಮಾಧ್ಯಮ ಹಾಗೂ 'ಇಕೋ-ವಾಚ್' ಸಂಸ್ಥೆಯ ಮೂಲಕ ಕೆರೆಗಳ ಪುನಶ್ಚೇತನ ಮತ್ತು ಪರಿಸರ ಜಾಗೃತಿ ಮೂಡಿಸಿದ ನಟ-ನಿರ್ದೇಶಕರು."
+          },
+          "fullDescription": {
+            "en": "Suresh Heblikar is a renowned Kannada filmmaker, actor, and environmental crusader who founded the non-profit organization Eco-Watch in 1998. He has directed several award-winning documentaries highlighting deforestation, Western Ghats biodiversity, and urban water tables. Through Eco-Watch, he has spearheaded mass urban tree planting, seed-balling campaigns, and the restoration of degraded lakes across Karnataka.",
+            "kn": "ಕನ್ನಡದ ಖ್ಯಾತ ನಟ ಮತ್ತು ನಿರ್ದೇಶಕರಾದ ಸುರೇಶ್ ಹೆಬ್ಳೀಕರ್ ಅವರು ಪರಿಸರ ಸಂರಕ್ಷಣೆಯನ್ನು ತಮ್ಮ ಬದುಕಿನ ಧ್ಯೇಯವಾಗಿಸಿಕೊಂಡವರು. ೧೯೯೮ ರಲ್ಲಿ 'ಇಕೋ-ವಾಚ್' (Eco-Watch) ಸಂಸ್ಥೆಯನ್ನು ಸ್ಥಾಪಿಸಿ, ಕೆರೆಗಳ ಪುನರುಜ್ಜೀವನ, ಬೀಜದುಂಡೆ (Seed-balling) ಅಭಿಯಾನ ಮತ್ತು ಶಾಲಾ ಕಾಲೇಜುಗಳಲ್ಲಿ ಪರಿಸರ ಶಿಕ್ಷಣವನ್ನು ಹರಡಿದರು. ಪಶ್ಚಿಮ ಘಟ್ಟಗಳು ಮತ್ತು ಪರಿಸರ ಮಾಲಿನ್ಯದ ಕುರಿತು ಹಲವು ಮಹತ್ವದ ಸಾಕ್ಷ್ಯಚಿತ್ರಗಳನ್ನು ನಿರ್ಮಿಸಿದ್ದಾರೆ."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Eco-watch afforestation drive and lake basin",
+                "kn": "ಕೆರೆಗಳ ಪುನಶ್ಚೇತನ ಮತ್ತು ಸಾಮಾಜಿಕ ಅರಣ್ಯ ಅಭಿಯಾನ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "sh_c1",
+              "question": {
+                "en": "What is the name of the environmental organization founded by Suresh Heblikar in 1998 to drive urban afforestation and water conservation?",
+                "kn": "ನಗರ ಅರಣ್ಯೀಕರಣ ಮತ್ತು ಕೆರೆಗಳ ಸಂರಕ್ಷಣೆಗಾಗಿ ಸುರೇಶ್ ಹೆಬ್ಳೀಕರ್ ಅವರು ೧೯೯೮ ರಲ್ಲಿ ಸ್ಥಾಪಿಸಿದ ಪರಿಸರ ಸಂಸ್ಥೆ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Eco-Watch (ಇಕೋ-ವಾಚ್)",
+                "kn": "ಇಕೋ-ವಾಚ್ (Eco-Watch)"
+              },
+              "details": {
+                "en": "The organization collaborates with students, scientists, and civil society to restore peri-urban water bodies.",
+                "kn": "ಈ ಸಂಸ್ಥೆಯು ವಿದ್ಯಾರ್ಥಿಗಳು ಮತ್ತು ಸಾರ್ವಜನಿಕರ ಸಹಭಾಗಿತ್ವದಲ್ಲಿ ಹಸಿರೀಕರಣ ಯೋಜನೆಗಳನ್ನು ಕೈಗೊಳ್ಳುತ್ತದೆ."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eco_literature_legal_advocacy",
+      "icon": "⚖️",
+      "name": {
+        "en": "Eco-Literature, Journalism & Legal Battles",
+        "kn": "ಪರಿಸರ ಸಾಹಿತ್ಯ, ಪತ್ರಿಕೋದ್ಯಮ ಮತ್ತು ಕಾನೂನು ಹೋರಾಟಗಳು"
+      },
+      "topics": [
+        {
+          "id": "poornachandra_tejaswi",
+          "name": {
+            "en": "K. P. Poornachandra Tejaswi",
+            "kn": "ಕೆ. ಪಿ. ಪೂರ್ಣಚಂದ್ರ ತೇಜಸ್ವಿ"
+          },
+          "era": {
+            "en": "1938 – 2007 CE",
+            "kn": "೧೯೩೮ – ೨೦೦೭"
+          },
+          "summary": {
+            "en": "Iconic Kannada literary genius who infused ecological curiosity and wildlife lore into everyday Kannada households.",
+            "kn": "ತಮ್ಮ ಅದ್ಭುತ ಸಾಹಿತ್ಯದ ಮೂಲಕ ಕನ್ನಡಿಗರಲ್ಲಿ ಪರಿಸರ ಪ್ರಜ್ಞೆ, ಕೀಟಶಾಸ್ತ್ರ ಮತ್ತು ಕಾಡಿನ ಬೆರಗನ್ನು ಬಿತ್ತಿದ ಮೇರು ಬರಹಗಾರರು."
+          },
+          "fullDescription": {
+            "en": "Kuppali Puttappa Poornachandra Tejaswi was a master novelist, ornithologist, and nature photographer based in Mudigere, Chikkamagaluru. Through landmark works like 'Karvalo', 'Jugari Cross', 'Kiragoorina Gayyaligalu', and his extensive 'Parisarada Kathe' series, he introduced millions of Kannada readers to biodiversity, entomology, and the fragile ecology of the Western Ghats.",
+            "kn": "ಚಿಕ್ಕಮಗಳೂರು ಜಿಲ್ಲೆಯ ಮೂಡಿಗೆರೆಯಲ್ಲಿ ನೆಲೆಸಿದ್ದ ಕೆ. ಪಿ. ಪೂರ್ಣಚಂದ್ರ ತೇಜಸ್ವಿ ಅವರು ಕನ್ನಡದ ಅತ್ಯಂತ ಪ್ರಭಾವಿ ಸಾಹಿತಿ, ಛಾಯಾಗ್ರಾಹಕ ಮತ್ತು ಪಕ್ಷಿ ವೀಕ್ಷಕರು. 'ಕರ್ವಾಲೋ', 'ಜುಗಾರಿ ಕ್ರಾಸ್', 'ಪರಿಸರದ ಕಥೆಗಳು' ಮತ್ತು ಕೆನೆತ್ ಆಂಡರ್ಸನ್ ಅವರ ಬೇಟೆ ಕಥೆಗಳ ಅನುವಾದಗಳ ಮೂಲಕ ಕಾಡು, ಪಕ್ಷಿ-ಕೀಟ ಪ್ರಪಂಚ ಹಾಗೂ ಜೀವವೈವಿಧ್ಯದ ಸೂಕ್ಷ್ಮತೆಗಳನ್ನು ಮನೆಮನೆಗೂ ತಲುಪಿಸಿದ ಅಪ್ರತಿಮ ಲೇಖಕರು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Western Ghats canopy lizard exploration (Karvalo lore)",
+                "kn": "ಪಶ್ಚಿಮ ಘಟ್ಟಗಳ ಹಾರುವ ಓತಿಕ್ಯಾತ ಮತ್ತು ನಿಗೂಢ ಜೀವಪ್ರಪಂಚ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "kpt_c1",
+              "question": {
+                "en": "Which famous novel by Poornachandra Tejaswi chronicles a humorous and philosophical quest in search of a rare flying lizard in the Western Ghats?",
+                "kn": "ಪಶ್ಚಿಮ ಘಟ್ಟಗಳಲ್ಲಿ ಹಾರುವ ಅಪರೂಪದ ಓತಿಯನ್ನು ಹುಡುಕುವ ವಿಜ್ಞಾನಿ ಕರ್ವಾಲೋ ಮತ್ತು ಮಂದಣ್ಣನ ಸಾಹಸವನ್ನು ವರ್ಣಿಸುವ ತೇಜಸ್ವಿಯವರ ಪ್ರಸಿದ್ಧ ಕಾದಂಬರಿ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Karvalo (ಕರ್ವಾಲೋ)",
+                "kn": "ಕರ್ವಾಲೋ (Karvalo)"
+              },
+              "details": {
+                "en": "The novel blends entomology, evolutionary biology, and rural Malnad culture in a quest for a surviving flying agamid lizard.",
+                "kn": "ಈ ಕಾದಂಬರಿಯು ವಿಕಾಸವಾದ, ಜೀವವಿಜ್ಞಾನ ಮತ್ತು ಮಲೆನಾಡಿನ ಗ್ರಾಮೀಣ ಸೊಗಡನ್ನು ಅದ್ಭುತವಾಗಿ ಬೆಸೆಯುತ್ತದೆ."
+              }
+            }
+          ]
+        },
+        {
+          "id": "sr_hiremath",
+          "name": {
+            "en": "Dr. S. R. Hiremath",
+            "kn": "ಡಾ. ಎಸ್. ಆರ್. ಹಿರೇಮಠ"
+          },
+          "era": {
+            "en": "Born 1944 CE",
+            "kn": "ಜನನ ೧೯೪೪"
+          },
+          "summary": {
+            "en": "Tenacious RTI activist whose Supreme Court public interest litigations halted massive illegal mining in Ballari.",
+            "kn": "ಬಳ್ಳಾರಿಯ ಅಕ್ರಮ ಗಣಿಗಾರಿಕೆ ಮತ್ತು ಅರಣ್ಯ ಲೂಟಿಯ ವಿರುದ್ಧ ಸುಪ್ರೀಂ ಕೋರ್ಟ್‌ನಲ್ಲಿ ಐತಿಹಾಸಿಕ ಹೋರಾಟ ನಡೆಸಿ ಗೆದ್ದ ಧೀಮಂತ ಹೋರಾಟಗಾರರು."
+          },
+          "fullDescription": {
+            "en": "Dr. S. R. Hiremath, through his non-governmental organization Samaja Parivartana Samudaya (SPS) in Dharwad, fought one of modern India's most significant legal battles against environmental degradation. His exhaustive public interest litigations in the Supreme Court exposed the multi-billion-rupee illegal iron ore mining mafia in Ballari, Tumakuru, and Chitradurga, prompting the court to halt mining and mandate environmental reclamation.",
+            "kn": "ಧಾರವಾಡದ 'ಸಮಾಜ ಪರಿವರ್ತನಾ ಸಮುದಾಯ'ದ (SPS) ಸಂಸ್ಥಾಪಕರಾದ ಎಸ್. ಆರ್. ಹಿರೇಮಠ್ ಅವರು ಭ್ರಷ್ಟಾಚಾರ ಮತ್ತು ಪರಿಸರ ಲೂಟಿಯ ವಿರುದ್ಧ ಅಹಿಂಸಾತ್ಮಕವಾಗಿ ಹೋರಾಡಿದವರು. ಬಳ್ಳಾರಿ, ತುಮಕೂರು ಮತ್ತು ಚಿತ್ರದುರ್ಗದಲ್ಲಿ ನೂರಾರು ಎಕರೆ ಅರಣ್ಯಗಳನ್ನು ನಾಶಮಾಡಿದ್ದ ಅಕ್ರಮ ಗಣಿಗಾರಿಕೆಯನ್ನು ಸುಪ್ರೀಂ ಕೋರ್ಟ್‌ನಲ್ಲಿ ಸಾರ್ವಜನಿಕ ಹಿತಾಸಕ್ತಿ ಅರ್ಜಿಗಳ (PIL) ಮೂಲಕ ಬಯಲಿಗೆಳೆದು, ಗಣಿಗಾರಿಕೆಗೆ ತಡೆ ತಂದು ಅರಣ್ಯ ಪುನಶ್ಚೇತನಕ್ಕೆ ಕಾರಣರಾದರು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Reforestation of degraded iron-ore mining hillocks",
+                "kn": "ಗಣಿಗಾರಿಕೆಯಿಂದ ಹಾಳಾದ ಬೆಟ್ಟಗುಡ್ಡಗಳ ಪರಿಸರ ಪುನಶ್ಚೇತನ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "srh_c1",
+              "question": {
+                "en": "Which grassroots organization was founded by S. R. Hiremath to fight the legal battle against illegal iron-ore mining in the Supreme Court?",
+                "kn": "ಅಕ್ರಮ ಗಣಿಗಾರಿಕೆಯ ವಿರುದ್ಧ ಸುಪ್ರೀಂ ಕೋರ್ಟ್‌ನಲ್ಲಿ ದಾವೆ ಹೂಡಲು ಎಸ್. ಆರ್. ಹಿರೇಮಠ್ ಅವರು ಸ್ಥಾಪಿಸಿದ ಜನಪರ ಸಂಸ್ಥೆ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Samaja Parivartana Samudaya (ಸಮಾಜ ಪರಿವರ್ತನಾ ಸಮುದಾಯ - SPS)",
+                "kn": "ಸಮಾಜ ಪರಿವರ್ತನಾ ಸಮುದಾಯ (SPS)"
+              },
+              "details": {
+                "en": "SPS systematically gathered field evidence, satellite imagery, and forestry records to challenge the mining mafia.",
+                "kn": "ಈ ಸಂಸ್ಥೆಯು ಅರಣ್ಯ ದಾಖಲೆಗಳು ಮತ್ತು ಉಪಗ್ರಹ ಚಿತ್ರಗಳನ್ನು ಸಾಕ್ಷ್ಯವಾಗಿ ಒದಗಿಸಿ ನ್ಯಾಯಾಂಗದ ಗಮನ ಸೆಳೆಯಿತು."
+              }
+            }
+          ]
+        },
+        {
+          "id": "nagesh_hegde",
+          "name": {
+            "en": "Nagesh Hegde",
+            "kn": "ನಾಗೇಶ ಹೆಗಡೆ"
+          },
+          "era": {
+            "en": "Born 1948 CE",
+            "kn": "ಜನನ ೧೯೪೮"
+          },
+          "summary": {
+            "en": "Pioneering environmental journalist who demystified global climate science and ecology in vernacular Kannada.",
+            "kn": "ಕನ್ನಡ ಪತ್ರಿಕೋದ್ಯಮದಲ್ಲಿ ಪರಿಸರ, ವಿಜ್ಞಾನ ಮತ್ತು ಜಾಗತಿಕ ಹವಾಮಾನ ಬದಲಾವಣೆಯನ್ನು ಜನಸಾಮಾನ್ಯರಿಗೆ ತಲುಪಿಸಿದ ಹಿರಿಯ ಅಂಕಣಕಾರರು."
+          },
+          "fullDescription": {
+            "en": "Hailing from Uttara Kannada and trained at IIT Kharagpur and JNU, Nagesh Hegde pioneered environmental journalism in Karnataka. For decades, through his celebrated columns in Prajavani and over 40 books, he educated readers on global warming, groundwater depletion, pesticide poisoning, and Western Ghats conservation, mentoring generations of regional science communicators.",
+            "kn": "ಉತ್ತರ ಕನ್ನಡ ಜಿಲ್ಲೆಯವರಾದ ನಾಗೇಶ ಹೆಗಡೆ ಅವರು ಐಐಟಿ ಖರಗ್‌ಪುರ ಮತ್ತು ಜೆಎನ್‌ಯುನಲ್ಲಿ ಉನ್ನತ ವ್ಯಾಸಂಗ ಮುಗಿಸಿ ಕನ್ನಡ ಪತ್ರಿಕೋದ್ಯಮಕ್ಕೆ ಹೊಸ ತಿರುವು ನೀಡಿದವರು. 'ಪ್ರಜಾವಾಣಿ' ಪತ್ರಿಕೆಯ ತಮ್ಮ ಜನಪ್ರಿಯ ಅಂಕಣಗಳ ಮೂಲಕ ಜಾಗತಿಕ ತಾಪಮಾನ, ಮಳೆನೀರು ಕೊಯ್ಲು, ಕೀಟನಾಶಕಗಳ ಅಪಾಯ ಮತ್ತು ಪಶ್ಚಿಮ ಘಟ್ಟಗಳ ರಕ್ಷಣೆಯ ಬಗ್ಗೆ ೪೦ಕ್ಕೂ ಹೆಚ್ಚು ಪುಸ್ತಕಗಳನ್ನು ಬರೆದು ಜನಸಾಮಾನ್ಯರಲ್ಲಿ ಪರಿಸರ ಜಾಗೃತಿ ಮೂಡಿಸಿದ್ದಾರೆ."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Science journalism and climate change communication",
+                "kn": "ವಿಜ್ಞಾನ ಸಂವಹನ ಮತ್ತು ಹವಾಮಾನ ಬದಲಾವಣೆ ಪತ್ರಿಕೋದ್ಯಮ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "nh_c1",
+              "question": {
+                "en": "Through which leading Kannada daily newspaper did Nagesh Hegde run his weekly environmental columns for multiple decades?",
+                "kn": "ನಾಗೇಶ ಹೆಗಡೆ ಅವರು ದಶಕಗಳ ಕಾಲ ತಮ್ಮ ಪರಿಸರ ಮತ್ತು ವಿಜ್ಞಾನ ಅಂಕಣಗಳನ್ನು ಪ್ರಕಟಿಸಿದ ಪ್ರಮುಖ ಕನ್ನಡ ದಿನಪತ್ರಿಕೆ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Prajavani (ಪ್ರಜಾವಾಣಿ)",
+                "kn": "ಪ್ರಜಾವಾಣಿ (Prajavani)"
+              },
+              "details": {
+                "en": "Columns such as 'Banna Belaku' and 'Vignana Vishesha' became essential reading for teachers, farmers, and students across Karnataka.",
+                "kn": "ಇವರ 'ಬಣ್ಣ ಬೆಳಕು' ಮತ್ತು ವಿಜ್ಞಾನ ಅಂಕಣಗಳು ಕರ್ನಾಟಕದಾದ್ಯಂತ ಅಪಾರ ಓದುಗರನ್ನು ಪರಿಸರ ಪ್ರೇಮಿಗಳನ್ನಾಗಿ ರೂಪಿಸಿದವು."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  
       ]
     }
   ]
