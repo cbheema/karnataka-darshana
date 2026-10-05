@@ -1,0 +1,282 @@
+{
+  "domains": [
+    {
+      "id": "hoysala",
+      "icon": "🏛️",
+      "name": {
+        "en": "Hoysala Heritage",
+        "kn": "ಹೊಯ್ಸಳ ಪರಂಪರೆ"
+      },
+      "topics": [
+        {
+          "id": "mallitamma",
+          "name": {
+            "en": "Ruvari Mallitamma",
+            "kn": "ರೂವಾರಿ ಮಲ್ಲಿತಮ್ಮ"
+          },
+          "era": {
+            "en": "12th – 13th Century CE",
+            "kn": "೧೨ – ೧೩ನೇ ಶತಮಾನ"
+          },
+          "summary": {
+            "en": "Ruvari Mallitamma was the chief sculptor of the Hoysala dynasty who signed over forty exquisite soapstone friezes at Somanathapura and Belur.",
+            "kn": "ರೂವಾರಿ ಮಲ್ಲಿತಮ್ಮ ಹೊಯ್ಸಳ ಸಾಮ್ರಾಜ್ಯದ ಅಪ್ರತಿಮ ಮುಖ್ಯ ಶಿಲ್ಪಿ. ಸೋಮನಾಥಪುರ ಮತ್ತು ಬೇಲೂರಿನಲ್ಲಿ ೪೦ಕ್ಕೂ ಹೆಚ್ಚು ಸೂಕ್ಷ್ಮ ಕೆತ್ತನೆಗಳ ಮೇಲೆ ತಮ್ಮ ಹೆಸರನ್ನು ಕೆತ್ತಿದ ಹೆಗ್ಗಳಿಕೆ ಇವರದು."
+          },
+          "fullDescription": {
+            "en": "Ruvari Mallitamma is one of the few ancient Indian master builders who broke the tradition of artisan anonymity by systematically inscribing his signature on stone creations. Spanning an astonishing career of nearly eight decades across the reigns of Hoysala kings Narasimha II, Someshvara, and Narasimha III, Mallitamma masterfully converted chloritic schist (soapstone) into microscopic friezes, celestial dancers (Madanikas), and stellate temple platforms.",
+            "kn": "ಪ್ರಾಚೀನ ಭಾರತೀಯ ಶಿಲ್ಪಿಗಳ ಅನಾಮಧೇಯ ಸಂಪ್ರದಾಯವನ್ನು ಮುರಿದು ತಮ್ಮ ಅದ್ಭುತ ಶಿಲ್ಪಗಳ ಮೇಲೆ ಸಹಿ ಹಾಕಿದ ಶ್ರೇಷ್ಠ ಶಿಲ್ಪಿ ರೂವಾರಿ ಮಲ್ಲಿತಮ್ಮ. ಮೂರು ತಲೆಮಾರುಗಳ ಹೊಯ್ಸಳ ರಾಜರ ಆಳ್ವಿಕೆಯಲ್ಲಿ ಎಂಟು ದಶಕಗಳ ಕಾಲ ಸೇವೆ ಸಲ್ಲಿಸಿದ ಇವರು, ಬಳಪದ ಕಲ್ಲಿನಲ್ಲಿ (Soapstone) ಮದನಿಕೆಯರು, ರಾಮಾಯಣ-ಮಹಾಭಾರತದ ಪ್ರಸಂಗಗಳು ಮತ್ತು ನಕ್ಷತ್ರಾಕಾರದ ದೇವಾಲಯಗಳನ್ನು ಅತ್ಯಂತ ಸೂಕ್ಷ್ಮವಾಗಿ ನಿರ್ಮಿಸಿದರು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Intricate soapstone reliefs, Somanathapura",
+                "kn": "ಸೋಮನಾಥಪುರದ ಸೂಕ್ಷ್ಮ ಬಳಪದ ಕಲ್ಲಿನ ಕೆತ್ತನೆ"
+              }
+            },
+            {
+              "type": "video",
+              "url": "https://www.youtube.com/embed/gW3LpXWf4aQ",
+              "caption": {
+                "en": "Documentary: Hoysala Architecture & Mallitamma",
+                "kn": "ಸಾಕ್ಷ್ಯಚಿತ್ರ: ಹೊಯ್ಸಳ ವಾಸ್ತುಶಿಲ್ಪ ಮತ್ತು ಮಲ್ಲಿತಮ್ಮ"
+              }
+            },
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1600100397608-f010f443b2e5?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Stellate platform layout",
+                "kn": "ನಕ್ಷತ್ರಾಕಾರದ ಜಗತಿ ವಿನ್ಯಾಸ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "mal_c1",
+              "question": {
+                "en": "Which trikuta (three-shrine) temple features over 40 distinct stone friezes signed by Ruvari Mallitamma?",
+                "kn": "ರೂವಾರಿ ಮಲ್ಲಿತಮ್ಮ ಕೆತ್ತಿದ ೪೦ಕ್ಕೂ ಹೆಚ್ಚು ಸಹಿ ಕೆತ್ತನೆಗಳನ್ನು ಹೊಂದಿರುವ ಪ್ರಸಿದ್ಧ ತ್ರಿಕೂಟ ದೇವಾಲಯ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Keshava Temple, Somanathapura (1268 CE)",
+                "kn": "ಕೇಶವ ದೇವಾಲಯ, ಸೋಮನಾಥಪುರ (೧೨೬೮)"
+              },
+              "details": {
+                "en": "Commissioned under Hoysala general Somanatha, this star-shaped monument preserves signed lintels indicating Mallitamma completed nearly the entire northern quadrant.",
+                "kn": "ಹೊಯ್ಸಳ ದಂಡನಾಯಕ ಸೋಮನಾಥನಿಂದ ನಿರ್ಮಿಸಲ್ಪಟ್ಟ ಈ ನಕ್ಷತ್ರಾಕಾರದ ದೇವಾಲಯದ ಉತ್ತರ ಭಾಗದ ಬಹುತೇಕ ಶಿಲ್ಪಗಳನ್ನು ಮಲ್ಲಿತಮ್ಮನೇ ಕೆತ್ತಿದ್ದಾನೆ."
+              }
+            },
+            {
+              "id": "mal_c2",
+              "question": {
+                "en": "What specific geological stone was favored by Mallitamma because it is soft when quarried but hardens when exposed to air?",
+                "kn": "ಗಣಿಯಿಂದ ತೆಗೆದಾಗ ಮೃದುವಾಗಿದ್ದು ಗಾಳಿಗೆ ಒಡ್ಡಿಕೊಂಡಾಗ ಗಟ್ಟಿಯಾಗುವ ಯಾವ ಕಲ್ಲನ್ನು ಮಲ್ಲಿತಮ್ಮ ಕೆತ್ತನೆಗೆ ಬಳಸಿದರು?"
+              },
+              "answer": {
+                "en": "Chloritic Schist (Soapstone / ಬಳಪದ ಕಲ್ಲು)",
+                "kn": "ಕ್ಲೋರಿಟಿಕ್ ಶಿಸ್ಟ್ (ಬಳಪದ ಕಲ್ಲು)"
+              },
+              "details": {
+                "en": "Chloritic schist allowed master carvers to execute microscopic lace-like jewelry, drapery, and undercut filigree work unachievable on hard granite.",
+                "kn": "ಈ ಮೃದುವಾದ ಕಲ್ಲಿನಿಂದಾಗಿ ಕಠಿಣ ಗ್ರಾನೈಟ್ ಕಲ್ಲಿನಲ್ಲಿ ಕೆತ್ತಲಾಗದ ಆಭರಣಗಳು, ಬಟ್ಟೆಯ ಮಡಿಕೆಗಳು ಮತ್ತು ಹೂವಿನ ಜಾಲಂದ್ರಗಳನ್ನು ಅತ್ಯಂತ ನಾಜೂಕಾಗಿ ಕೆತ್ತಲು ಸಾಧ್ಯವಾಯಿತು."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mysore_engineering",
+      "icon": "🌊",
+      "name": {
+        "en": "Mysore & Hydraulic Engineering",
+        "kn": "ಮೈಸೂರು ಸಂಸ್ಥಾನ ಮತ್ತು ಜಲತಂತ್ರಜ್ಞಾನ"
+      },
+      "topics": [
+        {
+          "id": "visvesvaraya",
+          "name": {
+            "en": "Sir M. Visvesvaraya",
+            "kn": "ಸರ್ ಎಂ. ವಿಶ್ವೇಶ್ವರಯ್ಯ"
+          },
+          "era": {
+            "en": "1861 – 1962 CE",
+            "kn": "೧೮೬೧ – ೧೯೬೨"
+          },
+          "summary": {
+            "en": "Visionary statesman and engineer who designed the Krishna Raja Sagara Dam and patented revolutionary automatic floodgates.",
+            "kn": "ಕೃಷ್ಣರಾಜ ಸಾಗರ ಅಣೆಕಟ್ಟು ವಿನ್ಯಾಸಗೊಳಿಸಿ, ಸ್ವಯಂಚಾಲಿತ ತೂಬು ಗೇಟ್‌‌ಗಳನ್ನು ಆವಿಷ್ಕರಿಸಿದ ಮಹಾನ್ ಎಂಜಿನಿಯರ್ ಮತ್ತು ದಾರ್ಶನಿಕ."
+          },
+          "fullDescription": {
+            "en": "Sir Mokshagundam Visvesvaraya transformed Karnataka's agrarian and industrial topography. Appointed Chief Engineer and later the 19th Diwan of Mysore, he conceptualized the Krishna Raja Sagara (KRS) dam across the Kaveri. He patented automatic weir sluice gates that operated purely via counterweights and water displacement, preventing reservoir breach without requiring human power.",
+            "kn": "ಸರ್ ಎಂ. ವಿಶ್ವೇಶ್ವರಯ್ಯನವರು ಕರ್ನಾಟಕದ ಕೃಷಿ ಮತ್ತು ಕೈಗಾರಿಕಾ ರಂಗಕ್ಕೆ ಹೊಸ ದಿಕ್ಕು ನೀಡಿದರು. ಮೈಸೂರಿನ ೧೯ನೇ ದಿವಾನರಾಗಿ, ಕಾವೇರಿ ನದಿಗೆ ಅಡ್ಡಲಾಗಿ ಕೃಷ್ಣರಾಜ ಸಾಗರ (KRS) ಅಣೆಕಟ್ಟನ್ನು ನಿರ್ಮಿಸಿದರು. ವಿದ್ಯುತ್ ಅಥವಾ ಮಾನವ ಶಕ್ತಿಯ ಅಗತ್ಯವಿಲ್ಲದೆ, ನೀರಿನ ಮಟ್ಟಕ್ಕನುಗುಣವಾಗಿ ತಾವಾಗಿಯೇ ತೆರೆದುಕೊಳ್ಳುವ ಸ್ವಯಂಚಾಲಿತ ಗೇಟ್‌ಗಳನ್ನು ವಿನ್ಯಾಸಗೊಳಿಸಿ ಪೇಟೆಂಟ್ ಪಡೆದರು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Krishna Raja Sagara Dam spillways",
+                "kn": "ಕೆ.ಆರ್.ಎಸ್ ಅಣೆಕಟ್ಟಿನ ನೀರೊಳು ಹರಿವು"
+              }
+            },
+            {
+              "type": "video",
+              "url": "https://www.youtube.com/embed/8J7m5n_Gg08",
+              "caption": {
+                "en": "Engineering Marvel: Automatic Floodgates",
+                "kn": "ಎಂಜಿನಿಯರಿಂಗ್ ಚಮತ್ಕಾರ: ಸ್ವಯಂಚಾಲಿತ ಪ್ರವಾಹ ಗೇಟ್‌ಗಳು"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "mv_c1",
+              "question": {
+                "en": "What patented innovation did Sir M. Visvesvaraya design in 1903 to safeguard reservoirs during peak floods?",
+                "kn": "೧೯೦೩ ರಲ್ಲಿ ಗರಿಷ್ಠ ಪ್ರವಾಹದ ಸಮಯದಲ್ಲಿ ಅಣೆಕಟ್ಟುಗಳನ್ನು ರಕ್ಷಿಸಲು ಸರ್ ಎಂ.ವಿ ಕಂಡುಹಿಡಿದ ಪೇಟೆಂಟ್ ತಂತ್ರಜ್ಞಾನ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Automatic Sluice Floodgates",
+                "kn": "ಸ್ವಯಂಚಾಲಿತ ತೂಬು ಪ್ರವಾಹ ಗೇಟ್‌ಗಳು"
+              },
+              "details": {
+                "en": "First installed at Khadakwasla Dam and later at Tigra and KRS Dams, these counterweight gates opened automatically when water rose above safety levels.",
+                "kn": "ಮೊದಲು ಪುಣೆಯ ಖಡಕ್‌‌ವಾಸ್ಲಾ ಮತ್ತು ನಂತರ ಕೆ.ಆರ್.ಎಸ್ ಅಣೆಕಟ್ಟಿನಲ್ಲಿ ಅಳವಡಿಸಲಾದ ಈ ತೂಬು ಗೇಟ್‌ಗಳು ನೀರಿನ ಒತ್ತಡದಿಂದ ತಾವೇ ತೆರೆದುಕೊಳ್ಳುತ್ತಿದ್ದವು."
+              }
+            },
+            {
+              "id": "mv_c2",
+              "question": {
+                "en": "In which year was Sir M. Visvesvaraya conferred India's highest civilian award, the Bharat Ratna?",
+                "kn": "ಸರ್ ಎಂ. ವಿಶ್ವೇಶ್ವರಯ್ಯನವರಿಗೆ ಭಾರತದ ಅತ್ಯುನ್ನತ ನಾಗರಿಕ ಪ್ರಶಸ್ತಿಯಾದ 'ಭಾರತ ರತ್ನ' ಯಾವ ವರ್ಷದಲ್ಲಿ ಸಂದಿತು?"
+              },
+              "answer": {
+                "en": "1955 CE",
+                "kn": "೧೯೫೫ ರಲ್ಲಿ"
+              },
+              "details": {
+                "en": "Conferred by President Rajendra Prasad, recognizing his indelible contributions to civil engineering, nation-building, and education.",
+                "kn": "ರಾಷ್ಟ್ರ ನಿರ್ಮಾಣ, ನೀರಾವರಿ ಎಂಜಿನಿಯರಿಂಗ್ ಮತ್ತು ಶಿಕ್ಷಣ ಕ್ಷೇತ್ರಕ್ಕೆ ನೀಡಿದ ಮಹೋನ್ನತ ಕೊಡುಗೆಗಾಗಿ ರಾಷ್ಟ್ರಪತಿ ರಾಜೇಂದ್ರ ಪ್ರಸಾದ್ ಅವರು ಪ್ರಶಸ್ತಿ ಪ್ರದಾನ ಮಾಡಿದರು."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "modern_civic",
+      "icon": "🏛️",
+      "name": {
+        "en": "Modernist & Civic Architecture",
+        "kn": "ಆಧುನಿಕ ಮತ್ತು ಸಾರ್ವಜನಿಕ ವಾಸ್ತುಶಿಲ್ಪ"
+      },
+      "topics": [
+        {
+          "id": "manickam",
+          "name": {
+            "en": "B.R. Manickam",
+            "kn": "ಬಿ.ಆರ್. ಮಾಣಿಕ್ಯಂ"
+          },
+          "era": {
+            "en": "Mid 20th Century",
+            "kn": "೨೦ನೇ ಶತಮಾನದ ಮಧ್ಯಭಾಗ"
+          },
+          "summary": {
+            "en": "Chief architect of the Vidhana Soudha, combining Bangalore granite with Neo-Dravidian architecture.",
+            "kn": "ಬೆಂಗಳೂರು ಗ್ರಾನೈಟ್ ಕಲ್ಲಿನಿಂದ ಭವ್ಯ ವಿಧಾನ ಸೌಧವನ್ನು ನವ-ದ್ರಾವಿಡ ಶೈಲಿಯಲ್ಲಿ ನಿರ್ಮಿಸಿದ ಮುಖ್ಯ ವಾಸ್ತುಶಿಲ್ಪಿ."
+          },
+          "fullDescription": {
+            "en": "B.R. Manickam served as the Government Architect of Mysore State. Guided by Chief Minister Kengal Hanumanthaiah's vision to craft an indigenous monument for sovereign governance, Manickam combined elements of Dravidian gopurams, Chola pillars, and Indo-Saracenic domes entirely constructed from Bangalore granite.",
+            "kn": "ಬಿ.ಆರ್. ಮಾಣಿಕ್ಯಂ ಮೈಸೂರು ಸರ್ಕಾರದ ಮುಖ್ಯ ವಾಸ್ತುಶಿಲ್ಪಿಯಾಗಿದ್ದರು. ಕೆಂಗಲ್ ಹನುಮಂತಯ್ಯನವರ ಕನಸಿನಂತೆ, ಪ್ರಜಾಪ್ರಭುತ್ವದ ಸಂಕೇತವಾಗಿ ಬೆಂಗಳೂರಿನ ಬೂದು ಗ್ರಾನೈಟ್ ಶಿಲೆಯಲ್ಲಿ ಭವ್ಯ ನವ-ದ್ರಾವಿಡ ವಿಧಾನ ಸೌಧವನ್ನು ನಿರ್ಮಿಸಿದರು."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Vidhana Soudha central dome",
+                "kn": "ವಿಧಾನ ಸೌಧದ ಪ್ರಮುಖ ಗುಮ್ಮಟ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "brm_c1",
+              "question": {
+                "en": "What local stone material was quarried and hand-dressed to construct the entire Vidhana Soudha?",
+                "kn": "ಸಂಪೂರ್ಣ ವಿಧಾನ ಸೌಧವನ್ನು ನಿರ್ಮಿಸಲು ಸ್ಥಳೀಯವಾಗಿ ಬಳಸಲಾದ ಕಲ್ಲು ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Bangalore Blue-Gray Granite",
+                "kn": "ಬೆಂಗಳೂರಿನ ನೀಲಿ-ಬೂದು ಗ್ರಾನೈಟ್ ಕಲ್ಲು"
+              },
+              "details": {
+                "en": "Over 5,000 convict artisans and sculptors hand-carved millions of cubic feet of granite between 1951 and 1956.",
+                "kn": "೧೯೫೧ ರಿಂದ ೧೯೫೬ ರ ನಡುವೆ ಸಾವಿರಾರು ಶಿಲ್ಪಿಗಳು ಗ್ರಾನೈಟ್ ಕಲ್ಲುಗಳನ್ನು ಕೈಯಾರೆ ಕೆತ್ತಿ ಈ ಬೃಹತ್ ಸೌಧವನ್ನು ನಿರ್ಮಿಸಿದರು."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sustainable",
+      "icon": "🌱",
+      "name": {
+        "en": "Sustainable & Earth Architecture",
+        "kn": "ಪರಿಸರ ಸ್ನೇಹಿ ಮತ್ತು ಮಣ್ಣಿನ ವಾಸ್ತುಶಿಲ್ಪ"
+      },
+      "topics": [
+        {
+          "id": "chitra",
+          "name": {
+            "en": "Chitra Vishwanath",
+            "kn": "ಚಿತ್ರಾ ವಿಶ್ವನಾಥ್"
+          },
+          "era": {
+            "en": "Contemporary Era",
+            "kn": "ಸಮಕಾಲೀನ ಯುಗ"
+          },
+          "summary": {
+            "en": "Pioneering eco-architect advocating mud architecture, rainwater harvesting, and ecological sanitation.",
+            "kn": "ಮಣ್ಣಿನ ಗಾರೆ, ಮಳೆನೀರು ಕೊಯ್ಲು ಮತ್ತು ನೈಸರ್ಗಿಕ ವಾತಾಯನದ ಮೂಲಕ ಪರಿಸರ ಸ್ನೇಹಿ ಮನೆಗಳನ್ನು ರೂಪಿಸಿದ ಪ್ರವರ್ತಕಿ."
+          },
+          "fullDescription": {
+            "en": "Chitra Vishwanath, principal architect at Biome Environmental Solutions, has designed and built more than 1,000 ecological structures. Her core methodology relies on mud excavated from basements and rainwater sumps to make compressed stabilized earth blocks without baking, reducing carbon emissions drastically.",
+            "kn": "ಬಯೋಮ್ ಎನ್ವಿರಾನ್‌ಮೆಂಟಲ್ ಸೊಲ್ಯೂಷನ್ಸ್ ಸಂಸ್ಥಾಪಕಿ ಚಿತ್ರಾ ವಿಶ್ವನಾಥ್, ಒಂದು ಸಾವಿರಕ್ಕೂ ಹೆಚ್ಚು ಪರಿಸರ ಸ್ನೇಹಿ ಕಟ್ಟಡಗಳನ್ನು ನಿರ್ಮಿಸಿದ್ದಾರೆ. ಕಟ್ಟಡದ ಅಡಿಪಾಯ ಅಗೆಯುವಾಗ ದೊರೆಯುವ ಮಣ್ಣಿನಿಂದಲೇ ಇಟ್ಟಿಗೆಗಳನ್ನು ತಯಾರಿಸಿ, ವಿದ್ಯುತ್ ಶಕ್ತಿಯಿಲ್ಲದೆ ತಂಪಾಗಿರುವ ಮನೆಗಳನ್ನು ನಿರ್ಮಿಸುವುದು ಇವರ ವಿಶೇಷತೆ."
+          },
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=700&q=80",
+              "caption": {
+                "en": "Rammed earth wall texture",
+                "kn": "ನೈಸರ್ಗಿಕ ಮಣ್ಣಿನ ಗೋಡೆಯ ವಿನ್ಯಾಸ"
+              }
+            }
+          ],
+          "challenges": [
+            {
+              "id": "cv_c1",
+              "question": {
+                "en": "What unburnt building material forms the cornerstone of Chitra Vishwanath's zero-waste construction?",
+                "kn": "ಚಿತ್ರಾ ವಿಶ್ವನಾಥ್ ಅವರ ಪರಿಸರ ಸ್ನೇಹಿ ಕಟ್ಟಡ ನಿರ್ಮಾಣದಲ್ಲಿ ಬಳಸಲಾಗುವ ಸುಡದ ಇಟ್ಟಿಗೆ ತಂತ್ರಜ್ಞಾನ ಯಾವುದು?"
+              },
+              "answer": {
+                "en": "Compressed Stabilized Earth Blocks (CSEB)",
+                "kn": "ಸಂಕುಚಿತ ಮಣ್ಣಿನ ಇಟ್ಟಿಗೆಗಳು (CSEB)"
+              },
+              "details": {
+                "en": "Blocks are pressed on-site using soil excavated from the foundation, eliminating kiln emissions and transportation carbon footprints.",
+                "kn": "ಸ್ಥಳೀಯವಾಗಿ ಅಗೆದ ಮಣ್ಣಿಗೆ ಸ್ವಲ್ಪ ಸಿಮೆಂಟ್ ಮಿಶ್ರಣ ಮಾಡಿ ಯಂತ್ರದಿಂದ ಅದುಮಿ ಇಟ್ಟಿಗೆ ತಯಾರಿಸಲಾಗುತ್ತದೆ."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
