@@ -177,7 +177,7 @@
           },
           "fullDescription": {
             "en": "Hailing from Mysuru, Dr. S. K. Shivakumar served as the Director of ISTRAC and the U R Rao Satellite Centre. He was the chief architect behind establishing the 32-meter giant Deep Space Network (DSN) antenna at Byalalu near Bengaluru, which made it possible for India to track, navigate, and receive high-definition images from Chandrayaan-1 in lunar orbit.",
-            "kn": "ಮೈಸೂರಿನವರಾದ ಡಾ. ಎಸ್. ಕೆ. ಶಿವಕುಮಾರ್ ಅವರು ಇಸ್ಟ್ರಾಕ್ (ISTRAC) ಮತ್ತು ಯು.ಆರ್. ರಾವ್ ಸ್ಯಾಟಲೈಟ್ ಸೆಂಟರ್‌ನ ನಿರ್ದೇಶಕರಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸಿದರು. ಬೆಂಗಳೂರಿನ ಸಮೀಪದ ಬ್ಯಾಲಾಳುವಿನಲ್ಲಿ ೩೨ ಮೀಟರ್ ಅಗಲದ ಬೃಹತ್ ಡೀಪ್ ಸ್ಪೇಸ್ ನೆಟ್‌ವರ್ಕ್ (DSN) ಆಂಟೆನಾವನ್ನು ಸ್ಥಾಪಿಸಿ, ಚಂದ್ರನ ಕಕ್ಷೆಯಲ್ಲಿದ್ದ ಚಂದ್ರಯಾನ-೧ ರೊಂದಿಗೆ ಭೂಮಿಯಿಂದ ಸಂವಹನ ಸಾಧ್ಯವಾಗಿಸಿದರು."
+            "kn": "ಮೈಸೂರಿನವರಾದ ಡಾ. ಎಸ್. ಕೆ. ಶಿವಕುಮಾರ್ ಅವರು ಇಸ್ಟ್ರಾಕ್ (ISTRAC) ಮತ್ತು ಯು.ಆರ್. ರಾವ್ ಸ್ಯಾಟಲೈಟ್ ಸೆಂಟರ್‌ನ ನಿರ್ದೇಶಕರಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸಿದರು. ಬೆಂಗಳೂರಿನ ಸಮೀಪದ ಬ್ಯಾಲಾಳುವಿನಲ್ಲಿ ೩೨ ಮೀಟರ್ ಅಗಲದ ಬೃಹತ್ ಡೀಪ್ ಸ್ಪೇಸ್ ನೆಟ್‌‌ವರ್ಕ್ (DSN) ಆಂಟೆನಾವನ್ನು ಸ್ಥಾಪಿಸಿ, ಚಂದ್ರನ ಕಕ್ಷೆಯಲ್ಲಿದ್ದ ಚಂದ್ರಯಾನ-೧ ರೊಂದಿಗೆ ಭೂಮಿಯಿಂದ ಸಂವಹನ ಸಾಧ್ಯವಾಗಿಸಿದರು."
           },
           "media": [
             {
@@ -502,8 +502,9 @@
               }
             }
           ]
-        },
-        
+        }
+      ]
+    },
     {
       "id": "grassroots_afforestation",
       "icon": "🌳",
@@ -994,7 +995,6 @@
         }
       ]
     },
-        
     {
       "id": "classical_halagannada",
       "icon": "📜",
@@ -1090,7 +1090,7 @@
               },
               "details": {
                 "en": "Written in dynamic Champu verse, it is widely compared to classical Greek tragedies.",
-                "kn": "ಈ ಕಾವ್ಯದಲ್ಲಿ ದುರ್ಯೋಧನನ ಪಾತ್ರಕ್ಕೆ ನೀಡಿರುವ ದುರಂತ ನಾಯಕನ ಮಹತ್ವವು ಜಾಗತಿಕ ಕ್ಲಾಸಿಕ್‌ಗಳಿಗೆ ಸರಿಸಾಟಿಯಾಗಿದೆ."
+                "kn": "ಈ ಕಾವ್ಯದಲ್ಲಿ ದುರ್ಯೋಧನನ ಪಾತ್ರಕ್ಕೆ ನೀಡಿರುವ ದುರಂತ ನಾಯಕನ ಮಹತ್ವವು ಜಾಗತಿಕ ಕ್ಲಾಸಿಕ್‌‌ಗಳಿಗೆ ಸರಿಸಾಟಿಯಾಗಿದೆ."
               }
             }
           ]
@@ -1877,7 +1877,7 @@
           },
           "fullDescription": {
             "en": "Dr. Udupi Rajagopalacharya Ananthamurthy was a towering intellectual, critic, and frontrunner of the Navya (Modernist) literary movement. In his explosive 1965 debut novel 'Samskara' (Funeral Rites), he dissected caste orthodoxy, Brahminical existential paralysis, and moral hypocrisy in an agrahara. Honored with the Jnanpith Award in 1994, his other masterworks include 'Bharathipura', 'Avasthe', and 'Bhava'.",
-            "kn": "ಯು. ಆರ್. ಅನಂತಮೂರ್ತಿಯವರು ಕನ್ನಡದ ನವ್ಯ ಸಾಹಿತ್ಯ ಚಳವಳಿಯ ಪ್ರಮುಖ ನೇತಾರರು. ೧೯೬೫ ರಲ್ಲಿ ಪ್ರಕಟವಾದ ಇವರ 'ಸಂಸ್ಕಾರ' ಕಾದಂಬರಿಯು ಬ್ರಾಹ್ಮಣ ಅಗ್ರಹಾರದ ಜಾತಿ ಪದ್ಧತಿ, ಮಡಿವಂತಿಕೆ ಮತ್ತು ಸಂಪ್ರದಾಯದ ಬಿಕ್ಕಟ್ಟುಗಳನ್ನು ಪ್ರಶ್ನಿಸಿ ದೇಶಾದ್ಯಂತ ದೊಡ್ಡ ಸಂಚಲನ ಮೂಡಿಸಿತು. ೧೯೯೪ ರಲ್ಲಿ ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿ ಪಡೆದ ಇವರು 'ಭಾರತೀಪುರ', 'ಅವಸ್ಥೆ' ಮುಂತಾದ ಪ್ರಸಿದ್ಧ ಕೃತಿಗಳನ್ನು ರಚಿಸಿದರು."
+            "kn": "ಯು. ಆರ್. ಅನಂತಮೂರ್ತಿಯವರು ಕನ್ನಡದ ನವ್ಯ ಸಾಹಿತ್ಯ ಚಳವಳಿಯ ಪ್ರಮುಖ ನೇತಾರರು. ೧೯೬೫ ರಲ್ಲಿ ಪ್ರಕಟವಾದ ಇವರ 'ಸಂಸ್ಕಾರ' ಕಾದಂಬರಿಯು ಬ್ರಾಹ್ಮಣ ಅಗ್ರಹಾರದ ಜಾತಿ ಪದ್ಧತಿ, ಮಡಿವಂತಿಕೆ ಮತ್ತು ಸಂಪ್ರದಾಯದ ಬಿಕ್ಕಟ್ಟುಗಳನ್ನು ಪ್ರಶ್ನಿಸಿ ದೇಶಾದ್ಯಂತ ದೊಡ್ಡ ಸಂಚಲನ ಮೂಡಿಸಿತು. ೧೯೪ ರಲ್ಲಿ ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿ ಪಡೆದ ಇವರು 'ಭಾರತೀಪುರ', 'ಅವಸ್ಥೆ' ಮುಂತಾದ ಪ್ರಸಿದ್ಧ ಕೃತಿಗಳನ್ನು ರಚಿಸಿದರು."
           },
           "media": [
             {
@@ -2045,10 +2045,6 @@
             }
           ]
         }
-      ]
-    }
-  
-  
       ]
     }
   ]
