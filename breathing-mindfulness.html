@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Breathe and Focus</title>
+<style>
+  :root { --bg:#f3f5f7; --card:#fff; --fg:#1d2733; --muted:#5b6876; --line:#d9e0e6; --accent:#2f6f73; --soft:#e1eeee; --warm:#b5763a; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#12181e; --card:#1a222a; --fg:#e4e9ee; --muted:#9aa7b4; --line:#2a3540; --accent:#7cc0c2; --soft:#1d3335; --warm:#d9a46c; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font-family:Arial, Helvetica, sans-serif; line-height:1.5; }
+  .wrap { max-width:720px; margin:0 auto; padding:24px 16px 48px; }
+  h1 { margin:0 0 4px; color:var(--accent); }
+  .sub { color:var(--muted); margin:0 0 20px; }
+  .tabs { display:flex; gap:8px; margin-bottom:16px; }
+  .tab { flex:1; padding:10px; border:1px solid var(--line); background:var(--card); color:var(--fg); border-radius:8px; font-size:1rem; cursor:pointer; }
+  .tab.active { background:var(--accent); color:var(--card); border-color:var(--accent); font-weight:bold; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px; }
+  .controls { display:flex; flex-wrap:wrap; gap:12px; margin-bottom:16px; }
+  label { font-size:.85rem; color:var(--muted); display:flex; flex-direction:column; gap:4px; flex:1; min-width:150px; }
+  select { padding:8px; font-size:1rem; border:1px solid var(--line); border-radius:6px; background:var(--card); color:var(--fg); }
+  .stage { height:280px; display:flex; align-items:center; justify-content:center; position:relative; }
+  .ring { position:absolute; width:240px; height:240px; border-radius:50%; border:2px dashed var(--line); }
+  .circle { width:240px; height:240px; border-radius:50%; background:var(--accent); opacity:.85; transform:scale(.4); display:flex; align-items:center; justify-content:center; }
+  .cueText { position:absolute; text-align:center; color:#fff; font-size:1.4rem; font-weight:bold; text-shadow:0 1px 3px rgba(0,0,0,.35); }
+  .cueText small { display:block; font-size:2rem; }
+  .stats { display:flex; justify-content:space-around; text-align:center; margin:12px 0; color:var(--muted); font-size:.9rem; }
+  .stats b { display:block; font-size:1.4rem; color:var(--fg); font-variant-numeric:tabular-nums; }
+  .btns { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
+  button.main { padding:12px 28px; font-size:1rem; font-weight:bold; border:0; border-radius:8px; background:var(--accent); color:var(--card); cursor:pointer; }
+  button.alt { padding:12px 20px; font-size:1rem; border:1px solid var(--line); border-radius:8px; background:var(--card); color:var(--fg); cursor:pointer; }
+  button:focus-visible, .tab:focus-visible { outline:2px solid var(--fg); outline-offset:2px; }
+  .prompt { min-height:120px; display:flex; align-items:center; justify-content:center; text-align:center; font-size:1.35rem; padding:16px; background:var(--soft); border-radius:10px; margin-bottom:12px; }
+  .dot { width:14px; height:14px; border-radius:50%; background:var(--accent); margin:0 auto 12px; opacity:.3; }
+  .running .dot { animation:pulse 6s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { transform:scale(1); opacity:.3; } 50% { transform:scale(2.2); opacity:.9; } }
+  .bar { height:6px; background:var(--line); border-radius:3px; overflow:hidden; margin:8px 0 16px; }
+  .bar div { height:100%; width:0; background:var(--warm); transition:width .5s linear; }
+  .tip { color:var(--muted); font-size:.9rem; margin-top:16px; }
+  .done { text-align:center; color:var(--accent); font-weight:bold; margin-top:12px; min-height:1.5em; }
+  [hidden] { display:none !important; }
+  @media (prefers-reduced-motion: reduce) { .circle { transition:none !important; } .running .dot { animation:none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Breathe and Focus</h1>
+  <p class="sub">A guided breathing and mindfulness practice. Sound plays a soft chime at each step (optional).</p>
+
+  <div class="tabs" role="tablist">
+    <button class="tab active" id="tabBreath" role="tab">Breathing</button>
+    <button class="tab" id="tabMind" role="tab">Mindfulness</button>
+  </div>
+
+  <!-- BREATHING -->
+  <div class="card" id="breathPanel">
+    <div class="controls">
+      <label>Pattern
+        <select id="pattern">
+          <option value="4,0,6,0">Calm: in 4, out 6</option>
+          <option value="4,4,4,4">Box: in 4, hold 4, out 4, hold 4</option>
+          <option value="4,7,8,0">Relax: in 4, hold 7, out 8</option>
+        </select>
+      </label>
+      <label>Duration
+        <select id="bDuration">
+          <option value="60">1 minute</option>
+          <option value="120" selected>2 minutes</option>
+          <option value="300">5 minutes</option>
+        </select>
+      </label>
+      <label>Sound
+        <select id="bSound"><option value="on">Chime on</option><option value="off">Off</option></select>
+      </label>
+    </div>
+
+    <div class="stage">
+      <div class="ring"></div>
+      <div class="circle" id="circle"></div>
+      <div class="cueText" id="cue">Ready<small id="count"></small></div>
+    </div>
+
+    <div class="stats">
+      <div><b id="bTime">2:00</b>Remaining</div>
+      <div><b id="bCycles">0</b>Breaths</div>
+    </div>
+
+    <div class="btns">
+      <button class="main" id="bStart">Start</button>
+      <button class="alt" id="bReset">Reset</button>
+    </div>
+    <p class="done" id="bDone"></p>
+    <p class="tip">Breathe through your nose, let your belly rise on the in-breath, and keep the out-breath slow. A longer exhale tells your body it is safe.</p>
+  </div>
+
+  <!-- MINDFULNESS -->
+  <div class="card" id="mindPanel" hidden>
+    <div class="controls">
+      <label>Practice
+        <select id="practice">
+          <option value="focus">Focus on the breath</option>
+          <option value="body">Body scan</option>
+          <option value="fear">Calm a fear</option>
+          <option value="work">Before starting work</option>
+        </select>
+      </label>
+      <label>Duration
+        <select id="mDuration">
+          <option value="180">3 minutes</option>
+          <option value="300" selected>5 minutes</option>
+          <option value="600">10 minutes</option>
+        </select>
+      </label>
+      <label>Sound
+        <select id="mSound"><option value="on">Chime on</option><option value="off">Off</option></select>
+      </label>
+    </div>
+
+    <div class="dot"></div>
+    <div class="prompt" id="prompt">Choose a practice and press Start.</div>
+    <div class="bar"><div id="mBar"></div></div>
+
+    <div class="stats">
+      <div><b id="mTime">5:00</b>Remaining</div>
+      <div><b id="wander">0</b>Times I came back</div>
+    </div>
+
+    <div class="btns">
+      <button class="main" id="mStart">Start</button>
+      <button class="alt" id="mWander">My mind wandered</button>
+      <button class="alt" id="mReset">Reset</button>
+    </div>
+    <p class="done" id="mDone"></p>
+    <p class="tip">Wandering is normal. Each time you notice and come back, press "My mind wandered." That moment of returning is the practice, and it is how focus gets stronger.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  // ---------- shared ----------
+  var audioCtx = null;
+  function chime(freq, on){
+    if(!on) return;
+    try{
+      audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+      var o = audioCtx.createOscillator(), g = audioCtx.createGain();
+      o.type = 'sine'; o.frequency.value = freq;
+      g.gain.setValueAtTime(0.0001, audioCtx.currentTime);
+      g.gain.exponentialRampToValueAtTime(0.15, audioCtx.currentTime + 0.05);
+      g.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 1.5);
+      o.connect(g); g.connect(audioCtx.destination); o.start(); o.stop(audioCtx.currentTime + 1.6);
+    }catch(e){}
+  }
+  function fmt(s){ s=Math.max(0,Math.ceil(s)); return Math.floor(s/60)+':'+String(s%60).padStart(2,'0'); }
+  function $(id){ return document.getElementById(id); }
+
+  // ---------- tabs ----------
+  $('tabBreath').onclick = function(){ show(true); };
+  $('tabMind').onclick = function(){ show(false); };
+  function show(b){
+    $('tabBreath').classList.toggle('active', b); $('tabMind').classList.toggle('active', !b);
+    $('breathPanel').hidden = !b; $('mindPanel').hidden = b;
+  }
+
+  // ---------- breathing ----------
+  var circle=$('circle'), cue=$('cue'), count=$('count');
+  var bTimer=null, bEnd=0, phaseIdx=0, phaseEnd=0, cycles=0, steps=[];
+  var names=['Breathe in','Hold','Breathe out','Hold'];
+  function buildSteps(){
+    var p=$('pattern').value.split(',').map(Number);
+    steps=[]; p.forEach(function(sec,i){ if(sec>0) steps.push({name:names[i], sec:sec, kind:i}); });
+  }
+  function startPhase(){
+    var s=steps[phaseIdx];
+    phaseEnd=Date.now()+s.sec*1000;
+    circle.style.transition='transform '+s.sec+'s ease-in-out';
+    if(s.kind===0) circle.style.transform='scale(1)';
+    if(s.kind===2) circle.style.transform='scale(.4)';
+    cue.firstChild.nodeValue=s.name;
+    chime(s.kind===0?528:s.kind===2?396:440, $('bSound').value==='on');
+  }
+  function bTick(){
+    var now=Date.now();
+    $('bTime').textContent=fmt((bEnd-now)/1000);
+    if(now>=phaseEnd){
+      phaseIdx++;
+      if(phaseIdx>=steps.length){ phaseIdx=0; cycles++; $('bCycles').textContent=cycles;
+        if(now>=bEnd){ bFinish(); return; } }
+      startPhase();
+    }
+    count.textContent=Math.ceil((phaseEnd-Date.now())/1000);
+  }
+  function bFinish(){
+    clearInterval(bTimer); bTimer=null;
+    circle.style.transition='transform 1.5s ease'; circle.style.transform='scale(.4)';
+    cue.firstChild.nodeValue='Well done'; count.textContent='';
+    $('bStart').textContent='Start'; $('bTime').textContent='0:00';
+    $('bDone').textContent='Session complete. Notice how your body feels now.';
+    chime(660, $('bSound').value==='on');
+  }
+  $('bStart').onclick=function(){
+    if(bTimer){ clearInterval(bTimer); bTimer=null; this.textContent='Resume';
+      circle.style.transition='none'; cue.firstChild.nodeValue='Paused'; count.textContent=''; bPausedLeft=bEnd-Date.now(); return; }
+    buildSteps(); $('bDone').textContent='';
+    if(this.textContent==='Resume' && bPausedLeft>0){ bEnd=Date.now()+bPausedLeft; }
+    else { bEnd=Date.now()+Number($('bDuration').value)*1000; cycles=0; $('bCycles').textContent=0; }
+    phaseIdx=0; startPhase(); bTimer=setInterval(bTick,200); this.textContent='Pause'; bTick();
+  };
+  var bPausedLeft=0;
+  $('bReset').onclick=function(){
+    clearInterval(bTimer); bTimer=null; bPausedLeft=0; cycles=0;
+    $('bCycles').textContent=0; $('bStart').textContent='Start'; $('bDone').textContent='';
+    $('bTime').textContent=fmt(Number($('bDuration').value));
+    circle.style.transition='transform .6s ease'; circle.style.transform='scale(.4)';
+    cue.firstChild.nodeValue='Ready'; count.textContent='';
+  };
+  $('bDuration').onchange=function(){ if(!bTimer) $('bTime').textContent=fmt(Number(this.value)); };
+
+  // ---------- mindfulness ----------
+  var scripts={
+    focus:[
+      'Sit comfortably. Let your shoulders drop.',
+      'Close your eyes or soften your gaze.',
+      'Notice the air coming in through your nose.',
+      'Feel your chest and belly rise and fall.',
+      'If a thought comes, notice it. Then return to the breath.',
+      'No need to control the breath. Just watch it.',
+      'Count each out-breath, from 1 to 10. Then start again.',
+      'If you lose count, that is fine. Begin again at 1.',
+      'Stay with this breath. Only this one.',
+      'Notice the pause between in and out.'
+    ],
+    body:[
+      'Sit or lie comfortably. Take one slow breath.',
+      'Bring attention to your feet. Notice any warmth, pressure, or tingling.',
+      'Move up to your legs and knees. Let them relax.',
+      'Notice your hips and lower back. Soften there.',
+      'Feel your belly move with each breath.',
+      'Notice your chest and upper back.',
+      'Bring attention to your hands, arms, and shoulders. Let them drop.',
+      'Relax your neck and jaw. Unclench your teeth.',
+      'Soften the muscles around your eyes and forehead.',
+      'Now feel your whole body at once, breathing.'
+    ],
+    fear:[
+      'Take a slow breath. You are safe in this moment.',
+      'Name the fear silently: "I am afraid of…"',
+      'Where do you feel it in your body? Just notice.',
+      'Breathe into that place. Let it soften a little.',
+      'Ask: is there something real to prepare for?',
+      'If yes, choose one small step. If no, let the alert pass.',
+      'Remember a time you handled something hard.',
+      'Say to yourself: "Bad things may happen, and I can handle them."',
+      'Say: "I am equipped. I can solve it."',
+      'Return to your breath. Feel your feet on the ground.'
+    ],
+    work:[
+      'Sit up gently. Take three slow breaths.',
+      'Let go of the last thing you were doing.',
+      'Ask: what is the one task that matters most right now?',
+      'Picture yourself finishing it. How does that feel?',
+      'Notice any urge to check your phone. Let it pass.',
+      'Say: "One task at a time. Finish, then move on."',
+      'Say: "I listen to others, and I decide for myself."',
+      'Decide your first small step on the task.',
+      'Take one more slow breath.',
+      'When you are ready, begin.'
+    ]
+  };
+  var mTimer=null, mEnd=0, mTotal=0, mLeft=0, nextPrompt=0, pIdx=0, wander=0;
+  function setPrompt(t){ $('prompt').textContent=t; }
+  function mTick(){
+    var now=Date.now(), left=(mEnd-now)/1000;
+    $('mTime').textContent=fmt(left);
+    $('mBar').style.width=(100*(1-left/mTotal))+'%';
+    if(left<=0){ mFinish(); return; }
+    if(now>=nextPrompt){
+      var list=scripts[$('practice').value];
+      setPrompt(list[pIdx%list.length]); pIdx++;
+      nextPrompt=now+(mTotal*1000)/list.length;
+      chime(440, $('mSound').value==='on');
+    }
+  }
+  function mFinish(){
+    clearInterval(mTimer); mTimer=null; mLeft=0;
+    $('mindPanel').classList.remove('running');
+    $('mStart').textContent='Start'; $('mTime').textContent='0:00'; $('mBar').style.width='100%';
+    setPrompt('Gently open your eyes. Carry this calm into your next task.');
+    $('mDone').textContent='Session complete. You came back '+wander+' time'+(wander===1?'':'s')+'. Each return builds focus.';
+    chime(660, $('mSound').value==='on');
+  }
+  $('mStart').onclick=function(){
+    if(mTimer){ clearInterval(mTimer); mTimer=null; mLeft=mEnd-Date.now(); this.textContent='Resume';
+      $('mindPanel').classList.remove('running'); setPrompt('Paused. Take a breath.'); return; }
+    $('mDone').textContent='';
+    if(this.textContent==='Resume' && mLeft>0){ mEnd=Date.now()+mLeft; nextPrompt=Date.now()+3000; }
+    else { mTotal=Number($('mDuration').value); mEnd=Date.now()+mTotal*1000; pIdx=0; wander=0; $('wander').textContent=0; nextPrompt=0; }
+    $('mindPanel').classList.add('running'); this.textContent='Pause';
+    mTimer=setInterval(mTick,500); mTick();
+  };
+  $('mWander').onclick=function(){
+    wander++; $('wander').textContent=wander;
+    if(mTimer){ setPrompt('Good. You noticed. Gently return to the breath.'); nextPrompt=Date.now()+8000; }
+  };
+  $('mReset').onclick=function(){
+    clearInterval(mTimer); mTimer=null; mLeft=0; wander=0;
+    $('wander').textContent=0; $('mStart').textContent='Start'; $('mDone').textContent='';
+    $('mindPanel').classList.remove('running'); $('mBar').style.width='0';
+    $('mTime').textContent=fmt(Number($('mDuration').value)); setPrompt('Choose a practice and press Start.');
+  };
+  $('mDuration').onchange=function(){ if(!mTimer) $('mTime').textContent=fmt(Number(this.value)); };
+})();
+</script>
+</body>
+</html>
